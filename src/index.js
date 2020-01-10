@@ -28,7 +28,7 @@ function* getSaga(action){
 // POST thing
 function* postSaga(action){
   try{
-      const getResponse = yield axios.post(`/portfolio`, action.payload);
+      yield axios.post(`/portfolio`, action.payload);
       yield put({type: `GET_THING`});
   }
   catch(error){
