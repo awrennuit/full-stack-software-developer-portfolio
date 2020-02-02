@@ -18,6 +18,10 @@ class Header extends Component{
           <br />
           <br />
           <br />
+          <button className="secondary-btn">Button</button>
+          <br />
+          <br />
+          <br />
           <div>
           <input className="text-field" type="text" />
           <label>Input Label</label>
