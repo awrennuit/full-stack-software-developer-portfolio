@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 30px;
   width: 100px;
   border-radius: 4px;
-  border: 3px solid #ffa372;
+  border: 1px solid #ffa372;
   box-shadow: 0 2px 3px #ed6663;
   cursor: pointer;
   transition: 0.3s;
@@ -135,6 +135,29 @@ h1, h2, h3, h4, h5, h6 {
   border: 3px solid #ffb288;
   color: #ffb288;
   box-shadow: 0 0 18px #ed6663;
+}
+
+.tertiary-btn {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #ffa372;
+  height: 30px;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tertiary-btn:hover {
+  box-shadow: 0 0 1px #ed6663;
+  transition: 0.3s;
+}
+
+.tertiary-btn:active {
+  border: 0.5px solid #ffb288;
+  color: #ffb288;
+  box-shadow: 0 0 8px #ed6663;
 }
 
 .text-field {
