@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Header.css';
 
 class Header extends Component{
 
@@ -10,6 +11,17 @@ class Header extends Component{
           <p>https://github.com/AwrenNuit</p>
           <p>awren.nuit@gmail.com</p>
           <p>LINK TO RESUME</p>
+          <br />          <br />
+          <br />
+
+          <button className="primary-btn">Button</button>
+          <br />
+          <br />
+          <br />
+          <div>
+          <input className="text-field" type="text" />
+          <label>Input Label</label>
+          </div>
         </div>
       </div>
     );

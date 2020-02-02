@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
-import axios from 'axios';
+// import axios from 'axios';
 import {combineReducers, createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import logger from 'redux-logger';
@@ -17,8 +17,8 @@ function* watcherSaga() {
 // GET thing
 function* getSaga(action){
   try{
-      const getResponse = yield axios.get(`/portfolio`, action.payload);
-      yield put({type: `SET_THING`, payload: getResponse.data});
+      // const getResponse = yield axios.get(`/portfolio`, action.payload);
+      // yield put({type: `SET_THING`, payload: getResponse.data});
   }
   catch(error){
       console.log('error in GET', error);
@@ -28,7 +28,7 @@ function* getSaga(action){
 // POST thing
 function* postSaga(action){
   try{
-      yield axios.post(`/portfolio`, action.payload);
+      // yield axios.post(`/portfolio`, action.payload);
       yield put({type: `GET_THING`});
   }
   catch(error){
