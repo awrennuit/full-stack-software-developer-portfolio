@@ -26,9 +26,9 @@ class Header extends Component{
           <br />
           <br />
           <br />
-          <div>
-          <input className="text-field" type="text" />
-          <label>Input Label</label>
+          <div className="text-field-container">
+            <input className="text-field" type="text" />
+            <label>Input Label</label>
           </div>
         </div>
       </div>
