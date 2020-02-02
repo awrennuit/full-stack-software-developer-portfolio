@@ -1,6 +1,7 @@
 import React from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './App.css';
-import {HashRouter as Router, Route, Link} from 'react-router-dom';
+import Header from '../Header/Header';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <Link to='/'>
           <Header />
         </Link>
-        <Route exact path='/' component={Home} />
+        {/* <Route exact path='/' component={Home} /> */}
       </Router>
     </>
   );
