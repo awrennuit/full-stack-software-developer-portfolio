@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .primary-btn:active {
-  box-shadow: 0 0 18px #ed6663;
+  box-shadow: 0 0 24px #ed6663;
   background-color: #ffb288;
   background-size: 100%;
   transition: 0.3s;
