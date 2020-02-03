@@ -13,7 +13,7 @@
   /* font: inherit; */
   vertical-align: baseline;
   outline: none;
-  color: black;
+  color: white;
 }
 
 body {
@@ -72,14 +72,19 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 40px solid #f0aa42;
 } */
 
-.main-container {
+.main-card {
   background-color: #621055;
   box-shadow: 5px 5px 10px #ed6663;
-  margin: 30px;
+  margin: 50px;
   padding: 20px;
   border-radius: 25px;
-  height: 80%;
-  width: 80%;
+  height: 50vh;
+  max-width: 100%;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 .primary-heading {

@@ -1,4 +1,25 @@
+.email-link {
+  grid-area: email;
+}
+
+.github-link {
+  grid-area: github;
+}
+
 .header {
   background-color: #621055;
   padding: 20px;
+  box-shadow: 0 0 10px #ed6663;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-areas: 
+    'space space space space space space resume github email';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.resume-link {
+  grid-area: resume;
 }
