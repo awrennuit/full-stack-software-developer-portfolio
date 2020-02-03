@@ -1,0 +1,21 @@
+.resume-li {
+  list-style: disc;
+}
+
+.resume-list-div {
+  margin-bottom: 10px;
+}
+
+.resume-subheading {
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.resume-sub-subheading {
+  font-weight: normal;
+  padding-left: 30px;
+}
+
+.resume-ul {
+  padding-left: 70px;
+}
