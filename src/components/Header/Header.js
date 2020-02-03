@@ -8,28 +8,9 @@ class Header extends Component{
       <div className="header">
         <h1>Awren Nuit</h1>
         <div>
-          <p>https://github.com/AwrenNuit</p>
-          <p>awren.nuit@gmail.com</p>
-          <p>LINK TO RESUME</p>
-          <br />          <br />
-          <br />
-
-          <button className="primary-btn">Button</button>
-          <br />
-          <br />
-          <br />
-          <button className="secondary-btn">Button</button>
-          <br />
-          <br />
-          <br />
-          <button className="tertiary-btn">Button</button>
-          <br />
-          <br />
-          <br />
-          <div className="text-field-container">
-            <input className="text-field" type="text" />
-            <label>Input Label</label>
-          </div>
+          <span>LINK TO RESUME</span>
+          <span>https://github.com/AwrenNuit</span>
+          <span>awren.nuit@gmail.com</span>
         </div>
       </div>
     );
