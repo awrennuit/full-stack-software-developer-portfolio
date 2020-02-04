@@ -1,5 +1,19 @@
-.content-container {
-  padding: 30px;
+.resume-card {
+  background-color: #621055;
+  box-shadow: 5px 5px 10px #ed6663;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 60%;
+}
+
+.resume-container {
+  margin: 50px 0;
+}
+
+.resume-job-duration {
+  font-weight: normal;
+  font-style: italic;
 }
 
 .resume-li {
@@ -8,6 +22,10 @@
 
 .resume-list-div {
   margin-bottom: 10px;
+}
+
+.resume-section {
+  padding: 15px;
 }
 
 .resume-skills-container {
@@ -29,9 +47,17 @@
   padding-left: 30px;
 }
 
+.resume-sub-li {
+  list-style: square;
+}
+
 .resume-sub-subheading {
   font-weight: normal;
   padding-left: 30px;
+}
+
+.resume-sub-ul {
+  padding-left: 40px;
 }
 
 .resume-ul {
