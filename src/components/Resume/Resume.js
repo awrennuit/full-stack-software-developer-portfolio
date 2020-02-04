@@ -4,7 +4,7 @@ import './Resume.css';
 function Resume() {
 
   return(
-    <>
+    <div className="content-container">
       <div>
         <h2 className="secondary-heading">Summary</h2>
         <p> 
@@ -17,6 +17,40 @@ function Resume() {
       </div>
       <div>
         <h2 className="secondary-heading">Technical Skills</h2>
+        <div className="resume-skills-container">
+          <ul className="resume-skills-column">
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>React</li>
+            <li>React-Redux</li>
+            <li>Redux-Saga</li>
+            <li>APIs</li>
+          </ul>
+          <ul className="resume-skills-column">
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>NPM</li>
+            <li>PostgreSQL</li>
+            <li>SQL</li>
+            <li>Postico</li>
+          </ul>
+          <ul className="resume-skills-column">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>AJAX</li>
+            <li>Axios</li>
+            <li>Moment.js</li>
+            <li>Passport</li>
+          </ul>
+          <ul className="resume-skills-column">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Material-UI</li>
+            <li>Bootstrap</li>
+            <li>Postman</li>
+            <li>AWS S3</li>
+          </ul>
+        </div>
       </div>
       <div>
         <h2 className="secondary-heading">Experience</h2>
@@ -90,7 +124,7 @@ function Resume() {
               </ul>
           </div>
       </div>
-    </>
+    </div>
   );
 }
 
