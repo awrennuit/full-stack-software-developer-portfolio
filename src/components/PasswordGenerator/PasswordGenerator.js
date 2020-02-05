@@ -4,26 +4,42 @@ import './PasswordGenerator.css';
 export default function PasswordGenerator() {
 
   const [length, setLength] = useState(10);
-  const [charset, setCharset] = useState('');
+  const [charset, setCharset] = useState('abcdefghijklmnopqrstuvwxyz');
   const [tempID, setTempID] = useState('');
   const notChar = /^[a-zA-Z0-9]/;
+
+  const handleCheck = e => {
+    const char = e.target
+    if(char.checked){
+      if(!charset.includes(`ABCDE`) && char.value === `ABCDE`){
+        setCharset(charset + char.value);
+      }
+      else if(!charset.includes(`abcde`) && char.value === `abcde`){
+        setCharset(charset + char.value);
+      }
+    }
+    if(!char.checked){
+      setCharset(charset.filter(c => c.includes(char.value)));
+    }
+  }
+
 
   const handleLengthChange = e => e.target.value <= 50 && e.target.value >= 2 ? setLength(+e.target.value) : '';
 
   return(
     <div className="password-background">
-      {JSON.stringify(length)}
+      {JSON.stringify(charset)}
       <div className="password-full-container">
         <h1 className="password-heading">Password Generator</h1>
 
-        <input type="checkbox" />
+        <input type="checkbox" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} onChange={handleCheck} />
         <span className="password-span">Add uppercase?</span>
         <div>
           <textarea className="password-textarea" readonly>ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
         </div>
         <hr className="password-hr" />
 
-        <input type="checkbox" checked />
+        <input type="checkbox" value={`abcdefghijklmnopqrstuvwxyz`} onChange={handleCheck} defaultChecked />
         <span className="password-span">Add lowercase?</span>
         <div>
           <textarea className="password-textarea" readonly>abcdefghijklmnopqrstuvwxyz</textarea>
