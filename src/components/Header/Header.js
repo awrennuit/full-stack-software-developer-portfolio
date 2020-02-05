@@ -14,10 +14,12 @@ export default function Header() {
       <h1 className="home-heading" onClick={pushHistoryHome}>Awren Nuit</h1>
       <div className="header-grid">
         <span className="resume-link" onClick={pushHistoryToResume}>View My Resume</span>
-        <a className="github-link" href="https://github.com/AwrenNuit" target="_blank">
+        <a className="github-link" href="https://github.com/AwrenNuit" target="_blank" rel="noopener noreferrer">
           <span>Checkout My GitHub</span>
         </a>
-        <span className="email-link">awren.nuit@gmail.com</span>
+        <a className="email-link" href = "mailto: awren.nuit@gmail.com" rel="noopener noreferrer">
+        <span>Email Me</span>
+        </a>
       </div>
     </div>
   );
