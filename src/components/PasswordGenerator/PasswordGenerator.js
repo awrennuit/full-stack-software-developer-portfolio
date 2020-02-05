@@ -8,9 +8,11 @@ export default function PasswordGenerator() {
   const [tempID, setTempID] = useState('');
   const notChar = /^[a-zA-Z0-9]/;
 
+  const handleLengthChange = e => e.target.value <= 50 && e.target.value >= 2 ? setLength(+e.target.value) : '';
 
   return(
     <div className="password-background">
+      {JSON.stringify(length)}
       <div className="password-full-container">
         <h1 className="password-heading">Password Generator</h1>
 
@@ -55,7 +57,7 @@ export default function PasswordGenerator() {
           max="50" 
           value={length} 
           id="length"
-          onChange={(event)=>setLength(event.target.value)} />
+          onChange={handleLengthChange} />
         <div>
           <button className="generate">Generate</button>
         </div>
