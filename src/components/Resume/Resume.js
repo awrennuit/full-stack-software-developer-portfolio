@@ -185,6 +185,7 @@ export default function Resume() {
               <h4 className="resume-subheading">Unique ID Generator</h4>
                 <ul className="resume-ul">
                   <li className="resume-li">Built out to further my understanding of jQuery and JavaScript, and to get new secure passwords</li>
+                  <li className="resume-li">Recently converted from jQuery to React</li>
                   <li className="resume-li">View app HERE and source code HERE</li>
                 </ul>
             </div>
