@@ -4,3 +4,25 @@
   border-radius: 40%;
   box-shadow: 0 0 10px #ed6663;
 }
+
+.home-bio {
+  grid-area: bio;
+}
+
+.home-bio2 {
+  grid-area: bio2;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-areas: 
+    'avatar avatar heading heading'
+    'avatar avatar bio bio'
+    'avatar avatar bio2 bio2';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.home-heading {
+  grid-area: heading;
+}
