@@ -5,8 +5,7 @@ class Home extends Component{
   render(){
     return(
       <div className="main-container">
-      <div className="main-card">
-          <p>yo sup bruh</p>
+        <div className="main-card">
         </div>
       </div>
     );

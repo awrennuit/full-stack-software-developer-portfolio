@@ -1,7 +1,7 @@
 import React from 'react';
 import './Resume.css';
 
-function Resume() {
+export default function Resume() {
 
   return(
     <div className="resume-container">
@@ -193,5 +193,3 @@ function Resume() {
     </div>
   );
 }
-
-export default Resume;
