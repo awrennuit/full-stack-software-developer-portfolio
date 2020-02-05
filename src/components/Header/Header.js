@@ -6,17 +6,17 @@ export default function Header() {
 
   const history = useHistory();
 
-  const pushHistoryToResume = () => {
-    console.log('in there');
-    history.push('/resume');
-  }
+  const pushHistoryHome = () => history.push('/');
+  const pushHistoryToResume = () => history.push('/resume');
 
   return(
     <div className="header">
-      <h1>Awren Nuit</h1>
+      <h1 className="home-heading" onClick={pushHistoryHome}>Awren Nuit</h1>
       <div className="header-grid">
         <span className="resume-link" onClick={pushHistoryToResume}>View My Resume</span>
-        <span className="github-link">https://github.com/AwrenNuit</span>
+        <a className="github-link" href="https://github.com/AwrenNuit" target="_blank">
+          <span>Checkout My GitHub</span>
+        </a>
         <span className="email-link">awren.nuit@gmail.com</span>
       </div>
     </div>

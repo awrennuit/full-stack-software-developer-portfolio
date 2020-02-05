@@ -22,6 +22,10 @@
   padding: 10px;
 }
 
+.home-heading {
+  cursor: pointer;
+}
+
 .resume-link {
   grid-area: resume;
   cursor: pointer;
