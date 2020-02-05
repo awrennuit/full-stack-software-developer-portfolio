@@ -11,15 +11,23 @@ export default function PasswordGenerator() {
   const handleCheck = e => {
     const char = e.target
     if(char.checked){
-      if(!charset.includes(`ABCDE`) && char.value === `ABCDE`){
+      if(!charset.includes(`ABCDEFGHIJKLMNOPQRSTUVWXYZ`)){
         setCharset(charset + char.value);
       }
-      else if(!charset.includes(`abcde`) && char.value === `abcde`){
+      else if(!charset.includes(`abcdefghijklmnopqrstuvwxyz`)){
+        setCharset(charset + char.value);
+      }
+      else if(!charset.includes(`1234567890`)){
+        setCharset(charset + char.value);
+      }
+      else if(!charset.includes(`-_`)){
+        setCharset(charset + char.value);
+      }else if(!charset.includes('#;:`~!@#$%^&*()+={}[]/?\\')){
         setCharset(charset + char.value);
       }
     }
-    if(!char.checked){
-      setCharset(charset.filter(c => c.includes(char.value)));
+    else if(!char.checked){
+      setCharset(charset.replace(char.value, ''));
     }
   }
 
@@ -35,35 +43,35 @@ export default function PasswordGenerator() {
         <input type="checkbox" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} onChange={handleCheck} />
         <span className="password-span">Add uppercase?</span>
         <div>
-          <textarea className="password-textarea" readonly>ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
+          <textarea className="password-textarea" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
         <input type="checkbox" value={`abcdefghijklmnopqrstuvwxyz`} onChange={handleCheck} defaultChecked />
         <span className="password-span">Add lowercase?</span>
         <div>
-          <textarea className="password-textarea" readonly>abcdefghijklmnopqrstuvwxyz</textarea>
+          <textarea className="password-textarea" value={`abcdefghijklmnopqrstuvwxyz`} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
-        <input type="checkbox" id="numbers" />
+        <input type="checkbox" id="numbers" value={`1234567890`} onChange={handleCheck} />
         <span className="password-span">Add numbers?</span>
         <div>
-          <textarea className="password-textarea" readonly>1234567890</textarea>
+          <textarea className="password-textarea" value={`1234567890`} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
-        <input type="checkbox" id="dash" />
+        <input type="checkbox" id="dash" value={`-_`} onChange={handleCheck} />
         <span className="password-span">Add dash & underscore?</span>
         <div>
-          <textarea className="password-textarea" readonly>-_</textarea>
+          <textarea className="password-textarea" value={`-_`} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
-        <input type="checkbox" id="symbols" />
+        <input type="checkbox" id="symbols" value={'#;:`~!@#$%^&*()+={}[]/?\\'} onChange={handleCheck} />
         <span className="password-span">Add other symbols?</span>
         <div>
-          {/* <textarea id="symbols-display" readonly>#;:`~!@#$%^&*()+={}[]/?\</textarea> */}
+          <textarea className="password-textarea" value={'#;:`~!@#$%^&*()+={}[]/?\\'} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
