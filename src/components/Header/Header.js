@@ -1,20 +1,24 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import './Header.css';
 
-class Header extends Component{
+export default function Header() {
 
-  render(){
-    return(
-      <div className="header">
-        <h1>Awren Nuit</h1>
-        <div className="header-grid">
-          <span className="resume-link">LINK TO RESUME</span>
-          <span className="github-link">https://github.com/AwrenNuit</span>
-          <span className="email-link">awren.nuit@gmail.com</span>
-        </div>
-      </div>
-    );
+  const history = useHistory();
+  
+  const pushHistoryToResume = () => {
+    console.log('in there');
+    history.push('/resume');
   }
-}
 
-export default Header;
+  return(
+    <div className="header">
+      <h1>Awren Nuit</h1>
+      <div className="header-grid">
+        <span className="resume-link" onClick={pushHistoryToResume}>LINK TO RESUME</span>
+        <span className="github-link">https://github.com/AwrenNuit</span>
+        <span className="email-link">awren.nuit@gmail.com</span>
+      </div>
+    </div>
+  );
+}
