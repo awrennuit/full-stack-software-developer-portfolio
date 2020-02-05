@@ -7,10 +7,12 @@
 
 .home-bio {
   grid-area: bio;
+  padding-left: 20px;
 }
 
 .home-bio2 {
   grid-area: bio2;
+  padding-left: 20px;
 }
 
 .home-grid {
