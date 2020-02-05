@@ -3,7 +3,7 @@ import './PasswordGenerator.css';
 
 export default function PasswordGenerator() {
 
-  const [length, setLength] = useState(0);
+  const [length, setLength] = useState(10);
   const [charset, setCharset] = useState('');
   const [tempID, setTempID] = useState('');
   const notChar = /^[a-zA-Z0-9]/;
@@ -53,7 +53,7 @@ export default function PasswordGenerator() {
           type="number" 
           min="2" 
           max="50" 
-          value="10" 
+          value={length} 
           id="length"
           onChange={(event)=>setLength(event.target.value)} />
         <div>
