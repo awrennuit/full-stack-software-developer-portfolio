@@ -1,0 +1,6 @@
+.avatar {
+  grid-area: avatar;
+  height: 250px;
+  border-radius: 40%;
+  box-shadow: 0 0 10px #ed6663;
+}
