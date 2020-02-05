@@ -1,8 +1,10 @@
 .avatar {
+  position: relative;
   grid-area: avatar;
   height: 250px;
   border-radius: 40%;
   box-shadow: 0 0 10px #ed6663;
+  animation: slide-in 0.8s ease-out;
 }
 
 .home-bio {
@@ -27,4 +29,13 @@
 
 .home-heading {
   grid-area: heading;
+}
+
+@keyframes slide-in {
+  from {
+    left: -800px;
+  }
+  to {
+    left: 0;
+  }
 }
