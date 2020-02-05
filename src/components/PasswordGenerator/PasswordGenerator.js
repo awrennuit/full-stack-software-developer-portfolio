@@ -22,7 +22,8 @@ export default function PasswordGenerator() {
       }
       else if(!charset.includes(`-_`)){
         setCharset(charset + char.value);
-      }else if(!charset.includes('#;:`~!@#$%^&*()+={}[]/?\\')){
+      }
+      else if(!charset.includes('#;:`~!@#$%^&*()+={}[]/?\\')){
         setCharset(charset + char.value);
       }
     }
