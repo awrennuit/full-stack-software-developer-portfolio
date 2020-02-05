@@ -10,58 +10,60 @@ export default function PasswordGenerator() {
 
 
   return(
-    <div id="full-container">
-      <h1>Password Generator</h1>
+    <div className="password-background">
+      <div className="password-full-container">
+        <h1 className="password-heading">Password Generator</h1>
 
-      <input type="checkbox" id="up-alphabet" />
-      <span>Add uppercase?</span>
-      <div>
-        <textarea id="up-alphabet-display" readonly>ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
-      </div>
-      <hr />
+        <input type="checkbox" />
+        <span className="password-span">Add uppercase?</span>
+        <div>
+          <textarea className="password-textarea" readonly>ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
+        </div>
+        <hr className="password-hr" />
 
-      <input type="checkbox" id="lo-alphabet" checked />
-      <span>Add lowercase?</span>
-      <div>
-        <textarea id="lo-alphabet-display" readonly>abcdefghijklmnopqrstuvwxyz</textarea>
-      </div>
-      <hr />
+        <input type="checkbox" checked />
+        <span className="password-span">Add lowercase?</span>
+        <div>
+          <textarea className="password-textarea" readonly>abcdefghijklmnopqrstuvwxyz</textarea>
+        </div>
+        <hr className="password-hr" />
 
-      <input type="checkbox" id="numbers" />
-      <span>Add numbers?</span>
-      <div>
-        <textarea id="numbers-display" readonly>1234567890</textarea>
-      </div>
-      <hr />
+        <input type="checkbox" id="numbers" />
+        <span className="password-span">Add numbers?</span>
+        <div>
+          <textarea className="password-textarea" readonly>1234567890</textarea>
+        </div>
+        <hr className="password-hr" />
 
-      <input type="checkbox" id="dash" />
-      <span>Add dash & underscore?</span>
-      <div>
-        <textarea id="dash-display" readonly>-_</textarea>
-      </div>
-      <hr />
+        <input type="checkbox" id="dash" />
+        <span className="password-span">Add dash & underscore?</span>
+        <div>
+          <textarea className="password-textarea" readonly>-_</textarea>
+        </div>
+        <hr className="password-hr" />
 
-      <input type="checkbox" id="symbols" />
-      <span>Add other symbols?</span>
-      <div>
-        <textarea id="symbols-display" readonly>#;:`~!@#$%^&*()+={}[]/?\</textarea>
-      </div>
-      <hr />
+        <input type="checkbox" id="symbols" />
+        <span className="password-span">Add other symbols?</span>
+        <div>
+          {/* <textarea id="symbols-display" readonly>#;:`~!@#$%^&*()+={}[]/?\</textarea> */}
+        </div>
+        <hr className="password-hr" />
 
-      <input 
-        type="number" 
-        min="2" 
-        max="50" 
-        value="10" 
-        id="length"
-        onChange={(event)=>setLength(event.target.value)} />
-      <div>
-        <button id="generate">Generate</button>
-      </div>
-      <hr />
-      
-      <div>
-        <p id="output">Your unique ID is: </p>
+        <input 
+          type="number" 
+          min="2" 
+          max="50" 
+          value="10" 
+          id="length"
+          onChange={(event)=>setLength(event.target.value)} />
+        <div>
+          <button className="generate">Generate</button>
+        </div>
+        <hr className="password-hr" />
+
+        <div>
+          <p className="password-span">Your unique ID is: </p>
+        </div>
       </div>
     </div>
   );

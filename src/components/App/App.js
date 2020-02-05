@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 import Header from '../Header/Header';
 import Home from '../Home/Home';
+import PasswordGenerator from '../PasswordGenerator/PasswordGenerator';
 import Resume from '../Resume/Resume';
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
     <Router>
       <Header />
       <Route exact path='/' component={Home} />
+      <Route exact path='/password-generator' component={PasswordGenerator} />
       <Route exact path='/resume' component={Resume} />
     </Router>
   );
