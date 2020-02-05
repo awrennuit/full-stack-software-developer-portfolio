@@ -5,7 +5,7 @@ import './Header.css';
 export default function Header() {
 
   const history = useHistory();
-  
+
   const pushHistoryToResume = () => {
     console.log('in there');
     history.push('/resume');
@@ -15,7 +15,7 @@ export default function Header() {
     <div className="header">
       <h1>Awren Nuit</h1>
       <div className="header-grid">
-        <span className="resume-link" onClick={pushHistoryToResume}>LINK TO RESUME</span>
+        <span className="resume-link" onClick={pushHistoryToResume}>View My Resume</span>
         <span className="github-link">https://github.com/AwrenNuit</span>
         <span className="email-link">awren.nuit@gmail.com</span>
       </div>

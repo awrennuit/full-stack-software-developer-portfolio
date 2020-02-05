@@ -24,4 +24,5 @@
 
 .resume-link {
   grid-area: resume;
+  cursor: pointer;
 }
