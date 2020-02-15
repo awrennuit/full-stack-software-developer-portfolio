@@ -3,11 +3,50 @@ import './PasswordGenerator.css';
 
 export default function PasswordGenerator() {
 
+  // Store local state
   const [length, setLength] = useState(10);
   const [charset, setCharset] = useState('abcdefghijklmnopqrstuvwxyz');
-  const [tempID, setTempID] = useState('');
+  const [uniquePassword, setUniquePassword] = useState('');
   const notChar = /^[a-zA-Z0-9]/;
+  let tempPassword = '';
 
+  // Check if a specific symbol is used two times in a row and skip it if true
+  const checkDupe = char => {
+    switch(char){
+      case char:
+        if(tempPassword[tempPassword.length-1] === char){
+          return false;
+        }
+        return true;
+      default:
+        return true;
+    }
+  }
+
+  // Create unique password
+  const generatePassword = () => {
+    let randomCharset = charset.split(``);
+
+    for(let i=0; tempPassword.length<length; i++) {
+      if(i === randomCharset.length){
+        i = 0;
+      }
+      else{
+        randomCharset.sort(() => Math.random() - 0.5);
+        if(!randomCharset[i].match(notChar)){
+          if(checkDupe(randomCharset[i])){
+            tempPassword += randomCharset[i];
+          }
+        }
+        else{
+          tempPassword += randomCharset[i];
+        }
+      }
+    }
+    setUniquePassword(tempPassword);
+  }
+
+  // Add characters to selected set when checked, remove them when unchecked
   const handleCheck = e => {
     const char = e.target
     if(char.checked){
@@ -23,7 +62,7 @@ export default function PasswordGenerator() {
       else if(!charset.includes(`-_`)){
         setCharset(charset + char.value);
       }
-      else if(!charset.includes('#;:`~!@#$%^&*()+={}[]/?\\')){
+      else if(!charset.includes('#;:`~!@#$%^&*()+={}[]/?\\')){ // Fix bug: adds \\ even though it only logs \
         setCharset(charset + char.value);
       }
     }
@@ -32,12 +71,11 @@ export default function PasswordGenerator() {
     }
   }
 
-
+  // Assure length cannot be lower than 2 or higher than 50
   const handleLengthChange = e => e.target.value <= 50 && e.target.value >= 2 ? setLength(+e.target.value) : '';
 
   return(
     <div className="password-background">
-      {JSON.stringify(charset)}
       <div className="password-full-container">
         <h1 className="password-heading">Password Generator</h1>
 
@@ -84,13 +122,16 @@ export default function PasswordGenerator() {
           id="length"
           onChange={handleLengthChange} />
         <div>
-          <button className="generate">Generate</button>
+          <button className="generate" onClick={generatePassword}>Generate</button>
         </div>
+
         <hr className="password-hr" />
 
         <div>
-          <p className="password-span">Your unique ID is: </p>
+          <p className="password-span">Your unique ID is:</p>
+          <p>{uniquePassword}</p>
         </div>
+
       </div>
     </div>
   );
