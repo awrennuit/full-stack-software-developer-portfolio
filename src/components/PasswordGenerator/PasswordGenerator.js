@@ -3,7 +3,7 @@ import './PasswordGenerator.css';
 
 export default function PasswordGenerator() {
 
-  // Store local state
+  // Store local state and variables
   const [length, setLength] = useState(10);
   const [charset, setCharset] = useState('abcdefghijklmnopqrstuvwxyz');
   const [uniquePassword, setUniquePassword] = useState('');
@@ -79,42 +79,53 @@ export default function PasswordGenerator() {
       <div className="password-full-container">
         <h1 className="password-heading">Password Generator</h1>
 
-        <input type="checkbox" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} onChange={handleCheck} />
-        <span className="password-span">Add uppercase?</span>
-        <div>
+        <div className="password-checkbox-container">
+          <input type="checkbox" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} onChange={handleCheck} />
+          <span className="password-span">Add uppercase?</span>
+        </div>
+        <div className="password-text-container">
           <textarea className="password-textarea" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
-        <input type="checkbox" value={`abcdefghijklmnopqrstuvwxyz`} onChange={handleCheck} defaultChecked />
-        <span className="password-span">Add lowercase?</span>
-        <div>
+        <div className="password-checkbox-container">
+          <input type="checkbox" value={`abcdefghijklmnopqrstuvwxyz`} onChange={handleCheck} defaultChecked />
+          <span className="password-span">Add lowercase?</span>
+        </div>
+        <div className="password-text-container">
           <textarea className="password-textarea" value={`abcdefghijklmnopqrstuvwxyz`} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
-        <input type="checkbox" id="numbers" value={`1234567890`} onChange={handleCheck} />
-        <span className="password-span">Add numbers?</span>
-        <div>
+        <div className="password-checkbox-container">
+          <input type="checkbox" id="numbers" value={`1234567890`} onChange={handleCheck} />
+          <span className="password-span">Add numbers?</span>
+        </div>
+        <div className="password-text-container">
           <textarea className="password-textarea" value={`1234567890`} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
-        <input type="checkbox" id="dash" value={`-_`} onChange={handleCheck} />
-        <span className="password-span">Add dash & underscore?</span>
-        <div>
+        <div className="password-checkbox-container">
+          <input type="checkbox" id="dash" value={`-_`} onChange={handleCheck} />
+          <span className="password-span">Add dash & underscore?</span>
+        </div>
+        <div className="password-text-container">
           <textarea className="password-textarea" value={`-_`} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
-        <input type="checkbox" id="symbols" value={'#;:`~!@#$%^&*()+={}[]/?\\'} onChange={handleCheck} />
-        <span className="password-span">Add other symbols?</span>
-        <div>
+        <div className="password-checkbox-container">
+          <input type="checkbox" id="symbols" value={'#;:`~!@#$%^&*()+={}[]/?\\'} onChange={handleCheck} />
+          <span className="password-span">Add other symbols?</span>
+        </div>
+        <div className="password-text-container">
           <textarea className="password-textarea" value={'#;:`~!@#$%^&*()+={}[]/?\\'} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
         <input 
+          className="password-length-input"
           type="number" 
           min="2" 
           max="50" 
@@ -128,8 +139,8 @@ export default function PasswordGenerator() {
         <hr className="password-hr" />
 
         <div>
-          <p className="password-span">Your unique ID is:</p>
-          <p>{uniquePassword}</p>
+          <p className="password-output-heading">Your unique ID is:</p>
+          <p className="password-output">{uniquePassword}</p>
         </div>
 
       </div>
