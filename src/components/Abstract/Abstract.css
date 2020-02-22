@@ -1,15 +1,9 @@
 .abstract-container {
-  /* width: 100vh; */
   height: 100vh;
   margin: 50px auto;
   background-color: rgb(38, 38, 46);
   background-size: cover;
 }
-
-/* div {
-  padding: 0;
-  line-height: 0px;
-} */
 
 .abstract-heading {
   text-align: center;
