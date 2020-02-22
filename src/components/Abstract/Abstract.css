@@ -1,17 +1,29 @@
-body {
-  width: 100vh;
+.abstract-container {
+  /* width: 100vh; */
   height: 100vh;
-  margin: auto;
+  margin: 50px auto;
   background-color: rgb(38, 38, 46);
+  background-size: cover;
+}
+
+/* div {
+  padding: 0;
+  line-height: 0px;
+} */
+
+.abstract-heading {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline;
   color: goldenrod;
 }
 
-div {
-  padding: 0;
-  line-height: 0px;
+.abstract-label {
+  font-family: 'Times New Roman';
+  color: goldenrod;
 }
 
-span {
+.abstract-span {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -19,30 +31,26 @@ span {
   width: 20px;
   display: inline-block;
   line-height: 0px;
+  color: black;
 }
 
-h1 {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-decoration: underline;
-}
-
-.row {
+.abstract-row {
   display: flex;
-  width: 100%;
+  width: 700px;
 }
 
-.column {
+.abstract-column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
   height: 25px;
+  padding-bottom: 10px;
   text-align: left;
   border: 1px solid rgb(85, 85, 85);
 }
 
-#output {
+.abstract-output {
   margin: 10px 0 0 0;
   text-align: center;
 }
@@ -287,12 +295,14 @@ h1 {
   background-color: rgb(234, 0, 255);
 }
 
-button {
+.abstract-btn {
+  font-family: 'Times New Roman';
   font-size: 0.9em;
+  color: black;
   cursor: pointer;
 }
 
-button:hover {
+.abstract-btn:hover {
   background-color: rgb(215, 216, 245);
 }
 
