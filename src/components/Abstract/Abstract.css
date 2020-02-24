@@ -5,6 +5,11 @@
   background-size: cover;
 }
 
+.abstract-div {
+  padding: 0;
+  line-height: 0px;
+}
+
 .abstract-heading {
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

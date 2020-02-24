@@ -4,22 +4,30 @@ import './Abstract.css';
 export default function Abstract() {
 
   const [color, setColor] = useState([]);
+  const [art, setArt] = useState('');
 
   const randomizeMatrix = () => {
-    let $div = '';
-    for(let i=0; i<30; i++) {
-      $div = $(`<div class="painting"></div>`);
-      for(let j=0; j<30; j++) {
-          colors.sort(() => Math.random() - 0.5);
-          $div.append(`<span class="${colors[0]}"></span>`);
-      }
+    let divs = [];
+    for(let i=0; i<30; i++){
+      divs.push(<div className="abstract-div" key={i}>{randomizeSpan()}</div>);
     }
+    return divs;
+  }
+
+  const randomizeSpan = () => {
+    let spans = [];
+    for(let i=0; i<30; i++){
+      color.sort(() => Math.random() - 0.5);
+      spans.push(<span className={`${color[0]} abstract-span`} key={i}></span>);
+    }
+    return spans;
   }
 
   const loop = () => {
+    setArt('');
     for(let i=0; i<500; i++) {
       setTimeout(() => {
-        randomizeMatrix();
+        setArt(randomizeMatrix());
       }, 10);
     }
   }
@@ -33,9 +41,9 @@ export default function Abstract() {
                   <input 
                     type="radio" 
                     id="dark" 
+                    name="colors"
                     onChange={()=>{
                                   setColor(['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee', 'eeeeeee', 'eeeeeeee', 'eeeeeeeee', 'eeeeeeeeee'])
-                                  loop();
                                 }
                               } 
               />  
@@ -45,9 +53,9 @@ export default function Abstract() {
                   <input 
                     type="radio" 
                     id="colorful" 
+                    name="colors"
                     onChange={()=>{
                                   setColor(['c', 'cc', 'ccc', 'cccc', 'ccccc', 'cccccc', 'ccccccc', 'cccccccc', 'ccccccccc', 'cccccccccc'])
-                                  loop();
                                 }
                               } 
               />
@@ -59,9 +67,9 @@ export default function Abstract() {
                   <input 
                     type="radio" 
                     id="darker" 
+                    name="colors"
                     onChange={()=>{
                                   setColor(['b', 'bb', 'bbb', 'bbbb', 'bbbbb', 'bbbbbb', 'bbbbbbb', 'bbbbbbbb', 'bbbbbbbbb', 'bbbbbbbbbb'])
-                                  loop();
                                 }
                               } 
               />
@@ -70,10 +78,10 @@ export default function Abstract() {
               <div className="abstract-column">
                   <input 
                     type="radio" 
-                    id="vaporave" 
+                    id="vaporwave" 
+                    name="colors"
                     onChange={()=>{
                                   setColor(['d', 'dd', 'ddd', 'dddd', 'ddddd', 'dddddd', 'ddddddd', 'dddddddd', 'ddddddddd', 'dddddddddd'])
-                                  loop();
                                 }
                               } 
               />
@@ -85,9 +93,9 @@ export default function Abstract() {
                   <input 
                     type="radio" 
                     id="darkest" 
+                    name="colors"
                     onChange={()=>{
                                   setColor(['a', 'aa', 'aaa', 'aaaa', 'aaaaa', 'aaaaaa', 'aaaaaaa', 'aaaaaaaa', 'aaaaaaaaa', 'aaaaaaaaaa'])
-                                  loop();
                                 }
                               } 
               />
@@ -97,9 +105,9 @@ export default function Abstract() {
                   <input 
                     type="radio" 
                     id="neon" 
+                    name="colors"
                     onChange={()=>{
                                   setColor(['f', 'ff', 'fff', 'ffff', 'fffff', 'ffffff', 'fffffff', 'ffffffff', 'fffffffff', 'ffffffffff'])
-                                  loop();
                                 }
                               } 
               />
@@ -108,7 +116,7 @@ export default function Abstract() {
           </div>
           <div className="abstract-row">
               <div className="abstract-column">
-                  <button className="abstract-btn" id="sad-btn">
+                  <button className="abstract-btn" id="sad-btn" onClick={loop}>
                     <span className="one abstract-span">&#187;</span>
                     <span className="two abstract-span">&#187;</span>
                     <span className="three abstract-span">&#187;</span>
@@ -121,7 +129,7 @@ export default function Abstract() {
                   </button>
               </div>
               <div className="abstract-column">
-                  <button className="abstract-btn" id="psych-btn">
+                  <button className="abstract-btn" id="psych-btn" onClick={loop}>
                     <span className="one abstract-span">&#187;</span>
                     <span className="two abstract-span">&#187;</span>
                     <span className="three abstract-span">&#187;</span>
@@ -136,7 +144,7 @@ export default function Abstract() {
           </div>
         </center>
         <div className="abstract-output">
-          {color}
+          {art}
         </div>
       </div>
     );
