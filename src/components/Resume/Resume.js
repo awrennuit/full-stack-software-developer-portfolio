@@ -10,11 +10,10 @@ export default function Resume() {
         <div className="resume-section">
           <h2 className="secondary-heading">Summary</h2>
           <p> 
-            Solving puzzles and creating things is what makes me feel alive. Building bridges between 
-            the cool & logical and the warm & emotional is how I try to approach things. Aside from 
-            being a full stack developer I am an herbalist, an energy healer, and a musician. I am 
-            passionate about Diversity & Inclusion in all its forms, especially at the intersections 
-            relating to queer identities.
+            Solving puzzles and creating things are what makes me feel alive. Aside from being 
+            a full stack developer I am an herbalist and a musician. I am passionate about 
+            Diversity & Inclusion in all its forms, especially at the intersections relating 
+            to queer identities.
           </p>
         </div> 
 
@@ -23,34 +22,34 @@ export default function Resume() {
           <div className="resume-skills-container">
             <ul className="resume-skills-column">
               <li>JavaScript</li>
-              <li>jQuery</li>
+              <li>TypeScript</li>
               <li>React</li>
               <li>React-Redux</li>
               <li>Redux-Saga</li>
-              <li>APIs</li>
+              <li>Angular</li>
             </ul>
             <ul className="resume-skills-column">
               <li>Node.js</li>
               <li>Express.js</li>
-              <li>NPM</li>
-              <li>PostgreSQL</li>
+              <li>REST</li>
+              <li>API</li>
               <li>SQL</li>
-              <li>Postico</li>
+              <li>NoSQL</li>
             </ul>
             <ul className="resume-skills-column">
               <li>HTML</li>
               <li>CSS</li>
               <li>AJAX</li>
-              <li>Axios</li>
-              <li>Moment.js</li>
-              <li>Passport</li>
-            </ul>
-            <ul className="resume-skills-column">
+              <li>jQuery</li>
               <li>Git</li>
               <li>GitHub</li>
+            </ul>
+            <ul className="resume-skills-column">
+              <li>JSON</li>
+              <li>Ionic</li>
               <li>Material-UI</li>
-              <li>Bootstrap</li>
-              <li>Postman</li>
+              <li>Firebase</li>
+              <li>MongoDB</li>
               <li>AWS S3</li>
             </ul>
           </div>
@@ -58,6 +57,38 @@ export default function Resume() {
 
         <div className="resume-section">
           <h2 className="secondary-heading">Experience</h2>
+
+          <div className="resume-list-div">
+            <h4 className="resume-subheading">Front-end Software Engineer
+              <span className="resume-job-duration"> April 2020 - Present</span>
+            </h4>
+            <h4 className="resume-sub-subheading">Konduct Coach Learning</h4>
+              <ul className="resume-ul">
+                <li className="resume-li">Creating and implementing UI/UX designs with responsiveness in mind</li>
+                <li className="resume-li">Collaborating remotely with a cross-country development team</li>
+                <li className="resume-li">Planning and executing technical goals for each two week sprint</li>
+              </ul>
+          </div>
+
+          <div className="resume-list-div">
+            <h4 className="resume-subheading">Software Developer
+              <span className="resume-job-duration"> March 2020 - Present</span>
+            </h4>
+            <h4 className="resume-sub-subheading">Freelance</h4>
+            <ul className="resume-ul">
+                <li className="resume-li">LeahWorks</li>
+                <ul className="resume-sub-ul">
+                  <li className="resume-sub-li">Constructing web presence for a therapist</li>
+                  <li className="resume-sub-li">Technologies used: HTML, CSS, React, Firebase</li>
+                </ul>
+                <li className="resume-li">Alumni Tracker</li>
+                <ul className="resume-sub-ul">
+                  <li className="resume-sub-li">Built a way to track which alumni were present at which Prime Digital Academy events</li>
+                  <li className="resume-sub-li">Technologies used: React, React-Redux, Firebase</li>
+                </ul>
+              </ul>
+          </div>
+
           <div className="resume-list-div">
             <h4 className="resume-subheading">Full Stack Software Developer Student
               <span className="resume-job-duration"> September 2019 - February 2020</span>
@@ -72,13 +103,12 @@ export default function Resume() {
                 </ul>
                 <li className="resume-li">Group Project: "Illume Pricing"</li>
                 <ul className="resume-sub-ul">
-                  <li className="resume-sub-li">Currently working collaboratively to create an easier, automated way for small business owners to extend their profits</li>
-                  <li className="resume-sub-li">The admin will be able to dynamically create/update/delete new or existing questions, inputs, and equations as needed</li>
-                  <li className="resume-sub-li">Users will go through a “choose your own adventure” type of generative question set where their answer(s) to the previous question(s) determine the next question(s), then users are provided with financial feedback based on their answers</li>
+                  <li className="resume-sub-li">With a small team created an easier, automated way for small business owners to increase their profits</li>
+                  <li className="resume-sub-li">The admin is able to dynamically update existing questions, user data, and industries</li>
+                  <li className="resume-sub-li">Users go through a “choose your own adventure” style questions, and are provided with financial feedback based on their answers</li>
                 </ul>
               </ul>
           </div>
-
 
           <div className="resume-list-div">
             <h4 className="resume-subheading">Independent Living Skills Coach
@@ -91,6 +121,7 @@ export default function Resume() {
                 <li className="resume-li">Aided clients with filing out and submitting county paperwork</li>
               </ul>
           </div>
+
           <div className="resume-list-div">
             <h4 className="resume-subheading">Resident Counselor
               <span className="resume-job-duration"> March 2017 - August 2019</span>
@@ -103,6 +134,7 @@ export default function Resume() {
                 <li className="resume-li">Administered medication to the program participants</li>
               </ul>
           </div>
+
           <div className="resume-list-div">
             <h4 className="resume-subheading">Sales Ambassador
               <span className="resume-job-duration"> November 2014 - March 2017</span>
@@ -121,21 +153,24 @@ export default function Resume() {
 
         <div className="resume-section">
           <h2 className="secondary-heading">Education</h2>
+
             <div className="resume-list-div">
               <h4 className="resume-subheading">Full Stack Software Engineering Certificate (2020)</h4>
               <h4 className="resume-sub-subheading">Prime Digital Academy</h4>
                 <ul className="resume-ul">
-                  <li className="resume-li">Creating increasingly complicated full stack software programs</li>
-                  <li className="resume-li">Performing public speaking, both impromptu and rehearsed</li>
-                  <li className="resume-li">Communicating within a small team to build apps</li>
-                  <li className="resume-li">Maintaining an active GitHub account</li>
+                  <li className="resume-li">Created increasingly complicated full stack software programs</li>
+                  <li className="resume-li">Performed public speaking, both impromptu and rehearsed</li>
+                  <li className="resume-li">Communicated within a small team to build apps</li>
+                  <li className="resume-li">Maintained an active GitHub account</li>
                 </ul>
             </div>
+
             <div className="resume-list-div">
               <h4 className="resume-subheading">Associate of Science in Integrative Health & Healing (2016)</h4>
               <h4 className="resume-sub-subheading">Anoka Ramsey Community College</h4>
               <h4 className="resume-sub-subheading">Cumulative GPA: 3.8</h4>
             </div>
+
             <div className="resume-list-div">
               <h4 className="resume-subheading">Associate of APplied Science in Music Business (2009)</h4>
               <h4 className="resume-sub-subheading">Minnesota School of Business</h4>
@@ -145,21 +180,34 @@ export default function Resume() {
 
         <div className="resume-section">
           <h2 className="secondary-heading">Additional Projects</h2>
-            <div className="resume-list-div">
-              <h4 className="resume-subheading">Change Counter (in progress)</h4>
-                <ul className="resume-ul">
-                  <li className="resume-li">Created to help people with dyscalculia know if they have enough money to purchase an item</li>
-                  <li className="resume-li">Originally programmed with jQuery, in the process of switching over to React</li>
-                  <li className="resume-li">View app HERE and source code HERE</li>
-                </ul>
-            </div>
-            <div className="resume-list-div">
-              <h4 className="resume-subheading">Weather & Facts API</h4>
-                <ul className="resume-ul">
-                  <li className="resume-li">Provides Minneapolis weather, number facts related to the high and low temperatures, and an "on this day" fact</li>
-                  <li className="resume-li">View app HERE and source code HERE</li>
-                </ul>
-            </div>
+
+          <div className="resume-list-div">
+            <h4 className="resume-subheading">Homebody</h4>
+              <ul className="resume-ul">
+                <li className="resume-li">Hack the Gap collaborative UX and developer weekend project</li>
+                <li className="resume-li">Users select at-home exercise criteria, then receive workout videos</li>
+                <li className="resume-li">View app HERE and source code HERE</li>
+              </ul>
+          </div>
+
+          <div className="resume-list-div">
+            <h4 className="resume-subheading">US State Facts</h4>
+              <ul className="resume-ul">
+                <li className="resume-li">Created to gain a deeper understanding with Angular and Firebase</li>
+                <li className="resume-li">Facts include things like state bird, capital city, electoral votes, etc.</li>
+                <li className="resume-li">View app HERE and source code HERE</li>
+              </ul>
+          </div>
+
+          <div className="resume-list-div">
+            <h4 className="resume-subheading">Book, Movie, and Podcast Club</h4>
+              <ul className="resume-ul">
+                <li className="resume-li">An effort to foster community in this age of social distancing</li>
+                <li className="resume-li">Users can share their recommendations and where to find them</li>
+                <li className="resume-li">View app HERE and source code HERE</li>
+              </ul>
+          </div>
+
             <div className="resume-list-div">
               <h4 className="resume-subheading">React Countdown Timer</h4>
                 <ul className="resume-ul">
@@ -167,6 +215,7 @@ export default function Resume() {
                   <li className="resume-li">View app HERE and source code HERE</li>
                 </ul>
             </div>
+
             <div className="resume-list-div">
               <h4 className="resume-subheading">Abstract Pixel Art Generator</h4>
                 <ul className="resume-ul">
@@ -174,13 +223,7 @@ export default function Resume() {
                   <li className="resume-li">View app HERE and source code HERE</li>
                 </ul>
             </div>
-            <div className="resume-list-div">
-              <h4 className="resume-subheading">De-Affirmation Generator</h4>
-                <ul className="resume-ul">
-                  <li className="resume-li">Self-teaching about randomization and database queries</li>
-                  <li className="resume-li">View app HERE and source code HERE</li>
-                </ul>
-            </div>
+
             <div className="resume-list-div">
               <h4 className="resume-subheading">Unique ID Generator</h4>
                 <ul className="resume-ul">
