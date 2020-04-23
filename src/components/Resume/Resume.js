@@ -16,7 +16,7 @@ export default function Resume() {
             passionate about Diversity & Inclusion in all its forms, especially at the intersections 
             relating to queer identities.
           </p>
-        </div>
+        </div> 
 
         <div className="resume-section">
           <h2 className="secondary-heading">Technical Skills</h2>
