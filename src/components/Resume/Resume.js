@@ -148,9 +148,6 @@ export default function Resume() {
           </div>
         </div>
 
-
-  
-
         <div className="resume-section">
           <h2 className="secondary-heading">Education</h2>
 
