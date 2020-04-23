@@ -62,7 +62,7 @@ export default function PasswordGenerator() {
       else if(!charset.includes(`-_`)){
         setCharset(charset + char.value);
       }
-      else if(!charset.includes('#;:`~!@#$%^&*()+={}[]/?\\')){ // Fix bug: adds \\ even though it only logs \
+      else if(!charset.includes('#;:`~!@#$%^&*()+={}[]/\\?')){ // Fix bug: adds \\ even though it only logs \
         setCharset(charset + char.value);
       }
     }
@@ -78,7 +78,7 @@ export default function PasswordGenerator() {
     <div className="password-background">
       <div className="password-full-container">
         <h1 className="password-heading">Password Generator</h1>
-
+{JSON.stringify(charset)}
         <div className="password-checkbox-container">
           <input type="checkbox" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} onChange={handleCheck} />
           <span className="password-span">Add uppercase?</span>
@@ -116,11 +116,11 @@ export default function PasswordGenerator() {
         <hr className="password-hr" />
 
         <div className="password-checkbox-container">
-          <input type="checkbox" id="symbols" value={'#;:`~!@#$%^&*()+={}[]/?\\'} onChange={handleCheck} />
+          <input type="checkbox" id="symbols" value={'#;:`~!@#$%^&*()+={}[]/\\?'} onChange={handleCheck} />
           <span className="password-span">Add other symbols?</span>
         </div>
         <div className="password-text-container">
-          <textarea className="password-textarea" value={'#;:`~!@#$%^&*()+={}[]/?\\'} readOnly></textarea>
+          <textarea className="password-textarea" value={'#;:`~!@#$%^&*()+={}[]/\\?'} readOnly></textarea>
         </div>
         <hr className="password-hr" />
 
