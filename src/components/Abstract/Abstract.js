@@ -25,7 +25,7 @@ export default function Abstract() {
 
   const loop = () => {
     setArt('');
-    for(let i=0; i<500; i++) {
+    for(let i=0; i<50; i++) {
       setTimeout(() => {
         setArt(randomizeMatrix());
       }, 10);

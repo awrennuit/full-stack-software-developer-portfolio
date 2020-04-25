@@ -1,36 +1,37 @@
 .abstract-container {
-  height: 100vh;
-  margin: 50px auto;
   background-color: rgb(38, 38, 46);
   background-size: cover;
+  height: 100vh;
+  margin: 50px auto;
 }
 
 .abstract-div {
-  padding: 0;
   line-height: 0px;
+  padding: 0;
 }
 
 .abstract-heading {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-decoration: underline;
   color: goldenrod;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .abstract-label {
-  font-family: 'Times New Roman';
   color: goldenrod;
+  font-family: 'Times New Roman';
 }
 
 .abstract-span {
+  color: black;
+  display: inline-block;
+  height: 20px;
+  line-height: 0px;
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 20px;
   width: 20px;
-  display: inline-block;
-  line-height: 0px;
-  color: black;
 }
 
 .abstract-row {
@@ -39,6 +40,7 @@
 }
 
 .abstract-column {
+  border: 1px solid #555555;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -46,7 +48,6 @@
   height: 25px;
   padding-bottom: 10px;
   text-align: left;
-  border: 1px solid rgb(85, 85, 85);
 }
 
 .abstract-output {
@@ -55,83 +56,83 @@
 }
 
 .a {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
 }
 
 .aa {
-  background-color: rgb(10, 10, 10);
+  background-color: #0a0a0a;
 }
 
 .aaa {
-  background-color: rgb(20, 20, 20);
+  background-color: #141414;
 }
 
 .aaaa {
-  background-color: rgb(30, 30, 30);
+  background-color: #1e1e1e;
 }
 
 .aaaaa {
-  background-color: rgb(40, 40, 40);
+  background-color: #282828;
 }
 
 .aaaaaa {
-  background-color: rgb(50, 50, 50);
+  background-color: #323232;
 }
 
 .aaaaaaa {
-  background-color: rgb(60, 60, 60);
+  background-color: #3c3c3c;
 }
 
 .aaaaaaaa {
-  background-color: rgb(70, 70, 70);
+  background-color: #464646;
 }
 
 .aaaaaaaaa {
-  background-color: rgb(80, 80, 80);
+  background-color: #505050;
 }
 
 .aaaaaaaaaa {
-  background-color: rgb(66, 55, 32);
+  background-color: #423720;
 }
 
 .b {
-  background-color: rgb(20, 20, 20);
+  background-color: #141414;
 }
 
 .bb {
-  background-color: rgb(40, 40, 40);
+  background-color: #282828;
 }
 
 .bbb {
-  background-color: rgb(60, 60, 60);
+  background-color: #3c3c3c;
 }
 
 .bbbb {
-  background-color: rgb(80, 80, 80);
+  background-color: #505050;
 }
 
 .bbbbb {
-  background-color: rgb(100, 100, 100);
+  background-color: #646464;
 }
 
 .bbbbbb {
-  background-color: rgb(120, 120, 120);
+  background-color: #787878;
 }
 
 .bbbbbbb {
-  background-color: rgb(140, 140, 140);
+  background-color: #8c8c8c;
 }
 
 .bbbbbbbb {
-  background-color: rgb(13, 13, 54);
+  background-color: #0d0d36;
 }
 
 .bbbbbbbbb {
-  background-color: rgb(58, 36, 18);
+  background-color: #3a2412;
 }
 
 .bbbbbbbbbb {
-  background-color: rgb(24, 48, 10);
+  background-color: #18300a;
 }
 
 .c {
@@ -179,119 +180,119 @@
 }
 
 .dd {
-  background-color: rgb(136, 192, 238);
+  background-color: #88c0ee;
 }
 
 .ddd {
-  background-color: rgb(123, 53, 204);
+  background-color: #7b35cc;
 }
 
 .dddd {
-  background-color: rgb(56, 89, 180);
+  background-color: #3859b4;
 }
 
 .ddddd {
-  background-color: rgb(162, 88, 185);
+  background-color: #a258b9;
 }
 
 .dddddd {
-  background-color: rgb(91, 79, 255);
+  background-color: #5b4fff;
 }
 
 .ddddddd {
-  background-color: rgb(172, 127, 214);
+  background-color: #ac7fd6;
 }
 
 .dddddddd {
-  background-color: rgb(104, 68, 187);
+  background-color: #6844bb;
 }
 
 .ddddddddd {
-  background-color: rgb(148, 146, 255);
+  background-color: #9492ff;
 }
 
 .dddddddddd {
-  background-color: rgb(255, 217, 0);
+  background-color: #ffd900;
 }
 
 .e {
-  background-color: rgb(60, 60, 60);
+  background-color: #3c3c3c;
 }
 
 .ee {
-  background-color: rgb(90, 90, 90);
+  background-color: #5a5a5a;
 }
 
 .eee {
-  background-color: rgb(120, 120, 120);
+  background-color: #787878;
 }
 
 .eeee {
-  background-color: rgb(150, 150, 150);
+  background-color: #969696;
 }
 
 .eeeee {
-  background-color: rgb(180, 180, 180);
+  background-color: #b4b4b4;
 }
 
 .eeeeee {
-  background-color: rgb(210, 210, 210);
+  background-color: #d2d2d2;
 }
 
 .eeeeeee {
-  background-color: rgb(93, 119, 71);
+  background-color: #5d7747;
 }
 
 .eeeeeeee {
-  background-color: rgb(85, 29, 29);
+  background-color: #551d1d;
 }
 
 .eeeeeeeee {
-  background-color: rgb(7, 0, 105);
+  background-color: #070069;
 }
 
 .eeeeeeeeee {
-  background-color: rgb(78, 1, 102);
+  background-color: #4e0166;
 }
 
 .f {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .ff {
-  background-color: rgb(255, 136, 0);
+  background-color: #ff8800;
 }
 
 .fff {
-  background-color: rgb(255, 0, 170);
+  background-color: #ff00aa;
 }
 
 .ffff {
-  background-color: rgb(60, 255, 0);
+  background-color: #3cff00;
 }
 
 .fffff {
-  background-color: rgb(200, 255, 0);
+  background-color: #c8ff00;
 }
 
 .ffffff {
-  background-color: rgb(255, 145, 0);
+  background-color: #ff9100;
 }
 
 .fffffff {
-  background-color: rgb(0, 89, 255);
+  background-color: #0059ff;
 }
 
 .ffffffff {
-  background-color: rgb(251, 255, 0);
+  background-color: #fbff00;
 }
 
 .fffffffff {
-  background-color: rgb(0, 255, 242);
+  background-color: #00fff2;
 }
 
 .ffffffffff {
-  background-color: rgb(234, 0, 255);
+  background-color: #ea00ff;
 }
 
 .abstract-btn {
@@ -302,7 +303,7 @@
 }
 
 .abstract-btn:hover {
-  background-color: rgb(215, 216, 245);
+  background-color: #d7d8f5;
 }
 
 .one {
@@ -343,10 +344,10 @@
   0% {
     opacity: 0;
   }
-  5% {
+  15% {
     opacity: 0;
   }
-  10% {
+  20% {
     opacity: 1;
   }
   65% {
@@ -364,10 +365,10 @@
   0% {
     opacity: 0;
   }
-  25% {
+  35% {
     opacity: 0;
   }
-  30% {
+  40% {
     opacity: 1;
   }
   85% {
@@ -385,16 +386,16 @@
   0% {
     opacity: 1;
   }
-  15% {
+  5% {
     opacity: 1;
   }
-  20% {
+  10% {
     opacity: 0;
   }
-  65% {
+  55% {
     opacity: 0;
   }
-  70% {
+  60% {
     opacity: 1;
   }
   100% {
