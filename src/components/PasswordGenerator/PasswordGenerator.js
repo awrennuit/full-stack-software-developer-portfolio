@@ -78,7 +78,6 @@ export default function PasswordGenerator() {
     <div className="password-background">
       <div className="password-full-container">
         <h1 className="password-heading">Password Generator</h1>
-{JSON.stringify(charset)}
         <div className="password-checkbox-container">
           <input type="checkbox" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} onChange={handleCheck} />
           <span className="password-span">Add uppercase?</span>
