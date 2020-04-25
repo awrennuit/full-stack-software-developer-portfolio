@@ -1,8 +1,8 @@
 .abstract-container {
   background-color: #26262e;
   background-size: cover;
-  height: 100vh;
-  margin: 50px auto;
+  min-height: 100vh;
+  padding: 50px;
 }
 
 .abstract-div {
