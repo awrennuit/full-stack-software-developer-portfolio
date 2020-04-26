@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import { Link } from 'react-router-dom';
-// import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
+import './Timer.css';
 
 class Timer extends Component{
 
@@ -66,7 +66,7 @@ class Timer extends Component{
       if(minutes <= 0 && hours <= 0 && days <= 0){
         minutes = 0;
       }
-      else if(seconds === 59 && minutes <= 0){
+      else if(seconds === 59 && minutes < 0){
         minutes = 59;
         hours--;
       }
@@ -75,7 +75,7 @@ class Timer extends Component{
       if(hours <= 0 && days <= 0){
         hours = 0;
       }
-      else if(seconds === 59 && minutes === 59 && hours <= 0){
+      else if(seconds === 59 && minutes === 59 && hours < 0){
         hours = 23;
         days--;
       }
@@ -114,18 +114,21 @@ class Timer extends Component{
   render(){
     return(
       <>
-        <div className="countdown-container">
-          <div className="countdown">
+        <div className="timer-countdown-container">
+          <div className="timer-countdown">
             {this.state.days < 10 ? "0"+this.state.days : this.state.days}d:
             {this.state.hours < 10 ? "0"+this.state.hours : this.state.hours}h:
             {this.state.minutes < 10 ? "0"+this.state.minutes : this.state.minutes}m:
             {this.state.seconds < 10 ? "0"+this.state.seconds : this.state.seconds}s
           </div>
 
-          {/* <Link to="/"> */}
-            {/* <Button variant="outlined">Set Timer</Button> */}
-            <button onClick={()=>this.props.history.push(`/set-timer`)}>Set Timer</button>
-          {/* </Link> */}
+            <Button 
+              variant="outlined"
+              onClick={()=>this.props.history.push(`/set-timer`)}
+            >
+              Set Timer
+            </Button>
+            {/* <button onClick={()=>this.props.history.push(`/set-timer`)}>Set Timer</button> */}
 
         </div>
       </>

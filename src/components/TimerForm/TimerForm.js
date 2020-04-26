@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-// import TextField from '@material-ui/core/TextField';
-// import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 export default function TimerForm() {
 
@@ -44,9 +44,9 @@ export default function TimerForm() {
     <div className="timer-form">
       <h1>SET TIMER</h1>
       <form onSubmit={handleSubmit}>
-        {/* <TextField  
+        <TextField  
           type="text" 
-          onChange={(e)=>handleChange(e, 'setDays')} 
+          onChange={e => {handleChange(e, 'days');setDays(e.target.value);}} 
           value={days} 
           id="standard-basic" 
           label="Days" 
@@ -54,7 +54,7 @@ export default function TimerForm() {
         />
         <TextField  
           type="text" 
-          onChange={(e)=>handleChange(e, 'setHours')} 
+          onChange={e => {handleChange(e, 'hours');setHours(e.target.value);}} 
           value={hours} 
           id="standard-basic" 
           label="Hours" 
@@ -62,7 +62,7 @@ export default function TimerForm() {
         />
         <TextField  
           type="text" 
-          onChange={(e)=>handleChange(e, 'setMinutes')} 
+          onChange={e =>{handleChange(e, 'minutes');setMinutes(e.target.value);}}
           value={minutes} 
           id="standard-basic" 
           label="Minutes" 
@@ -70,7 +70,7 @@ export default function TimerForm() {
         />
         <TextField  
           type="text" 
-          onChange={(e)=>handleChange(e, 'setSeconds')} 
+          onChange={e =>{handleChange(e, 'seconds');setSeconds(e.target.value);}}
           value={seconds} 
           id="standard-basic" 
           label="Seconds" 
@@ -78,8 +78,8 @@ export default function TimerForm() {
         />
         <br />
         <br />
-        <Button type="submit" variant="outlined">Start Countdown</Button> */}
-        <input  
+        <Button type="submit" variant="outlined">Start Countdown</Button>
+        {/* <input  
           type="text" 
           onChange={(e)=>{handleChange(e, 'days');setDays(e.target.value);}} 
           value={days} 
@@ -108,7 +108,7 @@ export default function TimerForm() {
         />
         <br />
         <br />
-        <button type="submit">Start Countdown</button>
+        <button type="submit">Start Countdown</button> */}
       </form>
     </div>
   );
