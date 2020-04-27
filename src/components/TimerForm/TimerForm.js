@@ -46,7 +46,7 @@ export default function TimerForm() {
       <form onSubmit={handleSubmit}>
         <TextField  
           type="text" 
-          onChange={e => {handleChange(e, 'days');setDays(e.target.value);}} 
+          onChange={e => {handleChange(e, 'days');setDays(+e.target.value);}} 
           value={days} 
           id="standard-basic" 
           label="Days" 
@@ -54,7 +54,7 @@ export default function TimerForm() {
         />
         <TextField  
           type="text" 
-          onChange={e => {handleChange(e, 'hours');setHours(e.target.value);}} 
+          onChange={e => {handleChange(e, 'hours');setHours(+e.target.value);}} 
           value={hours} 
           id="standard-basic" 
           label="Hours" 
@@ -62,7 +62,7 @@ export default function TimerForm() {
         />
         <TextField  
           type="text" 
-          onChange={e =>{handleChange(e, 'minutes');setMinutes(e.target.value);}}
+          onChange={e =>{handleChange(e, 'minutes');setMinutes(+e.target.value);}}
           value={minutes} 
           id="standard-basic" 
           label="Minutes" 
@@ -70,7 +70,7 @@ export default function TimerForm() {
         />
         <TextField  
           type="text" 
-          onChange={e =>{handleChange(e, 'seconds');setSeconds(e.target.value);}}
+          onChange={e =>{handleChange(e, 'seconds');setSeconds(+e.target.value);}}
           value={seconds} 
           id="standard-basic" 
           label="Seconds" 
