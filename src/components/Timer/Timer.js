@@ -15,16 +15,19 @@ class Timer extends Component{
   }
 
   UNSAFE_componentWillMount(){
-    this.setState(this.props.state);
+    this.setState(this.props.reduxState);
   }
 
   componentDidMount(){
+    if(this.props.reduxState.days === undefined){
+      this.props.history.push(`/set-timer`);
+    }
     this.interval = setInterval(() => this.countdown(), 1000);
   }
 
   componentDidUpdate(){
     if(this.state.alarm){
-      let audio = new Audio('/sounds/alarm.mp3');
+      const audio = new Audio('/sounds/alarm.mp3');
       audio.play();
       this.setState({
         alarm: false,
@@ -121,21 +124,19 @@ class Timer extends Component{
             {this.state.minutes < 10 ? "0"+this.state.minutes : this.state.minutes}m:
             {this.state.seconds < 10 ? "0"+this.state.seconds : this.state.seconds}s
           </div>
-
-            <Button 
-              variant="outlined"
-              onClick={()=>this.props.history.push(`/set-timer`)}
-            >
-              Set Timer
-            </Button>
-            {/* <button onClick={()=>this.props.history.push(`/set-timer`)}>Set Timer</button> */}
-
+          <Button 
+            variant="outlined"
+            onClick={()=>this.props.history.push(`/set-timer`)}
+            style={{marginTop:"25px",paddingTop:"5px",paddingBottom:"10px"}}
+          >
+            Set Timer
+          </Button>
         </div>
       </>
     );
   }
 }
 
-const reduxState = state => ({state: state.timer});
+const reduxState = state => ({reduxState: state.timer});
 
 export default connect(reduxState)(Timer);

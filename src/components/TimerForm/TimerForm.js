@@ -78,37 +78,10 @@ export default function TimerForm() {
         />
         <br />
         <br />
-        <Button type="submit" variant="outlined">Start Countdown</Button>
-        {/* <input  
-          type="text" 
-          onChange={(e)=>{handleChange(e, 'days');setDays(e.target.value);}} 
-          value={days} 
-          style={{width:"50px",margin:"10px"}} 
-        />
-        <input  
-          type="text" 
-          onChange={(e)=>{handleChange(e, 'hours');setHours(e.target.value);}} 
-          value={hours} 
-          label="Hours" 
-          style={{width:"50px",margin:"10px"}} 
-        />
-        <input  
-          type="text" 
-          onChange={(e)=>{handleChange(e, 'minutes');setMinutes(e.target.value);}} 
-          value={minutes} 
-          label="Minutes" 
-          style={{width:"50px",margin:"10px"}}      
-        />
-        <input  
-          type="text" 
-          onChange={(e)=>{handleChange(e, 'seconds');setSeconds(e.target.value);}} 
-          value={seconds} 
-          label="Seconds" 
-          style={{width:"50px",margin:"10px"}} 
-        />
-        <br />
-        <br />
-        <button type="submit">Start Countdown</button> */}
+        <Button 
+          type="submit" 
+          variant="outlined"
+          style={{paddingTop:"5px",paddingBottom:"10px"}}>Start Countdown</Button>
       </form>
     </div>
   );
