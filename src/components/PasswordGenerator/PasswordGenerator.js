@@ -79,7 +79,11 @@ export default function PasswordGenerator() {
       <div className="password-full-container">
         <h1 className="password-heading">Password Generator</h1>
         <div className="password-checkbox-container">
-          <input type="checkbox" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} onChange={handleCheck} />
+          <input 
+            type="checkbox" 
+            value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`}
+            onChange={handleCheck} 
+          />
           <span className="password-span">Add uppercase?</span>
         </div>
         <div className="password-text-container">
@@ -88,7 +92,12 @@ export default function PasswordGenerator() {
         <hr className="password-hr" />
 
         <div className="password-checkbox-container">
-          <input type="checkbox" value={`abcdefghijklmnopqrstuvwxyz`} onChange={handleCheck} defaultChecked />
+          <input 
+            type="checkbox" 
+            value={`abcdefghijklmnopqrstuvwxyz`} 
+            onChange={handleCheck} 
+            defaultChecked 
+          />
           <span className="password-span">Add lowercase?</span>
         </div>
         <div className="password-text-container">
@@ -97,7 +106,12 @@ export default function PasswordGenerator() {
         <hr className="password-hr" />
 
         <div className="password-checkbox-container">
-          <input type="checkbox" id="numbers" value={`1234567890`} onChange={handleCheck} />
+          <input 
+            type="checkbox" 
+            id="numbers" 
+            value={`1234567890`} 
+            onChange={handleCheck} 
+          />
           <span className="password-span">Add numbers?</span>
         </div>
         <div className="password-text-container">
@@ -106,7 +120,12 @@ export default function PasswordGenerator() {
         <hr className="password-hr" />
 
         <div className="password-checkbox-container">
-          <input type="checkbox" id="dash" value={`-_`} onChange={handleCheck} />
+          <input 
+            type="checkbox" 
+            id="dash" 
+            value={`-_`} 
+            onChange={handleCheck} 
+          />
           <span className="password-span">Add dash & underscore?</span>
         </div>
         <div className="password-text-container">
@@ -115,7 +134,12 @@ export default function PasswordGenerator() {
         <hr className="password-hr" />
 
         <div className="password-checkbox-container">
-          <input type="checkbox" id="symbols" value={'#;:`~!@#$%^&*()+={}[]/\\?'} onChange={handleCheck} />
+          <input 
+            type="checkbox" 
+            id="symbols" 
+            value={'#;:`~!@#$%^&*()+={}[]/\\?'} 
+            onChange={handleCheck} 
+          />
           <span className="password-span">Add other symbols?</span>
         </div>
         <div className="password-text-container">
