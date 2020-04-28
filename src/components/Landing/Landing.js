@@ -1,7 +1,10 @@
 import React from 'react';
 import './Landing.css';
+import { useHistory } from 'react-router-dom';
 
 export default function Landing() {
+
+  const history = useHistory();
 
   return(
     <div className="main-container">
@@ -14,7 +17,7 @@ export default function Landing() {
         </p>
         <p>I bring ideas to reality.</p>
         <div className="landing-btn-container">
-          <button className="landing-button">Go</button>
+          <button className="landing-button" onClick={()=>history.push('/main')}>Go</button>
           <span className="landing-box-lg"></span>
           <span className="landing-box-sm"></span>
         </div>
