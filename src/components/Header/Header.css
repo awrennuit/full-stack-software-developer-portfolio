@@ -20,7 +20,7 @@
   border: none;
   border-radius: 25px;
   box-shadow: -2px -2px 4px 1px #fff, 2px 2px 4px 1px #aaa;
-  color: #000;
+  color: #333;
   cursor: pointer;
   height: 30px;
   margin: 0 20px;
@@ -30,7 +30,7 @@
 
 .header-btn:hover {
   box-shadow: -2px -2px 4px #fff, 2px 2px 4px #aaa;
-  color: #555;
+  color: #777;
 }
 
 .header-btn:active {
