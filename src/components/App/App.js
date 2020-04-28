@@ -12,7 +12,7 @@ import Timer from '../Timer/Timer';
 export default function App() {
   return (
     <Router>
-      <Header />
+      {/* <Header /> */}
       <Route exact path='/' component={Home} />
       <Route exact path='/abstract-art' component={Abstract} />
       <Route exact path='/password-generator' component={PasswordGenerator} />
