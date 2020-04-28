@@ -1,20 +1,44 @@
-.email-link {
+/* .email-link {
   grid-area: email;
 }
 
 .github-link {
   grid-area: github;
-}
+} */
 
 .header {
-  background-color: #621055;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-shadow: 0 0 10px #ed6663;
+  background-color: #ddd;
+  display: inline-block;
+  padding: 20px 0;
+  text-align: center;
+  /* box-shadow: 0 0 10px #ed6663; */
+  width: 100%;
 }
 
-.header-grid {
+.header-btn {
+  background-color: linear-gradient(#ddd, #ccc);
+  border: none;
+  border-radius: 25px;
+  box-shadow: -2px -2px 4px 1px #fff, 2px 2px 4px 1px #aaa;
+  color: #000;
+  cursor: pointer;
+  height: 30px;
+  margin: 0 20px;
+  width: 80px;
+  transition: 0.3s;
+}
+
+.header-btn:hover {
+  box-shadow: -2px -2px 4px #fff, 2px 2px 4px #aaa;
+  color: #555;
+}
+
+.header-btn:active {
+  box-shadow: inset -2px -2px 2px #fff, inset 2px 2px 2px #aaa;
+
+}
+
+/* .header-grid {
   display: grid;
   grid-template-areas: 
     'space space space space space space resume github email';
@@ -29,4 +53,4 @@
 .resume-link {
   grid-area: resume;
   cursor: pointer;
-}
+} */
