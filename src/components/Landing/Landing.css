@@ -1,0 +1,152 @@
+.landing-container {
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.landing-container p {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.landing-name {
+  background: linear-gradient(#55cdfc, #55cdfc, #fff, #f7a8b8, #f7a8b8);
+  background: -webkit-linear-gradient(#55cdfc, #55cdfc, #fff, #f7a8b8, #f7a8b8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3em;
+  transition: 0.3s;
+}
+
+.landing-name:hover {
+  text-shadow: 0 -5px 15px #55cdfc, 0 5px 15px #f7a8b8;
+}
+
+.landing-btn-container {
+  margin: 30px auto 0 auto;
+  position: relative;
+  width: 100px;
+}
+
+.landing-button {
+  background: transparent;
+  border: 3px solid white;
+  cursor: pointer;
+  font-size: 2em;
+  height: 100px;
+  pointer-events: auto;
+  transition: 0.2s;
+  width: 100px;
+}
+
+.landing-button::before {
+  bottom: 55px;
+  content: '';
+  height: 30px;
+  left: 48px;
+  position: absolute;
+  transition: 0.2s;
+  width: 4px;
+}
+
+.landing-button::after {
+  border-radius: 50%;
+  bottom: 23px;
+  content: '';
+  height: 50px;
+  position: absolute;
+  left: 21px;
+  transition: 0.2s;
+  width: 50px;
+}
+
+.landing-button:hover {
+  border-radius: 50%;
+  color: transparent;
+}
+
+.landing-button:hover ~ .landing-box-lg::before {
+  height: 348px;
+  width: 266px;
+}
+
+.landing-button:hover ~ .landing-box-lg::after {
+  height: 272px;
+  width: 513px;
+}
+
+.landing-button:hover ~ .landing-box-sm::before {
+  height: 70px;
+  width: 240px;
+}
+
+.landing-button:hover::before {
+  border-left: 4px solid white;
+}
+
+.landing-button:hover::after {
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  border-left: 4px solid white;
+}
+
+.landing-button:active {
+  box-shadow: 0 0 20px white;
+}
+
+.landing-button:active::before, .landing-button:active::after {
+  border-color: #9bff7c;
+  transition: 0.2s;
+}
+
+.landing-button:active::before {
+  bottom: 56px;
+}
+
+.landing-button:active::after {
+  bottom: 24px;
+  box-shadow: inset 0 0 10px #9bff7c, 0 0 10px #9bff7c;
+}
+
+.landing-box-lg::before {
+  border-top: 7px solid white;
+  border-right: 7px solid white;
+  content: '';
+  height: 190px;
+  position: absolute;
+  right: -210px;
+  top: -206px;
+  transition: 0.9s;
+  width: 200px;
+  z-index: -1;
+}
+
+.landing-box-lg::after {
+  border-bottom: 7px solid white;
+  border-left: 7px solid white;
+  bottom: -50px;
+  content: '';
+  height: 150px;
+  left: -210px;
+  position: absolute;
+  transition: 0.6s;
+  width: 420px;
+  z-index: -1;
+}
+
+.landing-box-sm::before {
+  border-top: 7px solid white;
+  border-left: 7px solid white;
+  content: '';
+  height: 40px;
+  left: -210px;
+  position: absolute;
+  top: -206px;
+  transition: 0.4s;
+  width: 80px;
+  z-index: -1;
+}
