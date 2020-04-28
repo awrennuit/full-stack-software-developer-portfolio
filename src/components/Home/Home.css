@@ -13,7 +13,9 @@
 }
 
 .landing-name {
+  background: linear-gradient(#55cdfc, #55cdfc, #fff, #f7a8b8, #f7a8b8);
   background: -webkit-linear-gradient(#55cdfc, #55cdfc, #fff, #f7a8b8, #f7a8b8);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.3em;
