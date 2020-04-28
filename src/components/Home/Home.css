@@ -12,7 +12,7 @@
   margin-bottom: 10px;
 }
 
-.landing-container span {
+.landing-name {
   background: -webkit-linear-gradient(#55cdfc, #55cdfc, #fff, #f7a8b8, #f7a8b8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -20,7 +20,7 @@
   transition: 0.3s;
 }
 
-.landing-container span:hover {
+.landing-name:hover {
   text-shadow: 0 -5px 15px #55cdfc, 0 5px 15px #f7a8b8;
 }
 

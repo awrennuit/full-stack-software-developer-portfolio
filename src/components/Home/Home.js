@@ -9,7 +9,7 @@ export default function Home() {
         <p>Hi there!</p>
         <p>
           I'm&nbsp;
-          <span>Awren Nuit</span>
+          <span className="landing-name">Awren Nuit</span>
           .
         </p>
         <p>I bring ideas to reality.</p>
