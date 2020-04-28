@@ -7,9 +7,45 @@
   width: 400px;
 }
 
+.landing-container::before {
+  border-top: 7px solid white;
+  border-right: 7px solid white;
+  content: '';
+  height: 190px;
+  position: absolute;
+  right: -15%;
+  top: -20%;
+  width: 200px;
+  z-index: -1;
+}
+
+.landing-container::after {
+  border-bottom: 7px solid white;
+  border-left: 7px solid white;
+  content: '';
+  height: 150px;
+  position: absolute;
+  bottom: -20%;
+  left: -15%;
+  width: 420px;
+  z-index: -1;
+}
+
 .landing-container p {
   font-size: 2em;
   margin-bottom: 10px;
+}
+
+.landing-container p::before {
+  border-top: 7px solid white;
+  border-left: 7px solid white;
+  content: '';
+  height: 40px;
+  position: absolute;
+  top: -20%;
+  left: -15%;
+  width: 80px;
+  z-index: -1;
 }
 
 .landing-name {
