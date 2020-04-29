@@ -1,31 +1,35 @@
-/* .email-link {
-  grid-area: email;
-}
-
-.github-link {
-  grid-area: github;
-} */
-
 .header {
   background-color: #ddd;
   display: inline-block;
   padding: 20px 0;
-  text-align: center;
-  /* box-shadow: 0 0 10px #ed6663; */
   width: 100%;
 }
 
-.header-btn {
+.header-bg-btn, .header-btn {
   background-color: linear-gradient(#ddd, #ccc);
   border: none;
   border-radius: 25px;
-  box-shadow: -2px -2px 4px 1px #fff, 2px 2px 4px 1px #aaa;
   color: #333;
   cursor: pointer;
-  height: 30px;
   margin: 0 20px;
-  width: 80px;
   transition: 0.3s;
+}
+
+.header-bg-btn {
+  box-shadow: -1px -1px 4px 1px #fff, 1px 1px 4px 1px #aaa;
+  height: 20px;
+  width: 20px;
+}
+
+.header-bg-btn:hover {
+  box-shadow: -1px -1px 4px #fff, 1px 1px 4px #aaa;
+  color: #777;
+}
+
+.header-btn {
+  box-shadow: -2px -2px 4px 1px #fff, 2px 2px 4px 1px #aaa;
+  height: 30px;
+  width: 80px;
 }
 
 .header-btn:hover {
@@ -33,24 +37,6 @@
   color: #777;
 }
 
-.header-btn:active {
-  box-shadow: inset -2px -2px 2px #fff, inset 2px 2px 2px #aaa;
-
+.header-btn:active, .header-bg-btn:active {
+  box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
 }
-
-/* .header-grid {
-  display: grid;
-  grid-template-areas: 
-    'space space space space space space resume github email';
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.home-heading {
-  cursor: pointer;
-}
-
-.resume-link {
-  grid-area: resume;
-  cursor: pointer;
-} */

@@ -41,11 +41,6 @@ export default function Header() {
 
   return(
     <div className="header">
-      {JSON.stringify(red)}
-      {JSON.stringify(green)}
-      {JSON.stringify(blue)}
-      <br />
-      {JSON.stringify(bg)}
       {/* <h1 className="home-heading" onClick={()=>(history.push('/'))}>Awren Nuit</h1>
       <div className="header-grid">
         <span className="resume-link" onClick={()=>(history.push('/resume'))}>View My Resume</span>
@@ -56,9 +51,15 @@ export default function Header() {
         <span>Email Me</span>
         </a>
       </div> */}
-      <div className="header-nav">
-        <button className="header-btn" onClick={()=>changeBackground('up')}>&and;</button>
-        <button className="header-btn" onClick={()=>changeBackground('down')}>&or;</button>
+      <div>
+        <div style={{marginBottom:"10px"}}>
+          <button className="header-bg-btn" onClick={()=>changeBackground('up')}>&and;</button>
+        </div>
+        <div>
+          <button className="header-bg-btn" onClick={()=>changeBackground('down')}>&or;</button>
+        </div>
+      </div>
+      <div className="header-nav" style={{float:"right"}}>
         <button className="header-btn">Portfolio</button>
         <button className="header-btn">About</button>
         <button className="header-btn"></button>
