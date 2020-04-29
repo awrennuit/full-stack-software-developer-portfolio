@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-// import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './Header.css';
 
 export default function Header() {
 
-  // const history = useHistory();
+  const history = useHistory();
   const [red, setRed] = useState(50);
   const [green, setGreen] = useState(50);
   const [blue, setBlue] = useState(65);
@@ -62,7 +62,7 @@ export default function Header() {
       <div className="header-nav" style={{float:"right"}}>
         <button className="header-btn">Portfolio</button>
         <button className="header-btn">About</button>
-        <button className="header-btn">CSS Sandbox</button>
+        <button className="header-btn" onClick={()=>history.push(`/css-sandbox`)}>CSS Sandbox</button>
       </div>
     </div>
   );
