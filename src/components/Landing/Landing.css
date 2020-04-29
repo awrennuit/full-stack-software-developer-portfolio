@@ -20,6 +20,7 @@
   -webkit-text-fill-color: transparent;
   font-size: 1.3em;
   transition: 0.3s;
+  animation: name-pop 1s alternate 2;
 }
 
 .landing-name:hover {
@@ -149,4 +150,9 @@
   transition: 0.4s;
   width: 80px;
   z-index: -1;
+}
+
+@keyframes name-pop {
+  from { }
+  to { text-shadow: 0 -5px 15px #55cdfc, 0 5px 15px #f7a8b8; }
 }
