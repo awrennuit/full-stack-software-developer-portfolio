@@ -62,7 +62,7 @@ export default function Header() {
       <div className="header-nav" style={{float:"right"}}>
         <button className="header-btn">Portfolio</button>
         <button className="header-btn">About</button>
-        <button className="header-btn"></button>
+        <button className="header-btn">CSS Sandbox</button>
       </div>
     </div>
   );
