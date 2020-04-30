@@ -20,7 +20,7 @@ export default function CssSandbox() {
 
   //sets border
   const [borderWidth, setBorderWidth] = useState(0);
-  const [borderType, setBorderType] = useState('solid');
+  const [borderStyle, setBorderStyle] = useState('none');
   const [borderRed, setBorderRed] = useState(125);
   const [borderGreen, setBorderGreen] = useState(125);
   const [borderBlue, setBorderBlue] = useState(125);
@@ -66,7 +66,7 @@ export default function CssSandbox() {
             style={{
               backgroundColor:bgColor,
               filter:`blur(${blur}px)`,
-              border:`${borderWidth}px solid ${borderColor}`,
+              border:`${borderWidth}px ${borderStyle} ${borderColor}`,
               borderRadius:`${borderRadius}${borderRadiusType}`,
               boxShadow:`${boxInset} ${boxOffsetX}px ${boxOffsetY}px ${boxBlur}px ${boxSpread}px ${boxColor}`,
               height:`${height}px`,
@@ -132,13 +132,57 @@ export default function CssSandbox() {
 
           <div className="sandbox-item-container">
             <p className="sandbox-item-heading">&or; Border</p>
+            <label>
+              <input type="radio" name="borderStyle" value='none' onChange={e=>setBorderStyle(e.target.value)} defaultChecked />
+              None
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="borderStyle" value='solid' onChange={e=>setBorderStyle(e.target.value)} />
+              Solid
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="borderStyle" value='dashed' onChange={e=>setBorderStyle(e.target.value)} />
+              Dashed
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="borderStyle" value='dotted' onChange={e=>setBorderStyle(e.target.value)} />
+              Dotted
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="borderStyle" value='double' onChange={e=>setBorderStyle(e.target.value)} />
+              Double
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="borderStyle" value='groove' onChange={e=>setBorderStyle(e.target.value)} />
+              Groove
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="borderStyle" value='ridge' onChange={e=>setBorderStyle(e.target.value)} />
+              Ridge
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="borderStyle" value='inset' onChange={e=>setBorderStyle(e.target.value)} />
+              Inset
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="borderStyle" value='outset' onChange={e=>setBorderStyle(e.target.value)} />
+              Outset
+            </label>
+            <br />
             <div className="sandbox-item-flex">
               <label>Width</label>
               <div className="sandbox-input">
                 <input type="range" value={borderWidth} min={0} max={50} step={1} onChange={e=>setBorderWidth(e.target.value)} />
               </div>
             </div>
-              {/* type <input type="range" value={borderType} min={0} max={255} step={1} onChange={e=>setBorderType(e.target.value)} /> */}
             <div className="sandbox-item-flex">
               <label>Red</label>
               <div className="sandbox-input">

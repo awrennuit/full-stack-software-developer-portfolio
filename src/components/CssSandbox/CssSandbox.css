@@ -8,6 +8,7 @@
   position: absolute;
   top: 5%;
   left: 45%;
+  transform: translate(-50%, -50%);
 }
 
 .test-div h1 {
