@@ -57,111 +57,169 @@ export default function CssSandbox() {
   }, [boxRed, boxGreen, boxBlue]);
 
   return(
-    <div className="box-shadow-container">
+    <>
       <Header />
+      <div className="sandbox-grid">
+        <div>
+          <div 
+            className="test-div"
+            style={{
+              backgroundColor:bgColor,
+              filter:`blur(${blur}px)`,
+              border:`${borderWidth}px solid ${borderColor}`,
+              borderRadius:`${borderRadius}${borderRadiusType}`,
+              boxShadow:`${boxInset} ${boxOffsetX}px ${boxOffsetY}px ${boxBlur}px ${boxSpread}px ${boxColor}`,
+              height:`${height}px`,
+              margin:"20% auto 0 auto",
+              transform:`rotate(${rotation}deg)`,
+              width:`${width}px`
+            }}
+          >
+            <h1>^ TOP ^</h1>
+          </div>
+        </div>
 
-      <div 
-        className="test-div"
-        style={{
-          backgroundColor:bgColor,
-          filter:`blur(${blur}px)`,
-          border:`${borderWidth}px solid ${borderColor}`,
-          borderRadius:`${borderRadius}${borderRadiusType}`,
-          boxShadow:`${boxInset} ${boxOffsetX}px ${boxOffsetY}px ${boxBlur}px ${boxSpread}px ${boxColor}`,
-          height:`${height}px`,
-          margin:"20% auto 0 auto",
-          transform:`rotate(${rotation}deg)`,
-          width:`${width}px`
-        }}
-      >
-        <h1>^ TOP ^</h1>
-      </div>
+        <div className="sandbox-slider-container">
+          <h3>Properties</h3>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div>
-        height <input type="range" value={height} min={50} max={400} step={1} onChange={e=>setHeight(e.target.value)} />
-        <br />
-        width <input type="range" value={width} min={50} max={400} step={1} onChange={e=>setWidth(e.target.value)} />
+          <div className="sandbox-item-container">
+            <p className="sandbox-item-heading">&or; Dimensions</p>
+            <div className="sandbox-item-flex">
+                <label>Height</label>
+              <div className="sandbox-input">
+                <input type="range" value={height} min={50} max={400} step={1} onChange={e=>setHeight(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
+                <label>Width</label>
+                <div className="sandbox-input">
+                  <input type="range" value={width} min={50} max={400} step={1} onChange={e=>setWidth(e.target.value)} />
+                </div>
+            </div>
+          </div>
+
+          <div className="sandbox-item-container">
+            <p className="sandbox-item-heading">&or; BG Color</p>
+            <div className="sandbox-item-flex">
+              <label>Red</label>
+              <div className="sandbox-input">
+                <input type="range" value={bgRed} min={0} max={255} step={1} onChange={e=>setBgRed(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
+              <label>Green</label>
+              <div className="sandbox-input">
+                <input type="range" value={bgGreen} min={0} max={255} step={1} onChange={e=>setBgGreen(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
+              <label>Blue</label>
+              <div className="sandbox-input">
+                <input type="range" value={bgBlue} min={0} max={255} step={1} onChange={e=>setBgBlue(e.target.value)} />
+              </div>
+            </div>
+          </div>
+
+          <div className="sandbox-item-container">
+            <p className="sandbox-item-heading">&or; Blur</p>
+            <div className="sandbox-item-flex">
+              <label>Blur</label>
+              <div className="sandbox-input">
+                <input type="range" value={blur} min={0} max={60} step={1} onChange={e=>setBlur(e.target.value)} />
+              </div>
+            </div>
+          </div>
+
+          <div className="sandbox-item-container">
+            <p className="sandbox-item-heading">&or; Border</p>
+            <div className="sandbox-item-flex">
+              <label>Width</label>
+              <div className="sandbox-input">
+                <input type="range" value={borderWidth} min={0} max={50} step={1} onChange={e=>setBorderWidth(e.target.value)} />
+              </div>
+            </div>
+              {/* type <input type="range" value={borderType} min={0} max={255} step={1} onChange={e=>setBorderType(e.target.value)} /> */}
+            <div className="sandbox-item-flex">
+              <label>Red</label>
+              <div className="sandbox-input">
+                <input type="range" value={borderRed} min={0} max={255} step={1} onChange={e=>setBorderRed(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
+              <label>Green</label>
+              <div className="sandbox-input">
+                <input type="range" value={borderGreen} min={0} max={255} step={1} onChange={e=>setBorderGreen(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
+              <label>Blue</label>
+              <div className="sandbox-input">
+                <input type="range" value={borderBlue} min={0} max={255} step={1} onChange={e=>setBorderBlue(e.target.value)} />
+              </div>
+            </div>
+          </div>
+
+          <div className="sandbox-item-container">
+            <p className="sandbox-item-heading">&or; Border Radius</p>
+            <div className="sandbox-item-flex">
+              <label>Width</label>
+              <div className="sandbox-input">
+                <input type="range" value={borderRadius} min={0} max={100} step={1} onChange={e=>setBorderRadius(e.target.value)} />
+              </div>
+            </div>
+            <label>
+              <input type="radio" name="borderRadiusType" value='px' onChange={e=>setBorderRadiusType(e.target.value)} defaultChecked />
+              px
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="borderRadiusType" value='%' onChange={e=>setBorderRadiusType(e.target.value)} />
+              %
+            </label>
+          </div>
+
+          <div className="sandbox-item-container">
+            <p className="sandbox-item-heading">&or; Box Shadow</p>
+            <div>
+              <label>
+                <input type="checkbox" onChange={e=>{e.target.checked ? setBoxInset('inset') : setBoxInset('')}} />
+                Inset
+              </label>
+              <br />
+              <label>X Offset</label>
+              <input type="range" value={boxOffsetX} min={-100} max={100} step={1} onChange={e=>setBoxOffsetX(e.target.value)} />
+              <br />
+              <label>Y Offset</label>
+              <input type="range" value={boxOffsetY} min={-100} max={100} step={1} onChange={e=>setBoxOffsetY(e.target.value)} />
+              <br />
+              <label>Blur</label>
+              <input type="range" value={boxBlur} min={0} max={100} step={1} onChange={e=>setBoxBlur(e.target.value)} />
+              <br />
+              <label>Spread</label>
+              <input type="range" value={boxSpread} min={-100} max={100} step={1} onChange={e=>setBoxSpread(e.target.value)} />
+              <br />
+              <label>Red</label>
+              <input type="range" value={boxRed} min={0} max={255} step={1} onChange={e=>setBoxRed(e.target.value)} />
+              <br />
+              <label>Green</label>
+              <input type="range" value={boxGreen} min={0} max={255} step={1} onChange={e=>setBoxGreen(e.target.value)} />
+              <br />
+              <label>Blue</label>
+              <input type="range" value={boxBlue} min={0} max={255} step={1} onChange={e=>setBoxBlue(e.target.value)} />
+            </div>
+          </div>
+
+          <div className="sandbox-item-container">
+            <p className="sandbox-item-heading">&or; Rotation</p>
+            <div className="sandbox-item-flex">
+              <label>Rotate</label>
+              <div className="sandbox-input">
+                <input type="range" value={rotation} min={0} max={360} step={1} onChange={e=>setRotation(e.target.value)} />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <br />
-      <br />
-      <div>
-        <p>background color</p>
-        red <input type="range" value={bgRed} min={0} max={255} step={1} onChange={e=>setBgRed(e.target.value)} />
-        <br />
-        green <input type="range" value={bgGreen} min={0} max={255} step={1} onChange={e=>setBgGreen(e.target.value)} />
-        <br />
-        blue <input type="range" value={bgBlue} min={0} max={255} step={1} onChange={e=>setBgBlue(e.target.value)} />
-      </div>
-      <br />
-      <br />
-      <div>
-        blur <input type="range" value={blur} min={0} max={60} step={1} onChange={e=>setBlur(e.target.value)} />
-        {/* <br />
-        px <input type="radio" name="blurType" value='px' onChange={e=>setBlurType(e.target.value)} defaultChecked />
-        <br />
-        em <input type="radio" name="blurType" value='em' onChange={e=>setBlurType(e.target.value)} /> */}
-      </div>
-      <br />
-      <br />
-      <div>
-        <p>border</p>
-        width <input type="range" value={borderWidth} min={0} max={50} step={1} onChange={e=>setBorderWidth(e.target.value)} />
-        <br />
-        {/* type <input type="range" value={borderType} min={0} max={255} step={1} onChange={e=>setBorderType(e.target.value)} /> */}
-        <br />
-        red <input type="range" value={borderRed} min={0} max={255} step={1} onChange={e=>setBorderRed(e.target.value)} />
-        <br />
-        green <input type="range" value={borderGreen} min={0} max={255} step={1} onChange={e=>setBorderGreen(e.target.value)} />
-        <br />
-        blue <input type="range" value={borderBlue} min={0} max={255} step={1} onChange={e=>setBorderBlue(e.target.value)} />
-      </div>
-      <br />
-      <br />
-      <div>
-        <p>border radius</p>
-        width <input type="range" value={borderRadius} min={0} max={100} step={1} onChange={e=>setBorderRadius(e.target.value)} />
-        <br />
-        px <input type="radio" name="borderRadiusType" value='px' onChange={e=>setBorderRadiusType(e.target.value)} defaultChecked />
-        <br />
-        % <input type="radio" name="borderRadiusType" value='%' onChange={e=>setBorderRadiusType(e.target.value)} />
-      </div>
-      <br />
-      <br />
-      <div>
-        <p>box shadow color</p>
-        box red<input type="range" value={boxRed} min={0} max={255} step={1} onChange={e=>setBoxRed(e.target.value)} />
-        <br />
-        box green<input type="range" value={boxGreen} min={0} max={255} step={1} onChange={e=>setBoxGreen(e.target.value)} />
-        <br />
-        box blue<input type="range" value={boxBlue} min={0} max={255} step={1} onChange={e=>setBoxBlue(e.target.value)} />
-      </div>
-      <br />
-      <br />
-      <div>
-        <p>box shadow parameters</p>
-        inset <input type="checkbox" onChange={e=>{e.target.checked ? setBoxInset('inset') : setBoxInset('')}} />
-        <br />
-        x offset <input type="range" value={boxOffsetX} min={-100} max={100} step={1} onChange={e=>setBoxOffsetX(e.target.value)} />
-        <br />
-        y offset <input type="range" value={boxOffsetY} min={-100} max={100} step={1} onChange={e=>setBoxOffsetY(e.target.value)} />
-        <br />
-        blur <input type="range" value={boxBlur} min={0} max={100} step={1} onChange={e=>setBoxBlur(e.target.value)} />
-        <br />
-        spread <input type="range" value={boxSpread} min={-100} max={100} step={1} onChange={e=>setBoxSpread(e.target.value)} />
-      </div>
-      <br />
-      <br />
-      <div>
-        rotation <input type="range" value={rotation} min={0} max={360} step={1} onChange={e=>setRotation(e.target.value)} />
-      </div>
-    </div>
+    </>
   );
 }
