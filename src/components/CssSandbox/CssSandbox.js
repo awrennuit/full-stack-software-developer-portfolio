@@ -185,27 +185,49 @@ export default function CssSandbox() {
                 <input type="checkbox" onChange={e=>{e.target.checked ? setBoxInset('inset') : setBoxInset('')}} />
                 Inset
               </label>
+            </div>
               <br />
-              <label>X Offset</label>
-              <input type="range" value={boxOffsetX} min={-100} max={100} step={1} onChange={e=>setBoxOffsetX(e.target.value)} />
-              <br />
-              <label>Y Offset</label>
-              <input type="range" value={boxOffsetY} min={-100} max={100} step={1} onChange={e=>setBoxOffsetY(e.target.value)} />
-              <br />
+            <div className="sandbox-item-flex">
+              <label>X-Offset</label>
+              <div className="sandbox-input">
+                <input type="range" value={boxOffsetX} min={-100} max={100} step={1} onChange={e=>setBoxOffsetX(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
+              <label>Y-Offset</label>
+              <div className="sandbox-input">
+                <input type="range" value={boxOffsetY} min={-100} max={100} step={1} onChange={e=>setBoxOffsetY(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
               <label>Blur</label>
-              <input type="range" value={boxBlur} min={0} max={100} step={1} onChange={e=>setBoxBlur(e.target.value)} />
-              <br />
+              <div className="sandbox-input">
+                <input type="range" value={boxBlur} min={0} max={100} step={1} onChange={e=>setBoxBlur(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
               <label>Spread</label>
-              <input type="range" value={boxSpread} min={-100} max={100} step={1} onChange={e=>setBoxSpread(e.target.value)} />
-              <br />
+              <div className="sandbox-input">
+                <input type="range" value={boxSpread} min={-100} max={100} step={1} onChange={e=>setBoxSpread(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
               <label>Red</label>
-              <input type="range" value={boxRed} min={0} max={255} step={1} onChange={e=>setBoxRed(e.target.value)} />
-              <br />
+              <div className="sandbox-input">
+                <input type="range" value={boxRed} min={0} max={255} step={1} onChange={e=>setBoxRed(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
               <label>Green</label>
-              <input type="range" value={boxGreen} min={0} max={255} step={1} onChange={e=>setBoxGreen(e.target.value)} />
-              <br />
+              <div className="sandbox-input">
+                <input type="range" value={boxGreen} min={0} max={255} step={1} onChange={e=>setBoxGreen(e.target.value)} />
+              </div>
+            </div>
+            <div className="sandbox-item-flex">
               <label>Blue</label>
-              <input type="range" value={boxBlue} min={0} max={255} step={1} onChange={e=>setBoxBlue(e.target.value)} />
+              <div className="sandbox-input">
+                <input type="range" value={boxBlue} min={0} max={255} step={1} onChange={e=>setBoxBlue(e.target.value)} />
+              </div>
             </div>
           </div>
 

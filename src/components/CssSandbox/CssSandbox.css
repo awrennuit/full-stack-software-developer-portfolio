@@ -8,7 +8,6 @@
   position: absolute;
   top: 5%;
   left: 45%;
-  transform: translate(-50%, -50%);
 }
 
 .test-div h1 {
@@ -20,7 +19,7 @@
   background-color: #ddd;
   border-top: 1px solid #aaa;
   padding: 10px;
-  width: 200px;
+  width: 220px;
 }
 
 .sandbox-slider-container h3 {
