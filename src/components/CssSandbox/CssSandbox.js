@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './CssSandbox.css';
+import Header from '../Header/Header';
 
 export default function CssSandbox() {
 
@@ -57,6 +58,7 @@ export default function CssSandbox() {
 
   return(
     <div className="box-shadow-container">
+      <Header />
 
       <div 
         className="test-div"
