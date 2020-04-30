@@ -24,11 +24,16 @@
 
 .sandbox-item-container {
   margin-top: 20px;
+  position: relative;
+}
+
+.sandbox-item-container label {
+  color: #444;
 }
 
 .sandbox-item-heading {
   line-height: 30px;
-  background-color: linear-gradient(#ddd, #ccc);
+  background: linear-gradient(#ddd, #ccc);
   border: none;
   border-radius: 25px;
   box-shadow: -2px -2px 4px 1px #fff, 2px 2px 4px 1px #aaa;
@@ -36,9 +41,11 @@
   cursor: pointer;
   height: 30px;
   margin-bottom: 10px;
+  position: relative;
   text-align: center;
   transition: 0.3s;
   width: 100%;
+  z-index: 1;
 }
 
 .sandbox-item-heading:hover {
@@ -51,7 +58,34 @@
 }
 
 .sandbox-item-heading span {
-  color: #000;
+  color: inherit;
+}
+
+.sandbox-clicked {
+  line-height: 30px;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  height: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+  z-index: 1;
+}
+
+.sandbox-clicked:hover {
+  color: #777;
+}
+
+.sandbox-clicked:active {
+  /* border-radius: 25px; */
+  /* box-shadow: 0 0 5px 5px #f1f1f1; */
+}
+
+.sandbox-clicked span {
+  color: inherit;
 }
 
 .sandbox-hide {
@@ -59,7 +93,33 @@
 }
 
 .sandbox-show {
+  border-radius: 15px;
+  box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
   display: block;
+  background: linear-gradient(to bottom right, #ccc, #ddd);
+  margin-bottom: -40px;
+  padding: 40px 7px 7px 7px;
+  position: relative;
+  top: -40px;
+}
+
+.sandbox-show::before, .sandbox-show::after {
+  background-color: #999;
+  content: '';
+  height: 1px;
+  left: 10px;
+  position: absolute;
+  width: 200px;
+}
+
+.sandbox-show::before {
+  border-radius: 25%;
+  top: 29px;
+}
+
+.sandbox-show::after {
+  border-radius: 50%;
+  top: 31px;
 }
 
 .sandbox-item-flex {

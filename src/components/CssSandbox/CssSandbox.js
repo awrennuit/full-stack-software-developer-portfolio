@@ -5,7 +5,8 @@ import Header from '../Header/Header';
 export default function CssSandbox() {
 
   // sets height & width
-  const [dimensionsShow, setDimensionsShow] = useState('sandbox-hide')
+  const [dimensionsClicked, setDimensionsClicked] = useState('sandbox-item-heading');
+  const [dimensionsShow, setDimensionsShow] = useState('sandbox-hide');
   const [height, setHeight] = useState(200);
   const [width, setWidth] = useState(300);
 
@@ -84,7 +85,16 @@ export default function CssSandbox() {
           <h3>Properties</h3>
 
           <div className="sandbox-item-container">
-            <p className="sandbox-item-heading" onClick={()=>dimensionsShow === 'sandbox-hide' ? setDimensionsShow('sandbox-show') : setDimensionsShow('sandbox-hide')}>{dimensionsShow === 'sandbox-hide' ? <span>&or;</span> : <span>&and;</span>} Dimensions</p>
+            <p 
+              className={dimensionsClicked}
+              onClick={()=>{
+                        dimensionsClicked === 'sandbox-item-heading' ? setDimensionsClicked('sandbox-clicked') : setDimensionsClicked('sandbox-item-heading');
+                        dimensionsShow === 'sandbox-hide' ? setDimensionsShow('sandbox-show') : setDimensionsShow('sandbox-hide');
+                        }
+                      }
+            >
+              {dimensionsShow === 'sandbox-hide' ? <span>&or;</span> : <span>&and;</span>} Dimensions
+            </p>
             <div className={dimensionsShow}>
               <div className="sandbox-item-flex">
                   <label>Height</label>
