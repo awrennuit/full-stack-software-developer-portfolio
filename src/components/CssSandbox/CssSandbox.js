@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 export default function CssSandbox() {
 
   // sets height & width
+  const [dimensionsShow, setDimensionsShow] = useState('sandbox-hide')
   const [height, setHeight] = useState(200);
   const [width, setWidth] = useState(300);
 
@@ -83,18 +84,20 @@ export default function CssSandbox() {
           <h3>Properties</h3>
 
           <div className="sandbox-item-container">
-            <p className="sandbox-item-heading">&or; Dimensions</p>
-            <div className="sandbox-item-flex">
-                <label>Height</label>
-              <div className="sandbox-input">
-                <input type="range" value={height} min={50} max={400} step={1} onChange={e=>setHeight(e.target.value)} />
+            <p className="sandbox-item-heading" onClick={()=>dimensionsShow === 'sandbox-hide' ? setDimensionsShow('sandbox-show') : setDimensionsShow('sandbox-hide')}>{dimensionsShow === 'sandbox-hide' ? <span>&or;</span> : <span>&and;</span>} Dimensions</p>
+            <div className={dimensionsShow}>
+              <div className="sandbox-item-flex">
+                  <label>Height</label>
+                <div className="sandbox-input">
+                  <input type="range" value={height} min={50} max={400} step={1} onChange={e=>setHeight(e.target.value)} />
+                </div>
               </div>
-            </div>
-            <div className="sandbox-item-flex">
+              <div className="sandbox-item-flex">
                 <label>Width</label>
                 <div className="sandbox-input">
                   <input type="range" value={width} min={50} max={400} step={1} onChange={e=>setWidth(e.target.value)} />
                 </div>
+              </div>
             </div>
           </div>
 
