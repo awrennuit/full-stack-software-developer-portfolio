@@ -70,7 +70,7 @@ export default function CssSandbox() {
               borderRadius:`${borderRadius}${borderRadiusType}`,
               boxShadow:`${boxInset} ${boxOffsetX}px ${boxOffsetY}px ${boxBlur}px ${boxSpread}px ${boxColor}`,
               height:`${height}px`,
-              margin:"20% auto 0 auto",
+              margin:"0 auto",
               transform:`rotate(${rotation}deg)`,
               width:`${width}px`
             }}
