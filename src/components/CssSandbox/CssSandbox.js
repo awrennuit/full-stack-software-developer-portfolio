@@ -103,8 +103,15 @@ export default function CssSandbox() {
             <div 
               className={dimensionsClicked}
               onClick={()=>{
-                        dimensionsClicked === 'sandbox-item-heading' ? setDimensionsClicked('sandbox-dimensions-heading-clicked') : setDimensionsClicked('sandbox-item-heading');
-                        dimensionsShow === 'sandbox-hide' ? setDimensionsShow('sandbox-dimensions-show') : setDimensionsShow('sandbox-hide');
+                        dimensionsClicked === 'sandbox-item-heading' ? 
+                          setDimensionsClicked('sandbox-dimensions-heading-clicked') 
+                        : 
+                          setDimensionsClicked('sandbox-item-heading');
+
+                        dimensionsShow === 'sandbox-hide' ? 
+                          setDimensionsShow('sandbox-dimensions-show') 
+                        : 
+                          setDimensionsShow('sandbox-hide');
                         }
                       }
             >
@@ -115,13 +122,27 @@ export default function CssSandbox() {
               <div className="sandbox-item-flex">
                   <label>Height</label>
                 <div className="sandbox-input">
-                  <input type="range" value={height} min={50} max={400} step={1} onChange={e=>setHeight(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={height} 
+                    min={50} 
+                    max={400} 
+                    step={1} 
+                    onChange={e=>setHeight(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Width</label>
                 <div className="sandbox-input">
-                  <input type="range" value={width} min={50} max={400} step={1} onChange={e=>setWidth(e.target.value)} />
+                  <input 
+                  type="range" 
+                  value={width} 
+                  min={50} 
+                  max={400} 
+                  step={1} 
+                  onChange={e=>setWidth(e.target.value)} 
+                />
                 </div>
               </div>
             </div>
@@ -131,8 +152,15 @@ export default function CssSandbox() {
             <div 
               className={bgClicked}
               onClick={()=>{
-                        bgClicked === 'sandbox-item-heading' ? setBgClicked('sandbox-bg-heading-clicked') : setBgClicked('sandbox-item-heading');
-                        bgShow === 'sandbox-hide' ? setBgShow('sandbox-bg-show') : setBgShow('sandbox-hide');
+                        bgClicked === 'sandbox-item-heading' ? 
+                          setBgClicked('sandbox-bg-heading-clicked') 
+                        : 
+                          setBgClicked('sandbox-item-heading');
+
+                        bgShow === 'sandbox-hide' ? 
+                          setBgShow('sandbox-bg-show') 
+                        : 
+                          setBgShow('sandbox-hide');
                         }
                       }
             >
@@ -143,19 +171,40 @@ export default function CssSandbox() {
               <div className="sandbox-item-flex">
                 <label>Red</label>
                 <div className="sandbox-input">
-                  <input type="range" value={bgRed} min={0} max={255} step={1} onChange={e=>setBgRed(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={bgRed} 
+                    min={0} 
+                    max={255} 
+                    step={1} 
+                    onChange={e=>setBgRed(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Green</label>
                 <div className="sandbox-input">
-                  <input type="range" value={bgGreen} min={0} max={255} step={1} onChange={e=>setBgGreen(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={bgGreen} 
+                    min={0} 
+                    max={255} 
+                    step={1} 
+                    onChange={e=>setBgGreen(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Blue</label>
                 <div className="sandbox-input">
-                  <input type="range" value={bgBlue} min={0} max={255} step={1} onChange={e=>setBgBlue(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={bgBlue} 
+                    min={0} 
+                    max={255} 
+                    step={1} 
+                    onChange={e=>setBgBlue(e.target.value)} 
+                  />
                 </div>
               </div>
             </div>
@@ -165,8 +214,15 @@ export default function CssSandbox() {
             <div 
               className={blurClicked}
               onClick={()=>{
-                        blurClicked === 'sandbox-item-heading' ? setBlurClicked('sandbox-blur-heading-clicked') : setBlurClicked('sandbox-item-heading');
-                        blurShow === 'sandbox-hide' ? setBlurShow('sandbox-blur-show') : setBlurShow('sandbox-hide');
+                        blurClicked === 'sandbox-item-heading' ? 
+                          setBlurClicked('sandbox-blur-heading-clicked') 
+                        : 
+                          setBlurClicked('sandbox-item-heading');
+
+                        blurShow === 'sandbox-hide' ? 
+                          setBlurShow('sandbox-blur-show') 
+                        : 
+                          setBlurShow('sandbox-hide');
                         }
                       }
             >
@@ -177,7 +233,14 @@ export default function CssSandbox() {
               <div className="sandbox-item-flex">
                 <label>Blur</label>
                 <div className="sandbox-input">
-                  <input type="range" value={blur} min={0} max={60} step={1} onChange={e=>setBlur(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={blur} 
+                    min={0} 
+                    max={60} 
+                    step={1} 
+                    onChange={e=>setBlur(e.target.value)} 
+                  />
                 </div>
               </div>
             </div>
@@ -187,8 +250,15 @@ export default function CssSandbox() {
           <div 
               className={borderClicked}
               onClick={()=>{
-                        borderClicked === 'sandbox-item-heading' ? setBorderClicked('sandbox-border-heading-clicked') : setBorderClicked('sandbox-item-heading');
-                        borderShow === 'sandbox-hide' ? setBorderShow('sandbox-border-show') : setBorderShow('sandbox-hide');
+                        borderClicked === 'sandbox-item-heading' ? 
+                          setBorderClicked('sandbox-border-heading-clicked') 
+                        : 
+                          setBorderClicked('sandbox-item-heading');
+
+                        borderShow === 'sandbox-hide' ? 
+                          setBorderShow('sandbox-border-show') 
+                        : 
+                          setBorderShow('sandbox-hide');
                         }
                       }
             >
@@ -197,72 +267,146 @@ export default function CssSandbox() {
             </div>
             <div className={borderShow}>
               <label>
-                <input type="radio" name="borderStyle" value='none' onChange={e=>setBorderStyle(e.target.value)} defaultChecked />
+                <input 
+                  type="radio" 
+                  name="borderStyle" 
+                  value='none' 
+                  onChange={e=>setBorderStyle(e.target.value)} 
+                  defaultChecked 
+                />
                 None
               </label>
               <br />
               <label>
-                <input type="radio" name="borderStyle" value='solid' onChange={e=>setBorderStyle(e.target.value)} />
+                <input 
+                  type="radio" 
+                  name="borderStyle" 
+                  value='solid' 
+                  onChange={e=>setBorderStyle(e.target.value)} 
+                />
                 Solid
               </label>
               <br />
               <label>
-                <input type="radio" name="borderStyle" value='dashed' onChange={e=>setBorderStyle(e.target.value)} />
+                <input 
+                  type="radio" 
+                  name="borderStyle" 
+                  value='dashed' 
+                  onChange={e=>setBorderStyle(e.target.value)} 
+                />
                 Dashed
               </label>
               <br />
               <label>
-                <input type="radio" name="borderStyle" value='dotted' onChange={e=>setBorderStyle(e.target.value)} />
+                <input 
+                  type="radio" 
+                  name="borderStyle" 
+                  value='dotted' 
+                  onChange={e=>setBorderStyle(e.target.value)} 
+                />
                 Dotted
               </label>
               <br />
               <label>
-                <input type="radio" name="borderStyle" value='double' onChange={e=>setBorderStyle(e.target.value)} />
+                <input 
+                  type="radio" 
+                  name="borderStyle" 
+                  value='double' 
+                  onChange={e=>setBorderStyle(e.target.value)} 
+                />
                 Double
               </label>
               <br />
               <label>
-                <input type="radio" name="borderStyle" value='groove' onChange={e=>setBorderStyle(e.target.value)} />
+                <input 
+                  type="radio" 
+                  name="borderStyle" 
+                  value='groove' 
+                  onChange={e=>setBorderStyle(e.target.value)} 
+                />
                 Groove
               </label>
               <br />
               <label>
-                <input type="radio" name="borderStyle" value='ridge' onChange={e=>setBorderStyle(e.target.value)} />
+                <input 
+                  type="radio" 
+                  name="borderStyle" 
+                  value='ridge' 
+                  onChange={e=>setBorderStyle(e.target.value)} 
+                />
                 Ridge
               </label>
               <br />
               <label>
-                <input type="radio" name="borderStyle" value='inset' onChange={e=>setBorderStyle(e.target.value)} />
+                <input 
+                  type="radio" 
+                  name="borderStyle" 
+                  value='inset' 
+                  onChange={e=>setBorderStyle(e.target.value)} 
+                />
                 Inset
               </label>
               <br />
               <label>
-                <input type="radio" name="borderStyle" value='outset' onChange={e=>setBorderStyle(e.target.value)} />
+                <input 
+                  type="radio" 
+                  name="borderStyle" 
+                  value='outset' 
+                  onChange={e=>setBorderStyle(e.target.value)} 
+                />
                 Outset
               </label>
               <br />
               <div className="sandbox-item-flex">
                 <label>Width</label>
                 <div className="sandbox-input">
-                  <input type="range" value={borderWidth} min={0} max={50} step={1} onChange={e=>setBorderWidth(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={borderWidth} 
+                    min={0} 
+                    max={50} 
+                    step={1} 
+                    onChange={e=>setBorderWidth(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Red</label>
                 <div className="sandbox-input">
-                  <input type="range" value={borderRed} min={0} max={255} step={1} onChange={e=>setBorderRed(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={borderRed} 
+                    min={0} 
+                    max={255} 
+                    step={1} 
+                    onChange={e=>setBorderRed(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Green</label>
                 <div className="sandbox-input">
-                  <input type="range" value={borderGreen} min={0} max={255} step={1} onChange={e=>setBorderGreen(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={borderGreen} 
+                    min={0} 
+                    max={255} 
+                    step={1} 
+                    onChange={e=>setBorderGreen(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Blue</label>
                 <div className="sandbox-input">
-                  <input type="range" value={borderBlue} min={0} max={255} step={1} onChange={e=>setBorderBlue(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={borderBlue} 
+                    min={0} 
+                    max={255} 
+                    step={1} 
+                    onChange={e=>setBorderBlue(e.target.value)} 
+                  />
                 </div>
               </div>
             </div>
@@ -272,8 +416,15 @@ export default function CssSandbox() {
             <div 
               className={borderRadiusClicked}
               onClick={()=>{
-                        borderRadiusClicked === 'sandbox-item-heading' ? setBorderRadiusClicked('sandbox-border-radius-heading-clicked') : setBorderRadiusClicked('sandbox-item-heading');
-                        borderRadiusShow === 'sandbox-hide' ? setBorderRadiusShow('sandbox-border-radius-show') : setBorderRadiusShow('sandbox-hide');
+                        borderRadiusClicked === 'sandbox-item-heading' ? 
+                          setBorderRadiusClicked('sandbox-border-radius-heading-clicked') 
+                        : 
+                          setBorderRadiusClicked('sandbox-item-heading');
+
+                        borderRadiusShow === 'sandbox-hide' ? 
+                          setBorderRadiusShow('sandbox-border-radius-show') 
+                        : 
+                          setBorderRadiusShow('sandbox-hide');
                         }
                       }
             >
@@ -284,16 +435,34 @@ export default function CssSandbox() {
               <div className="sandbox-item-flex">
                 <label>Width</label>
                 <div className="sandbox-input">
-                  <input type="range" value={borderRadius} min={0} max={100} step={1} onChange={e=>setBorderRadius(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={borderRadius} 
+                    min={0} 
+                    max={100} 
+                    step={1} 
+                    onChange={e=>setBorderRadius(e.target.value)} 
+                  />
                 </div>
               </div>
               <label>
-                <input type="radio" name="borderRadiusType" value='px' onChange={e=>setBorderRadiusType(e.target.value)} defaultChecked />
+                <input 
+                  type="radio" 
+                  name="borderRadiusType" 
+                  value='px' 
+                  onChange={e=>setBorderRadiusType(e.target.value)} 
+                  defaultChecked 
+                />
                 px
               </label>
               <br />
               <label>
-                <input type="radio" name="borderRadiusType" value='%' onChange={e=>setBorderRadiusType(e.target.value)} />
+                <input 
+                  type="radio" 
+                  name="borderRadiusType" 
+                  value='%' 
+                  onChange={e=>setBorderRadiusType(e.target.value)} 
+                />
                 %
               </label>
             </div>
@@ -303,8 +472,15 @@ export default function CssSandbox() {
             <div 
               className={boxShadowClicked}
               onClick={()=>{
-                        boxShadowClicked === 'sandbox-item-heading' ? setBoxShadowClicked('sandbox-box-shadow-heading-clicked') : setBoxShadowClicked('sandbox-item-heading');
-                        boxShadowShow === 'sandbox-hide' ? setBoxShadowShow('sandbox-box-shadow-show') : setBoxShadowShow('sandbox-hide');
+                        boxShadowClicked === 'sandbox-item-heading' ? 
+                          setBoxShadowClicked('sandbox-box-shadow-heading-clicked') 
+                        : 
+                          setBoxShadowClicked('sandbox-item-heading');
+
+                        boxShadowShow === 'sandbox-hide' ? 
+                          setBoxShadowShow('sandbox-box-shadow-show') 
+                        : 
+                          setBoxShadowShow('sandbox-hide');
                         }
                       }
             >
@@ -314,7 +490,10 @@ export default function CssSandbox() {
             <div className={boxShadowShow}>
               <div>
                 <label>
-                  <input type="checkbox" onChange={e=>{e.target.checked ? setBoxInset('inset') : setBoxInset('')}} />
+                  <input 
+                    type="checkbox" 
+                    onChange={e=>{e.target.checked ? setBoxInset('inset') : setBoxInset('')}} 
+                  />
                   Inset
                 </label>
               </div>
@@ -322,43 +501,92 @@ export default function CssSandbox() {
               <div className="sandbox-item-flex">
                 <label>X-Offset</label>
                 <div className="sandbox-input">
-                  <input type="range" value={boxOffsetX} min={-100} max={100} step={1} onChange={e=>setBoxOffsetX(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={boxOffsetX} 
+                    min={-100} 
+                    max={100} 
+                    step={1} 
+                    onChange={e=>setBoxOffsetX(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Y-Offset</label>
                 <div className="sandbox-input">
-                  <input type="range" value={boxOffsetY} min={-100} max={100} step={1} onChange={e=>setBoxOffsetY(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={boxOffsetY} 
+                    min={-100} 
+                    max={100} 
+                    step={1} 
+                    onChange={e=>setBoxOffsetY(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Blur</label>
                 <div className="sandbox-input">
-                  <input type="range" value={boxBlur} min={0} max={100} step={1} onChange={e=>setBoxBlur(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={boxBlur} 
+                    min={0} 
+                    max={100} 
+                    step={1} 
+                    onChange={e=>setBoxBlur(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Spread</label>
                 <div className="sandbox-input">
-                  <input type="range" value={boxSpread} min={-100} max={100} step={1} onChange={e=>setBoxSpread(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={boxSpread} 
+                    min={-100} 
+                    max={100} 
+                    step={1} 
+                    onChange={e=>setBoxSpread(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Red</label>
                 <div className="sandbox-input">
-                  <input type="range" value={boxRed} min={0} max={255} step={1} onChange={e=>setBoxRed(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={boxRed} 
+                    min={0} 
+                    max={255} 
+                    step={1} 
+                    onChange={e=>setBoxRed(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Green</label>
                 <div className="sandbox-input">
-                  <input type="range" value={boxGreen} min={0} max={255} step={1} onChange={e=>setBoxGreen(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={boxGreen} 
+                    min={0} 
+                    max={255} 
+                    step={1} 
+                    onChange={e=>setBoxGreen(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="sandbox-item-flex">
                 <label>Blue</label>
                 <div className="sandbox-input">
-                  <input type="range" value={boxBlue} min={0} max={255} step={1} onChange={e=>setBoxBlue(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={boxBlue} 
+                    min={0} 
+                    max={255} 
+                    step={1} 
+                    onChange={e=>setBoxBlue(e.target.value)} 
+                  />
                 </div>
               </div>
             </div>
@@ -368,8 +596,15 @@ export default function CssSandbox() {
             <div 
               className={rotationClicked}
               onClick={()=>{
-                        rotationClicked === 'sandbox-item-heading' ? setRotationClicked('sandbox-rotation-heading-clicked') : setRotationClicked('sandbox-item-heading');
-                        rotationShow === 'sandbox-hide' ? setRotationShow('sandbox-rotation-show') : setRotationShow('sandbox-hide');
+                        rotationClicked === 'sandbox-item-heading' ? 
+                          setRotationClicked('sandbox-rotation-heading-clicked') 
+                        : 
+                          setRotationClicked('sandbox-item-heading');
+
+                        rotationShow === 'sandbox-hide' ? 
+                          setRotationShow('sandbox-rotation-show') 
+                        : 
+                          setRotationShow('sandbox-hide');
                         }
                       }
             >
@@ -380,7 +615,14 @@ export default function CssSandbox() {
               <div className="sandbox-item-flex">
                 <label>Rotate</label>
                 <div className="sandbox-input">
-                  <input type="range" value={rotation} min={0} max={360} step={1} onChange={e=>setRotation(e.target.value)} />
+                  <input 
+                    type="range" 
+                    value={rotation} 
+                    min={0} 
+                    max={360} 
+                    step={1} 
+                    onChange={e=>setRotation(e.target.value)} 
+                  />
                 </div>
               </div>
             </div>
