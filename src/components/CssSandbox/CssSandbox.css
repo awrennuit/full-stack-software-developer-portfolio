@@ -113,17 +113,11 @@
   color: #777;
 }
 
-.sandbox-dimensions-heading-clicked:active, .sandbox-bg-heading-clicked:active, .sandbox-blur-heading-clicked:hover {
-  /* border-radius: 25px; */
-  /* box-shadow: 0 0 5px 5px #f1f1f1; */
-}
-
 .sandbox-dimensions-heading-clicked span, .sandbox-bg-heading-clicked span, .sandbox-blur-heading-clicked span, .sandbox-border-heading-clicked span, .sandbox-border-radius-heading-clicked span, .sandbox-box-shadow-heading-clicked span, .sandbox-rotation-heading-clicked span {
   color: inherit;
 }
 
 .sandbox-hide {
-  /* display: none; */
   height: 0;
   opacity: 0;
   position: relative;
