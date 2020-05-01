@@ -12,6 +12,7 @@
   background-color: #ddd;
   border-top: 1px solid #aaa;
   min-height: 100vh;
+  max-height: 100%;
   padding: 10px;
   width: 220px;
 }
@@ -186,6 +187,7 @@
 .sandbox-modal-output-content {
   background-color: #333;
   border-radius: 4px;
+  display: inline-block;
   line-height: 1.2em;
   padding: 10px;
 }

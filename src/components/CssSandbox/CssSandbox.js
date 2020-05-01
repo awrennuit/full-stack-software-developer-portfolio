@@ -281,17 +281,7 @@ export default function CssSandbox() {
             </div>
             <div className={borderShow}>
               <div className="sandbox-item-flex">
-                <label style={{marginRight:"auto"}}>
-                  <input 
-                    type="radio" 
-                    name="borderStyle" 
-                    value='none' 
-                    onChange={e=>setBorderStyle(e.target.value)} 
-                    defaultChecked 
-                  />
-                  &nbsp;None
-                </label>
-                <label style={{marginRight:"42px"}}>
+                <label style={{cursor:"pointer",marginRight:"auto"}}>
                   <input 
                     type="radio" 
                     name="borderStyle" 
@@ -300,10 +290,19 @@ export default function CssSandbox() {
                   />
                   &nbsp;Solid
                 </label>
+                <label style={{cursor:"pointer",marginRight:"25px"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='double' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                  />
+                  &nbsp;Double
+                </label>
               </div>
               <br />
               <div className="sandbox-item-flex">
-                <label style={{marginRight:"auto"}}>
+                <label style={{cursor:"pointer",marginRight:"auto"}}>
                   <input 
                     type="radio" 
                     name="borderStyle" 
@@ -312,7 +311,7 @@ export default function CssSandbox() {
                   />
                   &nbsp;Dashed
                 </label>
-                <label style={{marginRight:"27px"}}>
+                <label style={{cursor:"pointer",marginRight:"27px"}}>
                   <input 
                     type="radio" 
                     name="borderStyle" 
@@ -324,16 +323,7 @@ export default function CssSandbox() {
               </div>
               <br />
               <div className="sandbox-item-flex">
-                <label style={{marginRight:"auto"}}>
-                  <input 
-                    type="radio" 
-                    name="borderStyle" 
-                    value='double' 
-                    onChange={e=>setBorderStyle(e.target.value)} 
-                  />
-                  &nbsp;Double
-                </label>
-                <label style={{marginRight:"25px"}}>
+                <label style={{cursor:"pointer",marginRight:"auto"}}>
                   <input 
                     type="radio" 
                     name="borderStyle" 
@@ -342,10 +332,7 @@ export default function CssSandbox() {
                   />
                   &nbsp;Groove
                 </label>
-              </div>
-              <br />
-              <div className="sandbox-item-flex">
-                <label style={{marginRight:"auto"}}>
+                <label style={{cursor:"pointer",marginRight:"38px"}}>
                   <input 
                     type="radio" 
                     name="borderStyle" 
@@ -354,7 +341,10 @@ export default function CssSandbox() {
                   />
                   &nbsp;Ridge
                 </label>
-                <label style={{marginRight:"43px"}}>
+              </div>
+              <br />
+              <div className="sandbox-item-flex">
+                <label style={{cursor:"pointer",marginRight:"auto"}}>
                   <input 
                     type="radio" 
                     name="borderStyle" 
@@ -363,16 +353,26 @@ export default function CssSandbox() {
                   />
                   &nbsp;Inset
                 </label>
+                <label style={{cursor:"pointer",marginRight:"28px"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='outset' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                  />
+                  &nbsp;Outset
+                </label>
               </div>
               <br />
               <label>
                 <input 
                   type="radio" 
                   name="borderStyle" 
-                  value='outset' 
-                  onChange={e=>setBorderStyle(e.target.value)} 
+                  value='none' 
+                  onChange={e=>setBorderStyle(e.target.value)}
+                  defaultChecked
                 />
-                &nbsp;Outset
+                &nbsp;None
               </label>
               <br />
               <br />
@@ -465,7 +465,7 @@ export default function CssSandbox() {
                 </div>
               </div>
               <div className="sandbox-item-flex">
-                <label style={{marginRight:"auto"}}>
+                <label style={{cursor:"pointer",marginRight:"auto"}}>
                   <input 
                     type="radio" 
                     name="borderRadiusType" 
@@ -475,7 +475,7 @@ export default function CssSandbox() {
                   />
                   &nbsp;px
                 </label>
-                <label style={{marginRight:"74px"}}>
+                <label style={{cursor:"pointer",marginRight:"71px"}}>
                   <input 
                     type="radio" 
                     name="borderRadiusType" 
