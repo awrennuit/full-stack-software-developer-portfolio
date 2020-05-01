@@ -280,86 +280,95 @@ export default function CssSandbox() {
               Border
             </div>
             <div className={borderShow}>
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderStyle" 
-                  value='none' 
-                  onChange={e=>setBorderStyle(e.target.value)} 
-                  defaultChecked 
-                />
-                None
-              </label>
+
+
+
+
+
+              <div className="sandbox-item-flex">
+                <label style={{marginRight:"auto"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='none' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                    defaultChecked 
+                  />
+                  &nbsp;None
+                </label>
+                <label style={{marginRight:"42px"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='solid' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                  />
+                  &nbsp;Solid
+                </label>
+              </div>
               <br />
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderStyle" 
-                  value='solid' 
-                  onChange={e=>setBorderStyle(e.target.value)} 
-                />
-                Solid
-              </label>
+              <div className="sandbox-item-flex">
+                <label style={{marginRight:"auto"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='dashed' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                  />
+                  &nbsp;Dashed
+                </label>
+                <label style={{marginRight:"27px"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='dotted' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                  />
+                  &nbsp;Dotted
+                </label>
+              </div>
               <br />
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderStyle" 
-                  value='dashed' 
-                  onChange={e=>setBorderStyle(e.target.value)} 
-                />
-                Dashed
-              </label>
+              <div className="sandbox-item-flex">
+                <label style={{marginRight:"auto"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='double' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                  />
+                  &nbsp;Double
+                </label>
+                <label style={{marginRight:"25px"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='groove' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                  />
+                  &nbsp;Groove
+                </label>
+              </div>
               <br />
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderStyle" 
-                  value='dotted' 
-                  onChange={e=>setBorderStyle(e.target.value)} 
-                />
-                Dotted
-              </label>
-              <br />
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderStyle" 
-                  value='double' 
-                  onChange={e=>setBorderStyle(e.target.value)} 
-                />
-                Double
-              </label>
-              <br />
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderStyle" 
-                  value='groove' 
-                  onChange={e=>setBorderStyle(e.target.value)} 
-                />
-                Groove
-              </label>
-              <br />
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderStyle" 
-                  value='ridge' 
-                  onChange={e=>setBorderStyle(e.target.value)} 
-                />
-                Ridge
-              </label>
-              <br />
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderStyle" 
-                  value='inset' 
-                  onChange={e=>setBorderStyle(e.target.value)} 
-                />
-                Inset
-              </label>
+              <div className="sandbox-item-flex">
+                <label style={{marginRight:"auto"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='ridge' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                  />
+                  &nbsp;Ridge
+                </label>
+                <label style={{marginRight:"43px"}}>
+                  <input 
+                    type="radio" 
+                    name="borderStyle" 
+                    value='inset' 
+                    onChange={e=>setBorderStyle(e.target.value)} 
+                  />
+                  &nbsp;Inset
+                </label>
+              </div>
               <br />
               <label>
                 <input 
@@ -368,8 +377,9 @@ export default function CssSandbox() {
                   value='outset' 
                   onChange={e=>setBorderStyle(e.target.value)} 
                 />
-                Outset
+                &nbsp;Outset
               </label>
+              <br />
               <br />
               <div className="sandbox-item-flex">
                 <label>Width</label>
