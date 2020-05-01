@@ -628,7 +628,12 @@ export default function CssSandbox() {
             </div>
           </div>
           <div>
-            <button onClick={()=>setShowModal(!showModal)}>I'm Done</button>
+            <button 
+              className="sandbox-btn-done"
+              onClick={()=>setShowModal(!showModal)}
+            >
+              I'm Done
+            </button>
           </div>
         </div>
 
@@ -689,6 +694,14 @@ export default function CssSandbox() {
               &nbsp;&nbsp;width: {width}px;
               <br />
             {'}'}
+          </div>
+          <div style={{textAlign:"center"}}>
+            <button 
+              className="sandbox-btn-modal"
+              onClick={()=>setShowModal(!showModal)}
+            >
+              Got It
+            </button>
           </div>
         </div>
       </div>
