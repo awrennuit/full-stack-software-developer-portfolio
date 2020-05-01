@@ -186,6 +186,7 @@
 .sandbox-modal-output-content {
   background-color: #333;
   border-radius: 4px;
+  line-height: 1.2em;
   padding: 10px;
 }
 

@@ -72,6 +72,20 @@ export default function CssSandbox() {
     setBoxColor(`rgb(${boxRed}, ${boxGreen}, ${boxBlue})`);
   }, [boxRed, boxGreen, boxBlue]);
 
+  const selectText = text => {
+    if(document.selection){ // for IE
+      const range = document.body.createTextRange();
+      range.moveToElementText(document.getElementById(text));
+      range.select();
+    } 
+    else if(window.getSelection){
+      const range = document.createRange();
+      range.selectNode(document.getElementById(text));
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+    }
+  }
+
   return(
     <>
       <Header />
@@ -639,7 +653,11 @@ export default function CssSandbox() {
 
         <div className="sandbox-modal-output" style={{opacity: showModal ? 1 : 0, transition: showModal ? 'opacity 0.3s' : '0.3s', visibility: showModal ? 'visible' : 'hidden'}} >
           <h3>Here's Your CSS</h3>
-          <div className="sandbox-modal-output-content">
+          <div 
+            className="sandbox-modal-output-content"
+            id="output"
+            onClick={()=>selectText('output')}
+          >
             .my-class {'{'}
               <br />
               &nbsp;&nbsp;background-color: {bgColor};
