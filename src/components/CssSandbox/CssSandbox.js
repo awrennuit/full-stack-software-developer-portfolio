@@ -10,17 +10,22 @@ export default function CssSandbox() {
   const [height, setHeight] = useState(200);
   const [width, setWidth] = useState(300);
 
-  // sets blur
-  const [blur, setBlur] = useState(0);
-  // const [blurType, setBlurType] = useState('px');
-
   // sets background color
+  const [bgClicked, setBgClicked] = useState('sandbox-item-heading');
+  const [bgShow, setBgShow] = useState('sandbox-hide');
   const [bgRed, setBgRed] = useState(255);
   const [bgGreen, setBgGreen] = useState(255);
   const [bgBlue, setBgBlue] = useState(255);
   const [bgColor, setBgColor] = useState(`rgb(${bgRed}, ${bgGreen}, ${bgBlue})`);
 
+  // sets blur
+  const [blurClicked, setBlurClicked] = useState('sandbox-item-heading');
+  const [blurShow, setBlurShow] = useState('sandbox-hide');
+  const [blur, setBlur] = useState(0);
+
   //sets border
+  const [borderClicked, setBorderClicked] = useState('sandbox-item-heading');
+  const [borderShow, setBorderShow] = useState('sandbox-hide');
   const [borderWidth, setBorderWidth] = useState(0);
   const [borderStyle, setBorderStyle] = useState('none');
   const [borderRed, setBorderRed] = useState(125);
@@ -29,10 +34,14 @@ export default function CssSandbox() {
   const [borderColor, setBorderColor] = useState(`rgb(${borderRed}, ${borderGreen}, ${borderBlue})`);
 
   // sets border radius
+  const [borderRadiusClicked, setBorderRadiusClicked] = useState('sandbox-item-heading');
+  const [borderRadiusShow, setBorderRadiusShow] = useState('sandbox-hide');
   const [borderRadius, setBorderRadius] = useState(0);
   const [borderRadiusType, setBorderRadiusType] = useState('px');
 
   // sets box shadow
+  const [boxShadowClicked, setBoxShadowClicked] = useState('sandbox-item-heading');
+  const [boxShadowShow, setBoxShadowShow] = useState('sandbox-hide');
   const [boxRed, setBoxRed] = useState(125);
   const [boxGreen, setBoxGreen] = useState(125);
   const [boxBlue, setBoxBlue] = useState(125);
@@ -44,6 +53,8 @@ export default function CssSandbox() {
   const [boxSpread, setBoxSpread] = useState(0);
 
   // sets rotation
+  const [rotationClicked, setRotationClicked] = useState('sandbox-item-heading');
+  const [rotationShow, setRotationShow] = useState('sandbox-hide');
   const[rotation, setRotation] = useState(0);
 
   useEffect(()=>{
@@ -85,16 +96,17 @@ export default function CssSandbox() {
           <h3>Properties</h3>
 
           <div className="sandbox-item-container">
-            <p 
+            <div 
               className={dimensionsClicked}
               onClick={()=>{
-                        dimensionsClicked === 'sandbox-item-heading' ? setDimensionsClicked('sandbox-clicked') : setDimensionsClicked('sandbox-item-heading');
-                        dimensionsShow === 'sandbox-hide' ? setDimensionsShow('sandbox-show') : setDimensionsShow('sandbox-hide');
+                        dimensionsClicked === 'sandbox-item-heading' ? setDimensionsClicked('sandbox-dimensions-heading-clicked') : setDimensionsClicked('sandbox-item-heading');
+                        dimensionsShow === 'sandbox-hide' ? setDimensionsShow('sandbox-dimensions-show') : setDimensionsShow('sandbox-hide');
                         }
                       }
             >
-              {dimensionsShow === 'sandbox-hide' ? <span>&or;</span> : <span>&and;</span>} Dimensions
-            </p>
+              <span className="sandbox-btn-arrow"></span>
+              Dimensions
+            </div>
             <div className={dimensionsShow}>
               <div className="sandbox-item-flex">
                   <label>Height</label>
@@ -112,188 +124,260 @@ export default function CssSandbox() {
           </div>
 
           <div className="sandbox-item-container">
-            <p className="sandbox-item-heading">&or; BG Color</p>
-            <div className="sandbox-item-flex">
-              <label>Red</label>
-              <div className="sandbox-input">
-                <input type="range" value={bgRed} min={0} max={255} step={1} onChange={e=>setBgRed(e.target.value)} />
-              </div>
+            <div 
+              className={bgClicked}
+              onClick={()=>{
+                        bgClicked === 'sandbox-item-heading' ? setBgClicked('sandbox-bg-heading-clicked') : setBgClicked('sandbox-item-heading');
+                        bgShow === 'sandbox-hide' ? setBgShow('sandbox-bg-show') : setBgShow('sandbox-hide');
+                        }
+                      }
+            >
+              <span className="sandbox-btn-arrow"></span>
+              Background
             </div>
-            <div className="sandbox-item-flex">
-              <label>Green</label>
-              <div className="sandbox-input">
-                <input type="range" value={bgGreen} min={0} max={255} step={1} onChange={e=>setBgGreen(e.target.value)} />
+            <div className={bgShow}>
+              <div className="sandbox-item-flex">
+                <label>Red</label>
+                <div className="sandbox-input">
+                  <input type="range" value={bgRed} min={0} max={255} step={1} onChange={e=>setBgRed(e.target.value)} />
+                </div>
               </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Blue</label>
-              <div className="sandbox-input">
-                <input type="range" value={bgBlue} min={0} max={255} step={1} onChange={e=>setBgBlue(e.target.value)} />
+              <div className="sandbox-item-flex">
+                <label>Green</label>
+                <div className="sandbox-input">
+                  <input type="range" value={bgGreen} min={0} max={255} step={1} onChange={e=>setBgGreen(e.target.value)} />
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div className="sandbox-item-container">
-            <p className="sandbox-item-heading">&or; Blur</p>
-            <div className="sandbox-item-flex">
-              <label>Blur</label>
-              <div className="sandbox-input">
-                <input type="range" value={blur} min={0} max={60} step={1} onChange={e=>setBlur(e.target.value)} />
-              </div>
-            </div>
-          </div>
-
-          <div className="sandbox-item-container">
-            <p className="sandbox-item-heading">&or; Border</p>
-            <label>
-              <input type="radio" name="borderStyle" value='none' onChange={e=>setBorderStyle(e.target.value)} defaultChecked />
-              None
-            </label>
-            <br />
-            <label>
-              <input type="radio" name="borderStyle" value='solid' onChange={e=>setBorderStyle(e.target.value)} />
-              Solid
-            </label>
-            <br />
-            <label>
-              <input type="radio" name="borderStyle" value='dashed' onChange={e=>setBorderStyle(e.target.value)} />
-              Dashed
-            </label>
-            <br />
-            <label>
-              <input type="radio" name="borderStyle" value='dotted' onChange={e=>setBorderStyle(e.target.value)} />
-              Dotted
-            </label>
-            <br />
-            <label>
-              <input type="radio" name="borderStyle" value='double' onChange={e=>setBorderStyle(e.target.value)} />
-              Double
-            </label>
-            <br />
-            <label>
-              <input type="radio" name="borderStyle" value='groove' onChange={e=>setBorderStyle(e.target.value)} />
-              Groove
-            </label>
-            <br />
-            <label>
-              <input type="radio" name="borderStyle" value='ridge' onChange={e=>setBorderStyle(e.target.value)} />
-              Ridge
-            </label>
-            <br />
-            <label>
-              <input type="radio" name="borderStyle" value='inset' onChange={e=>setBorderStyle(e.target.value)} />
-              Inset
-            </label>
-            <br />
-            <label>
-              <input type="radio" name="borderStyle" value='outset' onChange={e=>setBorderStyle(e.target.value)} />
-              Outset
-            </label>
-            <br />
-            <div className="sandbox-item-flex">
-              <label>Width</label>
-              <div className="sandbox-input">
-                <input type="range" value={borderWidth} min={0} max={50} step={1} onChange={e=>setBorderWidth(e.target.value)} />
-              </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Red</label>
-              <div className="sandbox-input">
-                <input type="range" value={borderRed} min={0} max={255} step={1} onChange={e=>setBorderRed(e.target.value)} />
-              </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Green</label>
-              <div className="sandbox-input">
-                <input type="range" value={borderGreen} min={0} max={255} step={1} onChange={e=>setBorderGreen(e.target.value)} />
-              </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Blue</label>
-              <div className="sandbox-input">
-                <input type="range" value={borderBlue} min={0} max={255} step={1} onChange={e=>setBorderBlue(e.target.value)} />
+              <div className="sandbox-item-flex">
+                <label>Blue</label>
+                <div className="sandbox-input">
+                  <input type="range" value={bgBlue} min={0} max={255} step={1} onChange={e=>setBgBlue(e.target.value)} />
+                </div>
               </div>
             </div>
           </div>
 
           <div className="sandbox-item-container">
-            <p className="sandbox-item-heading">&or; Border Radius</p>
-            <div className="sandbox-item-flex">
-              <label>Width</label>
-              <div className="sandbox-input">
-                <input type="range" value={borderRadius} min={0} max={100} step={1} onChange={e=>setBorderRadius(e.target.value)} />
+            <div 
+              className={blurClicked}
+              onClick={()=>{
+                        blurClicked === 'sandbox-item-heading' ? setBlurClicked('sandbox-blur-heading-clicked') : setBlurClicked('sandbox-item-heading');
+                        blurShow === 'sandbox-hide' ? setBlurShow('sandbox-blur-show') : setBlurShow('sandbox-hide');
+                        }
+                      }
+            >
+              <span className="sandbox-btn-arrow"></span>
+              Blur
+            </div>
+            <div className={blurShow}>
+              <div className="sandbox-item-flex">
+                <label>Blur</label>
+                <div className="sandbox-input">
+                  <input type="range" value={blur} min={0} max={60} step={1} onChange={e=>setBlur(e.target.value)} />
+                </div>
               </div>
             </div>
-            <label>
-              <input type="radio" name="borderRadiusType" value='px' onChange={e=>setBorderRadiusType(e.target.value)} defaultChecked />
-              px
-            </label>
-            <br />
-            <label>
-              <input type="radio" name="borderRadiusType" value='%' onChange={e=>setBorderRadiusType(e.target.value)} />
-              %
-            </label>
           </div>
 
           <div className="sandbox-item-container">
-            <p className="sandbox-item-heading">&or; Box Shadow</p>
-            <div>
+          <div 
+              className={borderClicked}
+              onClick={()=>{
+                        borderClicked === 'sandbox-item-heading' ? setBorderClicked('sandbox-border-heading-clicked') : setBorderClicked('sandbox-item-heading');
+                        borderShow === 'sandbox-hide' ? setBorderShow('sandbox-border-show') : setBorderShow('sandbox-hide');
+                        }
+                      }
+            >
+              <span className="sandbox-btn-arrow"></span>
+              Border
+            </div>
+            <div className={borderShow}>
               <label>
-                <input type="checkbox" onChange={e=>{e.target.checked ? setBoxInset('inset') : setBoxInset('')}} />
+                <input type="radio" name="borderStyle" value='none' onChange={e=>setBorderStyle(e.target.value)} defaultChecked />
+                None
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="borderStyle" value='solid' onChange={e=>setBorderStyle(e.target.value)} />
+                Solid
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="borderStyle" value='dashed' onChange={e=>setBorderStyle(e.target.value)} />
+                Dashed
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="borderStyle" value='dotted' onChange={e=>setBorderStyle(e.target.value)} />
+                Dotted
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="borderStyle" value='double' onChange={e=>setBorderStyle(e.target.value)} />
+                Double
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="borderStyle" value='groove' onChange={e=>setBorderStyle(e.target.value)} />
+                Groove
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="borderStyle" value='ridge' onChange={e=>setBorderStyle(e.target.value)} />
+                Ridge
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="borderStyle" value='inset' onChange={e=>setBorderStyle(e.target.value)} />
                 Inset
               </label>
-            </div>
               <br />
-            <div className="sandbox-item-flex">
-              <label>X-Offset</label>
-              <div className="sandbox-input">
-                <input type="range" value={boxOffsetX} min={-100} max={100} step={1} onChange={e=>setBoxOffsetX(e.target.value)} />
+              <label>
+                <input type="radio" name="borderStyle" value='outset' onChange={e=>setBorderStyle(e.target.value)} />
+                Outset
+              </label>
+              <br />
+              <div className="sandbox-item-flex">
+                <label>Width</label>
+                <div className="sandbox-input">
+                  <input type="range" value={borderWidth} min={0} max={50} step={1} onChange={e=>setBorderWidth(e.target.value)} />
+                </div>
               </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Y-Offset</label>
-              <div className="sandbox-input">
-                <input type="range" value={boxOffsetY} min={-100} max={100} step={1} onChange={e=>setBoxOffsetY(e.target.value)} />
+              <div className="sandbox-item-flex">
+                <label>Red</label>
+                <div className="sandbox-input">
+                  <input type="range" value={borderRed} min={0} max={255} step={1} onChange={e=>setBorderRed(e.target.value)} />
+                </div>
               </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Blur</label>
-              <div className="sandbox-input">
-                <input type="range" value={boxBlur} min={0} max={100} step={1} onChange={e=>setBoxBlur(e.target.value)} />
+              <div className="sandbox-item-flex">
+                <label>Green</label>
+                <div className="sandbox-input">
+                  <input type="range" value={borderGreen} min={0} max={255} step={1} onChange={e=>setBorderGreen(e.target.value)} />
+                </div>
               </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Spread</label>
-              <div className="sandbox-input">
-                <input type="range" value={boxSpread} min={-100} max={100} step={1} onChange={e=>setBoxSpread(e.target.value)} />
-              </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Red</label>
-              <div className="sandbox-input">
-                <input type="range" value={boxRed} min={0} max={255} step={1} onChange={e=>setBoxRed(e.target.value)} />
-              </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Green</label>
-              <div className="sandbox-input">
-                <input type="range" value={boxGreen} min={0} max={255} step={1} onChange={e=>setBoxGreen(e.target.value)} />
-              </div>
-            </div>
-            <div className="sandbox-item-flex">
-              <label>Blue</label>
-              <div className="sandbox-input">
-                <input type="range" value={boxBlue} min={0} max={255} step={1} onChange={e=>setBoxBlue(e.target.value)} />
+              <div className="sandbox-item-flex">
+                <label>Blue</label>
+                <div className="sandbox-input">
+                  <input type="range" value={borderBlue} min={0} max={255} step={1} onChange={e=>setBorderBlue(e.target.value)} />
+                </div>
               </div>
             </div>
           </div>
 
           <div className="sandbox-item-container">
-            <p className="sandbox-item-heading">&or; Rotation</p>
-            <div className="sandbox-item-flex">
-              <label>Rotate</label>
-              <div className="sandbox-input">
-                <input type="range" value={rotation} min={0} max={360} step={1} onChange={e=>setRotation(e.target.value)} />
+            <div 
+              className={borderRadiusClicked}
+              onClick={()=>{
+                        borderRadiusClicked === 'sandbox-item-heading' ? setBorderRadiusClicked('sandbox-border-radius-heading-clicked') : setBorderRadiusClicked('sandbox-item-heading');
+                        borderRadiusShow === 'sandbox-hide' ? setBorderRadiusShow('sandbox-border-radius-show') : setBorderRadiusShow('sandbox-hide');
+                        }
+                      }
+            >
+              <span className="sandbox-btn-arrow"></span>
+              Border Radius
+            </div>
+            <div className={borderRadiusShow}>
+              <div className="sandbox-item-flex">
+                <label>Width</label>
+                <div className="sandbox-input">
+                  <input type="range" value={borderRadius} min={0} max={100} step={1} onChange={e=>setBorderRadius(e.target.value)} />
+                </div>
+              </div>
+              <label>
+                <input type="radio" name="borderRadiusType" value='px' onChange={e=>setBorderRadiusType(e.target.value)} defaultChecked />
+                px
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="borderRadiusType" value='%' onChange={e=>setBorderRadiusType(e.target.value)} />
+                %
+              </label>
+            </div>
+          </div>
+
+          <div className="sandbox-item-container">
+            <div 
+              className={boxShadowClicked}
+              onClick={()=>{
+                        boxShadowClicked === 'sandbox-item-heading' ? setBoxShadowClicked('sandbox-box-shadow-heading-clicked') : setBoxShadowClicked('sandbox-item-heading');
+                        boxShadowShow === 'sandbox-hide' ? setBoxShadowShow('sandbox-box-shadow-show') : setBoxShadowShow('sandbox-hide');
+                        }
+                      }
+            >
+              <span className="sandbox-btn-arrow"></span>
+              Box Shadow
+            </div>
+            <div className={boxShadowShow}>
+              <div>
+                <label>
+                  <input type="checkbox" onChange={e=>{e.target.checked ? setBoxInset('inset') : setBoxInset('')}} />
+                  Inset
+                </label>
+              </div>
+              <br />
+              <div className="sandbox-item-flex">
+                <label>X-Offset</label>
+                <div className="sandbox-input">
+                  <input type="range" value={boxOffsetX} min={-100} max={100} step={1} onChange={e=>setBoxOffsetX(e.target.value)} />
+                </div>
+              </div>
+              <div className="sandbox-item-flex">
+                <label>Y-Offset</label>
+                <div className="sandbox-input">
+                  <input type="range" value={boxOffsetY} min={-100} max={100} step={1} onChange={e=>setBoxOffsetY(e.target.value)} />
+                </div>
+              </div>
+              <div className="sandbox-item-flex">
+                <label>Blur</label>
+                <div className="sandbox-input">
+                  <input type="range" value={boxBlur} min={0} max={100} step={1} onChange={e=>setBoxBlur(e.target.value)} />
+                </div>
+              </div>
+              <div className="sandbox-item-flex">
+                <label>Spread</label>
+                <div className="sandbox-input">
+                  <input type="range" value={boxSpread} min={-100} max={100} step={1} onChange={e=>setBoxSpread(e.target.value)} />
+                </div>
+              </div>
+              <div className="sandbox-item-flex">
+                <label>Red</label>
+                <div className="sandbox-input">
+                  <input type="range" value={boxRed} min={0} max={255} step={1} onChange={e=>setBoxRed(e.target.value)} />
+                </div>
+              </div>
+              <div className="sandbox-item-flex">
+                <label>Green</label>
+                <div className="sandbox-input">
+                  <input type="range" value={boxGreen} min={0} max={255} step={1} onChange={e=>setBoxGreen(e.target.value)} />
+                </div>
+              </div>
+              <div className="sandbox-item-flex">
+                <label>Blue</label>
+                <div className="sandbox-input">
+                  <input type="range" value={boxBlue} min={0} max={255} step={1} onChange={e=>setBoxBlue(e.target.value)} />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="sandbox-item-container">
+            <div 
+              className={rotationClicked}
+              onClick={()=>{
+                        rotationClicked === 'sandbox-item-heading' ? setRotationClicked('sandbox-rotation-heading-clicked') : setRotationClicked('sandbox-item-heading');
+                        rotationShow === 'sandbox-hide' ? setRotationShow('sandbox-rotation-show') : setRotationShow('sandbox-hide');
+                        }
+                      }
+            >
+              <span className="sandbox-btn-arrow"></span>
+              Rotation
+            </div>
+            <div className={rotationShow}>
+              <div className="sandbox-item-flex">
+                <label>Rotate</label>
+                <div className="sandbox-input">
+                  <input type="range" value={rotation} min={0} max={360} step={1} onChange={e=>setRotation(e.target.value)} />
+                </div>
               </div>
             </div>
           </div>
