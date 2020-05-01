@@ -171,3 +171,26 @@
   text-align: right;
   width: 100%;
 }
+
+.sandbox-modal-output {
+  background-color: #eee;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 2px #777;
+  left: 50%;
+  padding: 30px;
+  position: fixed;
+  top: 50%;
+  /* width: 400px; */
+  transform: translate(-50%, -50%);
+}
+
+.sandbox-modal-output h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.sandbox-modal-output-content {
+  background-color: #333;
+  border-radius: 4px;
+  padding: 10px;
+}

@@ -57,6 +57,9 @@ export default function CssSandbox() {
   const [rotationShow, setRotationShow] = useState('sandbox-hide');
   const[rotation, setRotation] = useState(0);
 
+  // toggles modal
+  const [showModal, setShowModal] = useState(false);
+
   useEffect(()=>{
     setBgColor(`rgb(${bgRed}, ${bgGreen}, ${bgBlue})`);
   }, [bgRed, bgGreen, bgBlue]);
@@ -72,7 +75,7 @@ export default function CssSandbox() {
   return(
     <>
       <Header />
-      <div className="sandbox-grid">
+      <div>
         <div>
           <div 
             className="test-div"
@@ -381,6 +384,69 @@ export default function CssSandbox() {
                 </div>
               </div>
             </div>
+          </div>
+          <div>
+            <button onClick={()=>setShowModal(!showModal)}>I'm Done</button>
+          </div>
+        </div>
+
+        <div className="sandbox-modal-output" style={{opacity: showModal ? 1 : 0, transition: showModal ? 'opacity 0.3s' : '0.3s', visibility: showModal ? 'visible' : 'hidden'}} >
+          <h3>Here's Your CSS</h3>
+          <div className="sandbox-modal-output-content">
+            .my-class {'{'}
+              <br />
+              &nbsp;&nbsp;background-color: {bgColor};
+              {
+                +blur !== 0 ? 
+                  <>
+                    <br />
+                    &nbsp;&nbsp;blur: {blur}px;
+                  </> 
+                : 
+                  ''
+              }
+              {
+                +borderWidth !== 0 ? 
+                  <>
+                    <br />
+                    &nbsp;&nbsp;border: {borderWidth}px {borderStyle} {borderColor};
+                  </> 
+                : 
+                  ''
+              }
+              {
+                +borderRadius !== 0 ? 
+                  <>
+                    <br />
+                    &nbsp;&nbsp;borderRadius: {borderRadius}{borderRadiusType};
+                  </> 
+                : 
+                  ''
+              }
+              {
+                +boxOffsetX !== 0 || +boxOffsetY !== 0 || +boxBlur !== 0 || +boxSpread !== 0 ? 
+                  <>
+                    <br />
+                    &nbsp;&nbsp;boxShadow: {boxInset} {boxOffsetX}px {boxOffsetY}px {boxBlur}px {boxSpread}px {boxColor};
+                  </> 
+                : 
+                  ''
+              }
+              <br />
+              &nbsp;&nbsp;height: {height}px;
+              {
+                +rotation !== 0 ? 
+                  <>
+                    <br />
+                    &nbsp;&nbsp;transform: rotate({rotation}deg);
+                  </> 
+                : 
+                  ''
+              }
+              <br />
+              &nbsp;&nbsp;width: {width}px;
+              <br />
+            {'}'}
           </div>
         </div>
       </div>
