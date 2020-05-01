@@ -1,7 +1,6 @@
 .test-div {
   left: 45%;
-  position: absolute;
-  top: 50%;
+  position: fixed;
 }
 
 .test-div h1 {

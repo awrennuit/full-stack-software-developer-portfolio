@@ -84,6 +84,7 @@ export default function CssSandbox() {
               boxShadow:`${boxInset} ${boxOffsetX}px ${boxOffsetY}px ${boxBlur}px ${boxSpread}px ${boxColor}`,
               height:`${height}px`,
               margin:"0 auto",
+              top:`${50 - height / 20}%`,
               transform:`rotate(${rotation}deg)`,
               width:`${width}px`
             }}
