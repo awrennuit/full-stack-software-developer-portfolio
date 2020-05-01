@@ -280,11 +280,6 @@ export default function CssSandbox() {
               Border
             </div>
             <div className={borderShow}>
-
-
-
-
-
               <div className="sandbox-item-flex">
                 <label style={{marginRight:"auto"}}>
                   <input 
@@ -469,26 +464,27 @@ export default function CssSandbox() {
                   />
                 </div>
               </div>
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderRadiusType" 
-                  value='px' 
-                  onChange={e=>setBorderRadiusType(e.target.value)} 
-                  defaultChecked 
-                />
-                px
-              </label>
-              <br />
-              <label>
-                <input 
-                  type="radio" 
-                  name="borderRadiusType" 
-                  value='%' 
-                  onChange={e=>setBorderRadiusType(e.target.value)} 
-                />
-                %
-              </label>
+              <div className="sandbox-item-flex">
+                <label style={{marginRight:"auto"}}>
+                  <input 
+                    type="radio" 
+                    name="borderRadiusType" 
+                    value='px' 
+                    onChange={e=>setBorderRadiusType(e.target.value)} 
+                    defaultChecked 
+                  />
+                  &nbsp;px
+                </label>
+                <label style={{marginRight:"74px"}}>
+                  <input 
+                    type="radio" 
+                    name="borderRadiusType" 
+                    value='%' 
+                    onChange={e=>setBorderRadiusType(e.target.value)} 
+                  />
+                  &nbsp;%
+                </label>
+              </div>
             </div>
           </div>
 
