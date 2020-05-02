@@ -65,18 +65,12 @@ export default function Header() {
           <span className="header-btn-corner-two"></span>
           Sandbox
         </button>
-        <button className="header-btn">
-          {/* <a href="https://github.com/AwrenNuit" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a> */}
+        <button className="header-btn" onClick={()=>window.location.href="https://github.com/AwrenNuit"}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           GitHub
         </button>
-        <button className="header-btn">
-          {/* <a href="mailto:awren.nuit@gmail.com" rel="noopener noreferrer">
-            Email
-          </a> */}
+        <button className="header-btn" onClick={()=>window.location.href="mailto:awren.nuit@gmail.com?subject=I%20Loved%20Your%20Portfolio"}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Email
