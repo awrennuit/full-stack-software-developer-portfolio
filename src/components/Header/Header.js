@@ -48,25 +48,38 @@ export default function Header() {
         <div>
           <button className="header-bg-btn" onClick={()=>changeBackground('down')}>&or;</button>
         </div>
-      </div>
-      <div className="header-nav" style={{float:"right"}}>
-        <button className="header-btn">Portfolio</button>
-        <button className="header-btn">About</button>
-        <button className="header-btn" onClick={()=>history.push(`/css-sandbox`)}>CSS Sandbox</button>
       </div> */}
       <div>
-        <button className="header-btn" onClick={()=>(history.push('/resume'))}>Resume</button>
-        <button className="header-btn" onClick={()=>(history.push('/projects'))}>Projects</button>
-        <button className="header-btn" onClick={()=>(history.push('/css-sandbox'))}>CSS Sandbox</button>
-        <button className="header-btn">
-          <a href="https://github.com/AwrenNuit" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
+        <button className="header-btn" onClick={()=>(history.push('/resume'))}>
+          <span className="header-btn-corner-one"></span>
+          <span className="header-btn-corner-two"></span>
+          Resume
+        </button>
+        <button className="header-btn" onClick={()=>(history.push('/projects'))}>
+          <span className="header-btn-corner-one"></span>
+          <span className="header-btn-corner-two"></span>
+          Projects
+        </button>
+        <button className="header-btn" onClick={()=>(history.push('/css-sandbox'))}>
+          <span className="header-btn-corner-one"></span>
+          <span className="header-btn-corner-two"></span>
+          CSS Sandbox
         </button>
         <button className="header-btn">
-          <a href="mailto:awren.nuit@gmail.com" rel="noopener noreferrer">
+          {/* <a href="https://github.com/AwrenNuit" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a> */}
+          <span className="header-btn-corner-one"></span>
+          <span className="header-btn-corner-two"></span>
+          GitHub
+        </button>
+        <button className="header-btn">
+          {/* <a href="mailto:awren.nuit@gmail.com" rel="noopener noreferrer">
             Email
-          </a>
+          </a> */}
+          <span className="header-btn-corner-one"></span>
+          <span className="header-btn-corner-two"></span>
+          Email
         </button>
       </div>
     </div>
