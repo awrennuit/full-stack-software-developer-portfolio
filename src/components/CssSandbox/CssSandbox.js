@@ -72,6 +72,33 @@ export default function CssSandbox() {
     setBoxColor(`rgb(${boxRed}, ${boxGreen}, ${boxBlue})`);
   }, [boxRed, boxGreen, boxBlue]);
 
+  const resetValues = () => {
+    document.getElementById("box-inset").checked = false;
+    document.getElementById("border-none").checked = true;
+    setHeight(200);
+    setWidth(300);
+    setBgRed(255);
+    setBgGreen(255);
+    setBgBlue(255);
+    setBlur(0);
+    setBorderStyle('none')
+    setBorderWidth(0);
+    setBorderRed(125);
+    setBorderGreen(125);
+    setBorderBlue(125);
+    setBorderRadius(0);
+    setBorderRadiusType('px');
+    setBoxInset(false); // changing but not updating visually
+    setBoxOffsetX(0); // changing but not updating visually
+    setBoxOffsetY(0); // changing but not updating visually
+    setBoxBlur(0); // changing but not updating visually
+    setBoxSpread(0); // changing but not updating visually
+    setBoxRed(125); // changing but not updating visually
+    setBoxGreen(125); // changing but not updating visually
+    setBoxBlue(125); // changing but not updating visually
+    setRotation(0);
+  }
+
   const selectText = text => {
     if(document.selection){ // for IE
       const range = document.body.createTextRange();
@@ -112,6 +139,12 @@ export default function CssSandbox() {
 
         <div className="sandbox-slider-container">
           <h3>Properties</h3>
+          <button 
+            className="sandbox-reset-btn"
+            onClick={resetValues}
+          >
+            Reset
+          </button>
 
           <div className="sandbox-item-container">
             <div 
@@ -366,6 +399,7 @@ export default function CssSandbox() {
               <br />
               <label>
                 <input 
+                  id="border-none"
                   type="radio" 
                   name="borderStyle" 
                   value='none' 
@@ -511,6 +545,7 @@ export default function CssSandbox() {
               <div>
                 <label>
                   <input 
+                    id="box-inset"
                     type="checkbox" 
                     onChange={e=>{e.target.checked ? setBoxInset('inset') : setBoxInset('')}} 
                   />

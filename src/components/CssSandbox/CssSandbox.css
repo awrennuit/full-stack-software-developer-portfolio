@@ -19,7 +19,34 @@
 
 .sandbox-slider-container h3 {
   color: #000;
+  display:inline-block;
   text-decoration: underline;
+}
+
+.sandbox-reset-btn {
+  line-height: 30px;
+  background: linear-gradient(#eedede, #e0c7c7);
+  border: none;
+  border-radius: 25px;
+  box-shadow: -2px -2px 4px 1px #fff, 2px 2px 4px 1px #aaa;
+  color: #333;
+  cursor: pointer;
+  font-size: 1em;
+  height: 30px;
+  margin-left: 50px;
+  position: relative;
+  text-align: center;
+  transition: 0.3s;
+  width: 70px;
+}
+
+.sandbox-reset-btn:hover {
+  box-shadow: -2px -2px 4px #fff, 2px 2px 4px #aaa;
+  color: #777;
+}
+
+.sandbox-reset-btn:active {
+  box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
 }
 
 .sandbox-item-container {
