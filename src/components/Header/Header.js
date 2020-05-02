@@ -41,17 +41,7 @@ export default function Header() {
 
   return(
     <div className="header">
-      {/* <h1 className="home-heading" onClick={()=>(history.push('/'))}>Awren Nuit</h1>
-      <div className="header-grid">
-        <span className="resume-link" onClick={()=>(history.push('/resume'))}>View My Resume</span>
-        <a className="github-link" href="https://github.com/AwrenNuit" target="_blank" rel="noopener noreferrer">
-          <span>Checkout My GitHub</span>
-        </a>
-        <a className="email-link" href = "mailto: awren.nuit@gmail.com" rel="noopener noreferrer">
-        <span>Email Me</span>
-        </a>
-      </div> */}
-      <div>
+      {/* <div>
         <div style={{marginBottom:"10px"}}>
           <button className="header-bg-btn" onClick={()=>changeBackground('up')}>&and;</button>
         </div>
@@ -63,6 +53,21 @@ export default function Header() {
         <button className="header-btn">Portfolio</button>
         <button className="header-btn">About</button>
         <button className="header-btn" onClick={()=>history.push(`/css-sandbox`)}>CSS Sandbox</button>
+      </div> */}
+      <div>
+        <button className="header-btn" onClick={()=>(history.push('/resume'))}>Resume</button>
+        <button className="header-btn" onClick={()=>(history.push('/projects'))}>Projects</button>
+        <button className="header-btn" onClick={()=>(history.push('/css-sandbox'))}>CSS Sandbox</button>
+        <button className="header-btn">
+          <a href="https://github.com/AwrenNuit" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </button>
+        <button className="header-btn">
+          <a href="mailto:awren.nuit@gmail.com" rel="noopener noreferrer">
+            Email
+          </a>
+        </button>
       </div>
     </div>
   );
