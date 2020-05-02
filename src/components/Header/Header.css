@@ -32,7 +32,7 @@
 } */
 
 
-.header-btn {
+.header-btn, .header-btn-here {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -44,33 +44,32 @@
   width: 120px;
 }
 
+.header-btn::before, .header-btn::after {
+  content: '';
+  position: absolute;
+  transition: 0.3s;
+  transition-delay: 0s;
+}
+
 .header-btn::before {
   border-top: 3px solid #fff;
   border-right: 3px solid #fff;
-  content: '';
   height: 15px;
   left: 50px;
-  position: absolute;
   top: -3px;
-  transition: 0.3s;
-  transition-delay: 0s;
   width: 70px;
 }
 
 .header-btn::after {
   border-bottom: 3px solid #fff;
   border-left: 3px solid #fff;
-  content: '';
   height: 10px;
   left: -3px;
-  position: absolute;
   top: 20px;
-  transition: 0.3s;
-  transition-delay: 0s;
   width: 80px;
 }
 
-.header-btn:hover {
+.header-btn:hover, .header-btn-here:hover {
   color: #ccc;
 }
 
@@ -104,30 +103,52 @@
   left: 77px;
 }
 
-.header-btn:active {
-  
+.header-btn:active::before, .header-btn:active::after {
+  border-radius: 50%;
+  left: 5px;
+  top: 0px;
+  transform: rotate(10deg);
+  transition: 0.3s ease-in;
 }
 
 .header-btn:active::before {
   border-color: #deeaee;
-  border-radius: 50%;
-  left: 5px;
-  top: 0px;
-  transform: rotate(10deg);
-  transition: 0.3s ease-in;
 }
 
 .header-btn:active::after {
   border-color: #bbd9e6;
-  border-radius: 50%;
-  left: 5px;
-  top: 0px;
-  transform: rotate(10deg);
-  transition: 0.3s ease-in;
 }
 
-.header-btn:active .header-btn-corner-one::before, .header-btn:active .header-btn-corner-one::after, .header-btn:active .header-btn-corner-two::before, .header-btn:active .header-btn-corner-two::after {
+.header-btn:active .header-btn-corner-one::before, .header-btn:active .header-btn-corner-one::after, .header-btn:active .header-btn-corner-two::before, .header-btn:active .header-btn-corner-two::after, .header-btn-here .header-btn-corner-one::before, .header-btn-here .header-btn-corner-one::after, .header-btn-here .header-btn-corner-two::before, .header-btn-here .header-btn-corner-two::after {
   display: none;
+}
+/////////////////////////////////////////////////////////////////////////////
+
+.header-btn-here {
+  position: relative;
+}
+
+.header-btn-here::before, .header-btn-here::after {
+  border-radius: 50%;
+  content: '';
+  left: 5px;
+  position: absolute;
+  top: 0px;
+  transform: rotate(10deg);
+}
+
+.header-btn-here::before {
+  border-top: 3px solid #deeaee;
+  border-right: 3px solid #deeaee;
+  height: 30px;
+  width: 120px;
+}
+
+.header-btn-here::after {
+  border-bottom: 3px solid #bbd9e6;
+  border-left: 3px solid #bbd9e6;
+  height: 33px;
+  width: 123px;
 }
 
 .header-btn-corner-one::before {

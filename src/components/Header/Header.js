@@ -5,42 +5,44 @@ import './Header.css';
 export default function Header() {
 
   const history = useHistory();
-  const [red, setRed] = useState(50);
-  const [green, setGreen] = useState(50);
-  const [blue, setBlue] = useState(65);
-  const [bg, setBg] = useState('');
+  const location = history.location.pathname;
+  // const [red, setRed] = useState(50);
+  // const [green, setGreen] = useState(50);
+  // const [blue, setBlue] = useState(65);
+  // const [bg, setBg] = useState('');
 
-  useEffect(()=>{
-    document.body.style = `background: ${bg};`;
-  }, [bg]);
+  // useEffect(()=>{
+  //   document.body.style = `background: ${bg};`;
+  // }, [bg]);
 
-  useEffect(()=>{
-    setBg(`rgb(${red}, ${green}, ${blue})`);
-  }, [red, green, blue]);
+  // useEffect(()=>{
+  //   setBg(`rgb(${red}, ${green}, ${blue})`);
+  // }, [red, green, blue]);
 
-  const changeBackground = dir => {
-    switch(dir){
-      case 'up':
-        if(blue < 255){
-          setRed(red + 5);
-          setGreen(green + 5);
-          setBlue(blue + 5);
-        }
-        break;
-      case 'down':
-        if(red > 0){
-          setRed(red - 5);
-          setGreen(green - 5);
-          setBlue(blue - 5);
-        }
-        break;
-      default:
-        break;
-    }
-  }
+  // const changeBackground = dir => {
+  //   switch(dir){
+  //     case 'up':
+  //       if(blue < 255){
+  //         setRed(red + 5);
+  //         setGreen(green + 5);
+  //         setBlue(blue + 5);
+  //       }
+  //       break;
+  //     case 'down':
+  //       if(red > 0){
+  //         setRed(red - 5);
+  //         setGreen(green - 5);
+  //         setBlue(blue - 5);
+  //       }
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  // }
 
   return(
     <div className="header">
+      {JSON.stringify(history.location.pathname)}
       {/* <div>
         <div style={{marginBottom:"10px"}}>
           <button className="header-bg-btn" onClick={()=>changeBackground('up')}>&and;</button>
@@ -55,12 +57,12 @@ export default function Header() {
           <span className="header-btn-corner-two"></span>
           Resume
         </button>
-        <button className="header-btn" onClick={()=>(history.push('/projects'))}>
+        <button className={location === '/projects' ? 'header-btn-here' : 'header-btn'} onClick={()=>(history.push('/projects'))}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Projects
         </button>
-        <button className="header-btn" onClick={()=>(history.push('/css-sandbox'))}>
+        <button className={location === '/css-sandbox' ? 'header-btn-here' : 'header-btn'} onClick={()=>(history.push('/css-sandbox'))}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Sandbox
