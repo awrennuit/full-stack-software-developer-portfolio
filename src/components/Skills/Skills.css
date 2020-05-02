@@ -1,0 +1,15 @@
+.skill-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill-container {
+  padding: 10px;
+  text-align: center;
+  width: 100px;
+}
