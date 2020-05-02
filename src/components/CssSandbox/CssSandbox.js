@@ -73,8 +73,9 @@ export default function CssSandbox() {
   }, [boxRed, boxGreen, boxBlue]);
 
   const resetValues = () => {
-    document.getElementById("box-inset").checked = false;
     document.getElementById("border-none").checked = true;
+    document.getElementById("radius-px").checked = true;
+    document.getElementById("box-inset").checked = false;
     setHeight(200);
     setWidth(300);
     setBgRed(255);
@@ -88,14 +89,14 @@ export default function CssSandbox() {
     setBorderBlue(125);
     setBorderRadius(0);
     setBorderRadiusType('px');
-    setBoxInset(false); // changing but not updating visually
-    setBoxOffsetX(0); // changing but not updating visually
-    setBoxOffsetY(0); // changing but not updating visually
-    setBoxBlur(0); // changing but not updating visually
-    setBoxSpread(0); // changing but not updating visually
-    setBoxRed(125); // changing but not updating visually
-    setBoxGreen(125); // changing but not updating visually
-    setBoxBlue(125); // changing but not updating visually
+    setBoxInset('');
+    setBoxOffsetX(0);
+    setBoxOffsetY(0);
+    setBoxBlur(0);
+    setBoxSpread(0);
+    setBoxRed(125);
+    setBoxGreen(125);
+    setBoxBlue(125);
     setRotation(0);
   }
 
@@ -501,6 +502,7 @@ export default function CssSandbox() {
               <div className="sandbox-item-flex">
                 <label style={{cursor:"pointer",marginRight:"auto"}}>
                   <input 
+                    id="radius-px"
                     type="radio" 
                     name="borderRadiusType" 
                     value='px' 
@@ -523,6 +525,7 @@ export default function CssSandbox() {
           </div>
 
           <div className="sandbox-item-container">
+            {JSON.stringify(boxSpread)}
             <div 
               className={boxShadowClicked}
               onClick={()=>{
