@@ -42,7 +42,6 @@ export default function Header() {
 
   return(
     <div className="header">
-      {JSON.stringify(history.location.pathname)}
       {/* <div>
         <div style={{marginBottom:"10px"}}>
           <button className="header-bg-btn" onClick={()=>changeBackground('up')}>&and;</button>
