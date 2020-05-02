@@ -1,37 +1,37 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React from 'react';
 
-class AboutMe extends Component {
+export default function About() {
 
-  render() {
-    return (
-      <>
-        <img src="MYPIC.JPG" alt="portrait of Awren" />
-        <p>
-          Hey! I'm Awren. My true passion is creating things. As a child I drew all sorts of monsters 
-          and aliens. Then I got into music and started learning instruments and making my own songs. 
-          After that I did a deep dive on herbalism and energywork. Most recently I attended Prime 
-          Digital Academy to learn software engineering. I can confidently say that this is my calling. 
-          I absolutely love thinking up practical apps to build and learning new skills along the way.
-        </p>
-        <p>
-          I'm still an active musician making my own strange music that ranges from extreme metal to 
-          meditative ambience. Gardening is my favorite destressing activity. Many of the plants I 
-          grow are used in herbal remedies I make. I try to hold a few classes a year to assist people 
-          with gaining basic practical herbal knowledge.
-        </p>
-        <p>
-          Thanks for dropping by and checking out where I'm at in my coding adventure. 
-          I wish you well~
-        </p>
-        <p>-Awren Nuit</p>
-      </>
-    );
-  }
+  return (
+    <div>
+      <h3>A little history...</h3>
+      <p>
+        Growing up I was always coming up with new ideas and figuring out how to bring them
+        to life. As I got older this manifested through visual arts and music. I performed 
+        with the school orchestra all through middle and high school, and have taught myself 
+        dozens of instruments since then.
+      </p>
+      <p>
+        I also have an affinity for plants, which blossomed into a deep study of Western 
+        herbalism. Forming a bond with the plants that I use is very important to me, so 
+        I raise many of them from seed so I can study them and be present with them through 
+        their entire lifecycle from seed to sprout to bloom and back again to seed. Ask me 
+        about my cough syrup sometime - it's delicious and nutritious!
+      </p>
+      <p>
+        My passions for creating and understanding how things work on a fundamental level 
+        carry over into my software development. I have a profound appreciation for engaging, 
+        interactive, and accessible design. In addition, I love walking outside of my comfort 
+        zone to try new things and see what underlying processes they function with.
+      </p>
+      <br />
+      <p>
+        I'm always open for a conversation, so feel free to&nbsp;
+        <a href="mailto:awren.nuit@gmail.com?subject=Let's%20Have%20a%20Conversation">
+          contact me
+        </a>
+        .
+      </p>
+    </div>
+  );
 }
-
-const putReduxStateOnProps = (reduxState) => ({
-  reduxState: reduxState.reducer
-});
-
-export default connect(putReduxStateOnProps)(AboutMe);
