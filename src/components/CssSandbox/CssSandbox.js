@@ -525,7 +525,6 @@ export default function CssSandbox() {
           </div>
 
           <div className="sandbox-item-container">
-            {JSON.stringify(boxSpread)}
             <div 
               className={boxShadowClicked}
               onClick={()=>{
