@@ -42,7 +42,7 @@
   height: 30px;
   margin-bottom: 10px;
   position: relative;
-  text-align: center;
+  text-align: left;
   transition: 0.3s;
   width: 100%;
   z-index: 1;
@@ -86,6 +86,10 @@
   transform: rotate(114deg);
 }
 
+.sandbox-btn-text {
+  padding-left: 45px;
+}
+
 .sandbox-dimensions-heading-clicked .sandbox-btn-arrow::before, .sandbox-bg-heading-clicked .sandbox-btn-arrow::before, .sandbox-blur-heading-clicked .sandbox-btn-arrow::before, .sandbox-border-heading-clicked .sandbox-btn-arrow::before, .sandbox-border-radius-heading-clicked .sandbox-btn-arrow::before, .sandbox-box-shadow-heading-clicked .sandbox-btn-arrow::before, .sandbox-rotation-heading-clicked .sandbox-btn-arrow::before {
   left: 20px;
   transform: rotate(114deg);
@@ -104,7 +108,7 @@
   height: 30px;
   margin-bottom: 10px;
   position: relative;
-  text-align: center;
+  text-align: left;
   transition: 0.3s;
   width: 100%;
   z-index: 1;

@@ -130,7 +130,7 @@ export default function CssSandbox() {
                       }
             >
               <span className="sandbox-btn-arrow"></span>
-              Dimensions
+              <span className="sandbox-btn-text">Dimensions</span>
             </div>
             <div className={dimensionsShow}>
               <div className="sandbox-item-flex">
@@ -179,7 +179,7 @@ export default function CssSandbox() {
                       }
             >
               <span className="sandbox-btn-arrow"></span>
-              Background
+              <span className="sandbox-btn-text">Background</span>
             </div>
             <div className={bgShow}>
               <div className="sandbox-item-flex">
@@ -241,7 +241,7 @@ export default function CssSandbox() {
                       }
             >
               <span className="sandbox-btn-arrow"></span>
-              Blur
+              <span className="sandbox-btn-text">Blur</span>
             </div>
             <div className={blurShow}>
               <div className="sandbox-item-flex">
@@ -277,7 +277,7 @@ export default function CssSandbox() {
                       }
             >
               <span className="sandbox-btn-arrow"></span>
-              Border
+              <span className="sandbox-btn-text">Border</span>
             </div>
             <div className={borderShow}>
               <div className="sandbox-item-flex">
@@ -448,7 +448,7 @@ export default function CssSandbox() {
                       }
             >
               <span className="sandbox-btn-arrow"></span>
-              Border Radius
+              <span className="sandbox-btn-text">Border Radius</span>
             </div>
             <div className={borderRadiusShow}>
               <div className="sandbox-item-flex">
@@ -505,7 +505,7 @@ export default function CssSandbox() {
                       }
             >
               <span className="sandbox-btn-arrow"></span>
-              Box Shadow
+              <span className="sandbox-btn-text">Box Shadow</span>
             </div>
             <div className={boxShadowShow}>
               <div>
@@ -629,7 +629,7 @@ export default function CssSandbox() {
                       }
             >
               <span className="sandbox-btn-arrow"></span>
-              Rotation
+              <span className="sandbox-btn-text">Rotation</span>
             </div>
             <div className={rotationShow}>
               <div className="sandbox-item-flex">
