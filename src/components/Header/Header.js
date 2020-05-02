@@ -63,7 +63,7 @@ export default function Header() {
         <button className="header-btn" onClick={()=>(history.push('/css-sandbox'))}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
-          CSS Sandbox
+          Sandbox
         </button>
         <button className="header-btn">
           {/* <a href="https://github.com/AwrenNuit" target="_blank" rel="noopener noreferrer">
