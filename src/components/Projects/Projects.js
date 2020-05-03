@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 export default function Projects() {
 
   const history = useHistory();
+  
   return(
     <>
       <Header />
