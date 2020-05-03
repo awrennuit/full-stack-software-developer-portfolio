@@ -56,12 +56,18 @@ export default function Header() {
           <span className="header-btn-corner-two"></span>
           Resume
         </button>
-        <button className={location === '/projects' ? 'header-btn-here' : 'header-btn'} onClick={()=>(history.push('/projects'))}>
+        <button 
+          className={location === '/projects' ? 'header-btn-here' : 'header-btn'} 
+          onClick={location !== '/projects' ? ()=>(history.push('/projects')) : ''}
+        >
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Projects
         </button>
-        <button className={location === '/css-sandbox' ? 'header-btn-here' : 'header-btn'} onClick={()=>(history.push('/css-sandbox'))}>
+        <button 
+          className={location === '/css-sandbox' ? 'header-btn-here' : 'header-btn'} 
+          onClick={location !== '/css-sandbox' ? ()=>(history.push('/css-sandbox')) : ''}
+        >
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Sandbox
