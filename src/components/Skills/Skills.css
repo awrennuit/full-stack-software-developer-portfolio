@@ -1,14 +1,53 @@
 .skill-main-container {
-  border: 7px solid #fff;
+  background-color: #323144;
   margin: 0 auto;
   padding: 10px;
-  width: 80%;
+  position: relative;
+  width: 922px;
+}
+
+.skill-heading::before, .skill-heading::after {
+  border-bottom: 7px solid #fff;
+  bottom: -7px;
+  content: '';
+  height: 239px;
+  position: absolute;
+  width: 350px;
+}
+
+.skill-heading::before {
+  border-right: 7px solid #fff;
+  left: 592px;
+}
+
+.skill-heading::after {
+  border-left: 7px solid #fff;
+  left: -7px;
 }
 
 .skill-flex {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.skill-flex::before, .skill-flex::after {
+  border-top: 7px solid #fff;
+  content: '';
+  height: 208px;
+  position: absolute;
+  top: -7px;
+  width: 350px;
+}
+
+.skill-flex::before {
+  border-left: 7px solid #fff;
+  left: -7px;
+}
+
+.skill-flex::after {
+  border-right: 7px solid #fff;
+  left: 592px;
 }
 
 .skill-group {

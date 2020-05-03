@@ -5,7 +5,7 @@ export default function Skills() {
 
   return(
     <div className="skill-main-container">
-      <h2>These are what I work in the most...</h2>
+      <h2 className="skill-heading">These are what I work with the most...</h2>
       <div className="skill-flex">
         <div className="skill-group">
           <div className="skill-container">
