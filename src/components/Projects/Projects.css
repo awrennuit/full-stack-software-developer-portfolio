@@ -43,6 +43,7 @@
   border: 1px solid #fff;
   bottom: 30px;
   cursor: pointer;
+  font-size: 0.9em;
   height: 40px;
   position: absolute;
   width: 130px;
@@ -54,4 +55,17 @@
 
 .project-btn-app {
   right: 40px;
+}
+
+.project-btn-code-tracker {
+  background-color: #323144;
+  border: 1px solid #fff;
+  bottom: 30px;
+  cursor: pointer;
+  font-size: 0.9em;
+  height: 40px;
+  left: 40px;
+  position: absolute;
+  right: 40px;
+  width: 80%;
 }

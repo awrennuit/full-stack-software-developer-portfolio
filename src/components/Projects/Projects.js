@@ -11,7 +11,7 @@ export default function Projects() {
       <Header />
       <div className="project-container">
         <div className="project-card">
-          <img src="images/screenshots/homebody.png" alt="homebody app's homepage"  height="300" width="400" />
+          <img src="images/screenshots/homebody.png" alt="homebody app's homepage" height="300" width="400" />
           <div className="project-overlay">
             <h2>Homebody</h2>
             <p>Women Who Code weekend virtual hackathon project conceived and built by a team of five</p>
@@ -31,7 +31,21 @@ export default function Projects() {
         </div>
 
         <div className="project-card">
-          <img src="images/screenshots/timer.png" alt="set timer page"  height="300" width="400" />
+          <img src="images/screenshots/tracker.png" alt="alumni tracker table" height="300" width="400" />
+          <div className="project-overlay">
+            <h2>Alumni Tracker</h2>
+            <p>Basic solution to track which events Prime Digital Academy alumni are attending</p>
+            <button
+              className="project-btn-code-tracker"
+              onClick={()=>window.open('https://github.com/AwrenNuit/alum-tracker', '_blank')}
+            >
+              View Code
+            </button>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <img src="images/screenshots/timer.png" alt="set timer page" height="300" width="400" />
           <div className="project-overlay">
             <h2>Countdown Timer</h2>
             <p>
@@ -55,7 +69,7 @@ export default function Projects() {
         </div>
 
         <div className="project-card">
-          <img src="images/screenshots/password.png" alt="password generator main page"  height="300" width="400" />
+          <img src="images/screenshots/password.png" alt="password generator main page" height="300" width="400" />
           <div className="project-overlay">
             <h2>Password Generator</h2>
             <p>
@@ -79,7 +93,7 @@ export default function Projects() {
         </div>
 
         <div className="project-card">
-          <img src="images/screenshots/art.png" alt="pixel art main page"  height="300" width="400" />
+          <img src="images/screenshots/art.png" alt="pixel art main page" height="300" width="400" />
           <div className="project-overlay">
             <h2>Abstract Pixel Art</h2>
             <p>Fusing my love for both experimental art and technology</p>
