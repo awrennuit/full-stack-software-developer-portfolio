@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import './Projects.css';
 import Header from '../Header/Header';
 
 export default function Projects() {
@@ -8,11 +9,93 @@ export default function Projects() {
   return(
     <>
       <Header />
-      <div className="project-card">
-        <img src="images/avatar.jpg" alt="react timer" width="300" />
-        <div className="project-overlay">
-          <h1>React Timer</h1>
-          <button onClick={()=>history.pushState('/timer')}>View Here</button>
+      <div className="project-container">
+        <div className="project-card">
+          <img src="images/screenshots/homebody.png" alt="homebody app's homepage"  height="300" width="400" />
+          <div className="project-overlay">
+            <h2>Homebody</h2>
+            <p>Women Who Code weekend virtual hackathon project conceived and built by a team of five</p>
+            <button
+              className="project-btn-code"
+              onClick={()=>window.open('https://github.com/AwrenNuit/HTG-WorkoutApp-2020', '_blank')}
+            >
+              View Code
+            </button>
+            <button
+              className="project-btn-app"
+              onClick={()=>window.open('https://htg2020-homebody.web.app/', '_blank')}
+            >
+              View App
+            </button>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <img src="images/screenshots/timer.png" alt="set timer page"  height="300" width="400" />
+          <div className="project-overlay">
+            <h2>Countdown Timer</h2>
+            <p>
+              Constructed to gain a better
+              <br />
+              understanding of time
+            </p>
+            <button
+              className="project-btn-code"
+              onClick={()=>window.open('https://github.com/AwrenNuit/countdown-timer', '_blank')}
+            >
+              View Code
+            </button>
+            <button
+              className="project-btn-app"
+              onClick={()=>history.push('/timer')}
+            >
+              View App
+            </button>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <img src="images/screenshots/password.png" alt="password generator main page"  height="300" width="400" />
+          <div className="project-overlay">
+            <h2>Password Generator</h2>
+            <p>
+              An exercise in basic password 
+              <br />
+              and ID generation
+            </p>
+            <button
+              className="project-btn-code"
+              onClick={()=>window.open('https://github.com/AwrenNuit/unique-id-generator', '_blank')}
+            >
+              View Code
+            </button>
+            <button
+              className="project-btn-app"
+              onClick={()=>history.push('/password-generator')}
+            >
+              View App
+            </button>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <img src="images/screenshots/art.png" alt="pixel art main page"  height="300" width="400" />
+          <div className="project-overlay">
+            <h2>Abstract Pixel Art</h2>
+            <p>Fusing my love for both experimental art and technology</p>
+            <button
+              className="project-btn-code"
+              onClick={()=>window.open('https://github.com/AwrenNuit/abstract-pixel-art', '_blank')}
+            >
+              View Code
+            </button>
+            <button
+              className="project-btn-app"
+              onClick={()=>history.push('/abstract-art')}
+            >
+              View App
+            </button>
+          </div>
         </div>
       </div>
     </>

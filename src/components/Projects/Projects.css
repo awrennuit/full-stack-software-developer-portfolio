@@ -1,0 +1,57 @@
+.project-container {
+  margin: 50px;
+}
+
+.project-card {
+  display: inline-block;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  width: 400px;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 10px #777;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay {
+  background-color: #000000b6;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.project-overlay h2 {
+  margin: 20px 0;
+}
+
+.project-overlay p {
+  line-height: 1.2em;
+}
+
+.project-btn-code, .project-btn-app {
+  background-color: #323144;
+  border: 1px solid #fff;
+  bottom: 30px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  width: 130px;
+}
+
+.project-btn-code {
+  left: 40px;
+}
+
+.project-btn-app {
+  right: 40px;
+}
