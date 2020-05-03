@@ -5,8 +5,7 @@ export default function About() {
 
   return (
     <div className="about-main-container">
-      {/* <span className="about-heading">A little history...</span> */}
-      <h2 className="about-heading">A little history...</h2>
+      <h2 className="about-heading"><span>A little history...</span></h2>
       <div className="about-content-container">
         <p>
           Growing up I was always coming up with new ideas and figuring out how to bring them

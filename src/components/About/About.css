@@ -27,6 +27,10 @@
   width: 90vw;
 }
 
+.about-main-container h2 span {
+  animation: fade-in 2s ease-in;
+}
+
 .about-heading {
   margin-top: 30px;
   margin-left: 10%;
@@ -80,6 +84,7 @@
 }
 
 .about-content-container p {
+  animation: fade-in 2s ease-in;
   line-height: 1.4em;
   margin-bottom: 15px;
 }
@@ -110,6 +115,11 @@
 
 .about-contact a:hover::before {
   animation: contact 1s;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes contact {

@@ -6,6 +6,11 @@
   width: 922px;
 }
 
+.skill-heading {
+  margin-top: 30px;
+  margin-left: 10%;
+}
+
 .skill-heading::before, .skill-heading::after {
   border-bottom: 7px solid #fff;
   bottom: -7px;
