@@ -1,6 +1,6 @@
 .about-main-container {
   background-color: #323144;
-  margin: 40px auto;
+  margin: 40px auto 80px auto;
   position: relative;
   padding: 10px 10px 0 10px;
   width: 922px;
@@ -115,6 +115,45 @@
 
 .about-contact a:hover::before {
   animation: contact 1s;
+}
+
+.about-bottom-line {
+  background-color: #fff;
+  bottom: -52px;
+  height: 7px;
+  left: 140px;
+  position: absolute;
+  width: 400px;
+}
+
+.about-bottom-design-left::before, .about-bottom-design-left::after {
+  border-left: 7px solid #fff;
+  content: '';
+  left: -170px;
+  position: absolute;
+  width: 200px;
+  z-index: -1;
+}
+
+.about-bottom-design-left::before, .about-bottom-design-right::before {
+  border-bottom: 7px solid #fff;
+  bottom: -52px;
+  height: 230px;
+}
+
+.about-bottom-design-left::after, .about-bottom-design-right::after {
+  border-top: 7px solid #fff;
+  bottom: -332px;
+  height: 280px;
+}
+
+.about-bottom-design-right::before, .about-bottom-design-right::after {
+  border-right: 7px solid #fff;
+  content: '';
+  right: -170px;
+  position: absolute;
+  width: 200px;
+  z-index: -1;
 }
 
 @keyframes fade-in {

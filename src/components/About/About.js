@@ -35,6 +35,9 @@ export default function About() {
           </a>
           .
         </p>
+        <span className="about-bottom-line"></span>
+        <span className="about-bottom-design-left"></span>
+        <span className="about-bottom-design-right"></span>
       </div>
     </div>
   );
