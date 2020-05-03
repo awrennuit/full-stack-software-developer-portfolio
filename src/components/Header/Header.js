@@ -52,11 +52,11 @@ export default function Header() {
       </div> */}
       <div>
         <button 
-          className={location === '/home' ? 'header-btn-here' : 'header-btn'}
-          onClick={location !== '/home' ? ()=>(history.push('/home')) : ''}>
+          className={location === '/about' ? 'header-btn-here' : 'header-btn'}
+          onClick={location !== '/about' ? ()=>(history.push('/about')) : ''}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
-          Home
+          About
         </button>
         <button 
           className={location === '/projects' ? 'header-btn-here' : 'header-btn'} 
@@ -74,10 +74,10 @@ export default function Header() {
           <span className="header-btn-corner-two"></span>
           Sandbox
         </button>
-        <button className="header-btn" onClick={()=>window.location.href="https://github.com/AwrenNuit"}>
+        <button className="header-btn" onClick={()=>history.push('/contact')}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
-          GitHub
+          Contact
         </button>
         <button className="header-btn" onClick={()=>window.location.href="mailto:awren.nuit@gmail.com?subject=I%20Loved%20Your%20Portfolio"}>
           <span className="header-btn-corner-one"></span>
