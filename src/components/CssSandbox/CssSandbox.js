@@ -551,7 +551,7 @@ export default function CssSandbox() {
                     type="checkbox" 
                     onChange={e=>{e.target.checked ? setBoxInset('inset') : setBoxInset('')}} 
                   />
-                  Inset
+                  &nbsp;Inset
                 </label>
               </div>
               <br />
