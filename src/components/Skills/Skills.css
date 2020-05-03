@@ -84,7 +84,7 @@
 
 .skill-group {
   animation: fade-in 2s ease-in;
-  background-color: #ccc;
+  background-color: #eee;
   display: flex;
   flex-direction: row;
   margin: 20px;
