@@ -31,20 +31,6 @@ export default function Projects() {
         </div>
 
         <div className="project-card">
-          <img src="images/screenshots/tracker.png" alt="alumni tracker table" height="300" width="400" />
-          <div className="project-overlay">
-            <h2>Alumni Tracker</h2>
-            <p>Basic solution to track which events Prime Digital Academy alumni are attending</p>
-            <button
-              className="project-btn-code-tracker"
-              onClick={()=>window.open('https://github.com/AwrenNuit/alum-tracker', '_blank')}
-            >
-              View Code
-            </button>
-          </div>
-        </div>
-
-        <div className="project-card">
           <img src="images/screenshots/timer.png" alt="set timer page" height="300" width="400" />
           <div className="project-overlay">
             <h2>Countdown Timer</h2>
@@ -64,6 +50,20 @@ export default function Projects() {
               onClick={()=>history.push('/timer')}
             >
               View App
+            </button>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <img src="images/screenshots/tracker.png" alt="alumni tracker table" height="300" width="400" />
+          <div className="project-overlay">
+            <h2>Alumni Tracker</h2>
+            <p>Basic solution to track which events Prime Digital Academy alumni are attending</p>
+            <button
+              className="project-btn-code-tracker"
+              onClick={()=>window.open('https://github.com/AwrenNuit/alum-tracker', '_blank')}
+            >
+              View Code
             </button>
           </div>
         </div>
