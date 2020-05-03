@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './Header.css';
 
@@ -53,14 +53,14 @@ export default function Header() {
       <div>
         <button 
           className={location === '/about' ? 'header-btn-here' : 'header-btn'}
-          onClick={location !== '/about' ? ()=>(history.push('/about')) : ''}>
+          onClick={location !== '/about' ? ()=>(history.push('/about')) : null}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           About
         </button>
         <button 
           className={location === '/projects' ? 'header-btn-here' : 'header-btn'} 
-          onClick={location !== '/projects' ? ()=>(history.push('/projects')) : ''}
+          onClick={location !== '/projects' ? ()=>(history.push('/projects')) : null}
         >
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
