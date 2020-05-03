@@ -8,7 +8,7 @@ export default function Footer() {
       <div>
         <p>&#169; {new Date().getFullYear()} Awren Nuit</p>
       </div>
-      <div>
+      <div className="footer-icons">
         <a href="https://www.linkedin.com/in/awren-nuit/" target="_blank" rel="noopener noreferrer">
           <img src="images/icons/linkedin.svg" alt="linkedin icon" height="30px" width="30px" />
         </a>
