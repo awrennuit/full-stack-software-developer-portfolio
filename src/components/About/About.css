@@ -1,0 +1,17 @@
+.about-main-container {
+  border: 7px solid #fff;
+  margin: 40px auto;
+  padding: 10px 10px 0 10px;
+  width: 80%;
+}
+
+.about-content-container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.about-content-container p {
+  line-height: 1.4em;
+  margin-bottom: 10px;
+}
