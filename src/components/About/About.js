@@ -5,6 +5,7 @@ export default function About() {
 
   return (
     <div className="about-main-container">
+      {/* <span className="about-heading">A little history...</span> */}
       <h2 className="about-heading">A little history...</h2>
       <div className="about-content-container">
         <p>
@@ -28,7 +29,7 @@ export default function About() {
           where the majority of growth takes place.
         </p>
         <br />
-        <p>
+        <p className="about-contact">
           I'm always open for a conversation, so feel free to&nbsp;
           <a href="mailto:awren.nuit@gmail.com?subject=Let's%20Have%20a%20Conversation">
             contact me

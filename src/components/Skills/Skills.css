@@ -13,6 +13,7 @@
   height: 239px;
   position: absolute;
   width: 350px;
+  z-index: -1;
 }
 
 .skill-heading::before {
@@ -38,6 +39,7 @@
   position: absolute;
   top: -7px;
   width: 350px;
+  z-index: -1;
 }
 
 .skill-flex::before {
