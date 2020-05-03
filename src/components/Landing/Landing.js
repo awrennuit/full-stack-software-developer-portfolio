@@ -17,7 +17,7 @@ export default function Landing() {
         </p>
         <p>I bring ideas to reality.</p>
         <div className="landing-btn-container">
-          <button className="landing-button" onClick={()=>history.push('/main')}>Go</button>
+          <button className="landing-button" onClick={()=>history.push('/home')}>Go</button>
           <span className="landing-box-lg"></span>
           <span className="landing-box-sm"></span>
         </div>
