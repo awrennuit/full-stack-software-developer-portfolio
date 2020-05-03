@@ -9,7 +9,7 @@
 .about-main-container::before, .about-main-container::after {
   content: '';
   left: 50%;
-  position: absolute; /* centers in screen when fixed, centers in box when absolute */
+  position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
