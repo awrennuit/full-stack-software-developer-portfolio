@@ -52,8 +52,8 @@ export default function Header() {
       </div> */}
       <div>
         <button 
-          className={location === '/main' ? 'header-btn-here' : 'header-btn'}
-          onClick={location !== '/main' ? ()=>(history.push('/main')) : ''}>
+          className={location === '/home' ? 'header-btn-here' : 'header-btn'}
+          onClick={location !== '/home' ? ()=>(history.push('/home')) : ''}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Home
