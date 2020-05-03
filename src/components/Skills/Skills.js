@@ -4,7 +4,8 @@ import './Skills.css';
 export default function Skills() {
 
   return(
-    <>
+    <div className="skill-main-container">
+      <h2>These are what I work in the most...</h2>
       <div className="skill-flex">
         <div className="skill-group">
           <div className="skill-container">
@@ -23,12 +24,12 @@ export default function Skills() {
             <img height="50" src="images/icons/typescript.png" alt="typescript logo" />
             <p>TypeScript</p>
           </div>
+        </div>
+        <div className="skill-group">
           <div className="skill-container">
             <img height="50" src="images/icons/react.svg" alt="react logo" />
             <p>React</p>
           </div>
-        </div>
-        <div className="skill-group">
           <div className="skill-container">
             <img height="50" src="images/icons/angular.svg" alt="angular logo" />
             <p>Angular</p>
@@ -41,6 +42,8 @@ export default function Skills() {
             <img height="50" src="images/icons/redux-saga.svg" alt="redux-saga logo" />
             <p>Redux-Saga</p>
           </div>
+        </div>
+        <div className="skill-group">
           <div className="skill-container">
             <img height="50" src="images/icons/node.svg" alt="node.js logo" />
             <p>Node.js</p>
@@ -48,6 +51,14 @@ export default function Skills() {
           <div className="skill-container">
             <img height="50" src="images/icons/postgresql.svg" alt="postgresql logo" />
             <p>PostgreSQL</p>
+          </div>
+          <div className="skill-container">
+            <img height="50" src="images/icons/firebase.svg" alt="firebase logo" />
+            <p>Firebase</p>
+          </div>
+          <div className="skill-container">
+            <img height="50" src="images/icons/json.svg" alt="json logo" />
+            <p>JSON</p>
           </div>
         </div>
         <div className="skill-group">
@@ -60,10 +71,6 @@ export default function Skills() {
             <p>GitHub</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/firebase.svg" alt="firebase logo" />
-            <p>Firebase</p>
-          </div>
-          <div className="skill-container">
             <img height="50" src="images/icons/bootstrap.svg" alt="bootstrap logo" />
             <p>Bootstrap</p>
           </div>
@@ -73,6 +80,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
