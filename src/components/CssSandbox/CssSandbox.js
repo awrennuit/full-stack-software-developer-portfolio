@@ -557,7 +557,7 @@ export default function CssSandbox() {
               </div>
               <br />
               <div className="sandbox-item-flex">
-                <label>X-Offset</label>
+                <label>X&#8209;Offset</label>
                 <div className="sandbox-input">
                   <input 
                     type="range" 
@@ -570,7 +570,7 @@ export default function CssSandbox() {
                 </div>
               </div>
               <div className="sandbox-item-flex">
-                <label>Y-Offset</label>
+                <label>Y&#8209;Offset</label>
                 <div className="sandbox-input">
                   <input 
                     type="range" 
