@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './Projects.css';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 export default function Projects() {
 
@@ -127,6 +128,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

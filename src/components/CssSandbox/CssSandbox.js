@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './CssSandbox.css';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 export default function CssSandbox() {
 
@@ -766,6 +767,7 @@ export default function CssSandbox() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

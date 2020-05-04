@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Home from '../Home/Home';
 import Abstract from '../Abstract/Abstract';
@@ -10,7 +10,6 @@ import Projects from '../Projects/Projects';
 import Resume from '../Resume/Resume';
 import TimerMain from '../TimerMain/TimerMain';
 import Timer from '../Timer/Timer';
-import Footer from '../Footer/Footer';
 
 export default function App() {
   return (
@@ -24,7 +23,6 @@ export default function App() {
       <Route exact path='/resume' component={Resume} />
       <Route exact path='/set-timer' component={TimerMain} />
       <Route exact path='/timer' component={Timer} />
-      <Footer />
     </Router>
   );
 }
