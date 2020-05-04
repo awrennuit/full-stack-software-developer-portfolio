@@ -20,7 +20,6 @@ class Timer extends Component{
 
   componentDidMount(){
     if(this.props.reduxState.days === undefined){
-      this.props.history.push(`/set-timer`);
     }
     this.interval = setInterval(() => this.countdown(), 1000);
   }

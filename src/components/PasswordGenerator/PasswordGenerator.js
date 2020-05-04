@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './PasswordGenerator.css';
+import Header from '../Header/Header';
 
 export default function PasswordGenerator() {
 
@@ -75,98 +76,101 @@ export default function PasswordGenerator() {
   const handleLengthChange = e => e.target.value <= 50 && e.target.value >= 2 ? setLength(+e.target.value) : '';
 
   return(
-    <div className="password-background">
-      <div className="password-full-container">
-        <h1 className="password-heading">Password Generator</h1>
-        <div className="password-checkbox-container">
+    <>
+      <Header />
+      <div className="password-background">
+        <div className="password-full-container">
+          <h1 className="password-heading">Password Generator</h1>
+          <div className="password-checkbox-container">
+            <input 
+              type="checkbox" 
+              value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`}
+              onChange={handleCheck} 
+            />
+            <span className="password-span">Add uppercase?</span>
+          </div>
+          <div className="password-text-container">
+            <textarea className="password-textarea" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} readOnly></textarea>
+          </div>
+          <hr className="password-hr" />
+
+          <div className="password-checkbox-container">
+            <input 
+              type="checkbox" 
+              value={`abcdefghijklmnopqrstuvwxyz`} 
+              onChange={handleCheck} 
+              defaultChecked 
+            />
+            <span className="password-span">Add lowercase?</span>
+          </div>
+          <div className="password-text-container">
+            <textarea className="password-textarea" value={`abcdefghijklmnopqrstuvwxyz`} readOnly></textarea>
+          </div>
+          <hr className="password-hr" />
+
+          <div className="password-checkbox-container">
+            <input 
+              type="checkbox" 
+              id="numbers" 
+              value={`1234567890`} 
+              onChange={handleCheck} 
+            />
+            <span className="password-span">Add numbers?</span>
+          </div>
+          <div className="password-text-container">
+            <textarea className="password-textarea" value={`1234567890`} readOnly></textarea>
+          </div>
+          <hr className="password-hr" />
+
+          <div className="password-checkbox-container">
+            <input 
+              type="checkbox" 
+              id="dash" 
+              value={`-_`} 
+              onChange={handleCheck} 
+            />
+            <span className="password-span">Add dash & underscore?</span>
+          </div>
+          <div className="password-text-container">
+            <textarea className="password-textarea" value={`-_`} readOnly></textarea>
+          </div>
+          <hr className="password-hr" />
+
+          <div className="password-checkbox-container">
+            <input 
+              type="checkbox" 
+              id="symbols" 
+              value={'#;:`~!@#$%^&*()+={}[]/\\?'} 
+              onChange={handleCheck} 
+            />
+            <span className="password-span">Add other symbols?</span>
+          </div>
+          <div className="password-text-container">
+            <textarea className="password-textarea" value={'#;:`~!@#$%^&*()+={}[]/\\?'} readOnly></textarea>
+          </div>
+          <hr className="password-hr" />
+
           <input 
-            type="checkbox" 
-            value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`}
-            onChange={handleCheck} 
-          />
-          <span className="password-span">Add uppercase?</span>
-        </div>
-        <div className="password-text-container">
-          <textarea className="password-textarea" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} readOnly></textarea>
-        </div>
-        <hr className="password-hr" />
+            className="password-length-input"
+            type="number" 
+            min="2" 
+            max="50" 
+            value={length} 
+            id="length"
+            onChange={handleLengthChange} />
+          <div>
+            <button className="generate" onClick={generatePassword}>Generate</button>
+          </div>
 
-        <div className="password-checkbox-container">
-          <input 
-            type="checkbox" 
-            value={`abcdefghijklmnopqrstuvwxyz`} 
-            onChange={handleCheck} 
-            defaultChecked 
-          />
-          <span className="password-span">Add lowercase?</span>
-        </div>
-        <div className="password-text-container">
-          <textarea className="password-textarea" value={`abcdefghijklmnopqrstuvwxyz`} readOnly></textarea>
-        </div>
-        <hr className="password-hr" />
+          <hr className="password-hr" />
 
-        <div className="password-checkbox-container">
-          <input 
-            type="checkbox" 
-            id="numbers" 
-            value={`1234567890`} 
-            onChange={handleCheck} 
-          />
-          <span className="password-span">Add numbers?</span>
-        </div>
-        <div className="password-text-container">
-          <textarea className="password-textarea" value={`1234567890`} readOnly></textarea>
-        </div>
-        <hr className="password-hr" />
+          <div>
+            <p className="password-output-heading">Your unique ID is:</p>
+            <p className="password-output">{uniquePassword}</p>
+          </div>
 
-        <div className="password-checkbox-container">
-          <input 
-            type="checkbox" 
-            id="dash" 
-            value={`-_`} 
-            onChange={handleCheck} 
-          />
-          <span className="password-span">Add dash & underscore?</span>
         </div>
-        <div className="password-text-container">
-          <textarea className="password-textarea" value={`-_`} readOnly></textarea>
-        </div>
-        <hr className="password-hr" />
-
-        <div className="password-checkbox-container">
-          <input 
-            type="checkbox" 
-            id="symbols" 
-            value={'#;:`~!@#$%^&*()+={}[]/\\?'} 
-            onChange={handleCheck} 
-          />
-          <span className="password-span">Add other symbols?</span>
-        </div>
-        <div className="password-text-container">
-          <textarea className="password-textarea" value={'#;:`~!@#$%^&*()+={}[]/\\?'} readOnly></textarea>
-        </div>
-        <hr className="password-hr" />
-
-        <input 
-          className="password-length-input"
-          type="number" 
-          min="2" 
-          max="50" 
-          value={length} 
-          id="length"
-          onChange={handleLengthChange} />
-        <div>
-          <button className="generate" onClick={generatePassword}>Generate</button>
-        </div>
-
-        <hr className="password-hr" />
-
-        <div>
-          <p className="password-output-heading">Your unique ID is:</p>
-          <p className="password-output">{uniquePassword}</p>
-        </div>
-
       </div>
-    </div>
+    </>
   );
 }

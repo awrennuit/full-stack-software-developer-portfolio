@@ -5,6 +5,7 @@ import TimerForm from '../TimerForm/TimerForm';
 import Timer from '../Timer/Timer';
 import ToggleThemeDark from '../TimerThemeDark/TimerThemeDark';
 import ToggleThemeLight from '../TimerThemeLight/TimerThemeLight';
+import Header from '../Header/Header';
 
 export default function TimerMain() {
 
@@ -31,6 +32,7 @@ export default function TimerMain() {
   // if(theme.palette.type === `dark`){
     return (
       <div className={theme.palette.theme}>
+        <Header />
         <Router>
           {theme.palette.type === `dark` ? 
             <ToggleThemeDark onToggleTheme={toggleTheme} />
