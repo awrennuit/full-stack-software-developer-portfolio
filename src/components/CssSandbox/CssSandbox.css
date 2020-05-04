@@ -198,6 +198,10 @@
   width: 100%;
 }
 
+.sandbox-input input[type=range] {
+  width: 130px;
+}
+
 .sandbox-modal-output {
   background-color: #eee;
   border-radius: 4px;

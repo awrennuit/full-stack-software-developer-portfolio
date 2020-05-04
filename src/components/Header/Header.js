@@ -74,11 +74,11 @@ export default function Header() {
           <span className="header-btn-corner-two"></span>
           Sandbox
         </button>
-        <button className="header-btn" onClick={()=>history.push('/contact')}>
+        {/* <button className="header-btn" onClick={()=>history.push('/contact')}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Contact
-        </button>
+        </button> */}
         <button className="header-btn" onClick={()=>window.location.href="mailto:awren.nuit@gmail.com?subject=I%20Loved%20Your%20Portfolio"}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
