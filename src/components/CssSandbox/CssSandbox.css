@@ -1,3 +1,7 @@
+.sandbox-main-container {
+  /* min-height: calc(100vh - 400px); */
+}
+
 .test-div {
   left: 45%;
   position: fixed;
@@ -11,7 +15,7 @@
 .sandbox-slider-container {
   background-color: #ddd;
   border-top: 1px solid #aaa;
-  min-height: 100vh;
+  min-height: calc(100vh - 141px);
   max-height: 100%;
   padding: 10px;
   width: 220px;

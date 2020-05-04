@@ -90,7 +90,11 @@ export default function PasswordGenerator() {
             <span className="password-span">Add uppercase?</span>
           </div>
           <div className="password-text-container">
-            <textarea className="password-textarea" value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} readOnly></textarea>
+            <textarea 
+              className="password-textarea" 
+              value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`} 
+              readOnly
+            ></textarea>
           </div>
           <hr className="password-hr" />
 
@@ -104,7 +108,11 @@ export default function PasswordGenerator() {
             <span className="password-span">Add lowercase?</span>
           </div>
           <div className="password-text-container">
-            <textarea className="password-textarea" value={`abcdefghijklmnopqrstuvwxyz`} readOnly></textarea>
+            <textarea 
+              className="password-textarea" 
+              value={`abcdefghijklmnopqrstuvwxyz`} 
+              readOnly
+            ></textarea>
           </div>
           <hr className="password-hr" />
 
@@ -146,7 +154,11 @@ export default function PasswordGenerator() {
             <span className="password-span">Add other symbols?</span>
           </div>
           <div className="password-text-container">
-            <textarea className="password-textarea" value={'#;:`~!@#$%^&*()+={}[]/\\?'} readOnly></textarea>
+            <textarea 
+              className="password-textarea" 
+              value={'#;:`~!@#$%^&*()+={}[]/\\?'} 
+              readOnly
+            ></textarea>
           </div>
           <hr className="password-hr" />
 

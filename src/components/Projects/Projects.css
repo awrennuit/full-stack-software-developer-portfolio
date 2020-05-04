@@ -1,5 +1,6 @@
 .project-container {
   margin: 50px;
+  min-height: calc(100vh - 220px);
 }
 
 .project-card-center {

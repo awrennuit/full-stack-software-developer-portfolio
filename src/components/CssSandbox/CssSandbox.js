@@ -118,7 +118,7 @@ export default function CssSandbox() {
   return(
     <>
       <Header />
-      <div>
+      <div className="sandbox-main-container">
         <div>
           <div 
             className="test-div"
