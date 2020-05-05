@@ -174,3 +174,137 @@
     width: 0;
   }
 }
+
+@media(max-width: 1180px){
+  .about-main-container {
+    width: 722px;
+  }
+
+  .about-heading::before, .about-heading::after {
+    width: 250px;
+  }
+  
+  .about-heading::before {
+    left: 492px;
+  }
+
+  .about-content-container::before, .about-content-container::after {
+    top: -72px;
+    width: 250px;
+  }
+  
+  .about-content-container::before {
+    left: -105.5px;
+  }
+  
+  .about-content-container::after {
+    left: 393.5px;
+  }
+
+  .about-bottom-line {
+    left: 140px;
+    width: 270px;
+  }
+
+  .about-bottom-design-left::before, .about-bottom-design-right::before {
+    height: 276px;
+  }
+}
+
+@media(max-width: 960px){
+  .about-main-container {
+    width: 422px;
+  }
+  
+  .about-main-container::before {
+    background-color: #fff;
+    height: 400px;
+    width: 95vw;
+  }
+  
+  .about-main-container::after {
+    border: 40px solid #323144;
+    height: 200px;
+    width: 75vw;
+  }
+
+  .about-heading::before, .about-heading::after {
+    height: 220px;
+    width: 150px;
+  }
+  
+  .about-heading::before {
+    left: 292px;
+  }
+
+  .about-content-container::before, .about-content-container::after {
+    height: 220px;
+    width: 150px;
+  }
+  
+  .about-content-container::before {
+    left: -60.5px;
+  }
+  
+  .about-content-container::after {
+    left: 238.5px;
+  }
+
+  .about-bottom-line {
+    left: 120px;
+    width: 100px;
+  }
+
+  .about-bottom-design-left::before, .about-bottom-design-right::before {
+    height: 357px;
+  }
+
+  .about-bottom-design-left::after, .about-bottom-design-right::after {
+    bottom: -441px;
+    height: 389px;
+  }
+}
+
+@media(max-width: 740px){
+  .about-main-container {
+    width: 350px;
+  }
+
+  .about-main-container::after {
+    display: none;
+  }
+
+  .about-heading::before, .about-heading::after {
+    height: 260px;
+    width: 150px;
+  }
+  
+  .about-heading::before {
+    left: 220px;
+  }
+
+  .about-content-container::before, .about-content-container::after {
+    height: 260px;
+    width: 150px;
+  }
+  
+  .about-content-container::before {
+    left: -49.5px;
+  }
+  
+  .about-content-container::after {
+    left: 177.5px;
+  }
+
+  .about-bottom-line {
+    display: none;
+  }
+
+  .about-bottom-design-left::before, .about-bottom-design-right::before {
+    display: none;
+  }
+
+  .about-bottom-design-left::after, .about-bottom-design-right::after {
+    display: none;
+  }
+}

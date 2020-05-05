@@ -50,7 +50,7 @@ export default function Header() {
           <button className="header-bg-btn" onClick={()=>changeBackground('down')}>&or;</button>
         </div>
       </div> */}
-      <div>
+      <div className="header-flex">
         <button 
           className={location === '/about' ? 'header-btn-here' : 'header-btn'}
           onClick={location !== '/about' ? ()=>(history.push('/about')) : null}>
