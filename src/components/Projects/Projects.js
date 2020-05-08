@@ -54,7 +54,7 @@ export default function Projects() {
               </button>
               <button
                 className="project-btn-app"
-                onClick={()=>history.push('/set-timer')}
+                onClick={()=>history.push('/timer')}
               >
                 View App
               </button>

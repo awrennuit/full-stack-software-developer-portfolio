@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import TimerForm from '../TimerForm/TimerForm';
 import Timer from '../Timer/Timer';
@@ -8,6 +7,8 @@ import ToggleThemeLight from '../TimerThemeLight/TimerThemeLight';
 import Header from '../Header/Header';
 
 export default function TimerMain() {
+
+  const [showTimer, setShowTimer] = useState(false);
 
   const [theme, setTheme] = useState({
     palette: {
@@ -29,21 +30,26 @@ export default function TimerMain() {
 
   const muiTheme = createMuiTheme(theme);
 
+  const showTimerComponent = bool => {
+    setShowTimer(bool);
+  }
+
   // if(theme.palette.type === `dark`){
     return (
       <div className={theme.palette.theme}>
         <Header />
-        <Router>
-          {theme.palette.type === `dark` ? 
-            <ToggleThemeDark onToggleTheme={toggleTheme} />
+        {theme.palette.type === `dark` ? 
+          <ToggleThemeDark onToggleTheme={toggleTheme} />
+        :
+          <ToggleThemeLight onToggleTheme={toggleTheme} />
+        }
+        <MuiThemeProvider theme={muiTheme}>
+          {!showTimer ?
+            <TimerForm timer={showTimerComponent} />
           :
-            <ToggleThemeLight onToggleTheme={toggleTheme} />
+            <Timer timer={showTimerComponent} />
           }
-          <MuiThemeProvider theme={muiTheme}>
-            <Route exact path="/set-timer" component={TimerForm} />
-            <Route path="/timer" component={Timer} />
-          </MuiThemeProvider>
-        </Router>
+        </MuiThemeProvider>
       </div>
     );
   // }

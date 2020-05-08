@@ -8,7 +8,6 @@ import Landing from '../Landing/Landing';
 import PasswordGenerator from '../PasswordGenerator/PasswordGenerator';
 import Projects from '../Projects/Projects';
 import TimerMain from '../TimerMain/TimerMain';
-import Timer from '../Timer/Timer';
 
 export default function App() {
   return (
@@ -19,8 +18,7 @@ export default function App() {
       <Route exact path='/css-sandbox' component={CssSandbox} />
       <Route exact path='/password-generator' component={PasswordGenerator} />
       <Route exact path='/projects' component={Projects} />
-      <Route exact path='/set-timer' component={TimerMain} />
-      <Route exact path='/timer' component={Timer} />
+      <Route exact path='/timer' component={TimerMain} />
     </Router>
   );
 }

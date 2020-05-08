@@ -115,23 +115,21 @@ class Timer extends Component{
 
   render(){
     return(
-      <>
-        <div className="timer-countdown-container">
-          <div className="timer-countdown">
-            {this.state.days < 10 ? "0"+this.state.days : this.state.days}d:
-            {this.state.hours < 10 ? "0"+this.state.hours : this.state.hours}h:
-            {this.state.minutes < 10 ? "0"+this.state.minutes : this.state.minutes}m:
-            {this.state.seconds < 10 ? "0"+this.state.seconds : this.state.seconds}s
-          </div>
-          <Button 
-            variant="outlined"
-            onClick={()=>this.props.history.push(`/set-timer`)}
-            style={{marginTop:"25px",paddingTop:"5px",paddingBottom:"10px"}}
-          >
-            Set Timer
-          </Button>
+      <div className="timer-countdown-container">
+        <div className="timer-countdown">
+          {this.state.days < 10 ? "0"+this.state.days : this.state.days}d:
+          {this.state.hours < 10 ? "0"+this.state.hours : this.state.hours}h:
+          {this.state.minutes < 10 ? "0"+this.state.minutes : this.state.minutes}m:
+          {this.state.seconds < 10 ? "0"+this.state.seconds : this.state.seconds}s
         </div>
-      </>
+        <Button 
+          variant="outlined"
+          onClick={()=>this.props.timer(false)}
+          style={{marginTop:"25px",paddingTop:"5px",paddingBottom:"10px"}}
+        >
+          Set Timer
+        </Button>
+      </div>
     );
   }
 }

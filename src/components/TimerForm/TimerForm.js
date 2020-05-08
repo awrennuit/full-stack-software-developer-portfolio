@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
-export default function TimerForm() {
+export default function TimerForm(props) {
 
   const dispatch = useDispatch();
-  const history = useHistory();
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -37,7 +35,7 @@ export default function TimerForm() {
     e.preventDefault();
     const state = {days, hours, minutes, seconds};
     dispatch({type: `SET_TIME`, payload: state});
-    history.push('/timer');
+    props.timer(true);
   }
 
   return(
