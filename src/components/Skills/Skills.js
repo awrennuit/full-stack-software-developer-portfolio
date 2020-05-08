@@ -63,7 +63,7 @@ export default function Skills() {
         </div>
         <div className="skill-group">
           <div className="skill-container">
-            <img height="50" src="images/icons/Git.svg" alt="git logo" />
+            <img height="50" src="images/icons/git.svg" alt="git logo" />
             <p>Git</p>
           </div>
           <div className="skill-container">
