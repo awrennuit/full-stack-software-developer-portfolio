@@ -156,3 +156,45 @@
   from { }
   to { text-shadow: 0 -5px 15px #55cdfc, 0 5px 15px #f7a8b8; }
 }
+
+@media(max-width: 570px) {
+  .landing-container {
+    width: 300px;
+  }
+
+  .landing-box-lg::before {
+    height: 190px;
+    right: -150px;
+    top: -236px;
+    width: 200px;
+  }
+  
+  .landing-box-lg::after {
+    bottom: -50px;
+    height: 150px;
+    left: -150px;
+    width: 320px;
+  }
+  
+  .landing-box-sm::before {
+    height: 40px;
+    left: -150px;
+    top: -236px;
+    width: 80px;
+  }
+
+  .landing-button:hover ~ .landing-box-lg::before {
+    height: 375px;
+    width: 260px;
+  }
+  
+  .landing-button:hover ~ .landing-box-lg::after {
+    height: 272px;
+    width: 393px;
+  }
+  
+  .landing-button:hover ~ .landing-box-sm::before {
+    height: 100px;
+    width: 130px;
+  }
+}
