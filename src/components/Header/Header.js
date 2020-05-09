@@ -60,7 +60,7 @@ export default function Header() {
         </button>
         <button 
           className={location === '/projects' ? 'header-btn-here' : 'header-btn'} 
-          onClick={location !== '/projects' ? ()=>(history.push('/projects')) : null}
+          onClick={location !== '/projects' ? ()=>history.push('/projects') : null}
         >
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
@@ -68,22 +68,25 @@ export default function Header() {
         </button>
         <button 
           className={location === '/css-sandbox' ? 'header-btn-here' : 'header-btn'} 
-          onClick={location !== '/css-sandbox' ? ()=>(history.push('/css-sandbox')) : ''}
+          onClick={location !== '/css-sandbox' ? ()=>history.push('/css-sandbox') : ''}
         >
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Sandbox
         </button>
-        {/* <button className="header-btn" onClick={()=>history.push('/contact')}>
+        <button 
+          className={location === '/contact' ? 'header-btn-here' : 'header-btn'} 
+          onClick={location !== '/contact' ? ()=>history.push('/contact') : ''}
+        >
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Contact
-        </button> */}
-        <button className="header-btn" onClick={()=>window.location.href="mailto:awren.nuit@gmail.com?subject=I%20Loved%20Your%20Portfolio"}>
+        </button>
+        {/* <button className="header-btn" onClick={()=>window.location.href="mailto:awren.nuit@gmail.com?subject=I%20Loved%20Your%20Portfolio"}>
           <span className="header-btn-corner-one"></span>
           <span className="header-btn-corner-two"></span>
           Email
-        </button>
+        </button> */}
       </div>
     </div>
   );
