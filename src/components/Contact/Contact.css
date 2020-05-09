@@ -1,0 +1,43 @@
+.contact-main-container {
+  min-height: calc(100vh - 160px);
+}
+
+.contact-writeup {
+  margin: 40px auto;
+  position: relative;
+  width: 500px;
+}
+
+.contact-writeup p {
+  line-height: 1.4em;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-areas: 
+    'email phone' 
+    'github linkedin'
+  ;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.contact-info-block {
+  margin: 20px 0;
+}
+
+.contact-email {
+  grid-area: email;
+}
+
+.contact-phone {
+  grid-area: phone;
+}
+
+.contact-github {
+  grid-area: github;
+}
+
+.contact-linkedin {
+  grid-area: linkedin;
+}
