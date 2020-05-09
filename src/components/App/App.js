@@ -15,6 +15,7 @@ export default function App() {
       <Route exact path='/' component={Landing} />
       <Route exact path='/about' component={Home} />
       <Route exact path='/abstract-art' component={Abstract} />
+      <Route exact path='/contact' component={Contact} />
       <Route exact path='/css-sandbox' component={CssSandbox} />
       <Route exact path='/password-generator' component={PasswordGenerator} />
       <Route exact path='/projects' component={Projects} />
