@@ -3,6 +3,7 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Home from '../Home/Home';
 import Abstract from '../Abstract/Abstract';
+import Contact from '../Contact/Contact';
 import CssSandbox from '../CssSandbox/CssSandbox';
 import Landing from '../Landing/Landing';
 import PasswordGenerator from '../PasswordGenerator/PasswordGenerator';
