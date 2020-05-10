@@ -42,7 +42,7 @@ export default function Contact() {
           <div className="contact-info-block contact-github">
             <p>
               GitHub:&nbsp;
-              <a href="https://github.com/AwrenNuit"
+              <a href="https://github.com/AwrenNuit" target="_blank" rel="noopener noreferrer"
               >
                 AwrenNuit
               </a>
@@ -51,7 +51,7 @@ export default function Contact() {
           <div className="contact-info-block contact-linkedin">
             <p>
               LinkedIn:&nbsp;
-              <a href="https://www.linkedin.com/in/awren-nuit/"
+              <a href="https://www.linkedin.com/in/awren-nuit/" target="_blank" rel="noopener noreferrer"
               >
                 Awren Nuit
               </a>
