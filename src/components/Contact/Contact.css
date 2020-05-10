@@ -3,26 +3,90 @@
 }
 
 .contact-writeup {
-  margin: 40px auto;
+  background-color: #323144;
+  margin: 80px auto;
   position: relative;
   width: 500px;
+}
+
+.contact-writeup::before, .contact-writeup::after, .contact-grid::after, .contact-sidebars::before, .contact-sidebars::after, .contact-divider::before {
+  content: '';
+  position: absolute;
+}
+
+.contact-writeup::before, .contact-writeup::after {
+  border-top: 7px solid #fff;
+  height: 150px;
+  top: -40px;
+  width: 200px;
+}
+
+.contact-writeup::before {
+  border-left: 7px solid #fff;
+  left: -50px;
+}
+
+.contact-writeup::after {
+  border-right: 7px solid #fff;
+  right: -50px;
 }
 
 .contact-writeup p {
   line-height: 1.4em;
 }
 
+.contact-sidebars::before {
+  background-color: #fff;
+  height: 150px;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 90vw;
+  z-index: -1;
+}
+
+.contact-sidebars::after {
+  background-color: #323144;
+  height: 150px;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 586px;
+}
+
+.contact-divider::before {
+  background-color: #fff;
+  bottom: -70px;
+  height: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  z-index: 1;
+}
+
 .contact-grid {
+  background-color: #323144;
   display: grid;
   grid-template-areas: 
     'email phone' 
     'github linkedin'
   ;
   margin: 0 auto;
+  position: relative;
   width: 500px;
 }
 
+.contact-grid::after {
+  border-bottom: 7px solid #fff;
+  bottom: -10px;
+  height: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+}
+
 .contact-info-block {
+  font-size: 1.1em;
   margin: 20px 0;
 }
 
@@ -40,4 +104,30 @@
 
 .contact-linkedin {
   grid-area: linkedin;
+}
+
+.contact-thanks {
+  margin: 70px auto 0 auto;
+  position: relative;
+  text-align: center;
+  width: 500px;
+}
+
+.contact-thanks::before, .contact-thanks::after {
+  border-bottom: 7px solid #fff;
+  bottom: -50px;
+  content: '';
+  height: 130px;
+  position: absolute;
+  width: 200px;
+}
+
+.contact-thanks::before {
+  border-left: 7px solid #fff;
+  left: -50px;
+}
+
+.contact-thanks::after {
+  border-right: 7px solid #fff;
+  right: -50px;
 }

@@ -15,15 +15,11 @@ export default function Contact() {
             LinkedIn, but any option is fine. I am in the US Central (CDT/CST) timezone, 
             which ranges from -5 to -6 hours from UTC based on the time of year. I would 
             love to connect if you are seeking a software engineer. I adore front-end work, 
-            and also geek out over back-end work. Thanks for stopping by, and I hope to 
-            hear from you!
+            and also geek out over back-end work.
           </p>
+          <span className="contact-sidebars"></span>
+          <span className="contact-divider"></span>
         </div>
-        {/* <div>
-          <p>
-            Location: Minneapolis, MN & Remote - open to exploring relocation for the right opportunity
-          </p>
-        </div> */}
         <div className="contact-grid">
           <div className="contact-info-block contact-email">
             <p>
@@ -61,6 +57,9 @@ export default function Contact() {
               </a>
             </p>
           </div>
+        </div>
+        <div className="contact-thanks">
+          <p>Thanks for stopping by, and I hope to hear from you!</p>
         </div>
       </div>
       <Footer />
