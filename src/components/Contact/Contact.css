@@ -90,6 +90,15 @@
   margin: 20px 0;
 }
 
+.contact-info-block a {
+  color: #55cdfc;
+  transition: 0.3s;
+}
+
+.contact-info-block a:hover {
+  color: #f7a8b8;
+}
+
 .contact-email {
   grid-area: email;
 }
