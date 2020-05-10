@@ -154,3 +154,97 @@
   border-right: 7px solid #fff;
   right: -50px;
 }
+
+@media(max-width: 800px) {
+  .contact-writeup {
+    text-align: justify;
+    width: 250px;
+  }
+
+  .contact-writeup::before {
+    border-left: 7px solid #fff;
+    height: 250px;
+    left: -50px;
+    width: 100px;
+  }
+  
+  .contact-writeup::after {
+    border-right: 7px solid #fff;
+    height: 250px;
+    right: -50px;
+    width: 100px;
+  }
+
+  .contact-sidebars::before {
+    height: 250px;
+  }
+  
+  .contact-sidebars::after {
+    border: 35px solid #323144;
+    top: 118%;
+    width: 70vw;
+  }
+
+  .contact-divider::after {
+    height: 350px;
+    top: 100%;
+    width: 335px;
+  }
+
+  .contact-divider::before {
+    width: 180px;
+  }
+
+  .contact-grid {
+    grid-template-areas: 
+      'email' 
+      'phone' 
+      'github' 
+      'linkedin'
+    ;
+    width: 250px;
+  }
+
+  .contact-grid::after {
+    width: 260px;
+  }
+
+  .contact-info-block {
+    font-size: 1em;
+  }
+
+  .contact-email a {
+    padding-left: 20px;
+  }
+  
+  .contact-phone a {
+    padding-left: 15px;
+  }
+  
+  .contact-github a {
+    padding-left: 10px;
+  }
+
+  .contact-thanks {
+    text-align: left;
+    width: 250px;
+  }
+
+  .contact-thanks::before {
+    border-left: 7px solid #fff;
+    height: 80px;
+    left: -50px;
+    width: 100px;
+  }
+  
+  .contact-thanks::after {
+    border-right: 7px solid #fff;
+    height: 80px;
+    right: -50px;
+    width: 100px;
+  }
+
+  .contact-thanks p {
+    line-height: 1.4em;
+  }
+}
