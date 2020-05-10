@@ -83,6 +83,19 @@
   width: 80%;
 }
 
+@media(min-width: 1550px) {
+  .project-card {
+    height: 375px;
+    margin: 30px;
+    width: 500px;
+  }
+
+  .project-card img {
+    height: 375px;
+    width: 500px;
+  }
+}
+
 @media(max-width: 1360px) {
   .project-card {
     height: 375px;
