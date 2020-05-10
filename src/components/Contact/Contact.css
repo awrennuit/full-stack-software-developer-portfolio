@@ -2,6 +2,10 @@
   min-height: calc(100vh - 160px);
 }
 
+.contact-main-container p {
+  animation: fade-in 2s ease-in;
+}
+
 .contact-writeup {
   background-color: #323144;
   margin: 80px auto;
@@ -117,6 +121,7 @@
 
 .contact-thanks {
   margin: 70px auto 0 auto;
+  padding-bottom: 90px;
   position: relative;
   text-align: center;
   width: 500px;
@@ -124,7 +129,7 @@
 
 .contact-thanks::before, .contact-thanks::after {
   border-bottom: 7px solid #fff;
-  bottom: -50px;
+  bottom: 40px;
   content: '';
   height: 130px;
   position: absolute;
