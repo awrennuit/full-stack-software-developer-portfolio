@@ -308,3 +308,40 @@
     display: none;
   }
 }
+
+@media(max-width: 425px) {
+  .about-main-container {
+    padding: 0;
+    width: 280px;
+  }
+
+  .about-heading::before, .about-heading::after {
+    bottom: 15px;
+    height: 360px;
+    width: 100px;
+    z-index: 1;
+  }
+  
+  .about-heading::before {
+    left: 170px;
+  }
+
+  .about-heading::after {
+    left: 5px;
+  }
+
+  .about-content-container::before, .about-content-container::after {
+    height: 360px;
+    top: -50px;
+    width: 100px;
+    z-index: 1;
+  }
+  
+  .about-content-container::before {
+    left: -20px;
+  }
+  
+  .about-content-container::after {
+    left: 150px;
+  }
+}
