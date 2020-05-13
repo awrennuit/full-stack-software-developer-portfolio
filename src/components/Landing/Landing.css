@@ -230,7 +230,7 @@
   }
 
   .landing-btn-container {
-    width: 125px;
+    width: 100px;
   }
 
   .landing-button:hover ~ .landing-box-lg::before {
@@ -240,7 +240,7 @@
   
   .landing-button:hover ~ .landing-box-lg::after {
     height: 220px;
-    width: 278px;
+    width: 253px;
   }
   
   .landing-button:hover ~ .landing-box-sm::before {
