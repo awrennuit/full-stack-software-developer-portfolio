@@ -214,3 +214,51 @@
     left: 220px;
   }
 }
+
+@media(max-width: 425px) {
+  .skill-main-container {
+    padding: 0;
+    width: 280px;
+  }
+
+  .skill-heading::before, .skill-heading::after {
+    bottom: -10px;
+    height: 160px;
+    width: 100px;
+    z-index: 1;
+  }
+  
+  .skill-heading::before {
+    left: 170px;
+  }
+
+  .skill-heading::after {
+    left: 5px;
+  }
+
+  .skill-flex::before, .skill-flex::after {
+    height: 160px;
+    top: -25px;
+    width: 100px;
+    z-index: 1;
+  }
+  
+  .skill-flex::before {
+    left: 5px;
+  }
+  
+  .skill-flex::after {
+    left: 170px;
+  }
+
+  .skill-group {
+    justify-content: center;
+    padding: 0;
+    width: 210px;
+  }
+
+  .skill-container {
+    padding: 5px 0;
+    width: 100px;
+  }
+}
