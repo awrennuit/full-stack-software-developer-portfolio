@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./PasswordGenerator.css";
 import Header from "../Header/Header";
+import PasswordSection from "../PasswordSection/PasswordSection";
 
 export default function PasswordGenerator() {
   // Store local state and variables
@@ -57,7 +58,6 @@ export default function PasswordGenerator() {
       } else if (!charset.includes(`-_`)) {
         setCharset(charset + char.value);
       } else if (!charset.includes("#;:`~!@#$%^&*()+={}[]/\\?")) {
-        // Fix bug: adds \\ even though it only logs \
         setCharset(charset + char.value);
       }
     } else if (!char.checked) {
@@ -77,94 +77,31 @@ export default function PasswordGenerator() {
       <div className="password-background">
         <div className="password-full-container">
           <h1 className="password-heading">Password Generator</h1>
-          <div className="password-checkbox-container">
-            <input
-              type="checkbox"
-              value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`}
-              onChange={handleCheck}
-            />
-            <span className="password-span">Add uppercase?</span>
-          </div>
-          <div className="password-text-container">
-            <textarea
-              className="password-textarea"
-              value={`ABCDEFGHIJKLMNOPQRSTUVWXYZ`}
-              readOnly
-            ></textarea>
-          </div>
-          <hr className="password-hr" />
-
-          <div className="password-checkbox-container">
-            <input
-              type="checkbox"
-              value={`abcdefghijklmnopqrstuvwxyz`}
-              onChange={handleCheck}
-              defaultChecked
-            />
-            <span className="password-span">Add lowercase?</span>
-          </div>
-          <div className="password-text-container">
-            <textarea
-              className="password-textarea"
-              value={`abcdefghijklmnopqrstuvwxyz`}
-              readOnly
-            ></textarea>
-          </div>
-          <hr className="password-hr" />
-
-          <div className="password-checkbox-container">
-            <input
-              type="checkbox"
-              id="numbers"
-              value={`1234567890`}
-              onChange={handleCheck}
-            />
-            <span className="password-span">Add numbers?</span>
-          </div>
-          <div className="password-text-container">
-            <textarea
-              className="password-textarea"
-              value={`1234567890`}
-              readOnly
-            ></textarea>
-          </div>
-          <hr className="password-hr" />
-
-          <div className="password-checkbox-container">
-            <input
-              type="checkbox"
-              id="dash"
-              value={`-_`}
-              onChange={handleCheck}
-            />
-            <span className="password-span">Add dash & underscore?</span>
-          </div>
-          <div className="password-text-container">
-            <textarea
-              className="password-textarea"
-              value={`-_`}
-              readOnly
-            ></textarea>
-          </div>
-          <hr className="password-hr" />
-
-          <div className="password-checkbox-container">
-            <input
-              type="checkbox"
-              id="symbols"
-              value={"#;:`~!@#$%^&*()+={}[]/\\?"}
-              onChange={handleCheck}
-            />
-            <span className="password-span">Add other symbols?</span>
-          </div>
-          <div className="password-text-container">
-            <textarea
-              className="password-textarea"
-              value={"#;:`~!@#$%^&*()+={}[]/\\?"}
-              readOnly
-            ></textarea>
-          </div>
-          <hr className="password-hr" />
+          <PasswordSection
+            symbolType="uppercase"
+            handleCheck={handleCheck}
+            value="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+          />
+          <PasswordSection
+            symbolType="lowercase"
+            handleCheck={handleCheck}
+            value="abcdefghijklmnopqrstuvwxyz"
+          />
+          <PasswordSection
+            symbolType="numbers"
+            handleCheck={handleCheck}
+            value="1234567890"
+          />
+          <PasswordSection
+            symbolType="dash & underscore"
+            handleCheck={handleCheck}
+            value="-_"
+          />
+          <PasswordSection
+            symbolType="other symbols"
+            handleCheck={handleCheck}
+            value="#;:`~!@#$%^&*()+={}[]/\\?"
+          />
 
           <input
             className="password-length-input"
