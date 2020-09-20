@@ -28,21 +28,25 @@ export default function PasswordGenerator() {
   const generatePassword = () => {
     let randomCharset = charset.split(``);
 
-    for (let i = 0; tempPassword.length < length; i++) {
-      if (i === randomCharset.length) {
-        i = 0;
-      } else {
-        randomCharset.sort(() => Math.random() - 0.5);
-        if (!randomCharset[i].match(notChar)) {
-          if (checkDupe(randomCharset[i])) {
+    if (!charset) {
+      setUniquePassword("Check at least one option!");
+    } else {
+      for (let i = 0; tempPassword.length < length; i++) {
+        if (i === randomCharset.length) {
+          i = 0;
+        } else {
+          randomCharset.sort(() => Math.random() - 0.5);
+          if (!randomCharset[i].match(notChar)) {
+            if (checkDupe(randomCharset[i])) {
+              tempPassword += randomCharset[i];
+            }
+          } else {
             tempPassword += randomCharset[i];
           }
-        } else {
-          tempPassword += randomCharset[i];
         }
       }
+      setUniquePassword(tempPassword);
     }
-    setUniquePassword(tempPassword);
   };
 
   // Add characters to selected set when checked, remove them when unchecked
