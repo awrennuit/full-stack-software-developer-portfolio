@@ -1,21 +1,21 @@
-import React from 'react';
-import './Contact.css';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import React from "react";
+import "./Contact.css";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 export default function Contact() {
-
-  return(
+  return (
     <>
       <Header />
       <div className="contact-main-container">
         <div className="contact-writeup">
           <p>
-            Hello! These are different mediums to reach me. My preference is via email or 
-            LinkedIn, but any option is fine. I am in the US Central (CDT/CST) timezone, 
-            which ranges from -5 to -6 hours from UTC based on the time of year. I would 
-            love to connect if you are seeking a software engineer. I adore front-end work, 
-            and also geek out over back-end work.
+            Hello! These are different mediums to reach me. My preference is via
+            email or LinkedIn, but any option is fine. I am in the US Central
+            (CDT/CST) timezone, which ranges from -5 to -6 hours from UTC based
+            on the time of year. I would love to connect if you are seeking a
+            software engineer. I adore front-end work, and also geek out over
+            back-end work.
           </p>
           <span className="contact-sidebars"></span>
           <span className="contact-divider"></span>
@@ -24,8 +24,7 @@ export default function Contact() {
           <div className="contact-info-block contact-email">
             <p>
               Email:&nbsp;
-              <a href="mailto:awren.nuit@gmail.com?subject=I%20Loved%20Your%20Portfolio"
-              >
+              <a href="mailto:awren.nuit@gmail.com?subject=I%20Loved%20Your%20Portfolio">
                 awren.nuit@gmail.com
               </a>
             </p>
@@ -33,16 +32,16 @@ export default function Contact() {
           <div className="contact-info-block contact-phone">
             <p>
               Phone:&nbsp;
-              <a href="tel:+01-651-276-3461"
-              >
-                651-276-3461
-              </a>
+              <a href="tel:+01-651-276-3461">651-276-3461</a>
             </p>
           </div>
           <div className="contact-info-block contact-github">
             <p>
               GitHub:&nbsp;
-              <a href="https://github.com/AwrenNuit" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://github.com/AwrenNuit"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 AwrenNuit
               </a>
@@ -51,7 +50,10 @@ export default function Contact() {
           <div className="contact-info-block contact-linkedin">
             <p>
               LinkedIn:&nbsp;
-              <a href="https://www.linkedin.com/in/awren-nuit/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://www.linkedin.com/in/awren-nuit/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Awren Nuit
               </a>

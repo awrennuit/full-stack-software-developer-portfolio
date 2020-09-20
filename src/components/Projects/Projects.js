@@ -14,7 +14,12 @@ export default function Projects() {
       <div className="project-container">
         <div className="project-card-center">
           <div className="project-card">
-            <img src="images/screenshots/homebody.png" alt="homebody app's homepage" height="300" width="400" />
+            <img
+              src="images/screenshots/homebody.png"
+              alt="homebody app's homepage"
+              height="300"
+              width="400"
+            />
             <div className="project-overlay">
               <h2>Homebody</h2>
               <p>

@@ -2,7 +2,6 @@ import React from 'react';
 import './Skills.css';
 
 export default function Skills() {
-
   return(
     <div className="skill-main-container">
       <h2 className="skill-heading"><span>These are what I work with the most...</span></h2>

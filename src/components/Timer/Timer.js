@@ -1,46 +1,44 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import Button from '@material-ui/core/Button';
-import './Timer.css';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import Button from "@material-ui/core/Button";
+import "./Timer.css";
 
-class Timer extends Component{
-
+class Timer extends Component {
   state = {
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
     alarm: false,
-    alarmDone: false
-  }
+    alarmDone: false,
+  };
 
-  UNSAFE_componentWillMount(){
+  UNSAFE_componentWillMount() {
     this.setState(this.props.reduxState);
-  }
+  };
 
-  componentDidMount(){
-    if(this.props.reduxState.days === undefined){
+  componentDidMount() {
+    if (this.props.reduxState.days === undefined) {
     }
     this.interval = setInterval(() => this.countdown(), 1000);
-  }
+  };
 
-  componentDidUpdate(){
-    if(this.state.alarm){
-      const audio = new Audio('/sounds/alarm.mp3');
+  componentDidUpdate() {
+    if (this.state.alarm) {
+      const audio = new Audio("/sounds/alarm.mp3");
       audio.play();
       this.setState({
         alarm: false,
-        alarmDone: true
+        alarmDone: true,
       });
     }
-  }
+  };
 
-  componentWillUnmount(){
+  componentWillUnmount() {
     clearInterval(this.interval);
-  }
+  };
 
   countdown = () => {
-
     const calcTimeLeft = () => {
       let remaining = {};
 
@@ -52,32 +50,29 @@ class Timer extends Component{
       seconds--;
 
       // Handle seconds change
-      if(seconds <= 0 && minutes <= 0 && hours <= 0 && days <= 0){
+      if (seconds <= 0 && minutes <= 0 && hours <= 0 && days <= 0) {
         seconds = 0;
         clearInterval(this.interval);
-        if(!this.state.alarmDone){
-          this.setState({alarm: true});
+        if (!this.state.alarmDone) {
+          this.setState({ alarm: true });
         }
-      }
-      else if(seconds < 0){
+      } else if (seconds < 0) {
         seconds = 59;
         minutes--;
       }
 
       // Handle minutes change
-      if(minutes <= 0 && hours <= 0 && days <= 0){
+      if (minutes <= 0 && hours <= 0 && days <= 0) {
         minutes = 0;
-      }
-      else if(seconds === 59 && minutes < 0){
+      } else if (seconds === 59 && minutes < 0) {
         minutes = 59;
         hours--;
       }
 
       // Handle hours change
-      if(hours <= 0 && days <= 0){
+      if (hours <= 0 && days <= 0) {
         hours = 0;
-      }
-      else if(seconds === 59 && minutes === 59 && hours < 0){
+      } else if (seconds === 59 && minutes === 59 && hours < 0) {
         hours = 23;
         days--;
       }
@@ -86,12 +81,12 @@ class Timer extends Component{
         days: days,
         hours: hours,
         minutes: minutes,
-        seconds: seconds
-      }
+        seconds: seconds,
+      };
 
       this.setState(remaining);
 
-        // ------------------TO USE DATE AS COUNTDOWN-----------------
+      // ------------------TO USE DATE AS COUNTDOWN-----------------
       // let stop = new Date('2020-01-01');
       // stop.setDate(stop.getDate()+this.state.days);
       // stop.setHours(stop.getHours()+this.state.hours);
@@ -109,23 +104,33 @@ class Timer extends Component{
       //   };
       // this.setState(remaining);
       // }
-    }
+    };
     setInterval(calcTimeLeft(), 1000);
-  }
+  };
 
-  render(){
-    return(
+  render() {
+    return (
       <div className="timer-countdown-container">
         <div className="timer-countdown">
-          {this.state.days < 10 ? "0"+this.state.days : this.state.days}d:
-          {this.state.hours < 10 ? "0"+this.state.hours : this.state.hours}h:
-          {this.state.minutes < 10 ? "0"+this.state.minutes : this.state.minutes}m:
-          {this.state.seconds < 10 ? "0"+this.state.seconds : this.state.seconds}s
+          {this.state.days < 10 ? "0" + this.state.days : this.state.days}d:
+          {this.state.hours < 10 ? "0" + this.state.hours : this.state.hours}h:
+          {this.state.minutes < 10
+            ? "0" + this.state.minutes
+            : this.state.minutes}
+          m:
+          {this.state.seconds < 10
+            ? "0" + this.state.seconds
+            : this.state.seconds}
+          s
         </div>
-        <Button 
+        <Button
           variant="outlined"
-          onClick={()=>this.props.timer(false)}
-          style={{marginTop:"25px",paddingTop:"5px",paddingBottom:"10px"}}
+          onClick={() => this.props.timer(false)}
+          style={{
+            marginTop: "25px",
+            paddingTop: "5px",
+            paddingBottom: "10px",
+          }}
         >
           Set Timer
         </Button>
@@ -134,6 +139,6 @@ class Timer extends Component{
   }
 }
 
-const reduxState = state => ({reduxState: state.timer});
+const reduxState = (state) => ({ reduxState: state.timer });
 
 export default connect(reduxState)(Timer);
