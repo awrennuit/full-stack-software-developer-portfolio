@@ -63,13 +63,13 @@
   right: 40px;
 }
 
-.project-btn-code:hover, .project-btn-app:hover, .project-btn-code-tracker:hover {
+.project-btn-code:hover, .project-btn-app:hover, .project-btn-code-single:hover {
   background: #1a1a24;
   border-color: #f7a8b8;
   color: #55cdfc;
 }
 
-.project-btn-code-tracker {
+.project-btn-code-single {
   background-color: #323144;
   border: 1px solid #fff;
   bottom: 30px;
@@ -140,7 +140,7 @@
     right: 20px;
   }
 
-  .project-btn-code-tracker {
+  .project-btn-code-single {
     left: 30px;
   }
 }
@@ -165,7 +165,7 @@
     right: 40px;
   }
 
-  .project-btn-code-tracker {
+  .project-btn-code-single {
     left: 50px;
   }
 }
@@ -190,7 +190,7 @@
     right: 40px;
   }
 
-  .project-btn-code-tracker {
+  .project-btn-code-single {
     left: 37px;
   }
 }
@@ -221,7 +221,7 @@
     right: 10px;
   }
 
-  .project-btn-code-tracker {
+  .project-btn-code-single {
     bottom: 10px;
     left: 30px;
   }
