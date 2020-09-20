@@ -56,7 +56,7 @@ export default function CssSandbox() {
   // sets rotation
   const [rotationClicked, setRotationClicked] = useState('sandbox-item-heading');
   const [rotationShow, setRotationShow] = useState('sandbox-hide');
-  const[rotation, setRotation] = useState(0);
+  const [rotation, setRotation] = useState(0);
 
   // toggles modal
   const [showModal, setShowModal] = useState(false);
@@ -99,7 +99,7 @@ export default function CssSandbox() {
     setBoxGreen(125);
     setBoxBlue(125);
     setRotation(0);
-  }
+  };
 
   const selectText = text => {
     if(document.selection){ // for IE
@@ -113,7 +113,7 @@ export default function CssSandbox() {
       window.getSelection().removeAllRanges();
       window.getSelection().addRange(range);
     }
-  }
+  };
 
   return(
     <>
@@ -152,17 +152,17 @@ export default function CssSandbox() {
             <div 
               className={dimensionsClicked}
               onClick={()=>{
-                        dimensionsClicked === 'sandbox-item-heading' ? 
-                          setDimensionsClicked('sandbox-dimensions-heading-clicked') 
-                        : 
-                          setDimensionsClicked('sandbox-item-heading');
+                dimensionsClicked === 'sandbox-item-heading' ? 
+                  setDimensionsClicked('sandbox-dimensions-heading-clicked') 
+                : 
+                  setDimensionsClicked('sandbox-item-heading');
 
-                        dimensionsShow === 'sandbox-hide' ? 
-                          setDimensionsShow('sandbox-dimensions-show') 
-                        : 
-                          setDimensionsShow('sandbox-hide');
-                        }
-                      }
+                dimensionsShow === 'sandbox-hide' ? 
+                  setDimensionsShow('sandbox-dimensions-show') 
+                : 
+                  setDimensionsShow('sandbox-hide');
+                }
+              }
             >
               <span className="sandbox-btn-arrow"></span>
               <span className="sandbox-btn-text">Dimensions</span>
@@ -201,17 +201,17 @@ export default function CssSandbox() {
             <div 
               className={bgClicked}
               onClick={()=>{
-                        bgClicked === 'sandbox-item-heading' ? 
-                          setBgClicked('sandbox-bg-heading-clicked') 
-                        : 
-                          setBgClicked('sandbox-item-heading');
+                bgClicked === 'sandbox-item-heading' ? 
+                  setBgClicked('sandbox-bg-heading-clicked') 
+                : 
+                  setBgClicked('sandbox-item-heading');
 
-                        bgShow === 'sandbox-hide' ? 
-                          setBgShow('sandbox-bg-show') 
-                        : 
-                          setBgShow('sandbox-hide');
-                        }
-                      }
+                bgShow === 'sandbox-hide' ? 
+                  setBgShow('sandbox-bg-show') 
+                : 
+                  setBgShow('sandbox-hide');
+                }
+              }
             >
               <span className="sandbox-btn-arrow"></span>
               <span className="sandbox-btn-text">Background</span>
@@ -263,17 +263,17 @@ export default function CssSandbox() {
             <div 
               className={blurClicked}
               onClick={()=>{
-                        blurClicked === 'sandbox-item-heading' ? 
-                          setBlurClicked('sandbox-blur-heading-clicked') 
-                        : 
-                          setBlurClicked('sandbox-item-heading');
+                blurClicked === 'sandbox-item-heading' ? 
+                  setBlurClicked('sandbox-blur-heading-clicked') 
+                : 
+                  setBlurClicked('sandbox-item-heading');
 
-                        blurShow === 'sandbox-hide' ? 
-                          setBlurShow('sandbox-blur-show') 
-                        : 
-                          setBlurShow('sandbox-hide');
-                        }
-                      }
+                blurShow === 'sandbox-hide' ? 
+                  setBlurShow('sandbox-blur-show') 
+                : 
+                  setBlurShow('sandbox-hide');
+                }
+              }
             >
               <span className="sandbox-btn-arrow"></span>
               <span className="sandbox-btn-text">Blur</span>
@@ -299,17 +299,17 @@ export default function CssSandbox() {
           <div 
               className={borderClicked}
               onClick={()=>{
-                        borderClicked === 'sandbox-item-heading' ? 
-                          setBorderClicked('sandbox-border-heading-clicked') 
-                        : 
-                          setBorderClicked('sandbox-item-heading');
+                borderClicked === 'sandbox-item-heading' ? 
+                  setBorderClicked('sandbox-border-heading-clicked') 
+                : 
+                  setBorderClicked('sandbox-item-heading');
 
-                        borderShow === 'sandbox-hide' ? 
-                          setBorderShow('sandbox-border-show') 
-                        : 
-                          setBorderShow('sandbox-hide');
-                        }
-                      }
+                borderShow === 'sandbox-hide' ? 
+                  setBorderShow('sandbox-border-show') 
+                : 
+                  setBorderShow('sandbox-hide');
+                }
+              }
             >
               <span className="sandbox-btn-arrow"></span>
               <span className="sandbox-btn-text">Border</span>
@@ -471,17 +471,17 @@ export default function CssSandbox() {
             <div 
               className={borderRadiusClicked}
               onClick={()=>{
-                        borderRadiusClicked === 'sandbox-item-heading' ? 
-                          setBorderRadiusClicked('sandbox-border-radius-heading-clicked') 
-                        : 
-                          setBorderRadiusClicked('sandbox-item-heading');
+                borderRadiusClicked === 'sandbox-item-heading' ? 
+                  setBorderRadiusClicked('sandbox-border-radius-heading-clicked') 
+                : 
+                  setBorderRadiusClicked('sandbox-item-heading');
 
-                        borderRadiusShow === 'sandbox-hide' ? 
-                          setBorderRadiusShow('sandbox-border-radius-show') 
-                        : 
-                          setBorderRadiusShow('sandbox-hide');
-                        }
-                      }
+                borderRadiusShow === 'sandbox-hide' ? 
+                  setBorderRadiusShow('sandbox-border-radius-show') 
+                : 
+                  setBorderRadiusShow('sandbox-hide');
+                }
+              }
             >
               <span className="sandbox-btn-arrow"></span>
               <span className="sandbox-btn-text">Border Radius</span>
@@ -529,17 +529,17 @@ export default function CssSandbox() {
             <div 
               className={boxShadowClicked}
               onClick={()=>{
-                        boxShadowClicked === 'sandbox-item-heading' ? 
-                          setBoxShadowClicked('sandbox-box-shadow-heading-clicked') 
-                        : 
-                          setBoxShadowClicked('sandbox-item-heading');
+                boxShadowClicked === 'sandbox-item-heading' ? 
+                  setBoxShadowClicked('sandbox-box-shadow-heading-clicked') 
+                : 
+                  setBoxShadowClicked('sandbox-item-heading');
 
-                        boxShadowShow === 'sandbox-hide' ? 
-                          setBoxShadowShow('sandbox-box-shadow-show') 
-                        : 
-                          setBoxShadowShow('sandbox-hide');
-                        }
-                      }
+                boxShadowShow === 'sandbox-hide' ? 
+                  setBoxShadowShow('sandbox-box-shadow-show') 
+                : 
+                  setBoxShadowShow('sandbox-hide');
+                }
+              }
             >
               <span className="sandbox-btn-arrow"></span>
               <span className="sandbox-btn-text">Box Shadow</span>
@@ -654,17 +654,17 @@ export default function CssSandbox() {
             <div 
               className={rotationClicked}
               onClick={()=>{
-                        rotationClicked === 'sandbox-item-heading' ? 
-                          setRotationClicked('sandbox-rotation-heading-clicked') 
-                        : 
-                          setRotationClicked('sandbox-item-heading');
+                rotationClicked === 'sandbox-item-heading' ? 
+                  setRotationClicked('sandbox-rotation-heading-clicked') 
+                : 
+                  setRotationClicked('sandbox-item-heading');
 
-                        rotationShow === 'sandbox-hide' ? 
-                          setRotationShow('sandbox-rotation-show') 
-                        : 
-                          setRotationShow('sandbox-hide');
-                        }
-                      }
+                rotationShow === 'sandbox-hide' ? 
+                  setRotationShow('sandbox-rotation-show') 
+                : 
+                  setRotationShow('sandbox-hide');
+                }
+              }
             >
               <span className="sandbox-btn-arrow"></span>
               <span className="sandbox-btn-text">Rotation</span>
@@ -727,7 +727,7 @@ export default function CssSandbox() {
                 +borderRadius !== 0 ? 
                   <>
                     <br />
-                    &nbsp;&nbsp;borderRadius: {borderRadius}{borderRadiusType};
+                    &nbsp;&nbsp;border-radius: {borderRadius}{borderRadiusType};
                   </> 
                 : 
                   ''
@@ -736,7 +736,7 @@ export default function CssSandbox() {
                 +boxOffsetX !== 0 || +boxOffsetY !== 0 || +boxBlur !== 0 || +boxSpread !== 0 ? 
                   <>
                     <br />
-                    &nbsp;&nbsp;boxShadow: {boxInset} {boxOffsetX}px {boxOffsetY}px {boxBlur}px {boxSpread}px {boxColor};
+                    &nbsp;&nbsp;box-shadow: {boxInset} {boxOffsetX}px {boxOffsetY}px {boxBlur}px {boxSpread}px {boxColor};
                   </> 
                 : 
                   ''
