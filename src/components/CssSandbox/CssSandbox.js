@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './CssSandbox.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import PropertyTab from './PropertyTab/PropertyTab';
 
 export default function CssSandbox() {
 
@@ -148,54 +149,25 @@ export default function CssSandbox() {
             Reset
           </button>
 
-          <div className="sandbox-item-container">
-            <div 
-              className={dimensionsClicked}
-              onClick={()=>{
-                dimensionsClicked === 'sandbox-item-heading' ? 
-                  setDimensionsClicked('sandbox-dimensions-heading-clicked') 
-                : 
-                  setDimensionsClicked('sandbox-item-heading');
-
-                dimensionsShow === 'sandbox-hide' ? 
-                  setDimensionsShow('sandbox-dimensions-show') 
-                : 
-                  setDimensionsShow('sandbox-hide');
-                }
-              }
-            >
-              <span className="sandbox-btn-arrow"></span>
-              <span className="sandbox-btn-text">Dimensions</span>
-            </div>
-            <div className={dimensionsShow}>
-              <div className="sandbox-item-flex">
-                  <label>Height</label>
-                <div className="sandbox-input">
-                  <input 
-                    type="range" 
-                    value={height} 
-                    min={50} 
-                    max={400} 
-                    step={1} 
-                    onChange={e=>setHeight(e.target.value)} 
-                  />
-                </div>
-              </div>
-              <div className="sandbox-item-flex">
-                <label>Width</label>
-                <div className="sandbox-input">
-                  <input 
-                  type="range" 
-                  value={width} 
-                  min={50} 
-                  max={400} 
-                  step={1} 
-                  onChange={e=>setWidth(e.target.value)} 
-                />
-                </div>
-              </div>
-            </div>
-          </div>
+          <PropertyTab
+            classClicked={dimensionsClicked}
+            classShow={dimensionsShow}
+            heading="Dimensions"
+            setClassClicked={setDimensionsClicked}
+            setClassShow={setDimensionsShow}
+            sliderOneLabel="Height"
+            sliderOneMaxValue={400}
+            sliderOneMinValue={50}
+            sliderOneSetVariable={setHeight}
+            sliderOneStepValue={1}
+            sliderOneVariable={height}
+            sliderTwoLabel="Width"
+            sliderTwoMaxValue={400}
+            sliderTwoMinValue={50}
+            sliderTwoSetVariable={setWidth}
+            sliderTwoStepValue={1}
+            sliderTwoVariable={width}
+          />
 
           <div className="sandbox-item-container">
             <div 
