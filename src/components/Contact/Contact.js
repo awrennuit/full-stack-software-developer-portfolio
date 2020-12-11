@@ -2,6 +2,8 @@ import React from "react";
 import "./Contact.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { contactData } from "../../utils/contactData";
+import ContactInfo from "./ContactInfo";
 
 export default function Contact() {
   return (
@@ -21,44 +23,17 @@ export default function Contact() {
           <span className="contact-divider"></span>
         </div>
         <div className="contact-grid">
-          <div className="contact-info-block contact-email">
-            <p>
-              Email:&nbsp;
-              <a href="mailto:awren.nuit@gmail.com?subject=I%20Loved%20Your%20Portfolio">
-                awren.nuit@gmail.com
-              </a>
-            </p>
-          </div>
-          <div className="contact-info-block contact-phone">
-            <p>
-              Phone:&nbsp;
-              <a href="tel:+01-651-276-3461">651-276-3461</a>
-            </p>
-          </div>
-          <div className="contact-info-block contact-github">
-            <p>
-              GitHub:&nbsp;
-              <a
-                href="https://github.com/AwrenNuit"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                AwrenNuit
-              </a>
-            </p>
-          </div>
-          <div className="contact-info-block contact-linkedin">
-            <p>
-              LinkedIn:&nbsp;
-              <a
-                href="https://www.linkedin.com/in/awren-nuit/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Awren Nuit
-              </a>
-            </p>
-          </div>
+          {contactData.map((info, i) => (
+            <ContactInfo
+              class={info.class}
+              href={info.href}
+              key={i}
+              label={info.label}
+              method={info.method}
+              rel={info.rel}
+              target={info.target}
+            />
+          ))}
         </div>
         <div className="contact-thanks">
           <p>Thanks for stopping by, and I hope to hear from you!</p>
