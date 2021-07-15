@@ -11,7 +11,7 @@ export const allProjects = [
   {
     altText: "homebody app's homepage",
     codeUrl: "https://github.com/AwrenNuit/HTG-WorkoutApp-2020",
-    descriptionLineOne: "Women Who Code weekend virtual hackathon",
+    descriptionLineOne: "Hack The Gap weekend virtual hackathon",
     descriptionLineTwo: "project conceived and built by a team of five",
     externalAppUrl: "https://htg2020-homebody.web.app/",
     image: "images/screenshots/homebody.png",
