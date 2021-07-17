@@ -6,9 +6,11 @@ import Abstract from "../Abstract/Abstract";
 import Blog from "../Blog/Blog";
 import Contact from "../Contact/Contact";
 import CssSandbox from "../CssSandbox/CssSandbox";
+import CustomGradient from "../CustomGradient/CustomGradient";
 import Landing from "../Landing/Landing";
 import PasswordGenerator from "../PasswordGenerator/PasswordGenerator";
 import ProjectList from "../Projects/ProjectList";
+import Swatches from "../Swatches/Swatches";
 import TimerMain from "../TimerMain/TimerMain";
 
 export default function App() {
@@ -20,8 +22,10 @@ export default function App() {
       <Route exact path="/blog" component={Blog} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/css-sandbox" component={CssSandbox} />
+      {/* <Route exact path="/gradient-maker" component={CustomGradient} /> */}
       <Route exact path="/password-generator" component={PasswordGenerator} />
       <Route exact path="/projects" component={ProjectList} />
+      {/* <Route exact path="/swatches" component={Swatches} /> */}
       <Route exact path="/timer" component={TimerMain} />
     </Router>
   );
