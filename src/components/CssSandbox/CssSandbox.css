@@ -119,7 +119,7 @@
 
 .sandbox-dimensions-heading-clicked .sandbox-btn-arrow::before, .sandbox-bg-heading-clicked .sandbox-btn-arrow::before, .sandbox-blur-heading-clicked .sandbox-btn-arrow::before, .sandbox-border-heading-clicked .sandbox-btn-arrow::before, .sandbox-border-radius-heading-clicked .sandbox-btn-arrow::before, .sandbox-box-shadow-heading-clicked .sandbox-btn-arrow::before, .sandbox-rotation-heading-clicked .sandbox-btn-arrow::before {
   left: 20px;
-  transform: rotate(114deg);
+  transform: rotate(300deg);
 }
 
 .sandbox-dimensions-heading-clicked .sandbox-btn-arrow::after, .sandbox-bg-heading-clicked .sandbox-btn-arrow::after, .sandbox-blur-heading-clicked .sandbox-btn-arrow::after, .sandbox-border-heading-clicked .sandbox-btn-arrow::after, .sandbox-border-radius-heading-clicked .sandbox-btn-arrow::after, .sandbox-box-shadow-heading-clicked .sandbox-btn-arrow::after, .sandbox-rotation-heading-clicked .sandbox-btn-arrow::after {
