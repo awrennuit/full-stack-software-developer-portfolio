@@ -3,6 +3,7 @@ import './CssSandbox.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import PropertyTab from './PropertyTab/PropertyTab';
+import TestDiv from './TestDiv/testDiv';
 
 export default function CssSandbox() {
 
@@ -120,25 +121,16 @@ export default function CssSandbox() {
     <>
       <Header />
       <div className="sandbox-main-container">
-        <div>
-          <div 
-            className="test-div"
-            style={{
-              backgroundColor:bgColor,
-              filter:`blur(${blur}px)`,
-              border:`${borderWidth}px ${borderStyle} ${borderColor}`,
-              borderRadius:`${borderRadius}${borderRadiusType}`,
-              boxShadow:`${boxInset} ${boxOffsetX}px ${boxOffsetY}px ${boxBlur}px ${boxSpread}px ${boxColor}`,
-              height:`${height}px`,
-              margin:"0 auto",
-              top:`${50 - height / 20}%`,
-              transform:`rotate(${rotation}deg)`,
-              width:`${width}px`
-            }}
-          >
-            <h1>^ TOP ^</h1>
-          </div>
-        </div>
+        <TestDiv
+          backgroundColor={bgColor}
+          border={`${borderWidth}px ${borderStyle} ${borderColor}`}
+          borderRadius={`${borderRadius}${borderRadiusType}`}
+          boxShadow={`${boxInset} ${boxOffsetX}px ${boxOffsetY}px ${boxBlur}px ${boxSpread}px ${boxColor}`}
+          filter={`blur(${blur}px)`}
+          height={height}
+          transform={`rotate(${rotation}deg)`}
+          width={`${width}px`}
+        />
 
         <div className="sandbox-slider-container">
           <h3>Properties</h3>
