@@ -1,19 +1,20 @@
 import React from "react";
 
 export default function Toggle({
-  isChecked,
+  isChecked = false,
   setVariable,
-  toggleName,
+  toggleId = '',
   toggleLabel,
+  toggleName,
   toggleType,
   toggleValue,
 }) {
   return (
     <label>
       <input
-        type={toggleType}
+        defaultChecked={isChecked}
+        id={toggleId ? toggleId : null}
         name={toggleName}
-        value={toggleValue}
         onChange={(e) =>
           toggleType === "checkbox"
             ? e.target.checked
@@ -21,7 +22,8 @@ export default function Toggle({
               : setVariable("")
             : setVariable(e.target.value)
         }
-        defaultChecked={isChecked}
+        type={toggleType}
+        value={toggleValue}
       />
       {toggleLabel}
     </label>

@@ -8,9 +8,7 @@ import Output from "./Output/Output";
 
 export default function CssSandbox() {
   // sets height & width
-  const [dimensionsClicked, setDimensionsClicked] = useState(
-    "sandbox-item-heading"
-  );
+  const [dimensionsClicked, setDimensionsClicked] = useState("sandbox-item-heading");
   const [dimensionsShow, setDimensionsShow] = useState("sandbox-item-contents");
   const [height, setHeight] = useState(200);
   const [width, setWidth] = useState(300);
@@ -21,9 +19,7 @@ export default function CssSandbox() {
   const [bgRed, setBgRed] = useState(255);
   const [bgGreen, setBgGreen] = useState(255);
   const [bgBlue, setBgBlue] = useState(255);
-  const [bgColor, setBgColor] = useState(
-    `rgb(${bgRed}, ${bgGreen}, ${bgBlue})`
-  );
+  const [bgColor, setBgColor] = useState(`rgb(${bgRed}, ${bgGreen}, ${bgBlue})`);
 
   // sets blur
   const [blurClicked, setBlurClicked] = useState("sandbox-item-heading");
@@ -38,29 +34,21 @@ export default function CssSandbox() {
   const [borderRed, setBorderRed] = useState(125);
   const [borderGreen, setBorderGreen] = useState(125);
   const [borderBlue, setBorderBlue] = useState(125);
-  const [borderColor, setBorderColor] = useState(
-    `rgb(${borderRed}, ${borderGreen}, ${borderBlue})`
-  );
+  const [borderColor, setBorderColor] = useState(`rgb(${borderRed}, ${borderGreen}, ${borderBlue})`);
 
   // sets border radius
-  const [borderRadiusClicked, setBorderRadiusClicked] = useState(
-    "sandbox-item-heading"
-  );
+  const [borderRadiusClicked, setBorderRadiusClicked] = useState("sandbox-item-heading");
   const [borderRadiusShow, setBorderRadiusShow] = useState("sandbox-item-contents");
   const [borderRadius, setBorderRadius] = useState(0);
   const [borderRadiusType, setBorderRadiusType] = useState("px");
 
   // sets box shadow
-  const [boxShadowClicked, setBoxShadowClicked] = useState(
-    "sandbox-item-heading"
-  );
+  const [boxShadowClicked, setBoxShadowClicked] = useState("sandbox-item-heading");
   const [boxShadowShow, setBoxShadowShow] = useState("sandbox-item-contents");
   const [boxRed, setBoxRed] = useState(125);
   const [boxGreen, setBoxGreen] = useState(125);
   const [boxBlue, setBoxBlue] = useState(125);
-  const [boxColor, setBoxColor] = useState(
-    `rgb(${boxRed}, ${boxGreen}, ${boxBlue})`
-  );
+  const [boxColor, setBoxColor] = useState(`rgb(${boxRed}, ${boxGreen}, ${boxBlue})`);
   const [boxInset, setBoxInset] = useState("");
   const [boxOffsetX, setBoxOffsetX] = useState(0);
   const [boxOffsetY, setBoxOffsetY] = useState(0);
@@ -68,9 +56,7 @@ export default function CssSandbox() {
   const [boxSpread, setBoxSpread] = useState(0);
 
   // sets rotation
-  const [rotationClicked, setRotationClicked] = useState(
-    "sandbox-item-heading"
-  );
+  const [rotationClicked, setRotationClicked] = useState("sandbox-item-heading");
   const [rotationShow, setRotationShow] = useState("sandbox-item-contents");
   const [rotation, setRotation] = useState(0);
 
@@ -196,68 +182,69 @@ export default function CssSandbox() {
       ],
       toggleList: [
         {
-          toggleVariable: setBorderStyle,
           toggleName: "borderStyle",
           toggleLabel: "Solid",
           toggleType: "radio",
           toggleValue: "solid",
-          defaultChecked: true,
+          toggleVariable: setBorderStyle,
         },
         {
-          toggleVariable: setBorderStyle,
           toggleName: "borderStyle",
           toggleLabel: "Double",
           toggleType: "radio",
           toggleValue: "double",
+          toggleVariable: setBorderStyle,
         },
         {
-          toggleVariable: setBorderStyle,
           toggleName: "borderStyle",
           toggleLabel: "Dashed",
           toggleType: "radio",
           toggleValue: "dashed",
+          toggleVariable: setBorderStyle,
         },
         {
-          toggleVariable: setBorderStyle,
           toggleName: "borderStyle",
           toggleLabel: "Dotted",
           toggleType: "radio",
           toggleValue: "dotted",
+          toggleVariable: setBorderStyle,
         },
         {
-          toggleVariable: setBorderStyle,
           toggleName: "borderStyle",
           toggleLabel: "Groove",
           toggleType: "radio",
           toggleValue: "groove",
+          toggleVariable: setBorderStyle,
         },
         {
-          toggleVariable: setBorderStyle,
           toggleName: "borderStyle",
           toggleLabel: "Ridge",
           toggleType: "radio",
           toggleValue: "ridge",
+          toggleVariable: setBorderStyle,
         },
         {
-          toggleVariable: setBorderStyle,
           toggleName: "borderStyle",
           toggleLabel: "Inset",
           toggleType: "radio",
           toggleValue: "inset",
+          toggleVariable: setBorderStyle,
         },
         {
-          toggleVariable: setBorderStyle,
           toggleName: "borderStyle",
           toggleLabel: "Outset",
           toggleType: "radio",
           toggleValue: "outset",
+          toggleVariable: setBorderStyle,
         },
         {
-          toggleVariable: setBorderStyle,
+          defaultChecked: true,
+          toggleId: "border-none",
           toggleName: "borderStyle",
           toggleLabel: "None",
           toggleType: "radio",
           toggleValue: "none",
+          toggleVariable: setBorderStyle,
         },
       ],
     },
@@ -279,19 +266,27 @@ export default function CssSandbox() {
       ],
       toggleList: [
         {
-          toggleVariable: setBorderRadiusType,
+          defaultChecked: true,
+          toggleId: "radius-px",
           toggleName: "borderRadiusType",
           toggleLabel: "px",
           toggleType: "radio",
           toggleValue: "px",
-          defaultChecked: true,
+          toggleVariable: setBorderRadiusType,
         },
         {
-          toggleVariable: setBorderRadiusType,
           toggleName: "borderRadiusType",
           toggleLabel: "%",
           toggleType: "radio",
           toggleValue: "%",
+          toggleVariable: setBorderRadiusType,
+        },
+        {
+          toggleName: "borderRadiusType",
+          toggleLabel: "ads",
+          toggleType: "radio",
+          toggleValue: "ads",
+          toggleVariable: setBorderRadiusType,
         },
       ],
     },
@@ -361,11 +356,12 @@ export default function CssSandbox() {
       ],
       toggleList: [
         {
-          toggleVariable: setBoxInset,
+          toggleId: "box-inset",
           toggleName: "boxInset",
           toggleLabel: "Inset",
           toggleType: "checkbox",
           toggleValue: "inset",
+          toggleVariable: setBoxInset,
         },
       ],
     },
@@ -401,6 +397,8 @@ export default function CssSandbox() {
   }, [boxRed, boxGreen, boxBlue]);
 
   const resetValues = () => {
+    document.querySelector('input[name="borderStyle"]:checked').checked = false;
+    document.querySelector('input[name="borderRadiusType"]:checked').checked = false;
     document.getElementById("border-none").checked = true;
     document.getElementById("radius-px").checked = true;
     document.getElementById("box-inset").checked = false;

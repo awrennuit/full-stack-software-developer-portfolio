@@ -17,13 +17,14 @@ export default function PropertyTab({
         className={classClicked}
         onClick={() => {
           classClicked === "sandbox-item-heading"
-            ? setClassClicked("sandbox-item-heading-clicked")
+            ? setClassClicked("sandbox-item-heading--clicked")
             : setClassClicked("sandbox-item-heading");
 
           classShow === "sandbox-item-contents"
             ? setClassShow("sandbox-item-contents sandbox-item-contents--active")
             : setClassShow("sandbox-item-contents");
         }}
+        role="button"
       >
         <span className="sandbox-btn-arrow"></span>
         <span className="sandbox-btn-text">{heading}</span>
@@ -36,6 +37,7 @@ export default function PropertyTab({
                   key={i}
                   isChecked={item.defaultChecked}
                   setVariable={item.toggleVariable}
+                  toggleId={item.toggleId}
                   toggleLabel={item.toggleLabel}
                   toggleName={item.toggleName}
                   toggleType={item.toggleType}
