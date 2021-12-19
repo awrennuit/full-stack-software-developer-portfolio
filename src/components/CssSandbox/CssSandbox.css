@@ -98,7 +98,7 @@
   content: '';
   height: 1.5px;
   position: absolute;
-  top: 15px;
+  top: 13px;
   transition: background-color 0.3s, left 0.5s, transform 0.7s;
   width: 15px;
 }
@@ -114,20 +114,21 @@
 }
 
 .sandbox-btn-text {
+  font-size: 16px;
   padding-left: 45px;
 }
 
-.sandbox-dimensions-heading-clicked .sandbox-btn-arrow::before, .sandbox-bg-heading-clicked .sandbox-btn-arrow::before, .sandbox-blur-heading-clicked .sandbox-btn-arrow::before, .sandbox-border-heading-clicked .sandbox-btn-arrow::before, .sandbox-border-radius-heading-clicked .sandbox-btn-arrow::before, .sandbox-box-shadow-heading-clicked .sandbox-btn-arrow::before, .sandbox-rotation-heading-clicked .sandbox-btn-arrow::before {
+.sandbox-item-heading--clicked .sandbox-btn-arrow::before {
   left: 20px;
-  transform: rotate(114deg);
+  transform: rotate(300deg);
 }
 
-.sandbox-dimensions-heading-clicked .sandbox-btn-arrow::after, .sandbox-bg-heading-clicked .sandbox-btn-arrow::after, .sandbox-blur-heading-clicked .sandbox-btn-arrow::after, .sandbox-border-heading-clicked .sandbox-btn-arrow::after, .sandbox-border-radius-heading-clicked .sandbox-btn-arrow::after, .sandbox-box-shadow-heading-clicked .sandbox-btn-arrow::after, .sandbox-rotation-heading-clicked .sandbox-btn-arrow::after {
+.sandbox-item-heading--clicked .sandbox-btn-arrow::after {
   left: 26px;
   transform: rotate(426deg);
 }
 
-.sandbox-dimensions-heading-clicked, .sandbox-bg-heading-clicked, .sandbox-blur-heading-clicked, .sandbox-border-heading-clicked, .sandbox-border-radius-heading-clicked, .sandbox-box-shadow-heading-clicked, .sandbox-rotation-heading-clicked {
+.sandbox-item-heading--clicked {
   line-height: 30px;
   border: none;
   color: #333;
@@ -141,34 +142,37 @@
   z-index: 1;
 }
 
-.sandbox-dimensions-heading-clicked:hover, .sandbox-bg-heading-clicked:hover, .sandbox-blur-heading-clicked:hover, .sandbox-border-heading-clicked:hover, .sandbox-border-radius-heading-clicked:hover, .sandbox-box-shadow-heading-clicked:hover, .sandbox-rotation-heading-clicked:hover {
+.sandbox-item-heading--clicked:hover {
   color: #777;
 }
 
-.sandbox-dimensions-heading-clicked span, .sandbox-bg-heading-clicked span, .sandbox-blur-heading-clicked span, .sandbox-border-heading-clicked span, .sandbox-border-radius-heading-clicked span, .sandbox-box-shadow-heading-clicked span, .sandbox-rotation-heading-clicked span {
+.sandbox-item-heading--clicked span {
   color: inherit;
 }
 
-.sandbox-hide {
-  height: 0;
+.sandbox-item-contents {
+  margin-bottom: -40px;
+  max-height: 0;
   opacity: 0;
+  overflow: hidden;
+  padding: 40px 7px 7px 7px;
   position: relative;
-  left: -999px;
-  transition: 0.5s;
+  transform: translateY(-40px);
+  transition: all 0.5s;
+  visibility: hidden;
 }
 
-.sandbox-dimensions-show, .sandbox-bg-show, .sandbox-blur-show, .sandbox-border-show, .sandbox-border-radius-show, .sandbox-box-shadow-show , .sandbox-rotation-show {
+.sandbox-item-contents--active {
   border-radius: 15px;
   box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
   background: linear-gradient(to bottom right, #ccc, #ddd);
-  margin-bottom: -40px;
-  padding: 40px 7px 7px 7px;
-  position: relative;
-  top: -40px;
-  transition: 0.5s;
+  max-height: 300px;
+  opacity: 1;
+  transition: all 0.5s, padding 0s;
+  visibility: visible;
 }
 
-.sandbox-dimensions-show::before, .sandbox-dimensions-show::after, .sandbox-bg-show::before, .sandbox-bg-show::after, .sandbox-blur-show::before, .sandbox-blur-show::after, .sandbox-border-show::before, .sandbox-border-show::after, .sandbox-border-radius-show::before, .sandbox-border-radius-show::after, .sandbox-box-shadow-show::before, .sandbox-box-shadow-show::after, .sandbox-rotation-show::before, .sandbox-rotation-show::after {
+.sandbox-item-show::before, .sandbox-item-show::after {
   background-color: #999;
   content: '';
   height: 1px;
@@ -177,19 +181,34 @@
   width: 200px;
 }
 
-.sandbox-dimensions-show::before, .sandbox-bg-show::before, .sandbox-blur-show::before, .sandbox-border-show::before, .sandbox-border-radius-show::before, .sandbox-box-shadow-show::before, .sandbox-rotation-show::before {
+.sandbox-item-show::before {
   border-radius: 25%;
   top: 29px;
 }
 
-.sandbox-dimensions-show::after, .sandbox-bg-show::after, .sandbox-blur-show::after, .sandbox-border-show::after, .sandbox-border-radius-show::after, .sandbox-box-shadow-show::after, .sandbox-rotation-show::after {
+.sandbox-item-show::after {
   border-radius: 50%;
   top: 31px;
 }
 
 .sandbox-item-flex {
   display: flex;
-  flex-direction: row;
+}
+
+.sandbox-toggle-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sandbox-toggle-flex label {
+  cursor: pointer;
+  margin-bottom: 12px;
+  width: 50%;
+}
+
+.sandbox-toggle-flex input {
+  cursor: pointer;
+  margin-right: 5px;
 }
 
 .sandbox-input {
