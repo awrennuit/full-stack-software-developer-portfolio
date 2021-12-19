@@ -281,13 +281,6 @@ export default function CssSandbox() {
           toggleValue: "%",
           toggleVariable: setBorderRadiusType,
         },
-        {
-          toggleName: "borderRadiusType",
-          toggleLabel: "ads",
-          toggleType: "radio",
-          toggleValue: "ads",
-          toggleVariable: setBorderRadiusType,
-        },
       ],
     },
     {
