@@ -11,13 +11,13 @@ export default function CssSandbox() {
   const [dimensionsClicked, setDimensionsClicked] = useState(
     "sandbox-item-heading"
   );
-  const [dimensionsShow, setDimensionsShow] = useState("sandbox-hide");
+  const [dimensionsShow, setDimensionsShow] = useState("sandbox-item-contents");
   const [height, setHeight] = useState(200);
   const [width, setWidth] = useState(300);
 
   // sets background color
   const [bgClicked, setBgClicked] = useState("sandbox-item-heading");
-  const [bgShow, setBgShow] = useState("sandbox-hide");
+  const [bgShow, setBgShow] = useState("sandbox-item-contents");
   const [bgRed, setBgRed] = useState(255);
   const [bgGreen, setBgGreen] = useState(255);
   const [bgBlue, setBgBlue] = useState(255);
@@ -27,12 +27,12 @@ export default function CssSandbox() {
 
   // sets blur
   const [blurClicked, setBlurClicked] = useState("sandbox-item-heading");
-  const [blurShow, setBlurShow] = useState("sandbox-hide");
+  const [blurShow, setBlurShow] = useState("sandbox-item-contents");
   const [blur, setBlur] = useState(0);
 
   //sets border
   const [borderClicked, setBorderClicked] = useState("sandbox-item-heading");
-  const [borderShow, setBorderShow] = useState("sandbox-hide");
+  const [borderShow, setBorderShow] = useState("sandbox-item-contents");
   const [borderWidth, setBorderWidth] = useState(0);
   const [borderStyle, setBorderStyle] = useState("none");
   const [borderRed, setBorderRed] = useState(125);
@@ -46,7 +46,7 @@ export default function CssSandbox() {
   const [borderRadiusClicked, setBorderRadiusClicked] = useState(
     "sandbox-item-heading"
   );
-  const [borderRadiusShow, setBorderRadiusShow] = useState("sandbox-hide");
+  const [borderRadiusShow, setBorderRadiusShow] = useState("sandbox-item-contents");
   const [borderRadius, setBorderRadius] = useState(0);
   const [borderRadiusType, setBorderRadiusType] = useState("px");
 
@@ -54,7 +54,7 @@ export default function CssSandbox() {
   const [boxShadowClicked, setBoxShadowClicked] = useState(
     "sandbox-item-heading"
   );
-  const [boxShadowShow, setBoxShadowShow] = useState("sandbox-hide");
+  const [boxShadowShow, setBoxShadowShow] = useState("sandbox-item-contents");
   const [boxRed, setBoxRed] = useState(125);
   const [boxGreen, setBoxGreen] = useState(125);
   const [boxBlue, setBoxBlue] = useState(125);
@@ -71,7 +71,7 @@ export default function CssSandbox() {
   const [rotationClicked, setRotationClicked] = useState(
     "sandbox-item-heading"
   );
-  const [rotationShow, setRotationShow] = useState("sandbox-hide");
+  const [rotationShow, setRotationShow] = useState("sandbox-item-contents");
   const [rotation, setRotation] = useState(0);
 
   // toggles modal
@@ -201,6 +201,7 @@ export default function CssSandbox() {
           toggleLabel: "Solid",
           toggleType: "radio",
           toggleValue: "solid",
+          defaultChecked: true,
         },
         {
           toggleVariable: setBorderStyle,
@@ -283,6 +284,7 @@ export default function CssSandbox() {
           toggleLabel: "px",
           toggleType: "radio",
           toggleValue: "px",
+          defaultChecked: true,
         },
         {
           toggleVariable: setBorderRadiusType,

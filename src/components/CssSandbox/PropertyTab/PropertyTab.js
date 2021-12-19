@@ -17,12 +17,12 @@ export default function PropertyTab({
         className={classClicked}
         onClick={() => {
           classClicked === "sandbox-item-heading"
-            ? setClassClicked("sandbox-dimensions-heading-clicked")
+            ? setClassClicked("sandbox-item-heading-clicked")
             : setClassClicked("sandbox-item-heading");
 
-          classShow === "sandbox-hide"
-            ? setClassShow("sandbox-dimensions-show")
-            : setClassShow("sandbox-hide");
+          classShow === "sandbox-item-contents"
+            ? setClassShow("sandbox-item-contents sandbox-item-contents--active")
+            : setClassShow("sandbox-item-contents");
         }}
       >
         <span className="sandbox-btn-arrow"></span>
@@ -34,6 +34,7 @@ export default function PropertyTab({
             ? toggleList.map((item, i) => (
                 <Toggle
                   key={i}
+                  isChecked={item.defaultChecked}
                   setVariable={item.toggleVariable}
                   toggleLabel={item.toggleLabel}
                   toggleName={item.toggleName}

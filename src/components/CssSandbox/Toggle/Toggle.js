@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Toggle({
+  isChecked,
   setVariable,
   toggleName,
   toggleLabel,
@@ -20,6 +21,7 @@ export default function Toggle({
               : setVariable("")
             : setVariable(e.target.value)
         }
+        defaultChecked={isChecked}
       />
       {toggleLabel}
     </label>
