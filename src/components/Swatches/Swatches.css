@@ -1,0 +1,93 @@
+.swatch-wrapper {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 15px;
+  position: relative;
+  transition: background-color ease-out 0.5s;
+}
+
+.swatch-toggle-btn {
+  background: transparent;
+  cursor: pointer;
+  font-size: 4rem;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+  top: 10px;
+  transition: transform 0.5s;
+  width: 40px;
+}
+
+.swatch-toggle-btn:hover .swatch-toggle-icon--active,
+.swatch-toggle-btn:hover .swatch-toggle-icon--inactive {
+  height: 33px;
+  width: 33px;
+}
+
+.swatch-toggle-icon--active,
+.swatch-toggle-icon--inactive {
+  border-radius: 50%;
+  bottom: 6px;
+  display: block;
+  height: 30px;
+  position: relative;
+  right: 5px;
+  transition: 0.3s;
+  width: 30px;
+}
+
+.swatch-toggle-icon--active {
+  box-shadow:
+    3px 1px 0 0 #fff,
+    2px 1px 0 0 #fff,
+    9px 4px 0 0 #fff,
+    11px 3px 0 1px #fff,
+    11px 6px 0 1px #fff;
+}
+
+.swatch-toggle-icon--inactive {
+  box-shadow:
+    3px 1px 0 0 #fff,
+    2px 1px 0 0 #fff,
+    9px 4px 0 0 #323114,
+    11px 3px 0 1px #fff,
+    11px 6px 0 1px #fff;
+}
+
+.swatch-box {
+  display: inline-block;
+  height: 150px;
+  margin: 15px;
+  width: 150px;
+}
+
+.swatch-box input {
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1100px) {
+  .swatch-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 940px) {
+  .swatch-wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 745px) {
+  .swatch-wrapper {
+    max-width: 360px;
+  }
+
+  .swatch-box {
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+  }
+}

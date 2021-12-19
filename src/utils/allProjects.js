@@ -1,5 +1,25 @@
 export const allProjects = [
   {
+    altText: "gradient maker homepage",
+    appUrl: "/gradient-maker",
+    codeUrl: "https://github.com/AwrenNuit/full-stack-software-developer-portfolio/tree/swatches-feature/src/components/Swatches",
+    descriptionLineOne: "Create a custom gradient",
+    descriptionLineTwo: "with this tool",
+    image: "images/screenshots/gradient-maker.png",
+    oneButton: false,
+    title: "Gradient Maker",
+  },
+  {
+    altText: "gradient swatches art gallery",
+    appUrl: "/swatches",
+    codeUrl: "https://github.com/AwrenNuit/full-stack-software-developer-portfolio/tree/swatches-feature/src/components/Swatches",
+    descriptionLineOne: "A collection of some of",
+    descriptionLineTwo: "my favorite gradients",
+    image: "images/screenshots/swatches.png",
+    oneButton: false,
+    title: "Gradient Swatches",
+  },
+  {
     altText: "household hub homepage",
     codeUrl: "https://github.com/AwrenNuit/home-shopping-list",
     descriptionLineOne: "A place to consolidate shopping lists,",
