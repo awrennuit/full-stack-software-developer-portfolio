@@ -22,10 +22,10 @@ export default function App() {
       <Route exact path="/blog" component={Blog} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/css-sandbox" component={CssSandbox} />
-      {/* <Route exact path="/gradient-maker" component={CustomGradient} /> */}
+      <Route exact path="/gradient-maker" component={CustomGradient} />
       <Route exact path="/password-generator" component={PasswordGenerator} />
       <Route exact path="/projects" component={ProjectList} />
-      {/* <Route exact path="/swatches" component={Swatches} /> */}
+      <Route exact path="/swatches" component={Swatches} />
       <Route exact path="/timer" component={TimerMain} />
     </Router>
   );

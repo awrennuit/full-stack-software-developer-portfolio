@@ -2,8 +2,12 @@
   height: 100%;
   margin: 0 auto;
   max-width: 900px;
+  padding: 15px;
   position: relative;
   transition: background-color ease-out 0.5s;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .swatch-toggle-btn {
@@ -26,7 +30,6 @@
 
 .swatch-toggle-icon--active,
 .swatch-toggle-icon--inactive {
-  background-color: #323144;
   border-radius: 50%;
   bottom: 6px;
   display: block;
@@ -62,14 +65,32 @@
   width: 150px;
 }
 
-@media (max-width: 1050px) {
+.swatch-box input {
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1100px) {
   .swatch-wrapper {
     max-width: 720px;
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 940px) {
   .swatch-wrapper {
     max-width: 540px;
+  }
+}
+
+@media (max-width: 745px) {
+  .swatch-wrapper {
+    max-width: 360px;
+  }
+
+  .swatch-box {
+    height: 100px;
+    margin: 10px;
+    width: 100px;
   }
 }
