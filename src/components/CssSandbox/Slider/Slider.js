@@ -1,17 +1,24 @@
 import React from "react";
 
-export default function Slider(props) {
+export default function Slider({
+  maxValue,
+  minValue,
+  setVariable,
+  sliderLabel,
+  stepValue,
+  variableName,
+}) {
   return (
     <div className="sandbox-item-flex">
-      <label>{props.sliderLabel}</label>
+      <label>{sliderLabel}</label>
       <div className="sandbox-input">
         <input
           type="range"
-          value={props.variableName}
-          min={props.minValue}
-          max={props.maxValue}
-          step={props.stepValue}
-          onChange={(e) => props.setVariable(e.target.value)}
+          value={variableName}
+          min={minValue}
+          max={maxValue}
+          step={stepValue}
+          onChange={(e) => setVariable(e.target.value)}
         />
       </div>
     </div>

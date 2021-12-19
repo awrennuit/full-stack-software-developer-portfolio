@@ -1,42 +1,61 @@
 import React from "react";
 import Slider from "../Slider/Slider";
+import Toggle from "../Toggle/Toggle";
 
-export default function PropertyTab(props) {
+export default function PropertyTab({
+  classClicked,
+  classShow,
+  heading,
+  setClassClicked,
+  setClassShow,
+  sliderList,
+  toggleList,
+}) {
   return (
     <div className="sandbox-item-container">
       <div
-        className={props.classClicked}
+        className={classClicked}
         onClick={() => {
-          props.classClicked === "sandbox-item-heading"
-            ? props.setClassClicked("sandbox-dimensions-heading-clicked")
-            : props.setClassClicked("sandbox-item-heading");
+          classClicked === "sandbox-item-heading"
+            ? setClassClicked("sandbox-dimensions-heading-clicked")
+            : setClassClicked("sandbox-item-heading");
 
-          props.classShow === "sandbox-hide"
-            ? props.setClassShow("sandbox-dimensions-show")
-            : props.setClassShow("sandbox-hide");
+          classShow === "sandbox-hide"
+            ? setClassShow("sandbox-dimensions-show")
+            : setClassShow("sandbox-hide");
         }}
       >
         <span className="sandbox-btn-arrow"></span>
-        <span className="sandbox-btn-text">{props.heading}</span>
+        <span className="sandbox-btn-text">{heading}</span>
       </div>
-      <div className={props.classShow}>
-        {/* implement numberOfSliders prop, conditionally render sliders based on that */}
-        <Slider
-          maxValue={props.sliderOneMaxValue}
-          minValue={props.sliderOneMinValue}
-          setVariable={props.sliderOneSetVariable}
-          sliderLabel={props.sliderOneLabel}
-          stepValue={props.sliderOneStepValue}
-          variableName={props.sliderOneVariable}
-        />
-        <Slider
-          maxValue={props.sliderTwoMaxValue}
-          minValue={props.sliderTwoMinValue}
-          setVariable={props.sliderTwoSetVariable}
-          sliderLabel={props.sliderTwoLabel}
-          stepValue={props.sliderTwoStepValue}
-          variableName={props.sliderTwoVariable}
-        />
+      <div className={classShow}>
+        <div className="sandbox-toggle-flex">
+          {toggleList?.length > 0
+            ? toggleList.map((item, i) => (
+                <Toggle
+                  key={i}
+                  setVariable={item.toggleVariable}
+                  toggleLabel={item.toggleLabel}
+                  toggleName={item.toggleName}
+                  toggleType={item.toggleType}
+                  toggleValue={item.toggleValue}
+                />
+              ))
+            : ""}
+        </div>
+        {sliderList?.length > 0
+          ? sliderList.map((item, i) => (
+              <Slider
+                key={i}
+                maxValue={item.sliderMaxValue}
+                minValue={item.sliderMinValue}
+                setVariable={item.sliderSetVariable}
+                sliderLabel={item.sliderLabel}
+                stepValue={item.sliderStepValue}
+                variableName={item.sliderVariable}
+              />
+            ))
+          : ""}
       </div>
     </div>
   );

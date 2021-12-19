@@ -192,6 +192,22 @@
   flex-direction: row;
 }
 
+.sandbox-toggle-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sandbox-toggle-flex label {
+  cursor: pointer;
+  margin-bottom: 12px;
+  width: 50%;
+}
+
+.sandbox-toggle-flex input {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
 .sandbox-input {
   text-align: right;
   width: 100%;
