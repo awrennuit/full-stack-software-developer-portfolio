@@ -2,7 +2,7 @@ export const allProjects = [
   {
     altText: "gradient maker homepage",
     appUrl: "/gradient-maker",
-    codeUrl: "https://github.com/AwrenNuit/full-stack-software-developer-portfolio/tree/swatches-feature/src/components/Swatches",
+    codeUrl: "https://github.com/AwrenNuit/full-stack-software-developer-portfolio/tree/master/src/components/CustomGradient",
     descriptionLineOne: "Create a custom gradient",
     descriptionLineTwo: "with this tool",
     image: "images/screenshots/gradient-maker.png",
@@ -12,7 +12,7 @@ export const allProjects = [
   {
     altText: "gradient swatches art gallery",
     appUrl: "/swatches",
-    codeUrl: "https://github.com/AwrenNuit/full-stack-software-developer-portfolio/tree/swatches-feature/src/components/Swatches",
+    codeUrl: "https://github.com/AwrenNuit/full-stack-software-developer-portfolio/tree/master/src/components/Swatches",
     descriptionLineOne: "A collection of some of",
     descriptionLineTwo: "my favorite gradients",
     image: "images/screenshots/swatches.png",
