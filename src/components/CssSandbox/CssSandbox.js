@@ -473,6 +473,15 @@ export default function CssSandbox() {
               toggleList={item.toggleList}
             />
           ))}
+
+          <div>
+            <button
+              className="sandbox-btn-done"
+              onClick={() => setShowModal(!showModal)}
+            >
+              I'm Done
+            </button>
+          </div>
         </div>
 
         <Output
