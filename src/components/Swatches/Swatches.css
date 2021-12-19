@@ -5,9 +5,6 @@
   padding: 15px;
   position: relative;
   transition: background-color ease-out 0.5s;
-
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .swatch-toggle-btn {
