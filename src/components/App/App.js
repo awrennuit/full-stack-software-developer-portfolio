@@ -8,7 +8,7 @@ import Contact from "../Contact/Contact";
 import CssSandbox from "../CssSandbox/CssSandbox";
 import Landing from "../Landing/Landing";
 import PasswordGenerator from "../PasswordGenerator/PasswordGenerator";
-import ProjectList from "../ProjectList/ProjectList";
+import ProjectList from "../Projects/ProjectList";
 import TimerMain from "../TimerMain/TimerMain";
 
 export default function App() {

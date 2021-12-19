@@ -1,5 +1,5 @@
 import React from "react";
-import "../ProjectList/ProjectList.css";
+import "./Projects.css";
 
 export default function ProjectCard(props) {
   return (
@@ -13,17 +13,21 @@ export default function ProjectCard(props) {
           {props.descriptionLineTwo}
         </p>
         <button
-          className={!props.oneButton ? "project-btn-code" : "project-btn-code-single"}
+          className={
+            !props.oneButton ? "project-btn-code" : "project-btn-code-single"
+          }
           onClick={() => window.open(props.codeUrl, "_blank")}
         >
           View Code
         </button>
-        {!props.oneButton ? 
-          <button className="project-btn-app" onClick={props.appUrl}>
+        {!props.oneButton ? (
+          <button
+            className="project-btn-app"
+            onClick={props.appUrl ? props.appUrl : props.externalAppUrl}
+          >
             View App
-          </button> :
-          null
-        }
+          </button>
+        ) : null}
       </div>
     </div>
   );
