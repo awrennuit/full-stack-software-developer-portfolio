@@ -149,12 +149,24 @@
 /** TOOL BAR **/
 /**************/
 .gradient-tools-wrapper {
-  background-color: #fff;
+  background-color: #323144;
   bottom: 0;
   height: 0;
+  padding-top: 15px;
   position: absolute;
   transition: 0.5s;
   width: 100%;
+}
+
+
+.gradient-code {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #323144;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  width: 430px;
 }
 
 .gradient-tools--inactive {
@@ -199,9 +211,9 @@
 
 .gradient-tools-close {
   background: transparent;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   border-radius: 50%;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   font-size: 1.4rem;
   height: 25px;
@@ -222,7 +234,7 @@
 }
 
 .gradient-tools-type-wrapper {
-  border: 1px solid #000;
+  border: 1px solid #fff;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -230,8 +242,20 @@
   padding: 15px;
 }
 
+.gradient-tools-inner {
+  margin: 0 auto;
+  max-width: 900px;
+  position: relative;
+}
+
 .gradient-tools--type {
-  color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gradient-tools--type input {
+  cursor: pointer;
+  margin-right: 5px;
 }
 
 .gradient-tools-dir-wrapper {
@@ -260,12 +284,12 @@
 }
 
 .gradient-tools-dir {
-  color: #000;
+  color: #fff;
   position: absolute;
 }
 
 .gradient-tools-dir--active {
-  border: 1px solid #000;
+  border: 1px solid #fff;
   border-radius: 4px;
 }
 
@@ -318,13 +342,4 @@
   left: 2px;
   top: 2px;
   transform: rotate(45deg);
-}
-
-.gradient-code {
-  background-color: #323144;
-  border-radius: 4px;
-  margin: 0 auto;
-  padding: 10px;
-  text-align: center;
-  width: 430px;
 }

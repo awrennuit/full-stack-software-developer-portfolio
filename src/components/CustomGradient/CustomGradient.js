@@ -42,12 +42,12 @@ export default function CustomGradient() {
   }, [colorOne, colorTwo, gradientType, gradientDirection]);
 
   const selectText = (text) => {
-    if (document.selection) { // for IE
+    if (document.selection) {
+      // for IE
       const range = document.body.createTextRange();
       range.moveToElementText(document.getElementById(text));
       range.select();
-    } 
-    else if (window.getSelection) {
+    } else if (window.getSelection) {
       const range = document.createRange();
       range.selectNode(document.getElementById(text));
       window.getSelection().removeAllRanges();
@@ -66,27 +66,53 @@ export default function CustomGradient() {
 
         <div
           className={`gradient-picker-wrapper
-            ${isMinimal ? "gradient-picker--active" : "gradient-picker--inactive"}`}
-          style={isMinimalDisplayNone ? {display:"none"} : null}
+            ${
+              isMinimal
+                ? "gradient-picker--active"
+                : "gradient-picker--inactive"
+            }`}
+          style={isMinimalDisplayNone ? { display: "none" } : null}
         >
-          <ColorPicker color={colorOne} isMinimal={isMinimal} setColor={setColorOne} />
-          <ColorPicker color={colorTwo} isMinimal={isMinimal} setColor={setColorTwo} />
+          <ColorPicker
+            color={colorOne}
+            isMinimal={isMinimal}
+            setColor={setColorOne}
+          />
+          <ColorPicker
+            color={colorTwo}
+            isMinimal={isMinimal}
+            setColor={setColorTwo}
+          />
         </div>
-        <button className="gradient-more-btn" onClick={() => setIsMinimal(false)}></button>
+        <button
+          className="gradient-more-btn"
+          onClick={() => setIsMinimal(false)}
+          title="Open advanced controls"
+        ></button>
 
         <div
           className={`gradient-tools-wrapper
             ${isMinimal ? "gradient-tools--inactive" : "gradient-tools--active"}`}
-          style={isMinimalDisplayNone ? null : {display:"none"}}
+          style={isMinimalDisplayNone ? null : { display: "none" }}
         >
-          <div className="gradient-tools-flex">
-            <button
-              className="gradient-tools-close"
-              onClick={() => setIsMinimal(true)}
-              title="Close toolbar"
-            >
-              &times;
-            </button>
+          <div className="gradient-tools-inner">
+            <div>
+              <p
+                className="gradient-code"
+                id="output"
+                onClick={() => selectText("output")}
+              >
+                {gradient}
+              </p>
+            </div>
+            <div className="gradient-tools-flex">
+              <button
+                className="gradient-tools-close"
+                onClick={() => setIsMinimal(true)}
+                title="Close toolbar"
+              >
+                &times;
+              </button>
               <ColorPicker
                 color={colorOne}
                 isMinimal={isMinimal}
@@ -113,7 +139,7 @@ export default function CustomGradient() {
 
               <div className="gradient-tools-dir-main-wrapper">
                 <div className="gradient-tools-dir-wrapper">
-                  {gradientBtnData.top.map((item, i) =>
+                  {gradientBtnData.top.map((item, i) => (
                     <GradientDirectionBtn
                       key={i}
                       arrowClass={item.arrowClass}
@@ -121,10 +147,10 @@ export default function CustomGradient() {
                       gradientDirection={gradientDirection}
                       setGradientDirection={setGradientDirection}
                     />
-                  )}
+                  ))}
                 </div>
                 <div className="gradient-tools-dir-wrapper gradient-tools-dir-wrapper--mid">
-                  {gradientBtnData.mid.map((item, i) =>
+                  {gradientBtnData.mid.map((item, i) => (
                     <GradientDirectionBtn
                       key={i}
                       arrowClass={item.arrowClass}
@@ -132,10 +158,10 @@ export default function CustomGradient() {
                       gradientDirection={gradientDirection}
                       setGradientDirection={setGradientDirection}
                     />
-                  )}
+                  ))}
                 </div>
                 <div className="gradient-tools-dir-wrapper">
-                  {gradientBtnData.bot.map((item, i) =>
+                  {gradientBtnData.bot.map((item, i) => (
                     <GradientDirectionBtn
                       key={i}
                       arrowClass={item.arrowClass}
@@ -143,7 +169,7 @@ export default function CustomGradient() {
                       gradientDirection={gradientDirection}
                       setGradientDirection={setGradientDirection}
                     />
-                  )}
+                  ))}
                 </div>
               </div>
 
@@ -154,12 +180,6 @@ export default function CustomGradient() {
                 setColor={setColorTwo}
               />
             </div>
-          <div>
-            <p
-              className="gradient-code"
-              id="output"
-              onClick={()=>selectText('output')}
-            >{gradient}</p>
           </div>
         </div>
       </div>
