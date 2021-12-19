@@ -23,6 +23,10 @@
   opacity: 1;
 }
 
+.project-card img {
+  object-fit: cover;
+}
+
 .project-overlay {
   background-color: #000000b6;
   height: 100%;
