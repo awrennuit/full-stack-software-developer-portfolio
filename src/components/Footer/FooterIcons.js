@@ -8,6 +8,7 @@ export default function FooterIcons(props) {
         alt={props.alt}
         height={props.height}
         width={props.width}
+        loading="lazy"
       />
     </a>
   );

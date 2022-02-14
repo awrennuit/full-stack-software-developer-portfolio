@@ -8,73 +8,73 @@ export default function Skills() {
       <div className="skill-flex">
         <div className="skill-group">
           <div className="skill-container">
-            <img height="50" src="images/icons/html.svg" alt="html logo" />
+            <img height="50" src="images/icons/html.svg" alt="html logo" loading="lazy" />
             <p>HTML</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/css.svg" alt="css logo" />
+            <img height="50" src="images/icons/css.svg" alt="css logo" loading="lazy" />
             <p>CSS</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/sass.png" alt="sass logo" />
+            <img height="50" src="images/icons/sass.png" alt="sass logo" loading="lazy" />
             <p>Sass</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/javascript.png" alt="javascript logo" />
+            <img height="50" src="images/icons/javascript.png" alt="javascript logo" loading="lazy" />
             <p>JavaScript</p>
           </div>
         </div>
         <div className="skill-group">
           <div className="skill-container">
-            <img height="50" src="images/icons/react.svg" alt="react logo" />
+            <img height="50" src="images/icons/react.svg" alt="react logo" loading="lazy" />
             <p>React</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/vue.png" alt="vue logo" />
+            <img height="50" src="images/icons/vue.png" alt="vue logo" loading="lazy" />
             <p>Vue</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/redux.svg" alt="redux logo" />
+            <img height="50" src="images/icons/redux.svg" alt="redux logo" loading="lazy" />
             <p>Redux</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/redux-saga.svg" alt="redux-saga logo" />
+            <img height="50" src="images/icons/redux-saga.svg" alt="redux-saga logo" loading="lazy" />
             <p>Redux-Saga</p>
           </div>
         </div>
         <div className="skill-group">
           <div className="skill-container">
-            <img height="50" src="images/icons/node.svg" alt="node.js logo" />
+            <img height="50" src="images/icons/node.svg" alt="node.js logo" loading="lazy" />
             <p>Node.js</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/rails.png" alt="ruby on rails logo" />
+            <img height="50" src="images/icons/rails.png" alt="ruby on rails logo" loading="lazy" />
             <p>Ruby on Rails</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/postgresql.svg" alt="postgresql logo" />
+            <img height="50" src="images/icons/postgresql.svg" alt="postgresql logo" loading="lazy" />
             <p>PostgreSQL</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/firebase.svg" alt="firebase logo" />
+            <img height="50" src="images/icons/firebase.svg" alt="firebase logo" loading="lazy" />
             <p>Firebase</p>
           </div>
         </div>
         <div className="skill-group">
           <div className="skill-container">
-            <img height="50" src="images/icons/git.svg" alt="git logo" />
+            <img height="50" src="images/icons/git.svg" alt="git logo" loading="lazy" />
             <p>Git</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/github.svg" alt="github logo" />
+            <img height="50" src="images/icons/github.svg" alt="github logo" loading="lazy" />
             <p>GitHub</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/bootstrap.svg" alt="bootstrap logo" />
+            <img height="50" src="images/icons/bootstrap.svg" alt="bootstrap logo" loading="lazy" />
             <p>Bootstrap</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/material-ui.svg" alt="material-ui logo" />
+            <img height="50" src="images/icons/material-ui.svg" alt="material-ui logo" loading="lazy" />
             <p>Material-UI</p>
           </div>
         </div>
