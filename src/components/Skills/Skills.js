@@ -16,12 +16,12 @@ export default function Skills() {
             <p>CSS</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/javascript.png" alt="javascript logo" />
-            <p>JavaScript</p>
+            <img height="50" src="images/icons/sass.png" alt="sass logo" />
+            <p>Sass</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/typescript.png" alt="typescript logo" />
-            <p>TypeScript</p>
+            <img height="50" src="images/icons/javascript.png" alt="javascript logo" />
+            <p>JavaScript</p>
           </div>
         </div>
         <div className="skill-group">
@@ -30,8 +30,8 @@ export default function Skills() {
             <p>React</p>
           </div>
           <div className="skill-container">
-            <img height="50" src="images/icons/angular.svg" alt="angular logo" />
-            <p>Angular</p>
+            <img height="50" src="images/icons/vue.png" alt="vue logo" />
+            <p>Vue</p>
           </div>
           <div className="skill-container">
             <img height="50" src="images/icons/redux.svg" alt="redux logo" />
@@ -48,16 +48,16 @@ export default function Skills() {
             <p>Node.js</p>
           </div>
           <div className="skill-container">
+            <img height="50" src="images/icons/rails.png" alt="ruby on rails logo" />
+            <p>Ruby on Rails</p>
+          </div>
+          <div className="skill-container">
             <img height="50" src="images/icons/postgresql.svg" alt="postgresql logo" />
             <p>PostgreSQL</p>
           </div>
           <div className="skill-container">
             <img height="50" src="images/icons/firebase.svg" alt="firebase logo" />
             <p>Firebase</p>
-          </div>
-          <div className="skill-container">
-            <img height="50" src="images/icons/json.svg" alt="json logo" />
-            <p>JSON</p>
           </div>
         </div>
         <div className="skill-group">
