@@ -1,4 +1,3 @@
-import React from "react";
 import "./CustomGradient.css";
 
 export default function GradientTypeRadio({

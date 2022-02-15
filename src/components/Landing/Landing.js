@@ -1,4 +1,3 @@
-import React from "react";
 import "./Landing.css";
 import { useHistory } from "react-router-dom";
 

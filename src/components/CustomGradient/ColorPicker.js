@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ColorPicker({ color, isMinimal, isMinimalDisplayNone, setColor }) {
   return (
     <div className={`gradient-picker ${isMinimalDisplayNone ? "gradient-picker--in-tools" : ""}`}>

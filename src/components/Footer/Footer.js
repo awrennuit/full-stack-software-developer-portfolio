@@ -1,4 +1,3 @@
-import React from "react";
 import { footerIconData } from "../../utils/footerIconData";
 import "./Footer.css";
 import FooterIcons from "./FooterIcons";
