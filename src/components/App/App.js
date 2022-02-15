@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
+import Loading from "../Loading/Loading";
 import "./App.css";
 
 const Abstract = React.lazy(() => import("../Abstract/Abstract"));
@@ -17,7 +18,7 @@ const TimerMain = React.lazy(() => import("../TimerMain/TimerMain"));
 export default function App() {
   return (
     <Router>
-      <Suspense fallback={<h1>Still Loading…</h1>}>
+      <Suspense fallback={<Loading />}>
         <Route exact path="/" component={Landing} />
         <Route exact path="/about" component={Home} />
         <Route exact path="/abstract-art" component={Abstract} />
