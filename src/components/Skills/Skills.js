@@ -60,24 +60,6 @@ export default function Skills() {
             <p>Firebase</p>
           </div>
         </div>
-        <div className="skill-group">
-          <div className="skill-container">
-            <img height="50" width="50" src="images/icons/git.svg" alt="git logo" loading="lazy" />
-            <p>Git</p>
-          </div>
-          <div className="skill-container">
-            <img height="50" width="50" src="images/icons/github.svg" alt="github logo" loading="lazy" />
-            <p>GitHub</p>
-          </div>
-          <div className="skill-container">
-            <img height="50" width="50" src="images/icons/bootstrap.svg" alt="bootstrap logo" loading="lazy" />
-            <p>Bootstrap</p>
-          </div>
-          <div className="skill-container">
-            <img height="50" width="50" src="images/icons/material-ui.svg" alt="material-ui logo" loading="lazy" />
-            <p>Material-UI</p>
-          </div>
-        </div>
       </div>
     </div>
   );
