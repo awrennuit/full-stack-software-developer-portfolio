@@ -2,7 +2,7 @@ export const allProjects = [
   {
     altText: "gradient maker homepage",
     appUrl: "/gradient-maker",
-    codeUrl: "https://github.com/AwrenNuit/full-stack-software-developer-portfolio/tree/master/src/components/CustomGradient",
+    codeUrl: "https://github.com/awrennuit/full-stack-software-developer-portfolio/tree/master/src/components/CustomGradient",
     descriptionLineOne: "Create a custom gradient",
     descriptionLineTwo: "with this tool",
     image: "images/screenshots/gradient-maker.webp",
@@ -12,7 +12,7 @@ export const allProjects = [
   {
     altText: "gradient swatches art gallery",
     appUrl: "/swatches",
-    codeUrl: "https://github.com/AwrenNuit/full-stack-software-developer-portfolio/tree/master/src/components/Swatches",
+    codeUrl: "https://github.com/awrennuit/full-stack-software-developer-portfolio/tree/master/src/components/Swatches",
     descriptionLineOne: "A collection of some of",
     descriptionLineTwo: "my favorite gradients",
     image: "images/screenshots/swatches.webp",
@@ -21,7 +21,7 @@ export const allProjects = [
   },
   {
     altText: "household hub homepage",
-    codeUrl: "https://github.com/AwrenNuit/home-shopping-list",
+    codeUrl: "https://github.com/awrennuit/home-shopping-list",
     descriptionLineOne: "A place to consolidate shopping lists,",
     descriptionLineTwo: "chores, recipes, etc.",
     image: "images/screenshots/household-hub.webp",
@@ -30,7 +30,7 @@ export const allProjects = [
   },
   {
     altText: "homebody app's homepage",
-    codeUrl: "https://github.com/AwrenNuit/HTG-WorkoutApp-2020",
+    codeUrl: "https://github.com/awrennuit/HTG-WorkoutApp-2020",
     descriptionLineOne: "Hack The Gap weekend virtual hackathon",
     descriptionLineTwo: "project conceived and built by a team of five",
     externalAppUrl: "https://htg2020-homebody.web.app/",
@@ -40,7 +40,7 @@ export const allProjects = [
   },
   {
     altText: "evening javascript homepage",
-    codeUrl: "https://github.com/AwrenNuit/evening-javascript",
+    codeUrl: "https://github.com/awrennuit/evening-javascript",
     descriptionLineOne: "Small, odd evening projects",
     descriptionLineTwo: "utilizing vanilla JavaScript",
     externalAppUrl: "https://evening-javascript.web.app/index.html",
@@ -50,7 +50,7 @@ export const allProjects = [
   },
   {
     altText: "tarot ascii logo",
-    codeUrl: "https://github.com/AwrenNuit/perl-tarot-reading",
+    codeUrl: "https://github.com/awrennuit/perl-tarot-reading",
     descriptionLineOne: "Perl script that initiates a",
     descriptionLineTwo: "command line fortune telling game",
     image: "images/screenshots/tarot.webp",
@@ -60,7 +60,7 @@ export const allProjects = [
   {
     altText: "set timer page",
     appUrl: "/timer",
-    codeUrl: "https://github.com/AwrenNuit/countdown-timer",
+    codeUrl: "https://github.com/awrennuit/countdown-timer",
     descriptionLineOne: "Constructed to gain a better",
     descriptionLineTwo: "understanding of time",
     image: "images/screenshots/timer.webp",
@@ -69,7 +69,7 @@ export const allProjects = [
   },
   {
     altText: "alumni tracker table",
-    codeUrl: "https://github.com/AwrenNuit/alum-tracker",
+    codeUrl: "https://github.com/awrennuit/alum-tracker",
     descriptionLineOne: "Basic solution to track which events Prime",
     descriptionLineTwo: "Digital Academy alumni are attending",
     image: "images/screenshots/tracker.webp",
@@ -79,7 +79,7 @@ export const allProjects = [
   {
     altText: "password generator main page",
     appUrl: "/password-generator",
-    codeUrl: "https://github.com/AwrenNuit/unique-id-generator",
+    codeUrl: "https://github.com/awrennuit/unique-id-generator",
     descriptionLineOne: "An exercise in basic password",
     descriptionLineTwo: "and ID generation",
     image: "images/screenshots/password.webp",
@@ -89,7 +89,7 @@ export const allProjects = [
   {
     altText: "pixel art main page",
     appUrl: "/abstract-art",
-    codeUrl: "https://github.com/AwrenNuit/abstract-pixel-art",
+    codeUrl: "https://github.com/awrennuit/abstract-pixel-art",
     descriptionLineOne: "Fusing my love for both",
     descriptionLineTwo: "experimental art and technology",
     image: "images/screenshots/art.webp",

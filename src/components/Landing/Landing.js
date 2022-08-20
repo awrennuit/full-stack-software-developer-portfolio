@@ -10,7 +10,7 @@ export default function Landing() {
         <p>Hi there!</p>
         <p>
           I'm&nbsp;
-          <span className="landing-name">Awren Nuit</span>.
+          <span className="landing-name">awren nuit</span>.
         </p>
         <p>I bring ideas to reality.</p>
         <div className="landing-btn-container">

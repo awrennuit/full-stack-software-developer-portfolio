@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div>
-        <p>&#169; {new Date().getFullYear()} Awren Nuit</p>
+        <p>&#169; {new Date().getFullYear()} awren nuit</p>
       </div>
       <div className="footer-icons">
         {footerIconData.map((info, i) => (

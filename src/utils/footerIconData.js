@@ -11,7 +11,7 @@ export const footerIconData = [
   {
     alt: "github icon",
     height: "30px",
-    href: "https://github.com/AwrenNuit",
+    href: "https://github.com/awrennuit",
     rel: "noopener noreferrer",
     src: "images/icons/github.svg",
     target: "_blank",
