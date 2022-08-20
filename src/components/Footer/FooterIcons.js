@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function FooterIcons(props) {
   return (
     <a href={props.href} target={props.target} rel={props.rel}>

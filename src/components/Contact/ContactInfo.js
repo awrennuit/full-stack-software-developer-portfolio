@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ContactInfo(props) {
   return (
     <div className={`contact-info-block ${props.class}`}>

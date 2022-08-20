@@ -17,8 +17,8 @@ export const contactData = [
   },
   {
     class: "contact-github",
-    href: "https://github.com/AwrenNuit",
-    label: "AwrenNuit",
+    href: "https://github.com/awrennuit",
+    label: "awrennuit",
     method: "GitHub",
     rel: "noopener noreferrer",
     target: "_blank",
@@ -26,7 +26,7 @@ export const contactData = [
   {
     class: "contact-linkedin",
     href: "https://www.linkedin.com/in/awren-nuit/",
-    label: "Awren Nuit",
+    label: "awren nuit",
     method: "LinkedIn",
     rel: "noopener noreferrer",
     target: "_blank",

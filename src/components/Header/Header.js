@@ -1,4 +1,3 @@
-import React from "react";
 import { headerLinks } from "../../utils/headerLinks";
 import HeaderBtn from "./HeaderBtn";
 import "./Header.css";
