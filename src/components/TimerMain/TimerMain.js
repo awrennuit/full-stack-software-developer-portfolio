@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import TimerForm from '../TimerForm/TimerForm';
 import Timer from '../Timer/Timer';
 import ToggleThemeDark from '../TimerThemeDark/TimerThemeDark';
@@ -11,20 +11,20 @@ export default function TimerMain() {
 
   const [theme, setTheme] = useState({
     palette: {
-      type: `dark`,
+      mode: `dark`,
       theme: `timer-dark-mode`,
     },
   });
 
   const toggleTheme = () => {
-    let newPaletteType = theme.palette.type === `light` ? `dark` : `light`;
+    let newPaletteType = theme.palette.mode === `light` ? `dark` : `light`;
     let newPaletteTheme =
       theme.palette.theme === `timer-light-mode`
         ? `timer-dark-mode`
         : `timer-light-mode`;
     setTheme({
       palette: {
-        type: newPaletteType,
+        mode: newPaletteType,
         theme: newPaletteTheme,
       },
     });
@@ -40,18 +40,18 @@ export default function TimerMain() {
   return (
     <div className={theme.palette.theme}>
       <Header />
-      {theme.palette.type === `dark` ? (
+      {theme.palette.mode === `dark` ? (
         <ToggleThemeDark onToggleTheme={toggleTheme} />
       ) : (
         <ToggleThemeLight onToggleTheme={toggleTheme} />
       )}
-      <MuiThemeProvider theme={muiTheme}>
+      <ThemeProvider theme={muiTheme}>
         {!showTimer ? (
           <TimerForm timer={showTimerComponent} />
         ) : (
           <Timer timer={showTimerComponent} />
         )}
-      </MuiThemeProvider>
+      </ThemeProvider>
     </div>
   );
   // }

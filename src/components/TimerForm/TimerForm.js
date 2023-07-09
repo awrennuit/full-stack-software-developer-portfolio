@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 export default function TimerForm(props) {
   const dispatch = useDispatch();
@@ -45,6 +45,7 @@ export default function TimerForm(props) {
           }}
           value={days}
           id="standard-basic"
+          variant="standard"
           label="Days"
           style={{ width: '50px', margin: '10px' }}
         />
@@ -56,6 +57,7 @@ export default function TimerForm(props) {
           }}
           value={hours}
           id="standard-basic"
+          variant="standard"
           label="Hours"
           style={{ width: '50px', margin: '10px' }}
         />
@@ -67,6 +69,7 @@ export default function TimerForm(props) {
           }}
           value={minutes}
           id="standard-basic"
+          variant="standard"
           label="Minutes"
           style={{ width: '50px', margin: '10px' }}
         />
@@ -78,6 +81,7 @@ export default function TimerForm(props) {
           }}
           value={seconds}
           id="standard-basic"
+          variant="standard"
           label="Seconds"
           style={{ width: '50px', margin: '10px' }}
         />
@@ -86,7 +90,10 @@ export default function TimerForm(props) {
         <Button
           type="submit"
           variant="outlined"
-          style={{ paddingTop: '5px', paddingBottom: '10px' }}
+          style={{
+            paddingTop: '5px',
+            paddingBottom: '10px',
+          }}
         >
           Start Countdown
         </Button>
