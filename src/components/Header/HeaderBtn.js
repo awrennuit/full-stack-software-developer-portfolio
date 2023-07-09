@@ -1,13 +1,13 @@
-import { useHistory } from "react-router-dom";
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function HeaderBtn({ label, url }) {
-  const history = useHistory();
-  const location = history.location.pathname;
+  const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <button
-      className={location === url ? "header-btn-here" : "header-btn"}
-      onClick={() => (location !== url ? history.push(url) : null)}
+      className={location.pathname === url ? 'header-btn-here' : 'header-btn'}
+      onClick={() => (location.pathname !== url ? navigate(url) : null)}
     >
       <span className="header-btn-corner-one"></span>
       <span className="header-btn-corner-two"></span>

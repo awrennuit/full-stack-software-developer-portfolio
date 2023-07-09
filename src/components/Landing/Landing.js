@@ -1,8 +1,8 @@
 import "./Landing.css";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Landing() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   return (
     <div className="main-container">
@@ -16,7 +16,7 @@ export default function Landing() {
         <div className="landing-btn-container">
           <button
             className="landing-button"
-            onClick={() => history.push("/about")}
+            onClick={() => navigate("/about")}
           >
             Go
           </button>

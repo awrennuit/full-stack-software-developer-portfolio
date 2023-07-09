@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 import TimerForm from "../TimerForm/TimerForm";
 import Timer from "../Timer/Timer";
 import ToggleThemeDark from "../TimerThemeDark/TimerThemeDark";
@@ -30,7 +30,7 @@ export default function TimerMain() {
     });
   };
 
-  const muiTheme = createMuiTheme(theme);
+  const muiTheme = createTheme(theme);
 
   const showTimerComponent = (bool) => {
     setShowTimer(bool);

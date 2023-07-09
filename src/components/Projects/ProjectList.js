@@ -1,4 +1,4 @@
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Projects.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 import { allProjects } from "../../utils/allProjects";
 
 export default function Projects() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -16,7 +16,7 @@ export default function Projects() {
           {allProjects.map((card, i) => (
             <ProjectCard
               altText={card.altText}
-              appUrl={card.appUrl ? () => history.push(card.appUrl) : null}
+              appUrl={card.appUrl ? () => navigate(card.appUrl) : null}
               codeUrl={card.codeUrl}
               descriptionLineOne={card.descriptionLineOne}
               descriptionLineTwo={card.descriptionLineTwo}
