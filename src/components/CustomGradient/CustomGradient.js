@@ -1,23 +1,27 @@
-import React, { useEffect, useState } from "react";
-import { gradientBtnData } from "../../utils/gradientBtnData";
-import "./CustomGradient.css";
-import ColorPicker from "./ColorPicker";
-import Header from "../Header/Header";
-import GradientDirectionBtn from "./GradientDirectionBtn";
-import GradientTypeRadio from "./GradientTypeRadio";
+import React, { useEffect, useState } from 'react';
+import { gradientBtnData } from '../../utils/gradientBtnData';
+import './CustomGradient.css';
+import ColorPicker from './ColorPicker';
+import Header from '../Header/Header';
+import GradientDirectionBtn from './GradientDirectionBtn';
+import GradientTypeRadio from './GradientTypeRadio';
 
 export default function CustomGradient() {
-  const [colorOne, setColorOne] = useState("");
-  const [colorTwo, setColorTwo] = useState("");
-  const [gradient, setGradient] = useState("");
-  const [gradientDirection, setGradientDirection] = useState("right");
-  const [gradientType, setGradientType] = useState("linear");
+  const [colorOne, setColorOne] = useState('');
+  const [colorTwo, setColorTwo] = useState('');
+  const [gradient, setGradient] = useState('');
+  const [gradientDirection, setGradientDirection] = useState('right');
+  const [gradientType, setGradientType] = useState('linear');
   const [isMinimal, setIsMinimal] = useState(true);
   const [isMinimalDisplayNone, setIsMinimalDisplayNone] = useState(false);
 
   useEffect(() => {
-    setColorOne("#" + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, "0"));
-    setColorTwo("#" + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, "0"));
+    setColorOne(
+      '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0')
+    );
+    setColorTwo(
+      '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0')
+    );
   }, []);
 
   useEffect(() => {
@@ -30,10 +34,12 @@ export default function CustomGradient() {
 
   useEffect(() => {
     switch (gradientType) {
-      case "linear":
-        setGradient(`linear-gradient(to ${gradientDirection}, ${colorOne}, ${colorTwo})`);
+      case 'linear':
+        setGradient(
+          `linear-gradient(to ${gradientDirection}, ${colorOne}, ${colorTwo})`
+        );
         break;
-      case "radial":
+      case 'radial':
         setGradient(`radial-gradient(${colorOne}, ${colorTwo})`);
         break;
       default:
@@ -60,7 +66,9 @@ export default function CustomGradient() {
       <Header />
       <div className="gradient-wrapper">
         <div
-          className={`gradient-render ${isMinimal ? "" : "gradient-render--sm"}`}
+          className={`gradient-render ${
+            isMinimal ? '' : 'gradient-render--sm'
+          }`}
           style={{ background: `${gradient}` }}
         ></div>
 
@@ -68,10 +76,10 @@ export default function CustomGradient() {
           className={`gradient-picker-wrapper
             ${
               isMinimal
-                ? "gradient-picker--active"
-                : "gradient-picker--inactive"
+                ? 'gradient-picker--active'
+                : 'gradient-picker--inactive'
             }`}
-          style={isMinimalDisplayNone ? { display: "none" } : null}
+          style={isMinimalDisplayNone ? { display: 'none' } : null}
         >
           <ColorPicker
             color={colorOne}
@@ -92,15 +100,17 @@ export default function CustomGradient() {
 
         <div
           className={`gradient-tools-wrapper
-            ${isMinimal ? "gradient-tools--inactive" : "gradient-tools--active"}`}
-          style={isMinimalDisplayNone ? null : { display: "none" }}
+            ${
+              isMinimal ? 'gradient-tools--inactive' : 'gradient-tools--active'
+            }`}
+          style={isMinimalDisplayNone ? null : { display: 'none' }}
         >
           <div className="gradient-tools-inner">
             <div>
               <p
                 className="gradient-code"
                 id="output"
-                onClick={() => selectText("output")}
+                onClick={() => selectText('output')}
               >
                 {gradient}
               </p>

@@ -14,10 +14,10 @@ export default function Toggle({
         id={toggleId ? toggleId : null}
         name={toggleName}
         onChange={(e) =>
-          toggleType === "checkbox"
+          toggleType === 'checkbox'
             ? e.target.checked
               ? setVariable(e.target.value)
-              : setVariable("")
+              : setVariable('')
             : setVariable(e.target.value)
         }
         type={toggleType}

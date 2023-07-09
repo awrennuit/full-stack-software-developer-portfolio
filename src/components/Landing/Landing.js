@@ -1,5 +1,5 @@
-import "./Landing.css";
-import { useNavigate } from "react-router-dom";
+import './Landing.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -14,10 +14,7 @@ export default function Landing() {
         </p>
         <p>I bring ideas to reality.</p>
         <div className="landing-btn-container">
-          <button
-            className="landing-button"
-            onClick={() => navigate("/about")}
-          >
+          <button className="landing-button" onClick={() => navigate('/about')}>
             Go
           </button>
           <span className="landing-box-lg"></span>

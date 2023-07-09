@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import "./Abstract.css";
-import Header from "../Header/Header";
+import React, { useState } from 'react';
+import './Abstract.css';
+import Header from '../Header/Header';
 
 export default function Abstract() {
   const [color, setColor] = useState([]);
-  const [art, setArt] = useState("");
+  const [art, setArt] = useState('');
 
   const randomizeMatrix = () => {
     let divs = [];
@@ -28,7 +28,7 @@ export default function Abstract() {
   };
 
   const loop = () => {
-    setArt("");
+    setArt('');
     for (let i = 0; i < 50; i++) {
       setTimeout(() => {
         setArt(randomizeMatrix());
@@ -50,16 +50,16 @@ export default function Abstract() {
                 name="colors"
                 onChange={() => {
                   setColor([
-                    "e",
-                    "ee",
-                    "eee",
-                    "eeee",
-                    "eeeee",
-                    "eeeeee",
-                    "eeeeeee",
-                    "eeeeeeee",
-                    "eeeeeeeee",
-                    "eeeeeeeeee",
+                    'e',
+                    'ee',
+                    'eee',
+                    'eeee',
+                    'eeeee',
+                    'eeeeee',
+                    'eeeeeee',
+                    'eeeeeeee',
+                    'eeeeeeeee',
+                    'eeeeeeeeee',
                   ]);
                 }}
               />
@@ -72,16 +72,16 @@ export default function Abstract() {
                 name="colors"
                 onChange={() => {
                   setColor([
-                    "c",
-                    "cc",
-                    "ccc",
-                    "cccc",
-                    "ccccc",
-                    "cccccc",
-                    "ccccccc",
-                    "cccccccc",
-                    "ccccccccc",
-                    "cccccccccc",
+                    'c',
+                    'cc',
+                    'ccc',
+                    'cccc',
+                    'ccccc',
+                    'cccccc',
+                    'ccccccc',
+                    'cccccccc',
+                    'ccccccccc',
+                    'cccccccccc',
                   ]);
                 }}
               />
@@ -96,16 +96,16 @@ export default function Abstract() {
                 name="colors"
                 onChange={() => {
                   setColor([
-                    "b",
-                    "bb",
-                    "bbb",
-                    "bbbb",
-                    "bbbbb",
-                    "bbbbbb",
-                    "bbbbbbb",
-                    "bbbbbbbb",
-                    "bbbbbbbbb",
-                    "bbbbbbbbbb",
+                    'b',
+                    'bb',
+                    'bbb',
+                    'bbbb',
+                    'bbbbb',
+                    'bbbbbb',
+                    'bbbbbbb',
+                    'bbbbbbbb',
+                    'bbbbbbbbb',
+                    'bbbbbbbbbb',
                   ]);
                 }}
               />
@@ -118,16 +118,16 @@ export default function Abstract() {
                 name="colors"
                 onChange={() => {
                   setColor([
-                    "d",
-                    "dd",
-                    "ddd",
-                    "dddd",
-                    "ddddd",
-                    "dddddd",
-                    "ddddddd",
-                    "dddddddd",
-                    "ddddddddd",
-                    "dddddddddd",
+                    'd',
+                    'dd',
+                    'ddd',
+                    'dddd',
+                    'ddddd',
+                    'dddddd',
+                    'ddddddd',
+                    'dddddddd',
+                    'ddddddddd',
+                    'dddddddddd',
                   ]);
                 }}
               />
@@ -142,16 +142,16 @@ export default function Abstract() {
                 name="colors"
                 onChange={() => {
                   setColor([
-                    "a",
-                    "aa",
-                    "aaa",
-                    "aaaa",
-                    "aaaaa",
-                    "aaaaaa",
-                    "aaaaaaa",
-                    "aaaaaaaa",
-                    "aaaaaaaaa",
-                    "aaaaaaaaaa",
+                    'a',
+                    'aa',
+                    'aaa',
+                    'aaaa',
+                    'aaaaa',
+                    'aaaaaa',
+                    'aaaaaaa',
+                    'aaaaaaaa',
+                    'aaaaaaaaa',
+                    'aaaaaaaaaa',
                   ]);
                 }}
               />
@@ -164,16 +164,16 @@ export default function Abstract() {
                 name="colors"
                 onChange={() => {
                   setColor([
-                    "f",
-                    "ff",
-                    "fff",
-                    "ffff",
-                    "fffff",
-                    "ffffff",
-                    "fffffff",
-                    "ffffffff",
-                    "fffffffff",
-                    "ffffffffff",
+                    'f',
+                    'ff',
+                    'fff',
+                    'ffff',
+                    'fffff',
+                    'ffffff',
+                    'fffffff',
+                    'ffffffff',
+                    'fffffffff',
+                    'ffffffffff',
                   ]);
                 }}
               />

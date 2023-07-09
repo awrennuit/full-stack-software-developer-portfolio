@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 export default function TimerForm(props) {
   const dispatch = useDispatch();
@@ -13,13 +13,13 @@ export default function TimerForm(props) {
   const handleChange = (e, prop) => {
     if (isNaN(e.target.value)) {
       e.target.value = 0;
-    } else if (prop === "days" && e.target.value > 364) {
+    } else if (prop === 'days' && e.target.value > 364) {
       e.target.value = 364;
-    } else if (prop === "hours" && e.target.value > 23) {
+    } else if (prop === 'hours' && e.target.value > 23) {
       e.target.value = 23;
-    } else if (prop === "minutes" && e.target.value > 59) {
+    } else if (prop === 'minutes' && e.target.value > 59) {
       e.target.value = 59;
-    } else if (prop === "seconds" && e.target.value > 59) {
+    } else if (prop === 'seconds' && e.target.value > 59) {
       e.target.value = 59;
     }
 
@@ -40,53 +40,53 @@ export default function TimerForm(props) {
         <TextField
           type="text"
           onChange={(e) => {
-            handleChange(e, "days");
+            handleChange(e, 'days');
             setDays(+e.target.value);
           }}
           value={days}
           id="standard-basic"
           label="Days"
-          style={{ width: "50px", margin: "10px" }}
+          style={{ width: '50px', margin: '10px' }}
         />
         <TextField
           type="text"
           onChange={(e) => {
-            handleChange(e, "hours");
+            handleChange(e, 'hours');
             setHours(+e.target.value);
           }}
           value={hours}
           id="standard-basic"
           label="Hours"
-          style={{ width: "50px", margin: "10px" }}
+          style={{ width: '50px', margin: '10px' }}
         />
         <TextField
           type="text"
           onChange={(e) => {
-            handleChange(e, "minutes");
+            handleChange(e, 'minutes');
             setMinutes(+e.target.value);
           }}
           value={minutes}
           id="standard-basic"
           label="Minutes"
-          style={{ width: "50px", margin: "10px" }}
+          style={{ width: '50px', margin: '10px' }}
         />
         <TextField
           type="text"
           onChange={(e) => {
-            handleChange(e, "seconds");
+            handleChange(e, 'seconds');
             setSeconds(+e.target.value);
           }}
           value={seconds}
           id="standard-basic"
           label="Seconds"
-          style={{ width: "50px", margin: "10px" }}
+          style={{ width: '50px', margin: '10px' }}
         />
         <br />
         <br />
         <Button
           type="submit"
           variant="outlined"
-          style={{ paddingTop: "5px", paddingBottom: "10px" }}
+          style={{ paddingTop: '5px', paddingBottom: '10px' }}
         >
           Start Countdown
         </Button>

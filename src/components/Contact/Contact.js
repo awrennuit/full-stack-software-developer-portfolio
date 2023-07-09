@@ -1,8 +1,8 @@
-import "./Contact.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import { contactData } from "../../utils/contactData";
-import ContactInfo from "./ContactInfo";
+import './Contact.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import { contactData } from '../../utils/contactData';
+import ContactInfo from './ContactInfo';
 
 export default function Contact() {
   return (

@@ -1,5 +1,5 @@
-import Slider from "../Slider/Slider";
-import Toggle from "../Toggle/Toggle";
+import Slider from '../Slider/Slider';
+import Toggle from '../Toggle/Toggle';
 
 export default function PropertyTab({
   classClicked,
@@ -15,13 +15,15 @@ export default function PropertyTab({
       <div
         className={classClicked}
         onClick={() => {
-          classClicked === "sandbox-item-heading"
-            ? setClassClicked("sandbox-item-heading--clicked")
-            : setClassClicked("sandbox-item-heading");
+          classClicked === 'sandbox-item-heading'
+            ? setClassClicked('sandbox-item-heading--clicked')
+            : setClassClicked('sandbox-item-heading');
 
-          classShow === "sandbox-item-contents"
-            ? setClassShow("sandbox-item-contents sandbox-item-contents--active")
-            : setClassShow("sandbox-item-contents");
+          classShow === 'sandbox-item-contents'
+            ? setClassShow(
+                'sandbox-item-contents sandbox-item-contents--active'
+              )
+            : setClassShow('sandbox-item-contents');
         }}
         role="button"
       >
@@ -43,7 +45,7 @@ export default function PropertyTab({
                   toggleValue={item.toggleValue}
                 />
               ))
-            : ""}
+            : ''}
         </div>
         {sliderList?.length > 0
           ? sliderList.map((item, i) => (
@@ -57,7 +59,7 @@ export default function PropertyTab({
                 variableName={item.sliderVariable}
               />
             ))
-          : ""}
+          : ''}
       </div>
     </div>
   );

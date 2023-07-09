@@ -1,4 +1,4 @@
-import "./Projects.css";
+import './Projects.css';
 
 export default function ProjectCard(props) {
   return (
@@ -13,9 +13,9 @@ export default function ProjectCard(props) {
         </p>
         <button
           className={
-            !props.oneButton ? "project-btn-code" : "project-btn-code-single"
+            !props.oneButton ? 'project-btn-code' : 'project-btn-code-single'
           }
-          onClick={() => window.open(props.codeUrl, "_blank")}
+          onClick={() => window.open(props.codeUrl, '_blank')}
         >
           View Code
         </button>

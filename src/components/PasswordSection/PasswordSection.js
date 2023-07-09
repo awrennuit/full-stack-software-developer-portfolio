@@ -1,4 +1,4 @@
-import "../PasswordGenerator/PasswordGenerator.css";
+import '../PasswordGenerator/PasswordGenerator.css';
 
 export default function PasswordSection(props) {
   return (
@@ -8,7 +8,7 @@ export default function PasswordSection(props) {
           type="checkbox"
           value={props.value}
           onChange={props.handleCheck}
-          defaultChecked={props.symbolType === "lowercase"}
+          defaultChecked={props.symbolType === 'lowercase'}
         />
         <span className="password-span">Add {props.symbolType}?</span>
       </div>

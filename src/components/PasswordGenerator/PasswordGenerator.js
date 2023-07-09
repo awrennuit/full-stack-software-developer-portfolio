@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import "./PasswordGenerator.css";
-import Header from "../Header/Header";
-import PasswordSection from "../PasswordSection/PasswordSection";
+import React, { useState } from 'react';
+import './PasswordGenerator.css';
+import Header from '../Header/Header';
+import PasswordSection from '../PasswordSection/PasswordSection';
 
 export default function PasswordGenerator() {
   // Store local state and variables
   const [length, setLength] = useState(10);
-  const [charset, setCharset] = useState("abcdefghijklmnopqrstuvwxyz");
-  const [uniquePassword, setUniquePassword] = useState("");
+  const [charset, setCharset] = useState('abcdefghijklmnopqrstuvwxyz');
+  const [uniquePassword, setUniquePassword] = useState('');
   const notChar = /^[a-zA-Z0-9]/;
-  let tempPassword = "";
+  let tempPassword = '';
 
   // Check if a specific symbol is used two times in a row and skip it if true
   const checkDupe = (char) => {
@@ -29,7 +29,7 @@ export default function PasswordGenerator() {
     let randomCharset = charset.split(``);
 
     if (!charset) {
-      setUniquePassword("Check at least one option!");
+      setUniquePassword('Check at least one option!');
     } else {
       for (let i = 0; tempPassword.length < length; i++) {
         if (i === randomCharset.length) {
@@ -61,11 +61,11 @@ export default function PasswordGenerator() {
         setCharset(charset + char.value);
       } else if (!charset.includes(`-_`)) {
         setCharset(charset + char.value);
-      } else if (!charset.includes("#;:`~!@#$%^&*()+={}[]/\\?")) {
+      } else if (!charset.includes('#;:`~!@#$%^&*()+={}[]/\\?')) {
         setCharset(charset + char.value);
       }
     } else if (!char.checked) {
-      setCharset(charset.replace(char.value, ""));
+      setCharset(charset.replace(char.value, ''));
     }
   };
 
@@ -73,7 +73,7 @@ export default function PasswordGenerator() {
   const handleLengthChange = (e) =>
     e.target.value <= 50 && e.target.value >= 2
       ? setLength(+e.target.value)
-      : "";
+      : '';
 
   return (
     <>

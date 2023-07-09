@@ -1,6 +1,6 @@
-import { headerLinks } from "../../utils/headerLinks";
-import HeaderBtn from "./HeaderBtn";
-import "./Header.css";
+import { headerLinks } from '../../utils/headerLinks';
+import HeaderBtn from './HeaderBtn';
+import './Header.css';
 
 export default function Header() {
   return (

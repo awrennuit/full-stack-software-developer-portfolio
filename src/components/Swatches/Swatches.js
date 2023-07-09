@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { swatchList } from "../../utils/swatches";
-import Header from "../Header/Header";
-import "./Swatches.css";
+import React, { useEffect, useState } from 'react';
+import { swatchList } from '../../utils/swatches';
+import Header from '../Header/Header';
+import './Swatches.css';
 
 export default function Swatches() {
   const [btnPos, setBtnPos] = useState(80);
   const [isBgWhite, setIsBgWhite] = useState(true);
 
   useEffect(() => {
-    window.addEventListener("scroll", btnPositionOnScroll);
+    window.addEventListener('scroll', btnPositionOnScroll);
   }, []);
 
   const btnPositionOnScroll = () => {
@@ -26,7 +26,7 @@ export default function Swatches() {
   const copySwatch = (i) => {
     document.getElementById(`swatch-${i}`).focus();
     document.getElementById(`swatch-${i}`).select();
-    document.execCommand("copy");
+    document.execCommand('copy');
   };
 
   return (
@@ -35,7 +35,7 @@ export default function Swatches() {
       <div
         className="swatch-wrapper"
         style={
-          isBgWhite ? { backgroundColor: "#fff" } : { backgroundColor: "#000" }
+          isBgWhite ? { backgroundColor: '#fff' } : { backgroundColor: '#000' }
         }
       >
         <button
@@ -46,8 +46,8 @@ export default function Swatches() {
           <span
             className={
               isBgWhite
-                ? "swatch-toggle-icon--inactive"
-                : "swatch-toggle-icon--active"
+                ? 'swatch-toggle-icon--inactive'
+                : 'swatch-toggle-icon--active'
             }
           ></span>
         </button>

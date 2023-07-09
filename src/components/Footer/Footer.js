@@ -1,6 +1,6 @@
-import { footerIconData } from "../../utils/footerIconData";
-import "./Footer.css";
-import FooterIcons from "./FooterIcons";
+import { footerIconData } from '../../utils/footerIconData';
+import './Footer.css';
+import FooterIcons from './FooterIcons';
 
 export default function Footer() {
   return (

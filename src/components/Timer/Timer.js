@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import Button from "@material-ui/core/Button";
-import "./Timer.css";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Button from '@material-ui/core/Button';
+import './Timer.css';
 
 class Timer extends Component {
   state = {
@@ -15,28 +15,28 @@ class Timer extends Component {
 
   UNSAFE_componentWillMount() {
     this.setState(this.props.reduxState);
-  };
+  }
 
   componentDidMount() {
     if (this.props.reduxState.days === undefined) {
     }
     this.interval = setInterval(() => this.countdown(), 1000);
-  };
+  }
 
   componentDidUpdate() {
     if (this.state.alarm) {
-      const audio = new Audio("/sounds/alarm.mp3");
+      const audio = new Audio('/sounds/alarm.mp3');
       audio.play();
       this.setState({
         alarm: false,
         alarmDone: true,
       });
     }
-  };
+  }
 
   componentWillUnmount() {
     clearInterval(this.interval);
-  };
+  }
 
   countdown = () => {
     const calcTimeLeft = () => {
@@ -112,14 +112,14 @@ class Timer extends Component {
     return (
       <div className="timer-countdown-container">
         <div className="timer-countdown">
-          {this.state.days < 10 ? "0" + this.state.days : this.state.days}d:
-          {this.state.hours < 10 ? "0" + this.state.hours : this.state.hours}h:
+          {this.state.days < 10 ? '0' + this.state.days : this.state.days}d:
+          {this.state.hours < 10 ? '0' + this.state.hours : this.state.hours}h:
           {this.state.minutes < 10
-            ? "0" + this.state.minutes
+            ? '0' + this.state.minutes
             : this.state.minutes}
           m:
           {this.state.seconds < 10
-            ? "0" + this.state.seconds
+            ? '0' + this.state.seconds
             : this.state.seconds}
           s
         </div>
@@ -127,9 +127,9 @@ class Timer extends Component {
           variant="outlined"
           onClick={() => this.props.timer(false)}
           style={{
-            marginTop: "25px",
-            paddingTop: "5px",
-            paddingBottom: "10px",
+            marginTop: '25px',
+            paddingTop: '5px',
+            paddingBottom: '10px',
           }}
         >
           Set Timer
