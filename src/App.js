@@ -1,23 +1,23 @@
 import React, { Suspense } from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import Loading from './Loading';
-import '../stylesheets/app.css';
+import Loading from './components/Loading';
+import './stylesheets/app.css';
 
-const Abstract = React.lazy(() => import('./Abstract'));
-const Blog = React.lazy(() => import('./Blog'));
-const Contact = React.lazy(() => import('./Contact'));
-const CssSandbox = React.lazy(() => import('./CssSandbox/CssSandbox'));
+const Abstract = React.lazy(() => import('./components/Abstract'));
+const Blog = React.lazy(() => import('./components/Blog'));
+const Contact = React.lazy(() => import('./components/Contact'));
+const CssSandbox = React.lazy(() => import('./components/CssSandbox/CssSandbox'));
 const CustomGradient = React.lazy(() =>
-  import('./CustomGradient/CustomGradient')
+  import('./components/CustomGradient/CustomGradient')
 );
-const Home = React.lazy(() => import('./Home'));
-const Landing = React.lazy(() => import('./Landing'));
+const Home = React.lazy(() => import('./components/Home'));
+const Landing = React.lazy(() => import('./components/Landing'));
 const PasswordGenerator = React.lazy(() =>
-  import('./PasswordGenerator')
+  import('./components/PasswordGenerator')
 );
-const ProjectList = React.lazy(() => import('./ProjectList'));
-const Swatches = React.lazy(() => import('./Swatches'));
-const TimerMain = React.lazy(() => import('./TimerMain'));
+const ProjectList = React.lazy(() => import('./components/ProjectList'));
+const Swatches = React.lazy(() => import('./components/Swatches'));
+const TimerMain = React.lazy(() => import('./components/TimerMain'));
 
 export default function App() {
   return (
