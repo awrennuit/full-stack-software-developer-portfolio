@@ -21,9 +21,10 @@ export default function Contact() {
           <span className="contact-sidebars"></span>
           <span className="contact-divider"></span>
         </div>
-        <div className="contact-grid">
+        <ul className="contact-grid">
           {contactData.map((info, i) => (
             <ContactInfo
+              ariaLabel={info.ariaLabel}
               class={info.class}
               href={info.href}
               key={i}
@@ -33,7 +34,7 @@ export default function Contact() {
               target={info.target}
             />
           ))}
-        </div>
+        </ul>
         <div className="contact-thanks">
           <p>Thanks for stopping by, and I hope to hear from you!</p>
         </div>

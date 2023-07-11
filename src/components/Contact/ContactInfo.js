@@ -1,12 +1,16 @@
 export default function ContactInfo(props) {
   return (
-    <div className={`contact-info-block ${props.class}`}>
-      <p>
-        {props.method}:&nbsp;
-        <a href={props.href} target={props.target} rel={props.rel}>
-          {props.label}
-        </a>
-      </p>
-    </div>
+    <li className={`contact-info-block ${props.class}`}>
+      <label htmlFor={props.class}>{props.method}:&nbsp;</label>
+      <a
+        id={props.class}
+        href={props.href}
+        target={props.target}
+        rel={props.rel}
+        aria-label={props.ariaLabel ? props.ariaLabel : null}
+      >
+        {props.label}
+      </a>
+    </li>
   );
 }

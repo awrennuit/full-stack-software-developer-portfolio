@@ -8,6 +8,7 @@ export const contactData = [
     target: null,
   },
   {
+    ariaLabel: '6 5 1. 2 7 6. 3 4 6 1.',
     class: 'contact-phone',
     href: 'tel:+01-651-276-3461',
     label: '651-276-3461',
