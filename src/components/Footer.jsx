@@ -1,6 +1,5 @@
 import { footerIconData } from '../utils/footerIconData';
-import '../stylesheets/footer.css';
-import FooterIcons from './FooterIcons';
+import FooterIcon from './FooterIcon';
 
 export default function Footer() {
   return (
@@ -8,9 +7,9 @@ export default function Footer() {
       <div>
         <p>&#169; {new Date().getFullYear()} awren nuit</p>
       </div>
-      <div className="footer-icons">
+      <div className="footer__icon-container">
         {footerIconData.map((info, i) => (
-          <FooterIcons
+          <FooterIcon
             alt={info.alt}
             height={info.height}
             href={info.href}
