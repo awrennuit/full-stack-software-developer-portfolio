@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../../stylesheets/abstract.css';
-import Header from '../Header/Header';
+import '../stylesheets/abstract.css';
+import Header from './Header';
 
 export default function Abstract() {
   const [color, setColor] = useState([]);

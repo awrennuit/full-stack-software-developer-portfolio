@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../../stylesheets/password-generator.css';
-import Header from '../Header/Header';
-import PasswordSection from '../PasswordSection/PasswordSection';
+import '../stylesheets/password-generator.css';
+import Header from './Header';
+import PasswordSection from './PasswordSection';
 
 export default function PasswordGenerator() {
   // Store local state and variables

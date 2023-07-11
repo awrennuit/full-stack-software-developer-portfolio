@@ -1,4 +1,4 @@
-import '../../stylesheets/blog.css';
+import '../stylesheets/blog.css';
 
 export default function Blog() {
   return (

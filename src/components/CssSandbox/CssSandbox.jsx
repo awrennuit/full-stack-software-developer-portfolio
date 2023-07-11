@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./CssSandbox.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import '../../stylesheets/css-sandbox.css';
+import Header from "../Header";
+import Footer from "../Footer";
 import PropertyTab from "./PropertyTab/PropertyTab";
 import TestDiv from "./TestDiv/testDiv";
 import Output from "./Output/Output";

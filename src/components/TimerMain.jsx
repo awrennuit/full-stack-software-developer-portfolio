@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import TimerForm from '../TimerForm/TimerForm';
-import Timer from '../Timer/Timer';
-import ToggleThemeDark from '../TimerThemeDark/TimerThemeDark';
-import ToggleThemeLight from '../TimerThemeLight/TimerThemeLight';
-import Header from '../Header/Header';
+import TimerForm from './TimerForm';
+import Timer from './Timer';
+import ToggleThemeDark from './TimerThemeDark';
+import ToggleThemeLight from './TimerThemeLight';
+import Header from './Header';
 
 export default function TimerMain() {
   const [showTimer, setShowTimer] = useState(false);

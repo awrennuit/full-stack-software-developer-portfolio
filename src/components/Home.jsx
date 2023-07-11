@@ -1,8 +1,8 @@
-import '../../stylesheets/home.css';
-import Header from '../Header/Header';
-import About from '../About/About';
-import Skills from '../Skills/Skills';
-import Footer from '../Footer/Footer';
+import '../stylesheets/home.css';
+import Header from './Header';
+import About from './About';
+import Skills from './Skills';
+import Footer from './Footer';
 
 export default function Home() {
   return (

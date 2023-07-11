@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { gradientBtnData } from '../../utils/gradientBtnData';
 import '../../stylesheets/custom-gradient.css';
 import ColorPicker from './ColorPicker';
-import Header from '../Header/Header';
+import Header from '../Header';
 import GradientDirectionBtn from './GradientDirectionBtn';
 import GradientTypeRadio from './GradientTypeRadio';
 

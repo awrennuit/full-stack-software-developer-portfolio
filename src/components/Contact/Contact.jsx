@@ -1,6 +1,6 @@
 import '../../stylesheets/contact.css';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../Header';
+import Footer from '../Footer';
 import { contactData } from '../../utils/contactData';
 import ContactInfo from './ContactInfo';
 

@@ -1,4 +1,4 @@
-import '../../stylesheets/password-generator.css';
+import '../stylesheets/password-generator.css';
 
 export default function PasswordSection(props) {
   return (

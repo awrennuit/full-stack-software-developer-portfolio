@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
-import '../../stylesheets/projects.css';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import '../stylesheets/projects.css';
+import Header from './Header';
+import Footer from './Footer';
 import ProjectCard from './ProjectCard';
-import { allProjects } from '../../utils/allProjects';
+import { allProjects } from '../utils/allProjects';
 
 export default function Projects() {
   const navigate = useNavigate();

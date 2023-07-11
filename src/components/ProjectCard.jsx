@@ -1,4 +1,4 @@
-import '../../stylesheets/projects.css';
+import '../stylesheets/projects.css';
 
 export default function ProjectCard(props) {
   return (
