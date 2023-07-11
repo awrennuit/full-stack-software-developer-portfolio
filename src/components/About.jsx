@@ -14,7 +14,7 @@ export default function About() {
           <a
             href="https://cavebirdrecords.bandcamp.com/"
             target="_blank"
-            rel="noopener noreferer"
+            rel="noopener noreferrer"
           >
             music
           </a>
