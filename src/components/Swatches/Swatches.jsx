@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { swatchList } from '../../utils/swatches';
 import Header from '../Header/Header';
-import './Swatches.css';
+import '../../stylesheets/swatches.css';
 
 export default function Swatches() {
   const [btnPos, setBtnPos] = useState(80);

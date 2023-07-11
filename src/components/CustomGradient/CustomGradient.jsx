@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { gradientBtnData } from '../../utils/gradientBtnData';
-import './CustomGradient.css';
+import '../../stylesheets/custom-gradient.css';
 import ColorPicker from './ColorPicker';
 import Header from '../Header/Header';
 import GradientDirectionBtn from './GradientDirectionBtn';

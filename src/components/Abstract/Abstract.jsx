@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Abstract.css';
+import '../../stylesheets/abstract.css';
 import Header from '../Header/Header';
 
 export default function Abstract() {

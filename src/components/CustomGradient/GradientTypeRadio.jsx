@@ -1,4 +1,4 @@
-import './CustomGradient.css';
+import '../../stylesheets/custom-gradient.css';
 
 export default function GradientTypeRadio({
   checkVal,

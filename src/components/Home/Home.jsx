@@ -1,4 +1,4 @@
-import './Home.css';
+import '../../stylesheets/home.css';
 import Header from '../Header/Header';
 import About from '../About/About';
 import Skills from '../Skills/Skills';

@@ -1,5 +1,5 @@
 import { footerIconData } from '../../utils/footerIconData';
-import './Footer.css';
+import '../../stylesheets/footer.css';
 import FooterIcons from './FooterIcons';
 
 export default function Footer() {

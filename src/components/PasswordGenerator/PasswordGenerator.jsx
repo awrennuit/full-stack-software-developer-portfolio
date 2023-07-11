@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PasswordGenerator.css';
+import '../../stylesheets/password-generator.css';
 import Header from '../Header/Header';
 import PasswordSection from '../PasswordSection/PasswordSection';
 

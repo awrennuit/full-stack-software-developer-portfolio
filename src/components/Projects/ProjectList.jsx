@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import './Projects.css';
+import '../../stylesheets/projects.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import ProjectCard from './ProjectCard';

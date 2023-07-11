@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Button from '@mui/material/Button';
-import './Timer.css';
+import '../../stylesheets/timer.css';
 
 class Timer extends Component {
   state = {
