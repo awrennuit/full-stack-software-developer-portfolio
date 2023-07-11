@@ -5,7 +5,7 @@ import '../stylesheets/app.css';
 
 const Abstract = React.lazy(() => import('./Abstract'));
 const Blog = React.lazy(() => import('./Blog'));
-const Contact = React.lazy(() => import('./Contact/Contact'));
+const Contact = React.lazy(() => import('./Contact'));
 const CssSandbox = React.lazy(() => import('./CssSandbox/CssSandbox'));
 const CustomGradient = React.lazy(() =>
   import('./CustomGradient/CustomGradient')

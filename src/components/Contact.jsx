@@ -1,7 +1,7 @@
-import '../../stylesheets/contact.css';
-import Header from '../Header';
-import Footer from '../Footer';
-import { contactData } from '../../utils/contactData';
+import '../stylesheets/contact.css';
+import Header from './Header';
+import Footer from './Footer';
+import { contactData } from '../utils/contactData';
 import ContactInfo from './ContactInfo';
 
 export default function Contact() {
