@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Loading from './components/Loading';
-import './stylesheets/app.css';
 
 const Abstract = React.lazy(() => import('./components/Abstract'));
 const Blog = React.lazy(() => import('./components/Blog'));
