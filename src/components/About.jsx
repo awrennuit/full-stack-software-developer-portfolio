@@ -10,9 +10,16 @@ export default function About() {
         <p>
           Growing up I was always coming up with new ideas and figuring out how
           to bring them to life. As I got older this manifested through visual
-          arts and music. I performed with the school orchestra all through
-          middle and high school, and have taught myself dozens of instruments
-          since then.
+          arts and{' '}
+          <a
+            href="https://cavebirdrecords.bandcamp.com/"
+            target="_blank"
+            rel="noopener noreferer"
+          >
+            music
+          </a>
+          . I performed with the school orchestra all through middle and high
+          school, and have taught myself dozens of instruments since then.
         </p>
         <p>
           I also have an affinity for plants, which blossomed into a deep study
@@ -26,9 +33,8 @@ export default function About() {
           My passions for creating and understanding how things work on a
           fundamental level carry over into my software development. I have a
           profound appreciation for engaging, interactive, and accessible
-          design. In addition, I love learning new technologies and working
-          outside my comfort zone. I embrace feeling uncomfortable, because
-          that's where the majority of growth takes place.
+          design. I live by the words "everyone has something to teach." Every
+          interaction is an opportunity to learn something new.
         </p>
         <br />
         <p className="about-contact">

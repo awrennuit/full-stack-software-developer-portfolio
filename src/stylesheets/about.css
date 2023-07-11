@@ -92,6 +92,10 @@
   margin-bottom: 15px;
 }
 
+.about-content-container a {
+  color: #55cdfc;
+}
+
 .about-contact {
   font-size: 1.2em;
 }
