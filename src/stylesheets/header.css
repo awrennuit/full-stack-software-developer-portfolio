@@ -31,8 +31,8 @@
   box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
 } */
 
-
-.header-btn, .header-btn-here {
+.header-btn,
+.header-btn-here {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -44,7 +44,8 @@
   width: 120px;
 }
 
-.header-btn::before, .header-btn::after {
+.header-btn::before,
+.header-btn::after {
   content: '';
   position: absolute;
   transition: 0.3s;
@@ -69,7 +70,8 @@
   width: 80px;
 }
 
-.header-btn:hover, .header-btn-here:hover {
+.header-btn:hover,
+.header-btn-here:hover {
   color: #ccc;
 }
 
@@ -103,7 +105,8 @@
   left: 77px;
 }
 
-.header-btn:active::before, .header-btn:active::after {
+.header-btn:active::before,
+.header-btn:active::after {
   border-radius: 50%;
   left: 5px;
   top: 0px;
@@ -119,7 +122,14 @@
   border-color: #bbd9e6;
 }
 
-.header-btn:active .header-btn-corner-one::before, .header-btn:active .header-btn-corner-one::after, .header-btn:active .header-btn-corner-two::before, .header-btn:active .header-btn-corner-two::after, .header-btn-here .header-btn-corner-one::before, .header-btn-here .header-btn-corner-one::after, .header-btn-here .header-btn-corner-two::before, .header-btn-here .header-btn-corner-two::after {
+.header-btn:active .header-btn-corner-one::before,
+.header-btn:active .header-btn-corner-one::after,
+.header-btn:active .header-btn-corner-two::before,
+.header-btn:active .header-btn-corner-two::after,
+.header-btn-here .header-btn-corner-one::before,
+.header-btn-here .header-btn-corner-one::after,
+.header-btn-here .header-btn-corner-two::before,
+.header-btn-here .header-btn-corner-two::after {
   display: none;
 }
 
@@ -127,7 +137,8 @@
   position: relative;
 }
 
-.header-btn-here::before, .header-btn-here::after {
+.header-btn-here::before,
+.header-btn-here::after {
   border-radius: 50%;
   content: '';
   left: 5px;
@@ -198,7 +209,7 @@
   z-index: -1;
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
   .header-flex {
     display: flex;
     flex-direction: row;
@@ -207,7 +218,8 @@
     width: 320px;
   }
 
-  .header-btn, .header-btn-here {
+  .header-btn,
+  .header-btn-here {
     margin: 20px;
   }
 }

@@ -2,7 +2,8 @@
   min-height: calc(100vh - 160px);
 }
 
-.contact-main-container p {
+.contact-main-container p,
+.contact-main-container li {
   animation: fade-in 2s ease-in;
 }
 
@@ -13,12 +14,19 @@
   width: 500px;
 }
 
-.contact-writeup::before, .contact-writeup::after, .contact-grid::after, .contact-sidebars::before, .contact-sidebars::after, .contact-divider::after, .contact-divider::before {
+.contact-writeup::before,
+.contact-writeup::after,
+.contact-grid::after,
+.contact-sidebars::before,
+.contact-sidebars::after,
+.contact-divider::after,
+.contact-divider::before {
   content: '';
   position: absolute;
 }
 
-.contact-writeup::before, .contact-writeup::after {
+.contact-writeup::before,
+.contact-writeup::after {
   border-top: 7px solid #fff;
   height: 150px;
   top: -40px;
@@ -80,10 +88,9 @@
 .contact-grid {
   background-color: #323144;
   display: grid;
-  grid-template-areas: 
-    'email phone' 
-    'github linkedin'
-  ;
+  grid-template-areas:
+    'email phone'
+    'github linkedin';
   margin: 0 auto;
   position: relative;
   width: 500px;
@@ -137,7 +144,8 @@
   width: 500px;
 }
 
-.contact-thanks::before, .contact-thanks::after {
+.contact-thanks::before,
+.contact-thanks::after {
   border-bottom: 7px solid #fff;
   bottom: 40px;
   content: '';
@@ -156,7 +164,16 @@
   right: -50px;
 }
 
-@media(max-width: 800px) {
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
   .contact-writeup {
     text-align: justify;
     width: 250px;
@@ -168,7 +185,7 @@
     left: -50px;
     width: 100px;
   }
-  
+
   .contact-writeup::after {
     border-right: 7px solid #fff;
     height: 250px;
@@ -179,7 +196,7 @@
   .contact-sidebars::before {
     height: 250px;
   }
-  
+
   .contact-sidebars::after {
     border: 35px solid #323144;
     top: 118%;
@@ -197,12 +214,11 @@
   }
 
   .contact-grid {
-    grid-template-areas: 
-      'email' 
-      'phone' 
-      'github' 
-      'linkedin'
-    ;
+    grid-template-areas:
+      'email'
+      'phone'
+      'github'
+      'linkedin';
     width: 250px;
   }
 
@@ -217,11 +233,11 @@
   .contact-email a {
     padding-left: 20px;
   }
-  
+
   .contact-phone a {
     padding-left: 15px;
   }
-  
+
   .contact-github a {
     padding-left: 10px;
   }
@@ -237,7 +253,7 @@
     left: -50px;
     width: 100px;
   }
-  
+
   .contact-thanks::after {
     border-right: 7px solid #fff;
     height: 80px;

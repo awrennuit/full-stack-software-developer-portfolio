@@ -19,7 +19,7 @@
 
 .sandbox-slider-container h3 {
   color: #000;
-  display:inline-block;
+  display: inline-block;
   text-decoration: underline;
 }
 
@@ -80,7 +80,8 @@
   color: #777;
 }
 
-.sandbox-item-container div:first-child:hover .sandbox-btn-arrow::before, .sandbox-item-container div:first-child:hover .sandbox-btn-arrow::after {
+.sandbox-item-container div:first-child:hover .sandbox-btn-arrow::before,
+.sandbox-item-container div:first-child:hover .sandbox-btn-arrow::after {
   background-color: #777;
 }
 
@@ -92,7 +93,8 @@
   color: inherit;
 }
 
-.sandbox-btn-arrow::before, .sandbox-btn-arrow::after {
+.sandbox-btn-arrow::before,
+.sandbox-btn-arrow::after {
   background-color: #333;
   border-radius: 1px;
   content: '';
@@ -172,7 +174,8 @@
   visibility: visible;
 }
 
-.sandbox-item-show::before, .sandbox-item-show::after {
+.sandbox-item-show::before,
+.sandbox-item-show::after {
   background-color: #999;
   content: '';
   height: 1px;
@@ -216,7 +219,7 @@
   width: 100%;
 }
 
-.sandbox-input input[type=range] {
+.sandbox-input input[type='range'] {
   width: 120px;
 }
 
@@ -244,7 +247,8 @@
   padding: 10px;
 }
 
-.sandbox-btn-done, .sandbox-btn-modal {
+.sandbox-btn-done,
+.sandbox-btn-modal {
   line-height: 30px;
   background: linear-gradient(#deeaee, #c7d9e0);
   border: none;
@@ -268,11 +272,13 @@
   margin: 30px 0 5px 0;
 }
 
-.sandbox-btn-done:hover, .sandbox-btn-modal:hover {
+.sandbox-btn-done:hover,
+.sandbox-btn-modal:hover {
   box-shadow: -2px -2px 4px #fff, 2px 2px 4px #aaa;
   color: #777;
 }
 
-.sandbox-btn-done:active, .sandbox-btn-modal:active {
+.sandbox-btn-done:active,
+.sandbox-btn-modal:active {
   box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
 }

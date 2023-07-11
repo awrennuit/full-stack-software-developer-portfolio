@@ -18,11 +18,20 @@ a {
   text-decoration: none;
 }
 
-p, span, div, label, button {
+p,
+span,
+div,
+label,
+button {
   font-family: 'Comfortaa', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -105,7 +114,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .primary-btn:hover {
   box-shadow: 0 0 12px #ed6663;
-  background: #ffa372 radial-gradient(circle, transparent 1%, #ffb288 1%) center/15000%;
+  background: #ffa372 radial-gradient(circle, transparent 1%, #ffb288 1%)
+    center/15000%;
   transition: background 0s, box-shadow 0.3s;
 }
 
@@ -211,5 +221,5 @@ h1, h2, h3, h4, h5, h6 {
   top: -36px;
   left: 128px;
   height: 4px;
-  background-color: #FFF;
+  background-color: #fff;
 }

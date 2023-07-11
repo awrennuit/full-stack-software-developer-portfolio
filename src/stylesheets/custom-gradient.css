@@ -19,8 +19,12 @@
 }
 
 @keyframes gradient-render--sm {
-  from { height: 100% }
-  to { height: calc(100% - 260px) }
+  from {
+    height: 100%;
+  }
+  to {
+    height: calc(100% - 260px);
+  }
 }
 
 .gradient-picker-wrapper {
@@ -40,8 +44,12 @@
 }
 
 @keyframes gradient-picker--active {
-  from { opacity: 0 }
-  to { opacity: 1 }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .gradient-picker--inactive {
@@ -49,8 +57,12 @@
 }
 
 @keyframes gradient-picker--inactive {
-  from { opacity: 1 }
-  to { opacity: 0 }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .gradient-picker--input {
@@ -92,7 +104,6 @@
   position: absolute;
 }
 
-
 /**************/
 /** MORE BTN **/
 /**************/
@@ -109,7 +120,7 @@
 
 .gradient-more-btn::before,
 .gradient-more-btn::after {
-  content: "";
+  content: '';
   position: absolute;
   transition: 0.3s;
 }
@@ -158,7 +169,6 @@
   width: 100%;
 }
 
-
 .gradient-code {
   background-color: #fff;
   border-radius: 4px;
@@ -174,8 +184,12 @@
 }
 
 @keyframes gradient-tools--inactive {
-  from { height: 190px; }
-  to { height: 0; }
+  from {
+    height: 190px;
+  }
+  to {
+    height: 0;
+  }
 }
 
 .gradient-tools--inactive .gradient-tools-type-wrapper,
@@ -185,8 +199,12 @@
 }
 
 @keyframes gradient-tools-content--inactive {
-  from { opacity: 1 }
-  to { opacity: 0 }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .gradient-tools--active {
@@ -194,8 +212,12 @@
 }
 
 @keyframes gradient-tools--active {
-  from { height: 0; }
-  to { height: 190px; }
+  from {
+    height: 0;
+  }
+  to {
+    height: 190px;
+  }
 }
 
 .gradient-tools--active .gradient-tools-type-wrapper,
@@ -205,8 +227,12 @@
 }
 
 @keyframes gradient-tools-content {
-  from { opacity: 0 }
-  to { opacity: 1 }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .gradient-tools-close {

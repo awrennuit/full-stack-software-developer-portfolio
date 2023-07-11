@@ -38,21 +38,13 @@
 }
 
 .swatch-toggle-icon--active {
-  box-shadow:
-    3px 1px 0 0 #fff,
-    2px 1px 0 0 #fff,
-    9px 4px 0 0 #fff,
-    11px 3px 0 1px #fff,
-    11px 6px 0 1px #fff;
+  box-shadow: 3px 1px 0 0 #fff, 2px 1px 0 0 #fff, 9px 4px 0 0 #fff,
+    11px 3px 0 1px #fff, 11px 6px 0 1px #fff;
 }
 
 .swatch-toggle-icon--inactive {
-  box-shadow:
-    3px 1px 0 0 #fff,
-    2px 1px 0 0 #fff,
-    9px 4px 0 0 #323114,
-    11px 3px 0 1px #fff,
-    11px 6px 0 1px #fff;
+  box-shadow: 3px 1px 0 0 #fff, 2px 1px 0 0 #fff, 9px 4px 0 0 #323114,
+    11px 3px 0 1px #fff, 11px 6px 0 1px #fff;
 }
 
 .swatch-box {
