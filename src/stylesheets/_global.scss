@@ -37,6 +37,10 @@ h6 {
   font-family: 'Libre Franklin', sans-serif;
 }
 
+input[type='range'] {
+  cursor: pointer;
+}
+
 .main-card {
   background-color: $purple--dark;
   border-radius: 25px;
