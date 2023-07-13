@@ -1,7 +1,10 @@
+// colors
 $white: #fff;
 
 $gray--light: #d3d3d3;
 $gray: #808080;
+
+$pink: #f7a8b8;
 
 $purple--dark: #621055;
 
@@ -11,3 +14,9 @@ $orange--lighter: #ffb288;
 
 $blue: #55cdfc;
 $blue--darker: #323144;
+
+// breakpoints
+$screen-xs-max: 425px;
+$screen-sm-max: 740px;
+$screen-md-max: 960px;
+$screen-lg-max: 1180px;

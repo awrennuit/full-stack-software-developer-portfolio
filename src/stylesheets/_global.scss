@@ -186,6 +186,15 @@ input[type='range'] {
   top: -36px;
 }
 
+.u-link {
+  color: $blue;
+  transition: 0.3s;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
 .a11y {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
