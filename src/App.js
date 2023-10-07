@@ -16,7 +16,7 @@ const PasswordGenerator = React.lazy(() =>
 );
 const ProjectList = React.lazy(() => import('./components/ProjectList'));
 const Swatches = React.lazy(() => import('./components/Swatches'));
-const TimerMain = React.lazy(() => import('./components/TimerMain'));
+const TimerMain = React.lazy(() => import('./components/Timer/TimerMain'));
 
 export default function App() {
   return (

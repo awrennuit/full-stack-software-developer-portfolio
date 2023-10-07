@@ -4,7 +4,7 @@ import TimerForm from './TimerForm';
 import Timer from './Timer';
 import ToggleThemeDark from './TimerThemeDark';
 import ToggleThemeLight from './TimerThemeLight';
-import Header from './Header';
+import Header from '../Header';
 
 export default function TimerMain() {
   const [showTimer, setShowTimer] = useState(false);
