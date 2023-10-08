@@ -38,21 +38,21 @@ export default function MyMethod() {
       <figure className="dungeon-synth__figure-container" role="group">
         <figure>
           <img
-            src="images/dungeon-synth/octave.png"
+            src="images/ds/octave.png"
             alt="an octave interval in the piano roll"
           />
           <figcaption>octave</figcaption>
         </figure>
         <figure>
           <img
-            src="images/dungeon-synth/fifth.png"
+            src="images/ds/fifth.png"
             alt="a fifth interval in the piano roll"
           />
           <figcaption>fifth</figcaption>
         </figure>
         <figure>
           <img
-            src="images/dungeon-synth/fourth.png"
+            src="images/ds/fourth.png"
             alt="a fourth interval in the piano roll"
           />
           <figcaption>fourth</figcaption>
@@ -75,7 +75,7 @@ export default function MyMethod() {
       </p>
       <figure className="dungeon-synth__figure">
         <img
-          src="images/dungeon-synth/melody.png"
+          src="images/ds/melody.png"
           alt="a short melody that rises and falls in the piano roll"
         />
         <figcaption>melody rise & fall</figcaption>
