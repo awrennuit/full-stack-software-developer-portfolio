@@ -17,29 +17,6 @@ export default function Inspiration() {
         the narrative becomes clearer as the music gets further along.
       </p>
       <p className="dungeon-synth__content-block">
-        speaking of the music, i pick a set of maybe 4-8 instruments/synth
-        patches to prevent decision paralysis. setting limitations on music may
-        seem counterintuitive, but it can also help spark creativity. too many
-        choices lends itself to indecision and abandoned projects. the timbre
-        (or sound, like how a violin sounds different than a trumpet or a
-        clarinet) of the instruments plays a major role, too. for instance,
-        brass instruments can sound victorious or like a battle. whereas harp or
-        piano can create a more delicate or introspective atmosphere. i make
-        most of the sounds on my albums in Synth1, and try to create a couple
-        new sounds for each album.
-      </p>
-      <p className="dungeon-synth__content-block">
-        once the instruments are chosen, i start making some short musical
-        ideas. nothing set in stone, and most of them end up getting deleted
-        eventually. i make my entire album in one Reaper file, which helps me
-        bounce around from song to song while i'm writing. i've found that
-        trying to brute force my way through one song, then the next, the next,
-        etc takes away from the joy and wonder of the creative process. if i'm
-        not having fun in the creating, then it's not worth doing. if the music
-        is feeling stale i usually take a break for a couple weeks. when i come
-        back to it everything sounds fresh again.
-      </p>
-      <p className="dungeon-synth__content-block">
         the most important thing to remember is that music is not a competition.
         everyone works at their own pace. we all have a different musical
         background with different things we like and dislike. what works for me

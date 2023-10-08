@@ -4,9 +4,10 @@ import { Link, useLocation } from 'react-router-dom';
 import AudioPlayer from './AudioPlayer';
 import BriefIntroduction from './sections/BriefIntroduction';
 import CommonGear from './sections/CommonGear';
-import MoreRecommendations from './sections/MoreRecommendations';
-import ThankYou from './sections/ThankYou';
 import Inspiration from './sections/Inspiration';
+import MoreRecommendations from './sections/MoreRecommendations';
+import MyMethod from './sections/MyMethod';
+import ThankYou from './sections/ThankYou';
 
 export default function DungeonSynth() {
   const location = useLocation();
@@ -45,7 +46,8 @@ export default function DungeonSynth() {
             <Link to="/dungeon-synth#recs">II. recommendations</Link>
             <Link to="/dungeon-synth#gear">III. common gear</Link>
             <Link to="/dungeon-synth#inspiration">IV. inspiration</Link>
-            <Link to="/dungeon-synth#thanks">V. final thoughts</Link>
+            <Link to="/dungeon-synth#method">V. my method</Link>
+            <Link to="/dungeon-synth#thanks">VI. final thoughts</Link>
           </nav>
         </header>
         <section>
@@ -71,14 +73,21 @@ export default function DungeonSynth() {
 
         <section>
           <a id="inspiration">
-            <h3>IV. inspiration & my method</h3>
+            <h3>IV. inspiration</h3>
           </a>
           <Inspiration />
         </section>
 
         <section>
+          <a id="method">
+            <h3>V. my method</h3>
+          </a>
+          <MyMethod />
+        </section>
+
+        <section>
           <a id="thanks">
-            <h3>V. thank you!</h3>
+            <h3>VI. thank you!</h3>
           </a>
           <ThankYou />
         </section>

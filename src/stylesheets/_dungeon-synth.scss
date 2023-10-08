@@ -8,7 +8,7 @@
 
   &__inner {
     margin: 0 auto;
-    max-width: 40rem;
+    max-width: 45rem;
     padding: 0.5rem 1.25rem;
   }
 
@@ -70,6 +70,7 @@
   }
 
   &__content-block {
+    line-height: 1.06rem;
     padding-bottom: 0.75rem;
   }
 
@@ -107,6 +108,28 @@
 
     ul li {
       padding-bottom: 0.25rem;
+    }
+  }
+
+  &__figure-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 0.75rem;
+
+    img {
+      max-height: 200px;
+    }
+  }
+
+  &__figure {
+    margin: 0 auto;
+    padding-bottom: 0.75rem;
+    width: max-content;
+
+    img {
+      max-height: 200px;
     }
   }
 }
