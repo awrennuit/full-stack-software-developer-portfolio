@@ -1,0 +1,89 @@
+.audio-player {
+  max-width: 18.75rem;
+  position: relative;
+
+  @media (min-width: $screen-md-min) {
+    position: absolute;
+    right: 0.75rem;
+    top: 0;
+  }
+
+  &__controls {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__play-btn {
+    cursor: pointer;
+  }
+
+  &__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__progress {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__time {
+    width: 2.125rem;
+  }
+
+  &__progress-slider {
+    cursor: grabbing;
+    width: 4.688rem;
+  }
+
+  &__volume {
+    align-items: center;
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  &__volume-slider {
+    cursor: grabbing;
+    width: 3.125rem;
+  }
+
+  &__play-icon {
+    margin-left: 0.063rem;
+    margin-right: -0.063rem;
+  }
+
+  canvas {
+    height: 3.125rem;
+    width: 18.75rem;
+  }
+
+  audio {
+    background-color: $blue--darker;
+
+    &:active {
+      button {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem;
+
+    &:hover {
+      background-color: #e4eae28a; // $gray--light
+    }
+
+    &:active {
+      background: transparent;
+    }
+  }
+}
