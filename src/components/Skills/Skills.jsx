@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <div className="skill-main-container">
       <h2 className="skill-heading">
-        <span>Tech I use regularly...</span>
+        Tech I use regularly...
       </h2>
       <div className="skill-flex">
         <div className="skill-group">
