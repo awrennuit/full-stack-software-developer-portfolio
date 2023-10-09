@@ -104,7 +104,7 @@
   margin-bottom: 10px;
 }
 
-.skill-container p {
+.skill-container figcaption {
   color: #000;
   font-weight: bold;
 }
