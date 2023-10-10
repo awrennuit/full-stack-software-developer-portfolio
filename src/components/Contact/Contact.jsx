@@ -26,9 +26,8 @@ export default function Contact() {
             Hello! These are different mediums to reach me. My preference is via
             email or LinkedIn, but any option is fine. I am in the US Central
             (CDT/CST) timezone, which ranges from -5 to -6 hours from UTC based
-            on the time of year. I would love to connect if you are seeking a
-            software engineer. I adore front-end work, and also geek out over
-            back-end work.
+            on the time of year. I would love to connect if you are seeking an
+            empathetic software engineer.
           </p>
           <span className="contact-sidebars"></span>
           <span className="contact-divider"></span>
@@ -48,7 +47,7 @@ export default function Contact() {
           ))}
         </ul>
         <div className="contact-thanks">
-          <p>Thanks for stopping by, and I hope to hear from you!</p>
+          <p>Thanks for stopping by. Have a wonderful day!</p>
         </div>
       </div>
       <Footer />

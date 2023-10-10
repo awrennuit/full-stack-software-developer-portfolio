@@ -22,6 +22,11 @@
 .project-card:hover .project-overlay {
   opacity: 1;
 }
+.project-card:focus .project-overlay,
+.project-card:focus-within .project-overlay {
+  opacity: 1;
+  outline: 1px solid #f7a8b8;
+}
 
 .project-card img {
   object-fit: cover;
@@ -70,7 +75,10 @@
 
 .project-btn-code:hover,
 .project-btn-app:hover,
-.project-btn-code-single:hover {
+.project-btn-code-single:hover,
+.project-btn-code:focus,
+.project-btn-app:focus,
+.project-btn-code-single:focus {
   background: #1a1a24;
   border-color: #f7a8b8;
   color: #55cdfc;
