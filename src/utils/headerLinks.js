@@ -12,6 +12,10 @@ export const headerLinks = [
     label: 'Sandbox',
   },
   {
+    url: '/dungeon-synth',
+    label: 'Music',
+  },
+  {
     url: '/contact',
     label: 'Contact',
   },

@@ -33,12 +33,15 @@
 
 .header-btn,
 .header-btn-here {
+  align-items: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  display: inline-flex;
   font-size: 0.9em;
   height: 30px;
-  margin: 0 20px;
+  justify-content: center;
+  margin: 20px;
   position: relative;
   transition: 0.3s;
   width: 120px;
@@ -216,10 +219,5 @@
     flex-wrap: wrap;
     margin: 0 auto;
     width: 320px;
-  }
-
-  .header-btn,
-  .header-btn-here {
-    margin: 20px;
   }
 }

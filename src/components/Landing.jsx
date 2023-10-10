@@ -1,10 +1,8 @@
 import { Helmet } from 'react-helmet';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../stylesheets/landing.css';
 
 export default function Landing() {
-  const navigate = useNavigate();
-
   return (
     <>
       <Helmet>
@@ -27,12 +25,9 @@ export default function Landing() {
           </p>
           <p>I bring ideas to reality.</p>
           <div className="landing-btn-container">
-            <button
-              className="landing-button"
-              onClick={() => navigate('/about')}
-            >
+            <Link className="landing-button" to="/about">
               Go
-            </button>
+            </Link>
             <span className="landing-box-lg"></span>
             <span className="landing-box-sm"></span>
           </div>
