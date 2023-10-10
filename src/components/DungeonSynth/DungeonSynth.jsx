@@ -25,11 +25,11 @@ export default function DungeonSynth() {
         <title>a dungeon synth primer</title>
         <meta
           name="description"
-          content="A brief Dungeon Synth primer, including common gear and how to make it. Written by Aveline Baudelaire aka Wooden Vessels."
+          content="A brief Dungeon Synth primer, including common gear and how to make make the music. Written by Aveline Baudelaire aka Wooden Vessels."
         />
         <meta
           name="keywords"
-          content="dungeon synth, how to make dungeon synth, how do i make dungeon synth, dungeon synth gear, dungeon synth intro, dungeon synth introduction, dungeon synth basics, dungeon synth primer, wooden vessels, aveline baudelaire"
+          content="dungeon synth, how to make dungeon synth, how do i make dungeon synth, dungeon synth gear, dungeon synth intro, dungeon synth introduction, dungeon synth basics, dungeon synth primer, dungeon synth gear, dungeon synth history, wooden vessels, aveline baudelaire"
         />
       </Helmet>
       <div className="dungeon-synth__inner">

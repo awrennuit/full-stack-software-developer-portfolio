@@ -1,63 +1,80 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import '../../stylesheets/css-sandbox.css';
-import Header from "../Header";
-import Footer from "../Footer";
-import PropertyTab from "./PropertyTab/PropertyTab";
-import TestDiv from "./TestDiv/testDiv";
-import Output from "./Output/Output";
+import Header from '../Header';
+import Footer from '../Footer';
+import PropertyTab from './PropertyTab/PropertyTab';
+import TestDiv from './TestDiv/testDiv';
+import Output from './Output/Output';
 
 export default function CssSandbox() {
   // sets height & width
-  const [dimensionsClicked, setDimensionsClicked] = useState("sandbox-item-heading");
-  const [dimensionsShow, setDimensionsShow] = useState("sandbox-item-contents");
+  const [dimensionsClicked, setDimensionsClicked] = useState(
+    'sandbox-item-heading'
+  );
+  const [dimensionsShow, setDimensionsShow] = useState('sandbox-item-contents');
   const [height, setHeight] = useState(200);
   const [width, setWidth] = useState(300);
 
   // sets background color
-  const [bgClicked, setBgClicked] = useState("sandbox-item-heading");
-  const [bgShow, setBgShow] = useState("sandbox-item-contents");
+  const [bgClicked, setBgClicked] = useState('sandbox-item-heading');
+  const [bgShow, setBgShow] = useState('sandbox-item-contents');
   const [bgRed, setBgRed] = useState(255);
   const [bgGreen, setBgGreen] = useState(255);
   const [bgBlue, setBgBlue] = useState(255);
-  const [bgColor, setBgColor] = useState(`rgb(${bgRed}, ${bgGreen}, ${bgBlue})`);
+  const [bgColor, setBgColor] = useState(
+    `rgb(${bgRed}, ${bgGreen}, ${bgBlue})`
+  );
 
   // sets blur
-  const [blurClicked, setBlurClicked] = useState("sandbox-item-heading");
-  const [blurShow, setBlurShow] = useState("sandbox-item-contents");
+  const [blurClicked, setBlurClicked] = useState('sandbox-item-heading');
+  const [blurShow, setBlurShow] = useState('sandbox-item-contents');
   const [blur, setBlur] = useState(0);
 
   //sets border
-  const [borderClicked, setBorderClicked] = useState("sandbox-item-heading");
-  const [borderShow, setBorderShow] = useState("sandbox-item-contents");
+  const [borderClicked, setBorderClicked] = useState('sandbox-item-heading');
+  const [borderShow, setBorderShow] = useState('sandbox-item-contents');
   const [borderWidth, setBorderWidth] = useState(0);
-  const [borderStyle, setBorderStyle] = useState("none");
+  const [borderStyle, setBorderStyle] = useState('none');
   const [borderRed, setBorderRed] = useState(125);
   const [borderGreen, setBorderGreen] = useState(125);
   const [borderBlue, setBorderBlue] = useState(125);
-  const [borderColor, setBorderColor] = useState(`rgb(${borderRed}, ${borderGreen}, ${borderBlue})`);
+  const [borderColor, setBorderColor] = useState(
+    `rgb(${borderRed}, ${borderGreen}, ${borderBlue})`
+  );
 
   // sets border radius
-  const [borderRadiusClicked, setBorderRadiusClicked] = useState("sandbox-item-heading");
-  const [borderRadiusShow, setBorderRadiusShow] = useState("sandbox-item-contents");
+  const [borderRadiusClicked, setBorderRadiusClicked] = useState(
+    'sandbox-item-heading'
+  );
+  const [borderRadiusShow, setBorderRadiusShow] = useState(
+    'sandbox-item-contents'
+  );
   const [borderRadius, setBorderRadius] = useState(0);
-  const [borderRadiusType, setBorderRadiusType] = useState("px");
+  const [borderRadiusType, setBorderRadiusType] = useState('px');
 
   // sets box shadow
-  const [boxShadowClicked, setBoxShadowClicked] = useState("sandbox-item-heading");
-  const [boxShadowShow, setBoxShadowShow] = useState("sandbox-item-contents");
+  const [boxShadowClicked, setBoxShadowClicked] = useState(
+    'sandbox-item-heading'
+  );
+  const [boxShadowShow, setBoxShadowShow] = useState('sandbox-item-contents');
   const [boxRed, setBoxRed] = useState(125);
   const [boxGreen, setBoxGreen] = useState(125);
   const [boxBlue, setBoxBlue] = useState(125);
-  const [boxColor, setBoxColor] = useState(`rgb(${boxRed}, ${boxGreen}, ${boxBlue})`);
-  const [boxInset, setBoxInset] = useState("");
+  const [boxColor, setBoxColor] = useState(
+    `rgb(${boxRed}, ${boxGreen}, ${boxBlue})`
+  );
+  const [boxInset, setBoxInset] = useState('');
   const [boxOffsetX, setBoxOffsetX] = useState(0);
   const [boxOffsetY, setBoxOffsetY] = useState(0);
   const [boxBlur, setBoxBlur] = useState(0);
   const [boxSpread, setBoxSpread] = useState(0);
 
   // sets rotation
-  const [rotationClicked, setRotationClicked] = useState("sandbox-item-heading");
-  const [rotationShow, setRotationShow] = useState("sandbox-item-contents");
+  const [rotationClicked, setRotationClicked] = useState(
+    'sandbox-item-heading'
+  );
+  const [rotationShow, setRotationShow] = useState('sandbox-item-contents');
   const [rotation, setRotation] = useState(0);
 
   // toggles modal
@@ -68,12 +85,12 @@ export default function CssSandbox() {
     {
       classClicked: dimensionsClicked,
       classShow: dimensionsShow,
-      heading: "Dimensions",
+      heading: 'Dimensions',
       setClassClicked: setDimensionsClicked,
       setClassShow: setDimensionsShow,
       sliderList: [
         {
-          sliderLabel: "Height",
+          sliderLabel: 'Height',
           sliderMaxValue: 400,
           sliderMinValue: 50,
           sliderSetVariable: setHeight,
@@ -81,7 +98,7 @@ export default function CssSandbox() {
           sliderVariable: height,
         },
         {
-          sliderLabel: "Width",
+          sliderLabel: 'Width',
           sliderMaxValue: 400,
           sliderMinValue: 50,
           sliderSetVariable: setWidth,
@@ -93,12 +110,12 @@ export default function CssSandbox() {
     {
       classClicked: bgClicked,
       classShow: bgShow,
-      heading: "Background",
+      heading: 'Background',
       setClassClicked: setBgClicked,
       setClassShow: setBgShow,
       sliderList: [
         {
-          sliderLabel: "Red",
+          sliderLabel: 'Red',
           sliderMaxValue: 255,
           sliderMinValue: 0,
           sliderSetVariable: setBgRed,
@@ -106,7 +123,7 @@ export default function CssSandbox() {
           sliderVariable: bgRed,
         },
         {
-          sliderLabel: "Green",
+          sliderLabel: 'Green',
           sliderMaxValue: 255,
           sliderMinValue: 0,
           sliderSetVariable: setBgGreen,
@@ -114,7 +131,7 @@ export default function CssSandbox() {
           sliderVariable: bgGreen,
         },
         {
-          sliderLabel: "Blue",
+          sliderLabel: 'Blue',
           sliderMaxValue: 255,
           sliderMinValue: 0,
           sliderSetVariable: setBgBlue,
@@ -126,12 +143,12 @@ export default function CssSandbox() {
     {
       classClicked: blurClicked,
       classShow: blurShow,
-      heading: "Blur",
+      heading: 'Blur',
       setClassClicked: setBlurClicked,
       setClassShow: setBlurShow,
       sliderList: [
         {
-          sliderLabel: "Blur",
+          sliderLabel: 'Blur',
           sliderMaxValue: 60,
           sliderMinValue: 0,
           sliderSetVariable: setBlur,
@@ -143,12 +160,12 @@ export default function CssSandbox() {
     {
       classClicked: borderClicked,
       classShow: borderShow,
-      heading: "Border",
+      heading: 'Border',
       setClassClicked: setBorderClicked,
       setClassShow: setBorderShow,
       sliderList: [
         {
-          sliderLabel: "Width",
+          sliderLabel: 'Width',
           sliderMaxValue: 50,
           sliderMinValue: 0,
           sliderSetVariable: setBorderWidth,
@@ -156,7 +173,7 @@ export default function CssSandbox() {
           sliderVariable: borderWidth,
         },
         {
-          sliderLabel: "Red",
+          sliderLabel: 'Red',
           sliderMaxValue: 255,
           sliderMinValue: 0,
           sliderSetVariable: setBorderRed,
@@ -164,7 +181,7 @@ export default function CssSandbox() {
           sliderVariable: borderRed,
         },
         {
-          sliderLabel: "Green",
+          sliderLabel: 'Green',
           sliderMaxValue: 255,
           sliderMinValue: 0,
           sliderSetVariable: setBorderGreen,
@@ -172,7 +189,7 @@ export default function CssSandbox() {
           sliderVariable: borderGreen,
         },
         {
-          sliderLabel: "Blue",
+          sliderLabel: 'Blue',
           sliderMaxValue: 255,
           sliderMinValue: 0,
           sliderSetVariable: setBorderBlue,
@@ -182,68 +199,68 @@ export default function CssSandbox() {
       ],
       toggleList: [
         {
-          toggleName: "borderStyle",
-          toggleLabel: "Solid",
-          toggleType: "radio",
-          toggleValue: "solid",
+          toggleName: 'borderStyle',
+          toggleLabel: 'Solid',
+          toggleType: 'radio',
+          toggleValue: 'solid',
           toggleVariable: setBorderStyle,
         },
         {
-          toggleName: "borderStyle",
-          toggleLabel: "Double",
-          toggleType: "radio",
-          toggleValue: "double",
+          toggleName: 'borderStyle',
+          toggleLabel: 'Double',
+          toggleType: 'radio',
+          toggleValue: 'double',
           toggleVariable: setBorderStyle,
         },
         {
-          toggleName: "borderStyle",
-          toggleLabel: "Dashed",
-          toggleType: "radio",
-          toggleValue: "dashed",
+          toggleName: 'borderStyle',
+          toggleLabel: 'Dashed',
+          toggleType: 'radio',
+          toggleValue: 'dashed',
           toggleVariable: setBorderStyle,
         },
         {
-          toggleName: "borderStyle",
-          toggleLabel: "Dotted",
-          toggleType: "radio",
-          toggleValue: "dotted",
+          toggleName: 'borderStyle',
+          toggleLabel: 'Dotted',
+          toggleType: 'radio',
+          toggleValue: 'dotted',
           toggleVariable: setBorderStyle,
         },
         {
-          toggleName: "borderStyle",
-          toggleLabel: "Groove",
-          toggleType: "radio",
-          toggleValue: "groove",
+          toggleName: 'borderStyle',
+          toggleLabel: 'Groove',
+          toggleType: 'radio',
+          toggleValue: 'groove',
           toggleVariable: setBorderStyle,
         },
         {
-          toggleName: "borderStyle",
-          toggleLabel: "Ridge",
-          toggleType: "radio",
-          toggleValue: "ridge",
+          toggleName: 'borderStyle',
+          toggleLabel: 'Ridge',
+          toggleType: 'radio',
+          toggleValue: 'ridge',
           toggleVariable: setBorderStyle,
         },
         {
-          toggleName: "borderStyle",
-          toggleLabel: "Inset",
-          toggleType: "radio",
-          toggleValue: "inset",
+          toggleName: 'borderStyle',
+          toggleLabel: 'Inset',
+          toggleType: 'radio',
+          toggleValue: 'inset',
           toggleVariable: setBorderStyle,
         },
         {
-          toggleName: "borderStyle",
-          toggleLabel: "Outset",
-          toggleType: "radio",
-          toggleValue: "outset",
+          toggleName: 'borderStyle',
+          toggleLabel: 'Outset',
+          toggleType: 'radio',
+          toggleValue: 'outset',
           toggleVariable: setBorderStyle,
         },
         {
           defaultChecked: true,
-          toggleId: "border-none",
-          toggleName: "borderStyle",
-          toggleLabel: "None",
-          toggleType: "radio",
-          toggleValue: "none",
+          toggleId: 'border-none',
+          toggleName: 'borderStyle',
+          toggleLabel: 'None',
+          toggleType: 'radio',
+          toggleValue: 'none',
           toggleVariable: setBorderStyle,
         },
       ],
@@ -251,12 +268,12 @@ export default function CssSandbox() {
     {
       classClicked: borderRadiusClicked,
       classShow: borderRadiusShow,
-      heading: "Border Radius",
+      heading: 'Border Radius',
       setClassClicked: setBorderRadiusClicked,
       setClassShow: setBorderRadiusShow,
       sliderList: [
         {
-          sliderLabel: "Width",
+          sliderLabel: 'Width',
           sliderMaxValue: 100,
           sliderMinValue: 0,
           sliderSetVariable: setBorderRadius,
@@ -267,18 +284,18 @@ export default function CssSandbox() {
       toggleList: [
         {
           defaultChecked: true,
-          toggleId: "radius-px",
-          toggleName: "borderRadiusType",
-          toggleLabel: "px",
-          toggleType: "radio",
-          toggleValue: "px",
+          toggleId: 'radius-px',
+          toggleName: 'borderRadiusType',
+          toggleLabel: 'px',
+          toggleType: 'radio',
+          toggleValue: 'px',
           toggleVariable: setBorderRadiusType,
         },
         {
-          toggleName: "borderRadiusType",
-          toggleLabel: "%",
-          toggleType: "radio",
-          toggleValue: "%",
+          toggleName: 'borderRadiusType',
+          toggleLabel: '%',
+          toggleType: 'radio',
+          toggleValue: '%',
           toggleVariable: setBorderRadiusType,
         },
       ],
@@ -286,12 +303,12 @@ export default function CssSandbox() {
     {
       classClicked: boxShadowClicked,
       classShow: boxShadowShow,
-      heading: "Box Shadow",
+      heading: 'Box Shadow',
       setClassClicked: setBoxShadowClicked,
       setClassShow: setBoxShadowShow,
       sliderList: [
         {
-          sliderLabel: "X-Offset",
+          sliderLabel: 'X-Offset',
           sliderMaxValue: 100,
           sliderMinValue: -100,
           sliderSetVariable: setBoxOffsetX,
@@ -299,7 +316,7 @@ export default function CssSandbox() {
           sliderVariable: boxOffsetX,
         },
         {
-          sliderLabel: "Y-Offset",
+          sliderLabel: 'Y-Offset',
           sliderMaxValue: 100,
           sliderMinValue: -100,
           sliderSetVariable: setBoxOffsetY,
@@ -307,7 +324,7 @@ export default function CssSandbox() {
           sliderVariable: boxOffsetY,
         },
         {
-          sliderLabel: "Blur",
+          sliderLabel: 'Blur',
           sliderMaxValue: 100,
           sliderMinValue: 0,
           sliderSetVariable: setBoxBlur,
@@ -315,7 +332,7 @@ export default function CssSandbox() {
           sliderVariable: boxBlur,
         },
         {
-          sliderLabel: "Spread",
+          sliderLabel: 'Spread',
           sliderMaxValue: 100,
           sliderMinValue: -100,
           sliderSetVariable: setBoxSpread,
@@ -323,7 +340,7 @@ export default function CssSandbox() {
           sliderVariable: boxSpread,
         },
         {
-          sliderLabel: "Red",
+          sliderLabel: 'Red',
           sliderMaxValue: 255,
           sliderMinValue: 0,
           sliderSetVariable: setBoxRed,
@@ -331,7 +348,7 @@ export default function CssSandbox() {
           sliderVariable: boxRed,
         },
         {
-          sliderLabel: "Green",
+          sliderLabel: 'Green',
           sliderMaxValue: 255,
           sliderMinValue: 0,
           sliderSetVariable: setBoxGreen,
@@ -339,7 +356,7 @@ export default function CssSandbox() {
           sliderVariable: boxGreen,
         },
         {
-          sliderLabel: "Blue",
+          sliderLabel: 'Blue',
           sliderMaxValue: 255,
           sliderMinValue: 0,
           sliderSetVariable: setBoxBlue,
@@ -349,11 +366,11 @@ export default function CssSandbox() {
       ],
       toggleList: [
         {
-          toggleId: "box-inset",
-          toggleName: "boxInset",
-          toggleLabel: "Inset",
-          toggleType: "checkbox",
-          toggleValue: "inset",
+          toggleId: 'box-inset',
+          toggleName: 'boxInset',
+          toggleLabel: 'Inset',
+          toggleType: 'checkbox',
+          toggleValue: 'inset',
           toggleVariable: setBoxInset,
         },
       ],
@@ -361,12 +378,12 @@ export default function CssSandbox() {
     {
       classClicked: rotationClicked,
       classShow: rotationShow,
-      heading: "Rotation",
+      heading: 'Rotation',
       setClassClicked: setRotationClicked,
       setClassShow: setRotationShow,
       sliderList: [
         {
-          sliderLabel: "Rotate",
+          sliderLabel: 'Rotate',
           sliderMaxValue: 360,
           sliderMinValue: 0,
           sliderSetVariable: setRotation,
@@ -391,24 +408,26 @@ export default function CssSandbox() {
 
   const resetValues = () => {
     document.querySelector('input[name="borderStyle"]:checked').checked = false;
-    document.querySelector('input[name="borderRadiusType"]:checked').checked = false;
-    document.getElementById("border-none").checked = true;
-    document.getElementById("radius-px").checked = true;
-    document.getElementById("box-inset").checked = false;
+    document.querySelector(
+      'input[name="borderRadiusType"]:checked'
+    ).checked = false;
+    document.getElementById('border-none').checked = true;
+    document.getElementById('radius-px').checked = true;
+    document.getElementById('box-inset').checked = false;
     setHeight(200);
     setWidth(300);
     setBgRed(255);
     setBgGreen(255);
     setBgBlue(255);
     setBlur(0);
-    setBorderStyle("none");
+    setBorderStyle('none');
     setBorderWidth(0);
     setBorderRed(125);
     setBorderGreen(125);
     setBorderBlue(125);
     setBorderRadius(0);
-    setBorderRadiusType("px");
-    setBoxInset("");
+    setBorderRadiusType('px');
+    setBoxInset('');
     setBoxOffsetX(0);
     setBoxOffsetY(0);
     setBoxBlur(0);
@@ -435,6 +454,17 @@ export default function CssSandbox() {
 
   return (
     <>
+      <Helmet>
+        <title>CSS Sandbox - Full Stack Software Engineer Portfolio</title>
+        <meta
+          name="description"
+          content="This is an interactive CSS sandbox! Add some styles, including box-shadow, blur, borders, and more. Then copy the code to add to your project."
+        />
+        <meta
+          name="keywords"
+          content="Full Stack, Frontend, Front-end, Front end, Backend, Back-end, Back end, Software Engineer, Software Engineering, Software Developer, Web Developer, Portfolio, Portfolio Website, Software Developer Portfolio, JavaScript, CSS, React, Node.js, awren, awren nuit"
+        />
+      </Helmet>
       <Header />
       <div className="sandbox-main-container">
         <TestDiv

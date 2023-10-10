@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import '../stylesheets/password-generator.css';
 import Header from './Header';
 import PasswordSection from './PasswordSection';
@@ -77,6 +78,19 @@ export default function PasswordGenerator() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Password Generator - Full Stack Software Engineer Portfolio
+        </title>
+        <meta
+          name="description"
+          content="A password generator developed by full stack software awren nuit. It's a free & easy way to create secure passwords."
+        />
+        <meta
+          name="keywords"
+          content="Full Stack, Frontend, Front-end, Front end, Backend, Back-end, Back end, Software Engineer, Software Engineering, Software Developer, Web Developer, Portfolio, Portfolio Website, Software Developer Portfolio, JavaScript, CSS, React, Node.js, awren, awren nuit"
+        />
+      </Helmet>
       <Header />
       <div className="password-background">
         <div className="password-full-container">

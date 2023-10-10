@@ -1,12 +1,24 @@
-import '../stylesheets/contact.css';
-import Header from './Header';
-import Footer from './Footer';
-import { contactData } from '../utils/contactData';
+import '../../stylesheets/contact.css';
+import { contactData } from '../../utils/contactData';
+import { Helmet } from 'react-helmet';
 import ContactInfo from './ContactInfo';
+import Footer from '../Footer';
+import Header from '../Header';
 
 export default function Contact() {
   return (
     <>
+      <Helmet>
+        <title>Contact - Full Stack Software Engineer Portfolio</title>
+        <meta
+          name="description"
+          content="Different ways to contact full stack software engineer awren nuit. Methods include email, phone, GitHub, and LinkedIn."
+        />
+        <meta
+          name="keywords"
+          content="Full Stack, Frontend, Front-end, Front end, Backend, Back-end, Back end, Software Engineer, Software Engineering, Software Developer, Web Developer, Portfolio, Portfolio Website, Software Developer Portfolio, JavaScript, CSS, React, Node.js, awren, awren nuit"
+        />
+      </Helmet>
       <Header />
       <div className="contact-main-container">
         <div className="contact-writeup">
@@ -25,7 +37,7 @@ export default function Contact() {
           {contactData.map((info, i) => (
             <ContactInfo
               ariaLabel={info.ariaLabel}
-              class={info.class}
+              className={info.class}
               href={info.href}
               key={i}
               label={info.label}
