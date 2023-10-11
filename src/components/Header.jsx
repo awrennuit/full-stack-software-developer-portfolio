@@ -5,11 +5,15 @@ import '../stylesheets/header.css';
 export default function Header() {
   return (
     <div className="header">
-      <div className="header-flex">
-        {headerLinks.map((link, i) => (
-          <HeaderBtn key={i} label={link.label} url={link.url} />
-        ))}
-      </div>
+      <nav>
+        <ul className="header-flex">
+          {headerLinks.map((link, i) => (
+            <li>
+              <HeaderBtn key={i} label={link.label} url={link.url} />
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   );
 }

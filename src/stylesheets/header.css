@@ -1,8 +1,6 @@
 .header {
   background-color: #0000003f;
-  display: inline-block;
   padding: 20px 0;
-  text-align: center;
   width: 100%;
 }
 
@@ -200,12 +198,17 @@
   z-index: -1;
 }
 
-@media (max-width: 650px) {
+.header-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: 651px) {
   .header-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 320px;
+    width: 100%;
   }
 }
