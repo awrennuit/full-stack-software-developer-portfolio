@@ -19,32 +19,34 @@ export default function Projects() {
         />
         <meta
           name="keywords"
-          content="Full Stack, Frontend, Front-end, Front end, Backend, Back-end, Back end, Software Engineer, Software Engineering, Software Developer, Web Developer, Portfolio, Portfolio Website, Software Developer Portfolio, JavaScript, CSS, React, Node.js, awren, awren nuit"
+          content="Full Stack, Frontend, Front-end, Front end, Backend, Back-end, Back end, Software Engineer, Software Engineering, Software Developer, Web Developer, Portfolio, Portfolio Website, Software Developer Portfolio, JavaScript, CSS, React, Node.js, Password Generator, awren, awren nuit"
         />
       </Helmet>
       <Header />
-      <div className="project-container">
-        <div className="project-card-center">
+      <main className="project-container">
+        <ul className="project-card-center">
           {allProjects.map((card, i) => (
-            <ProjectCard
-              altText={card.altText}
-              appUrl={card.appUrl ? () => navigate(card.appUrl) : null}
-              codeUrl={card.codeUrl}
-              descriptionLineOne={card.descriptionLineOne}
-              descriptionLineTwo={card.descriptionLineTwo}
-              externalAppUrl={
-                card.externalAppUrl
-                  ? () => window.open(card.externalAppUrl, '_blank')
-                  : null
-              }
-              image={card.image}
-              key={i}
-              oneButton={card.oneButton}
-              title={card.title}
-            />
+            <li>
+              <ProjectCard
+                altText={card.altText}
+                appUrl={card.appUrl ? () => navigate(card.appUrl) : null}
+                codeUrl={card.codeUrl}
+                descriptionLineOne={card.descriptionLineOne}
+                descriptionLineTwo={card.descriptionLineTwo}
+                externalAppUrl={
+                  card.externalAppUrl
+                    ? () => window.open(card.externalAppUrl, '_blank')
+                    : null
+                }
+                image={card.image}
+                key={i}
+                oneButton={card.oneButton}
+                title={card.title}
+              />
+            </li>
           ))}
-        </div>
-      </div>
+        </ul>
+      </main>
       <Footer />
     </>
   );
