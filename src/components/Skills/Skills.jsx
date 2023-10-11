@@ -4,7 +4,7 @@ import SkillContainer from './SkillContainer';
 
 export default function Skills() {
   return (
-    <article className="skill-main-container">
+    <section className="skill-main-container">
       <h2 className="skill-heading">Tech I use regularly...</h2>
       <div className="skill-flex">
         <ul className="skill-group">
@@ -30,6 +30,6 @@ export default function Skills() {
           ))}
         </ul>
       </div>
-    </article>
+    </section>
   );
 }
