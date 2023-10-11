@@ -50,47 +50,49 @@ export default function DungeonSynth() {
             <Link to="/dungeon-synth#thanks">VI. final thoughts</Link>
           </nav>
         </header>
-        <section>
-          <a id="intro">
-            <h3>I. a brief introduction</h3>
-          </a>
-          <BriefIntroduction />
-        </section>
+        <main>
+          <section>
+            <a id="intro">
+              <h3>I. a brief introduction</h3>
+            </a>
+            <BriefIntroduction />
+          </section>
 
-        <section>
-          <a id="recs">
-            <h3>II. more recommendations</h3>
-          </a>
-          <MoreRecommendations />
-        </section>
+          <section>
+            <a id="recs">
+              <h3>II. more recommendations</h3>
+            </a>
+            <MoreRecommendations />
+          </section>
 
-        <section>
-          <a id="gear">
-            <h3>III. common gear</h3>
-          </a>
-          <CommonGear />
-        </section>
+          <section>
+            <a id="gear">
+              <h3>III. common gear</h3>
+            </a>
+            <CommonGear />
+          </section>
 
-        <section>
-          <a id="inspiration">
-            <h3>IV. inspiration</h3>
-          </a>
-          <Inspiration />
-        </section>
+          <section>
+            <a id="inspiration">
+              <h3>IV. inspiration</h3>
+            </a>
+            <Inspiration />
+          </section>
 
-        <section>
-          <a id="method">
-            <h3>V. my method</h3>
-          </a>
-          <MyMethod />
-        </section>
+          <section>
+            <a id="method">
+              <h3>V. my method</h3>
+            </a>
+            <MyMethod />
+          </section>
 
-        <section>
-          <a id="thanks">
-            <h3>VI. thank you!</h3>
-          </a>
-          <ThankYou />
-        </section>
+          <section>
+            <a id="thanks">
+              <h3>VI. thank you!</h3>
+            </a>
+            <ThankYou />
+          </section>
+        </main>
       </div>
     </div>
   );
