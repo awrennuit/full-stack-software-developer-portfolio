@@ -17,7 +17,7 @@ export default function Landing() {
         />
       </Helmet>
       <div className="main-container">
-        <div className="landing-container">
+        <main className="landing-container">
           <p>Hi there!</p>
           <p>
             I'm&nbsp;
@@ -31,7 +31,7 @@ export default function Landing() {
             <span className="landing-box-lg"></span>
             <span className="landing-box-sm"></span>
           </div>
-        </div>
+        </main>
       </div>
     </>
   );
