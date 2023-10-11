@@ -80,7 +80,7 @@ export default function PasswordGenerator() {
     <>
       <Helmet>
         <title>
-          Password Generator - Full Stack Software Engineer Portfolio
+          password generator - awren nuit's software engineering portfolio
         </title>
         <meta
           name="description"

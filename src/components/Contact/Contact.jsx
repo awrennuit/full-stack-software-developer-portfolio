@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact - Full Stack Software Engineer Portfolio</title>
+        <title>contact - awren nuit's software engineering portfolio</title>
         <meta
           name="description"
           content="Different ways to contact full stack software engineer awren nuit. Methods include email, phone, GitHub, and LinkedIn."

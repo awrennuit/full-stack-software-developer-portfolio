@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>About - Full Stack Software Engineer Portfolio</title>
+        <title>about - awren nuit's software engineering portfolio</title>
         <meta
           name="description"
           content="More details about full stack software engineer awren nuit, including personal background and frequently-used technologies."
