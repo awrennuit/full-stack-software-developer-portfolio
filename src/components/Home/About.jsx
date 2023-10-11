@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="about">
+    <article className="about">
       <h2 className="about__heading">
         <span className="about__heading-copy">A little history...</span>
       </h2>
@@ -54,6 +54,6 @@ export default function About() {
         <span className="about__bottom-design-left"></span>
         <span className="about__bottom-design-right"></span>
       </div>
-    </div>
+    </article>
   );
 }

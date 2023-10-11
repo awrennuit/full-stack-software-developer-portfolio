@@ -20,11 +20,11 @@ export default function Home() {
         />
       </Helmet>
       <Header />
-      <div className="main-container">
+      <main className="main-container">
         <About />
         <br />
         <Skills />
-      </div>
+      </main>
       <Footer />
     </>
   );
