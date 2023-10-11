@@ -4,7 +4,7 @@ import '../stylesheets/header.css';
 
 export default function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <nav>
         <ul className="header-flex">
           {headerLinks.map((link, i) => (
@@ -14,6 +14,6 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
