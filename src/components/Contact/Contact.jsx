@@ -20,7 +20,7 @@ export default function Contact() {
         />
       </Helmet>
       <Header />
-      <div className="contact-main-container">
+      <main className="contact-main-container">
         <div className="contact-writeup">
           <p>
             Hello! These are different mediums to reach me. My preference is via
@@ -49,7 +49,7 @@ export default function Contact() {
         <div className="contact-thanks">
           <p>Thanks for stopping by. Have a wonderful day!</p>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );
