@@ -7,6 +7,7 @@ export default function Landing() {
     <>
       <Helmet>
         <title>awren nuit's software engineering portfolio</title>
+        <link rel="canonical" href="http://awrennuit.com/#/" />
         <meta
           name="description"
           content="Full Stack Software Engineer portfolio for awren nuit. awren does front end and back end development using technologies like React, Vue, Node.js, and Ruby on Rails."

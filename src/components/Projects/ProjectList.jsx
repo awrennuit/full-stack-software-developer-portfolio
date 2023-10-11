@@ -13,6 +13,7 @@ export default function Projects() {
     <>
       <Helmet>
         <title>projects - awren nuit's software engineering portfolio</title>
+        <link rel="canonical" href="http://awrennuit.com/#/projects" />
         <meta
           name="description"
           content="Full stack software engineer awren nuit's past personal projects. Most projects have a link to both the source code and a demo."

@@ -456,6 +456,7 @@ export default function CssSandbox() {
     <>
       <Helmet>
         <title>css sandbox - awren nuit's software engineering portfolio</title>
+        <link rel="canonical" href="http://awrennuit.com/#/css-sandbox" />
         <meta
           name="description"
           content="This is an interactive CSS sandbox! Add some styles, including box-shadow, blur, borders, and more. Then copy the code to add to your project."

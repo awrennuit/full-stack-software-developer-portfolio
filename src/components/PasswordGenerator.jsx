@@ -82,6 +82,10 @@ export default function PasswordGenerator() {
         <title>
           password generator - awren nuit's software engineering portfolio
         </title>
+        <link
+          rel="canonical"
+          href="http://awrennuit.com/#/password-generator"
+        />
         <meta
           name="description"
           content="A password generator developed by full stack software awren nuit. It's a free & easy way to create secure passwords."
