@@ -8,8 +8,8 @@ export default function Header() {
       <nav>
         <ul className="header-flex">
           {headerLinks.map((link, i) => (
-            <li>
-              <HeaderBtn key={i} label={link.label} url={link.url} />
+            <li key={i}>
+              <HeaderBtn label={link.label} url={link.url} />
             </li>
           ))}
         </ul>

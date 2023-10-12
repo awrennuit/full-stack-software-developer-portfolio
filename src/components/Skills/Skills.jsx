@@ -9,23 +9,15 @@ export default function Skills() {
       <div className="skill-flex">
         <ul className="skill-group">
           {techUsed.rowOne.map((tech, i) => (
-            <li>
-              <SkillContainer
-                key={i}
-                imageUrl={tech.imageUrl}
-                label={tech.label}
-              />
+            <li key={i}>
+              <SkillContainer imageUrl={tech.imageUrl} label={tech.label} />
             </li>
           ))}
         </ul>
         <ul className="skill-group">
           {techUsed.rowTwo.map((tech, i) => (
-            <li>
-              <SkillContainer
-                key={i}
-                imageUrl={tech.imageUrl}
-                label={tech.label}
-              />
+            <li key={i}>
+              <SkillContainer imageUrl={tech.imageUrl} label={tech.label} />
             </li>
           ))}
         </ul>

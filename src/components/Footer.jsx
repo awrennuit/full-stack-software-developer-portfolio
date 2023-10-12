@@ -7,12 +7,11 @@ export default function Footer() {
       <p>&#169; {new Date().getFullYear()} awren nuit</p>
       <ul className="footer__icon-container">
         {footerIconData.map((info, i) => (
-          <li>
+          <li key={i}>
             <FooterIcon
               alt={info.alt}
               height={info.height}
               href={info.href}
-              key={i}
               rel={info.rel}
               src={info.src}
               target={info.target}
