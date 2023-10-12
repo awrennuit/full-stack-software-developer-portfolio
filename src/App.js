@@ -18,8 +18,8 @@ const Landing = React.lazy(() => import('./components/Landing'));
 const PasswordGenerator = React.lazy(() =>
   import('./components/PasswordGenerator')
 );
-const ProjectList = React.lazy(() =>
-  import('./components/Projects/ProjectList')
+const Projects = React.lazy(() =>
+  import('./components/Projects/Projects')
 );
 const Swatches = React.lazy(() => import('./components/Swatches'));
 const TimerMain = React.lazy(() => import('./components/Timer/TimerMain'));
@@ -41,7 +41,7 @@ export default function App() {
             path="/password-generator"
             element={<PasswordGenerator />}
           />
-          <Route exact path="/projects" element={<ProjectList />} />
+          <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/swatches" element={<Swatches />} />
           <Route exact path="/timer" element={<TimerMain />} />
         </Routes>

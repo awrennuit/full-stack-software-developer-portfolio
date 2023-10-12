@@ -1,11 +1,8 @@
-import '../../stylesheets/projects.css';
-
 export default function ProjectCard({
   altText,
   appUrl,
   codeUrl,
-  descriptionLineOne,
-  descriptionLineTwo,
+  description,
   externalAppUrl,
   image,
   oneButton,
@@ -13,25 +10,21 @@ export default function ProjectCard({
 }) {
   return (
     <div className="project-card" tabIndex={0}>
-      <img src={image} alt={altText} height="300" width="400" />
-      <div className="project-overlay">
+      <img src={image} alt={altText} />
+      <div className="project-card__overlay">
         <h2>{title}</h2>
-        <p>
-          {descriptionLineOne}
-          <br />
-          {descriptionLineTwo}
-        </p>
+        <p>{description}</p>
         <button
-          className={
-            !oneButton ? 'project-btn-code' : 'project-btn-code-single'
-          }
+          className={`project-card__btn ${
+            !oneButton ? 'project-card__btn--code' : 'project-card__btn--single'
+          }`}
           onClick={() => window.open(codeUrl, '_blank')}
         >
           View Code
         </button>
         {!oneButton ? (
           <button
-            className="project-btn-app"
+            className="project-card__btn project-card__btn--app"
             onClick={appUrl ? appUrl : externalAppUrl}
           >
             View App

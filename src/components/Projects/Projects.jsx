@@ -1,7 +1,6 @@
 import { allProjects } from '../../utils/allProjects';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-import '../../stylesheets/projects.css';
 import Header from '../Header';
 import Footer from '../Footer';
 import ProjectCard from './ProjectCard';
@@ -24,23 +23,21 @@ export default function Projects() {
         />
       </Helmet>
       <Header />
-      <main className="project-container">
-        <ul className="project-card-center">
+      <main className="projects">
+        <ul className="projects__list-container">
           {allProjects.map((card, i) => (
-            <li>
+            <li key={i} className="projects__list-item">
               <ProjectCard
                 altText={card.altText}
                 appUrl={card.appUrl ? () => navigate(card.appUrl) : null}
                 codeUrl={card.codeUrl}
-                descriptionLineOne={card.descriptionLineOne}
-                descriptionLineTwo={card.descriptionLineTwo}
+                description={card.description}
                 externalAppUrl={
                   card.externalAppUrl
                     ? () => window.open(card.externalAppUrl, '_blank')
                     : null
                 }
                 image={card.image}
-                key={i}
                 oneButton={card.oneButton}
                 title={card.title}
               />
