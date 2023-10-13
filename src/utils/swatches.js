@@ -46,7 +46,7 @@ export const swatchList = [
   },
   {
     a: '#ffe5b4',
-    b: '#E6E6FA',
+    b: '#e6e6fa',
     dir: 'to right',
   },
   {

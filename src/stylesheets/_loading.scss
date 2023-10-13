@@ -1,28 +1,23 @@
 .loading {
   align-items: center;
   background-color: $blue--darker;
+  bottom: 0;
   display: flex;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
-  width: 100vw;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
 
   &__spinner {
-    -webkit-animation: spin 1s linear infinite;
     animation: spin 1s ease infinite;
-    border: 4px solid #55cdfc21;
+    border: 0.25rem solid $blue--transparent;
     border-radius: 50%;
-    border-top: 4px solid #f7a8b882;
-    width: 20px;
-    height: 20px;
-  }
-
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
+    border-top: 0.25rem solid $pink--transparent;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 
   @keyframes spin {
