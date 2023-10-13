@@ -29,7 +29,10 @@
 
 .gradient-picker-wrapper {
   display: flex;
-  gap: 200px;
+  justify-content: space-between;
+  margin: 0 1rem;
+  max-width: 25rem;
+  width: 100%;
 }
 
 .gradient-picker {

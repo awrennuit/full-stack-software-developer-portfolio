@@ -64,14 +64,7 @@ export default function CustomGradient() {
   return (
     <>
       <Header />
-      <div className="gradient-wrapper">
-        <div
-          className={`gradient-render ${
-            isMinimal ? '' : 'gradient-render--sm'
-          }`}
-          style={{ background: `${gradient}` }}
-        ></div>
-
+      <div className="gradient-wrapper" style={{ background: `${gradient}` }}>
         <div
           className={`gradient-picker-wrapper
             ${
