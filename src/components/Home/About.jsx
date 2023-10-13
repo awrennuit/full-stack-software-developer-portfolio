@@ -1,9 +1,10 @@
 export default function About() {
   return (
     <section className="about">
-      <h2 className="about__heading">
-        <span className="about__heading-copy">A little history...</span>
-      </h2>
+      <span className="about__decoration-top"></span>
+      <span className="about__decoration-bottom-inner"></span>
+      <span className="about__decoration-bottom-outer"></span>
+      <h1 className="about__heading">A little history...</h1>
       <div className="about__content-container">
         <p className="about__content-copy">
           Hello. I'm awren nuit. A software engineer with a special love for
@@ -50,9 +51,6 @@ export default function About() {
           </a>
           .
         </p>
-        <span className="about__bottom-line"></span>
-        <span className="about__bottom-design-left"></span>
-        <span className="about__bottom-design-right"></span>
       </div>
     </section>
   );

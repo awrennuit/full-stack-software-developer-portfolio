@@ -1,4 +1,3 @@
-import '../../stylesheets/home.css';
 import { Helmet } from 'react-helmet';
 import Header from '../Header';
 import About from './About';
@@ -23,7 +22,6 @@ export default function Home() {
       <Header />
       <main className="main-container">
         <About />
-        <br />
         <Skills />
       </main>
       <Footer />

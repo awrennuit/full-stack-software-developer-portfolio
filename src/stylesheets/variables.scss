@@ -6,6 +6,7 @@ $gray: #808080;
 $gray--darker: #323144;
 $gray--darkest: #1a1a24;
 
+$black: #000;
 $black--transparent: rgba(0, 0, 0, 0.714);
 
 $pink: #f7a8b8;
@@ -21,8 +22,10 @@ $blue--darker: #323144;
 
 // breakpoints
 $screen-xs-max: 425px;
+$screen-sm-min: 426px;
 $screen-sm-max: 740px;
 $screen-md-min: 741px;
 $screen-md-max: 960px;
 $screen-lg-min: 961px;
 $screen-lg-max: 1180px;
+$screen-xl-min: 1181px;

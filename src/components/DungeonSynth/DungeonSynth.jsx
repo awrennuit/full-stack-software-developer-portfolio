@@ -38,7 +38,7 @@ export default function DungeonSynth() {
           <div className="dungeon-synth__title-container">
             <AudioPlayer />
             <h1>
-              dungeon synth <span>by Aveline Baudelaire</span>
+              a dungeon synth primer <span>by Aveline Baudelaire</span>
             </h1>
           </div>
           <nav>

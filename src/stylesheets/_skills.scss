@@ -1,0 +1,98 @@
+.skills {
+  margin: 0 auto;
+  padding: 0.75rem;
+  position: relative;
+  max-width: 56.25rem;
+
+  @media (min-width: $screen-md-min) {
+    &::before,
+    &::after {
+      border: 0.5rem solid $white;
+      border-bottom: none;
+      content: '';
+      height: 12.5rem;
+      position: absolute;
+      top: -1rem;
+      width: 12.5rem;
+    }
+
+    &::before {
+      border-right: none;
+      left: -1rem;
+    }
+
+    &::after {
+      border-left: none;
+      right: -1rem;
+    }
+  }
+
+  &__decoration {
+    @media (min-width: $screen-xl-min) {
+      &::before,
+      &::after {
+        border: 0.5rem solid $white;
+        border-bottom: none;
+        content: '';
+        height: 18rem;
+        position: absolute;
+        top: -3rem;
+        width: 10rem;
+      }
+
+      &::before {
+        border-right: none;
+        left: -3rem;
+      }
+
+      &::after {
+        border-left: none;
+        right: -3rem;
+      }
+    }
+  }
+
+  &__heading {
+    animation: fade-in 2s ease-in;
+  }
+
+  &__list {
+    animation: fade-in 2s ease-in;
+    background-color: $gray--light;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 1rem auto;
+    max-width: 100%;
+    padding: 1rem;
+    width: 15rem;
+
+    @media (min-width: $screen-md-min) {
+      width: max-content;
+    }
+  }
+}
+
+.skill-container {
+  text-align: center;
+  width: 7rem;
+
+  img {
+    padding-bottom: 10px;
+  }
+
+  figcaption {
+    color: $black;
+    font-weight: 700;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
