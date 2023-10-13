@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function ProjectCard({
   altText,
   appUrl,
@@ -14,21 +16,34 @@ export default function ProjectCard({
       <div className="project-card__overlay">
         <h2>{title}</h2>
         <p>{description}</p>
-        <button
+        <a
           className={`project-card__btn ${
             !oneButton ? 'project-card__btn--code' : 'project-card__btn--single'
           }`}
-          onClick={() => window.open(codeUrl, '_blank')}
+          href={codeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           View Code
-        </button>
+        </a>
         {!oneButton ? (
-          <button
-            className="project-card__btn project-card__btn--app"
-            onClick={appUrl ? appUrl : externalAppUrl}
-          >
-            View App
-          </button>
+          appUrl ? (
+            <Link
+              className="project-card__btn project-card__btn--app"
+              to={appUrl}
+            >
+              View App
+            </Link>
+          ) : (
+            <a
+              className="project-card__btn project-card__btn--app"
+              href={externalAppUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View App
+            </a>
+          )
         ) : null}
       </div>
     </div>

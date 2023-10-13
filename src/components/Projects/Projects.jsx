@@ -29,14 +29,10 @@ export default function Projects() {
             <li key={i} className="projects__list-item">
               <ProjectCard
                 altText={card.altText}
-                appUrl={card.appUrl ? () => navigate(card.appUrl) : null}
+                appUrl={card.appUrl}
                 codeUrl={card.codeUrl}
                 description={card.description}
-                externalAppUrl={
-                  card.externalAppUrl
-                    ? () => window.open(card.externalAppUrl, '_blank')
-                    : null
-                }
+                externalAppUrl={card.externalAppUrl}
                 image={card.image}
                 oneButton={card.oneButton}
                 title={card.title}

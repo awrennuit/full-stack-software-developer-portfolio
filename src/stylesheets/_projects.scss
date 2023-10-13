@@ -6,6 +6,10 @@
     padding: 3rem;
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
   &__list-container {
     display: flex;
     gap: 1rem;
@@ -55,7 +59,6 @@
 
   &__overlay {
     background-color: $black--transparent;
-    box-sizing: border-box;
     height: 100%;
     left: 0;
     opacity: 0;
