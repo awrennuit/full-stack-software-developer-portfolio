@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { gradientBtnData } from '../../utils/gradientBtnData';
+import { Helmet } from 'react-helmet';
 import '../../stylesheets/custom-gradient.css';
 import ColorPicker from './ColorPicker';
 import Header from '../Header';
@@ -25,11 +26,8 @@ export default function CustomGradient() {
   }, []);
 
   useEffect(() => {
-    if (isMinimal) {
-      setTimeout(() => setIsMinimalDisplayNone(false), 300);
-    } else {
-      setTimeout(() => setIsMinimalDisplayNone(true), 300);
-    }
+    if (isMinimal) setTimeout(() => setIsMinimalDisplayNone(false), 300);
+    else setTimeout(() => setIsMinimalDisplayNone(true), 300);
   }, [isMinimal]);
 
   useEffect(() => {
@@ -63,6 +61,20 @@ export default function CustomGradient() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          gradient maker - awren nuit's software engineering portfolio
+        </title>
+        <link rel="canonical" href="http://awrennuit.com/#/gradient-maker" />
+        <meta
+          name="description"
+          content="A gradient generator developed by full stack software awren nuit. It's a free & easy way to create beautiful backgrounds."
+        />
+        <meta
+          name="keywords"
+          content="Full Stack, Frontend, Front-end, Front end, Backend, Back-end, Back end, Software Engineer, Software Engineering, Software Developer, Web Developer, Portfolio, Portfolio Website, Software Developer Portfolio, JavaScript, CSS, React, Node.js, Gradient, Gradients, Gradient maker, Gradient generator, Background gradient, awren, awren nuit"
+        />
+      </Helmet>
       <Header />
       <div className="gradient-wrapper" style={{ background: `${gradient}` }}>
         <div
