@@ -1,0 +1,94 @@
+.gradient-toolbar {
+  background-color: #323144;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: height 0.5s, opacity 0.5s;
+  width: 100%;
+
+  &--active {
+    height: 20rem;
+
+    @media (min-width: $screen-md-min) {
+      height: 12.5rem;
+    }
+  }
+
+  &__inner {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 1rem 0;
+    position: relative;
+  }
+
+  &__code {
+    background-color: $white;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    color: $blue--darker;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding: 0.75rem;
+    text-align: center;
+    width: 15rem;
+
+    @media (min-width: $screen-md-min) {
+      line-height: 1em;
+      width: 28rem;
+    }
+  }
+
+  &__close {
+    background: $blue--darker;
+    border: 0.125rem solid $white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: $white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+    transition: 0.3s;
+    width: 2rem;
+
+    &:hover,
+    &:focus {
+      border-color: $pink;
+      color: $blue;
+    }
+  }
+
+  &__tools-container {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+    padding-top: 1rem;
+
+    @media (min-width: $screen-md-min) {
+      justify-content: space-between;
+      padding-top: 0;
+    }
+  }
+
+  &__middle-tools {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    order: 3;
+    width: 100%;
+
+    @media (min-width: $screen-md-min) {
+      gap: 6rem;
+      justify-content: space-between;
+      order: initial;
+      width: auto;
+    }
+  }
+}

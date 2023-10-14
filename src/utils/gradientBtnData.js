@@ -1,40 +1,56 @@
-export const gradientBtnData = {
-  top: [
+export const gradientBtnData = [
+  [
     {
-      arrowClass: 'gradient-tools-dir top-left-dir',
+      arrowClass:
+        'gradient-direction-btn__arrow gradient-direction-btn__arrow--top-left',
       direction: 'top left',
+      label: 'Point the gradient towards the top left',
     },
     {
-      arrowClass: 'gradient-tools-dir top-dir',
+      arrowClass:
+        'gradient-direction-btn__arrow gradient-direction-btn__arrow--top',
       direction: 'top',
+      label: 'Point the gradient towards the top',
     },
     {
-      arrowClass: 'gradient-tools-dir top-right-dir',
+      arrowClass:
+        'gradient-direction-btn__arrow gradient-direction-btn__arrow--top-right',
       direction: 'top right',
+      label: 'Point the gradient towards the top right',
     },
   ],
-  mid: [
+  [
     {
-      arrowClass: 'gradient-tools-dir left-dir',
+      arrowClass:
+        'gradient-direction-btn__arrow gradient-direction-btn__arrow--left',
       direction: 'left',
+      label: 'Point the gradient towards the left',
     },
     {
-      arrowClass: 'gradient-tools-dir right-dir',
+      arrowClass:
+        'gradient-direction-btn__arrow gradient-direction-btn__arrow--right',
       direction: 'right',
+      label: 'Point the gradient towards the right',
     },
   ],
-  bot: [
+  [
     {
-      arrowClass: 'gradient-tools-dir bot-left-dir',
+      arrowClass:
+        'gradient-direction-btn__arrow gradient-direction-btn__arrow--bot-left',
       direction: 'bottom left',
+      label: 'Point the gradient towards the bottom left',
     },
     {
-      arrowClass: 'gradient-tools-dir bot-dir',
+      arrowClass:
+        'gradient-direction-btn__arrow gradient-direction-btn__arrow--bot',
       direction: 'bottom',
+      label: 'Point the gradient towards the bottom',
     },
     {
-      arrowClass: 'gradient-tools-dir bot-right-dir',
+      arrowClass:
+        'gradient-direction-btn__arrow gradient-direction-btn__arrow--bot-right',
       direction: 'bottom right',
+      label: 'Point the gradient towards the bottom right',
     },
   ],
-};
+];

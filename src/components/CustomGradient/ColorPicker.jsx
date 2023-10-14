@@ -1,22 +1,21 @@
-export default function ColorPicker({
-  color,
-  isMinimal,
-  isMinimalDisplayNone,
-  setColor,
-}) {
+export default function ColorPicker({ color, isToolbarOpen, setColor }) {
   return (
     <div
-      className={`gradient-picker ${
-        isMinimalDisplayNone ? 'gradient-picker--in-tools' : ''
+      className={`color-picker ${
+        isToolbarOpen ? 'color-picker--inactive' : ''
       }`}
     >
+      <label className="a11y" htmlFor="color-input">
+        Pick a color
+      </label>
       <input
-        className="gradient-picker--input"
+        id="color-input"
+        className="color-picker__input"
         onChange={(e) => setColor(e.target.value)}
         type="color"
         value={color}
       />
-      <p className="gradient-picker--value">{color}</p>
+      <p className="color-picker__value">{color}</p>
     </div>
   );
 }

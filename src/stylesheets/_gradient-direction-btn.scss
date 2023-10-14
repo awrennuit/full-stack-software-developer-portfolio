@@ -1,0 +1,59 @@
+.gradient-direction-btn {
+  align-items: center;
+  background: transparent;
+  border: 0.063rem solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  font-size: 2rem;
+  height: 2.25rem;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 2.25rem;
+
+  &:hover,
+  &:focus {
+    border-color: $pink;
+  }
+
+  &--active {
+    border-color: $pink;
+
+    .gradient-direction-btn__arrow {
+      color: $blue;
+    }
+  }
+
+  &__arrow {
+    color: $white;
+
+    &--top-left {
+      transform: rotate(225deg);
+    }
+
+    &--top {
+      transform: rotate(270deg);
+    }
+
+    &--top-right {
+      transform: rotate(315deg);
+    }
+
+    &--left {
+      transform: rotate(180deg);
+    }
+
+    &--bot-left {
+      transform: rotate(135deg);
+    }
+
+    &--bot {
+      transform: rotate(90deg);
+    }
+
+    &--bot-right {
+      transform: rotate(45deg);
+    }
+  }
+}

@@ -1,5 +1,3 @@
-import '../../stylesheets/custom-gradient.css';
-
 export default function GradientTypeRadio({
   checkVal,
   gradientType,
@@ -8,7 +6,7 @@ export default function GradientTypeRadio({
   setGradientType,
 }) {
   return (
-    <label className="gradient-tools--type">
+    <label className="gradient-type-radio">
       <input
         checked={gradientType === checkVal}
         onChange={(e) => setGradientType(e.target.value)}

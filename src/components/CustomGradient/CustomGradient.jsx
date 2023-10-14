@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { gradientBtnData } from '../../utils/gradientBtnData';
 import { Helmet } from 'react-helmet';
-import '../../stylesheets/custom-gradient.css';
-import ColorPicker from './ColorPicker';
 import Header from '../Header';
-import GradientDirectionBtn from './GradientDirectionBtn';
-import GradientTypeRadio from './GradientTypeRadio';
+import GradientToolbar from './GradientToolbar';
+import SimplePicker from './SimplePicker';
 
 export default function CustomGradient() {
   const [colorOne, setColorOne] = useState('');
@@ -13,8 +10,7 @@ export default function CustomGradient() {
   const [gradient, setGradient] = useState('');
   const [gradientDirection, setGradientDirection] = useState('right');
   const [gradientType, setGradientType] = useState('linear');
-  const [isMinimal, setIsMinimal] = useState(true);
-  const [isMinimalDisplayNone, setIsMinimalDisplayNone] = useState(false);
+  const [isToolbarOpen, setIsToolbarOpen] = useState(false);
 
   useEffect(() => {
     setColorOne(
@@ -24,11 +20,6 @@ export default function CustomGradient() {
       '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0')
     );
   }, []);
-
-  useEffect(() => {
-    if (isMinimal) setTimeout(() => setIsMinimalDisplayNone(false), 300);
-    else setTimeout(() => setIsMinimalDisplayNone(true), 300);
-  }, [isMinimal]);
 
   useEffect(() => {
     switch (gradientType) {
@@ -76,127 +67,39 @@ export default function CustomGradient() {
         />
       </Helmet>
       <Header />
-      <div className="gradient-wrapper" style={{ background: `${gradient}` }}>
-        <div
-          className={`gradient-picker-wrapper
-            ${
-              isMinimal
-                ? 'gradient-picker--active'
-                : 'gradient-picker--inactive'
-            }`}
-          style={isMinimalDisplayNone ? { display: 'none' } : null}
-        >
-          <ColorPicker
-            color={colorOne}
-            isMinimal={isMinimal}
-            setColor={setColorOne}
-          />
-          <ColorPicker
-            color={colorTwo}
-            isMinimal={isMinimal}
-            setColor={setColorTwo}
-          />
-        </div>
+      <div className="custom-gradient" style={{ background: `${gradient}` }}>
+        <SimplePicker
+          colorOne={colorOne}
+          colorTwo={colorTwo}
+          isToolbarOpen={isToolbarOpen}
+          setColorOne={setColorOne}
+          setColorTwo={setColorTwo}
+        />
         <button
-          className="gradient-more-btn"
-          onClick={() => setIsMinimal(false)}
+          className={`custom-gradient__toolbar-btn ${
+            isToolbarOpen ? 'custom-gradient__toolbar-btn--hidden' : ''
+          }`}
+          onClick={() => setIsToolbarOpen(true)}
           title="Open advanced controls"
-        ></button>
-
-        <div
-          className={`gradient-tools-wrapper
-            ${
-              isMinimal ? 'gradient-tools--inactive' : 'gradient-tools--active'
-            }`}
-          style={isMinimalDisplayNone ? null : { display: 'none' }}
         >
-          <div className="gradient-tools-inner">
-            <div>
-              <p
-                className="gradient-code"
-                id="output"
-                onClick={() => selectText('output')}
-              >
-                {gradient}
-              </p>
-            </div>
-            <div className="gradient-tools-flex">
-              <button
-                className="gradient-tools-close"
-                onClick={() => setIsMinimal(true)}
-                title="Close toolbar"
-              >
-                &times;
-              </button>
-              <ColorPicker
-                color={colorOne}
-                isMinimal={isMinimal}
-                isMinimalDisplayNone={isMinimalDisplayNone}
-                setColor={setColorOne}
-              />
+          &#10137;
+          <span className="a11y">Open advanced controls</span>
+        </button>
 
-              <div className="gradient-tools-type-wrapper">
-                <GradientTypeRadio
-                  checkVal="linear"
-                  gradientType={gradientType}
-                  radioLabel="Linear"
-                  radioVal="linear"
-                  setGradientType={setGradientType}
-                />
-                <GradientTypeRadio
-                  checkVal="radial"
-                  gradientType={gradientType}
-                  radioLabel="Radial"
-                  radioVal="radial"
-                  setGradientType={setGradientType}
-                />
-              </div>
-
-              <div className="gradient-tools-dir-main-wrapper">
-                <div className="gradient-tools-dir-wrapper">
-                  {gradientBtnData.top.map((item, i) => (
-                    <GradientDirectionBtn
-                      key={i}
-                      arrowClass={item.arrowClass}
-                      direction={item.direction}
-                      gradientDirection={gradientDirection}
-                      setGradientDirection={setGradientDirection}
-                    />
-                  ))}
-                </div>
-                <div className="gradient-tools-dir-wrapper gradient-tools-dir-wrapper--mid">
-                  {gradientBtnData.mid.map((item, i) => (
-                    <GradientDirectionBtn
-                      key={i}
-                      arrowClass={item.arrowClass}
-                      direction={item.direction}
-                      gradientDirection={gradientDirection}
-                      setGradientDirection={setGradientDirection}
-                    />
-                  ))}
-                </div>
-                <div className="gradient-tools-dir-wrapper">
-                  {gradientBtnData.bot.map((item, i) => (
-                    <GradientDirectionBtn
-                      key={i}
-                      arrowClass={item.arrowClass}
-                      direction={item.direction}
-                      gradientDirection={gradientDirection}
-                      setGradientDirection={setGradientDirection}
-                    />
-                  ))}
-                </div>
-              </div>
-
-              <ColorPicker
-                color={colorTwo}
-                isMinimal={isMinimal}
-                isMinimalDisplayNone={isMinimalDisplayNone}
-                setColor={setColorTwo}
-              />
-            </div>
-          </div>
-        </div>
+        <GradientToolbar
+          colorOne={colorOne}
+          colorTwo={colorTwo}
+          gradient={gradient}
+          gradientDirection={gradientDirection}
+          gradientType={gradientType}
+          isToolbarOpen={isToolbarOpen}
+          selectText={selectText}
+          setColorOne={setColorOne}
+          setColorTwo={setColorTwo}
+          setGradientDirection={setGradientDirection}
+          setGradientType={setGradientType}
+          setIsToolbarOpen={setIsToolbarOpen}
+        />
       </div>
     </>
   );
