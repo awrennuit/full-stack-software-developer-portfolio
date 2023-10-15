@@ -40,6 +40,9 @@ export default function MyMethod() {
           <img
             src="images/ds/octave.png"
             alt="an octave interval in the piano roll"
+            height="200"
+            width="155"
+            loading="lazy"
           />
           <figcaption>octave</figcaption>
         </figure>
@@ -47,6 +50,9 @@ export default function MyMethod() {
           <img
             src="images/ds/fifth.png"
             alt="a fifth interval in the piano roll"
+            height="200"
+            width="155"
+            loading="lazy"
           />
           <figcaption>fifth</figcaption>
         </figure>
@@ -54,6 +60,9 @@ export default function MyMethod() {
           <img
             src="images/ds/fourth.png"
             alt="a fourth interval in the piano roll"
+            height="200"
+            width="155"
+            loading="lazy"
           />
           <figcaption>fourth</figcaption>
         </figure>
@@ -77,6 +86,9 @@ export default function MyMethod() {
         <img
           src="images/ds/melody.png"
           alt="a short melody that rises and falls in the piano roll"
+          height="200"
+          width="304"
+          loading="lazy"
         />
         <figcaption>melody rise & fall</figcaption>
       </figure>

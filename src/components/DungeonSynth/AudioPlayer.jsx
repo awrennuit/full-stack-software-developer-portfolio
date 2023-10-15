@@ -242,13 +242,13 @@ export default function AudioPlayer() {
       <canvas ref={canvasRef}></canvas>
       <audio ref={audioRef} id="audio" src={currentFile.src}>
         <p>
-          Your browser does not support audio. You can listen{' '}
+          Your browser does not support audio. You can listen on{' '}
           <a
-            href="https://cavebirdrecords.bandcamp.com/album/the-softest-feeling-the-quietest-touch"
+            href="https://cavebirdrecords.bandcamp.com/album/meadowtrek-woods-life-and-ecology"
             target="_blank"
             rel="noopener noreferrer"
           >
-            here
+            bandcamp
           </a>
           .
         </p>
