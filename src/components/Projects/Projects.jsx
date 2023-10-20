@@ -1,13 +1,10 @@
 import { allProjects } from '../../utils/allProjects';
 import { Helmet } from 'react-helmet';
-import { useNavigate } from 'react-router-dom';
 import Header from '../Header';
 import Footer from '../Footer';
 import ProjectCard from './ProjectCard';
 
 export default function Projects() {
-  const navigate = useNavigate();
-
   return (
     <>
       <Helmet>
