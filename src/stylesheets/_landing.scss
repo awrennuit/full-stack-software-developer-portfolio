@@ -1,0 +1,195 @@
+.landing {
+  font-size: 2rem;
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 18rem;
+
+  @media (min-width: $screen-md-min) {
+    width: 25rem;
+  }
+
+  p {
+    box-sizing: border-box;
+    padding-bottom: 0.5rem;
+  }
+
+  &__name {
+    animation: name-pop 1s alternate 2;
+    background: linear-gradient($blue, $blue, $white, $pink, $pink);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    transition: 0.3s;
+
+    &:hover {
+      text-shadow: 0 -0.25rem 1rem $blue, 0 0.25rem 1rem $pink;
+    }
+
+    @keyframes name-pop {
+      from {
+      }
+      to {
+        text-shadow: 0 -0.25rem 1rem $blue, 0 0.25rem 1rem $pink;
+      }
+    }
+  }
+
+  &__btn-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 1.75rem;
+    position: relative;
+    width: 6.25rem;
+  }
+
+  &__btn {
+    align-items: center;
+    border: 0.25rem solid $white;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+    position: relative;
+    transition: 0.2s;
+
+    &::before,
+    &::after {
+      content: '';
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      transition: 0.2s;
+    }
+
+    &::before {
+      height: 2rem;
+      top: 0.5rem;
+      width: 0.25rem;
+    }
+
+    &::after {
+      border: 0.25rem solid transparent;
+      border-top: none;
+      border-radius: 50%;
+      height: 3.5rem;
+      top: 1.25rem;
+      width: 3.5rem;
+    }
+
+    &:hover,
+    &:focus {
+      border-radius: 50%;
+      color: transparent;
+
+      &::before {
+        background-color: $white;
+      }
+
+      &::after {
+        border-color: $white;
+      }
+
+      & ~ .landing__decoration-double::before {
+        height: 21.25rem;
+        width: 16.5rem;
+
+        @media (min-width: $screen-md-min) {
+          height: 22.25rem;
+        }
+      }
+
+      & ~ .landing__decoration-double::after {
+        height: 18rem;
+        width: 20.5rem;
+
+        @media (min-width: $screen-md-min) {
+          width: 31.75rem;
+        }
+      }
+
+      & ~ .landing__decoration-single {
+        height: 4.5rem;
+        width: 15rem;
+      }
+    }
+
+    &:active {
+      box-shadow: 0 0 1.25rem $white;
+
+      &::before,
+      &::after {
+        box-shadow: inset 0 0 0.5rem $green, 0 0 0.5rem $green;
+      }
+
+      &::before {
+        background-color: $green;
+      }
+
+      &::after {
+        border-color: $green;
+      }
+    }
+  }
+
+  &__decoration-double {
+    &::before {
+      border-top: 0.5rem solid $white;
+      border-right: 0.5rem solid $white;
+      content: '';
+      height: 11.75rem;
+      position: absolute;
+      right: -7.5rem;
+      top: -11.5rem;
+      transition: 0.9s;
+      width: 7rem;
+      z-index: -1;
+
+      @media (min-width: $screen-md-min) {
+        right: -13rem;
+        top: -12rem;
+        width: 12.5rem;
+      }
+    }
+
+    &::after {
+      border-bottom: 0.5rem solid $white;
+      border-left: 0.5rem solid $white;
+      bottom: -2rem;
+      content: '';
+      height: 9.25rem;
+      left: -7.5rem;
+      position: absolute;
+      transition: 0.6s;
+      width: 10rem;
+      z-index: -1;
+
+      @media (min-width: $screen-md-min) {
+        bottom: -3rem;
+        left: -13rem;
+        width: 26.25rem;
+      }
+    }
+  }
+
+  &__decoration-single {
+    border-top: 0.5rem solid $white;
+    border-left: 0.5rem solid $white;
+    height: 2.5rem;
+    left: -7.5rem;
+    position: absolute;
+    top: -11.5rem;
+    transition: 0.4s;
+    width: 5rem;
+    z-index: -1;
+
+    @media (min-width: $screen-md-min) {
+      left: -13rem;
+      top: -12rem;
+    }
+  }
+}
