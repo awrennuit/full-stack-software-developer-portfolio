@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import '../../stylesheets/css-sandbox.css';
 import Header from '../Header';
 import Footer from '../Footer';
-import PropertyTab from './PropertyTab/PropertyTab';
-import TestDiv from './TestDiv/testDiv';
-import Output from './Output/Output';
+import PropertyTab from './PropertyTab';
+import TestDiv from './testDiv';
+import Output from './Output';
 
 export default function CssSandbox() {
   // sets height & width
@@ -438,7 +437,7 @@ export default function CssSandbox() {
     setRotation(0);
   };
 
-  const selectText = (text) => {
+  const selectText = text => {
     if (document.selection) {
       // for IE
       const range = document.body.createTextRange();
@@ -467,21 +466,17 @@ export default function CssSandbox() {
         />
       </Helmet>
       <Header />
-      <div className="sandbox-main-container">
-        <TestDiv
-          backgroundColor={bgColor}
-          border={`${borderWidth}px ${borderStyle} ${borderColor}`}
-          borderRadius={`${borderRadius}${borderRadiusType}`}
-          boxShadow={`${boxInset} ${boxOffsetX}px ${boxOffsetY}px ${boxBlur}px ${boxSpread}px ${boxColor}`}
-          filter={`blur(${blur}px)`}
-          height={height}
-          transform={`rotate(${rotation}deg)`}
-          width={`${width}px`}
-        />
-
-        <div className="sandbox-slider-container">
-          <h3>Properties</h3>
-          <button className="sandbox-reset-btn" onClick={resetValues}>
+      {/* TODO: streamline HTML & CSS */}
+      {/* TODO: add h1, h2 for Properties, section for properties */}
+      <div className="sandbox">
+        <div className="sandbox__slider-container">
+          <button
+            className="sandbox__done-btn"
+            onClick={() => setShowModal(!showModal)}
+          >
+            I'm Done
+          </button>
+          <button className="sandbox__reset-btn" onClick={resetValues}>
             Reset
           </button>
 
@@ -497,16 +492,18 @@ export default function CssSandbox() {
               toggleList={item.toggleList}
             />
           ))}
-
-          <div>
-            <button
-              className="sandbox-btn-done"
-              onClick={() => setShowModal(!showModal)}
-            >
-              I'm Done
-            </button>
-          </div>
         </div>
+
+        <TestDiv
+          backgroundColor={bgColor}
+          border={`${borderWidth}px ${borderStyle} ${borderColor}`}
+          borderRadius={`${borderRadius}${borderRadiusType}`}
+          boxShadow={`${boxInset} ${boxOffsetX}px ${boxOffsetY}px ${boxBlur}px ${boxSpread}px ${boxColor}`}
+          filter={`blur(${blur}px)`}
+          height={height}
+          transform={`rotate(${rotation}deg)`}
+          width={`${width}px`}
+        />
 
         <Output
           bgColor={bgColor}

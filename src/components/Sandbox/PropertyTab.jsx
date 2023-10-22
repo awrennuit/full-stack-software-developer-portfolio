@@ -1,5 +1,5 @@
-import Slider from '../Slider/Slider';
-import Toggle from '../Toggle/Toggle';
+import Slider from './Slider';
+import Toggle from './Toggle';
 
 export default function PropertyTab({
   classClicked,

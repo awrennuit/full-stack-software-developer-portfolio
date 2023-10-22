@@ -1,0 +1,83 @@
+.output {
+  align-items: center;
+  background-color: $black--transparenter;
+  border-radius: 0.25rem;
+  bottom: 0;
+  box-shadow: 0 0 0.5rem 0.125rem $gray;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  padding: 1.75rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  visibility: hidden;
+
+  &--open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__dialog {
+    align-items: center;
+    background-color: $gray--lightest;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem 0.125rem $gray;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    left: 60%;
+    padding: 1.75rem;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h3 {
+    color: $gray--darker;
+  }
+
+  &__content {
+    background-color: $gray--darker;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    line-height: 1.5;
+    padding: 0.5rem;
+  }
+
+  &__btn {
+    align-items: center;
+    background: $blue-gradient--lightest;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: -0.125rem -0.125rem 0.25rem 0.063rem $white,
+      0.125rem 0.125rem 0.25rem 0.063rem $gray--light;
+    box-sizing: border-box;
+    color: $gray--darker;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 0.5rem 3.25rem;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      box-shadow: -0.125rem -0.125rem 0.25rem $white,
+        0.125rem 0.125rem 0.25rem $gray--light;
+      color: $gray;
+    }
+
+    &:active {
+      box-shadow: inset -0.125rem -1px 0.125rem $white,
+        inset 0.125rem 0.125rem 0.125rem $gray--light;
+    }
+  }
+}

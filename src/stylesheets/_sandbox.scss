@@ -1,0 +1,238 @@
+.sandbox {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  &__slider-container {
+    background-color: #ddd;
+    border-top: 1px solid #aaa;
+    min-height: calc(100vh - 141px);
+    max-height: 100%;
+    padding: 10px;
+    width: 220px;
+  }
+
+  &__reset-btn {
+    line-height: 30px;
+    background: linear-gradient(#eedede, #e0c7c7);
+    border: none;
+    border-radius: 25px;
+    box-shadow: -2px -2px 4px 1px #fff, 2px 2px 4px 1px #aaa;
+    color: #333;
+    cursor: pointer;
+    font-size: 1em;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
+    width: 70px;
+  }
+
+  &__done-btn {
+    line-height: 30px;
+    background: linear-gradient(#deeaee, #c7d9e0);
+    border: none;
+    border-radius: 25px;
+    box-shadow: -2px -2px 4px 1px #fff, 2px 2px 4px 1px #aaa;
+    color: #333;
+    cursor: pointer;
+    font-size: 1em;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
+    width: 150px;
+  }
+}
+
+.sandbox-reset-btn:hover {
+  box-shadow: -2px -2px 4px #fff, 2px 2px 4px #aaa;
+  color: #777;
+}
+
+.sandbox-reset-btn:active {
+  box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
+}
+
+.sandbox-item-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.sandbox-item-container label {
+  color: #444;
+}
+
+.sandbox-item-heading {
+  line-height: 30px;
+  background: linear-gradient(#ddd, #ccc);
+  border: none;
+  border-radius: 25px;
+  box-shadow: -2px -2px 4px 1px #fff, 2px 2px 4px 1px #aaa;
+  color: #333;
+  cursor: pointer;
+  height: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: left;
+  transition: 0.3s;
+  width: 100%;
+  z-index: 1;
+}
+
+.sandbox-item-heading:hover {
+  box-shadow: -2px -2px 4px #fff, 2px 2px 4px #aaa;
+  color: #777;
+}
+
+.sandbox-item-container div:first-child:hover .sandbox-btn-arrow::before,
+.sandbox-item-container div:first-child:hover .sandbox-btn-arrow::after {
+  background-color: #777;
+}
+
+.sandbox-item-heading:active {
+  box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
+}
+
+.sandbox-item-heading span {
+  color: inherit;
+}
+
+.sandbox-btn-arrow::before,
+.sandbox-btn-arrow::after {
+  background-color: #333;
+  border-radius: 1px;
+  content: '';
+  height: 1.5px;
+  position: absolute;
+  top: 13px;
+  transition: background-color 0.3s, left 0.5s, transform 0.7s;
+  width: 15px;
+}
+
+.sandbox-btn-arrow::before {
+  left: 20px;
+  transform: rotate(66deg);
+}
+
+.sandbox-btn-arrow::after {
+  left: 26px;
+  transform: rotate(114deg);
+}
+
+.sandbox-btn-text {
+  font-size: 16px;
+  padding-left: 45px;
+}
+
+.sandbox-item-heading--clicked .sandbox-btn-arrow::before {
+  left: 20px;
+  transform: rotate(300deg);
+}
+
+.sandbox-item-heading--clicked .sandbox-btn-arrow::after {
+  left: 26px;
+  transform: rotate(426deg);
+}
+
+.sandbox-item-heading--clicked {
+  line-height: 30px;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  height: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: left;
+  transition: 0.3s;
+  width: 100%;
+  z-index: 1;
+}
+
+.sandbox-item-heading--clicked:hover {
+  color: #777;
+}
+
+.sandbox-item-heading--clicked span {
+  color: inherit;
+}
+
+.sandbox-item-contents {
+  margin-bottom: -40px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 40px 7px 7px 7px;
+  position: relative;
+  transform: translateY(-40px);
+  transition: all 0.5s;
+  visibility: hidden;
+}
+
+.sandbox-item-contents--active {
+  border-radius: 15px;
+  box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
+  background: linear-gradient(to bottom right, #ccc, #ddd);
+  max-height: 300px;
+  opacity: 1;
+  transition: all 0.5s, padding 0s;
+  visibility: visible;
+}
+
+.sandbox-item-show::before,
+.sandbox-item-show::after {
+  background-color: #999;
+  content: '';
+  height: 1px;
+  left: 10px;
+  position: absolute;
+  width: 200px;
+}
+
+.sandbox-item-show::before {
+  border-radius: 25%;
+  top: 29px;
+}
+
+.sandbox-item-show::after {
+  border-radius: 50%;
+  top: 31px;
+}
+
+.sandbox-item-flex {
+  display: flex;
+}
+
+.sandbox-toggle-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sandbox-toggle-flex label {
+  cursor: pointer;
+  margin-bottom: 12px;
+  width: 50%;
+}
+
+.sandbox-toggle-flex input {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.sandbox-input {
+  text-align: right;
+  width: 100%;
+}
+
+.sandbox-input input[type='range'] {
+  width: 120px;
+}
+
+.sandbox-btn-done:hover {
+  box-shadow: -2px -2px 4px #fff, 2px 2px 4px #aaa;
+  color: #777;
+}
+
+.sandbox-btn-done:active {
+  box-shadow: inset -2px -1px 2px #fff, inset 2px 2px 2px #aaa;
+}

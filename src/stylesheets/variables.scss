@@ -1,6 +1,7 @@
 // colors
 $white: #fff;
 
+$gray--lightest: #eee;
 $gray--lighter: #d3d3d3;
 $gray--light: #aaa;
 $gray: #808080;
@@ -9,6 +10,7 @@ $gray--darkest: #1a1a24;
 
 $black: #000;
 $black--transparent: rgba(0, 0, 0, 0.714);
+$black--transparenter: rgba(0, 0, 0, 0.529);
 $black--transparentest: rgba(0, 0, 0, 0.247);
 
 $pink: #f7a8b8;
@@ -26,6 +28,9 @@ $blue--lightest: #bbd9e6;
 $blue: #55cdfc;
 $blue--darker: #323144;
 $blue--transparent: #55cdfc21;
+
+// gradients
+$blue-gradient--lightest: linear-gradient(#deeaee, #c7d9e0);
 
 // breakpoints
 $screen-xs-max: 425px;
