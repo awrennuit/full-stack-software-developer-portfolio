@@ -32,14 +32,12 @@ export default function Output({
     }
   }, [showModal]);
 
-  const handleEscPress = e => {
+  const handleEscPress = (e) => {
     if (e.key === 'Escape') setShowModal(!showModal);
   };
 
   return (
     // TODO: trap focus in dialog
-    // TODO: fix this absurd HTML
-    // TODO: streamline CSS
     createPortal(
       <div
         className={`output ${showModal ? 'output--open' : ''}`}
@@ -49,7 +47,7 @@ export default function Output({
           className="output__dialog"
           aria-labelledby="dialog-title"
           aria-describedby="dialog-description"
-          onClick={e => e.stopPropagation()}
+          onClick={(e) => e.stopPropagation()}
         >
           <h3 id="dialog-title">Here's Your CSS</h3>
           <div
@@ -57,60 +55,46 @@ export default function Output({
             className="output__content"
             onClick={() => selectText('dialog-description')}
           >
-            .my-class {'{'}
-            <br />
-            &nbsp;&nbsp;background-color: {bgColor};
-            {+blur !== 0 ? (
-              <>
-                <br />
-                &nbsp;&nbsp;blur: {blur}px;
-              </>
-            ) : (
-              ''
-            )}
-            {+borderWidth !== 0 ? (
-              <>
-                <br />
-                &nbsp;&nbsp;border: {borderWidth}px {borderStyle} {borderColor};
-              </>
-            ) : (
-              ''
-            )}
-            {+borderRadius !== 0 ? (
-              <>
-                <br />
-                &nbsp;&nbsp;border-radius: {borderRadius}
-                {borderRadiusType};
-              </>
-            ) : (
-              ''
-            )}
-            {+boxOffsetX !== 0 ||
-            +boxOffsetY !== 0 ||
-            +boxBlur !== 0 ||
-            +boxSpread !== 0 ? (
-              <>
-                <br />
-                &nbsp;&nbsp;box-shadow: {boxInset} {boxOffsetX}px {boxOffsetY}
-                px {boxBlur}px {boxSpread}px {boxColor};
-              </>
-            ) : (
-              ''
-            )}
-            <br />
-            &nbsp;&nbsp;height: {height}px;
-            {+rotation !== 0 ? (
-              <>
-                <br />
-                &nbsp;&nbsp;transform: rotate({rotation}deg);
-              </>
-            ) : (
-              ''
-            )}
-            <br />
-            &nbsp;&nbsp;width: {width}px;
-            <br />
-            {'}'}
+            <p>
+              <span>.my-class {'{'}</span>
+              <span>&nbsp;&nbsp;background-color: {bgColor};</span>
+              {+blur !== 0 ? <span>&nbsp;&nbsp;blur: {blur}px;</span> : ''}
+              {+borderWidth !== 0 ? (
+                <span>
+                  &nbsp;&nbsp;border: {borderWidth}px {borderStyle}{' '}
+                  {borderColor};
+                </span>
+              ) : (
+                ''
+              )}
+              {+borderRadius !== 0 ? (
+                <span>
+                  &nbsp;&nbsp;border-radius: {borderRadius}
+                  {borderRadiusType};
+                </span>
+              ) : (
+                ''
+              )}
+              {+boxOffsetX !== 0 ||
+              +boxOffsetY !== 0 ||
+              +boxBlur !== 0 ||
+              +boxSpread !== 0 ? (
+                <span>
+                  &nbsp;&nbsp;box-shadow: {boxInset} {boxOffsetX}px {boxOffsetY}
+                  px {boxBlur}px {boxSpread}px {boxColor};
+                </span>
+              ) : (
+                ''
+              )}
+              <span>&nbsp;&nbsp;height: {height}px;</span>
+              {+rotation !== 0 ? (
+                <span>&nbsp;&nbsp;transform: rotate({rotation}deg);</span>
+              ) : (
+                ''
+              )}
+              <span>&nbsp;&nbsp;width: {width}px;</span>
+              <span>{'}'}</span>
+            </p>
           </div>
           <button
             className="output__btn"

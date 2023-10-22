@@ -29,7 +29,7 @@ export default function App() {
           <Route exact path="/about" element={<Home />} />
           <Route exact path="/abstract-art" element={<Abstract />} />
           <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/css-sandbox" element={<Sandbox />} />
+          <Route exact path="/sandbox" element={<Sandbox />} />
           <Route exact path="/dungeon-synth" element={<DungeonSynth />} />
           <Route exact path="/gradient-maker" element={<CustomGradient />} />
           <Route
