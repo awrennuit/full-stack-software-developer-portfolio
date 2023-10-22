@@ -7,8 +7,8 @@ export default function GradientDirectionBtn({
 }) {
   return (
     <button
-      className={`gradient-direction-btn ${
-        gradientDirection === direction ? 'gradient-direction-btn--active' : ''
+      className={`gradient-direction-btn${
+        gradientDirection === direction ? ' gradient-direction-btn--active' : ''
       }`}
       onClick={() => setGradientDirection(direction)}
     >

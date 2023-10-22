@@ -29,8 +29,8 @@ export default function Swatches() {
           <span className="a11y">Toggle light/dark mode</span>
         </button>
         <div
-          className={`swatches__container ${
-            isBgWhite ? 'swatches__container--white' : ''
+          className={`swatches__container${
+            isBgWhite ? ' swatches__container--white' : ''
           }`}
         >
           {swatchList.map((item, i) => (

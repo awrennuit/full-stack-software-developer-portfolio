@@ -18,30 +18,30 @@ export default function Output({
   height,
   rotation,
   selectText,
-  setShowModal,
-  showModal,
+  setShowDialog,
+  showDialog,
   width,
 }) {
   useEffect(() => {
-    if (showModal) {
+    if (showDialog) {
       document.body.style.overflow = 'hidden';
       document.addEventListener('keydown', handleEscPress);
     } else {
       document.body.style.overflow = 'auto';
       document.removeEventListener('keydown', handleEscPress);
     }
-  }, [showModal]);
+  }, [showDialog]);
 
   const handleEscPress = (e) => {
-    if (e.key === 'Escape') setShowModal(!showModal);
+    if (e.key === 'Escape') setShowDialog(!showDialog);
   };
 
   return (
     // TODO: trap focus in dialog
     createPortal(
       <div
-        className={`output ${showModal ? 'output--open' : ''}`}
-        onClick={() => setShowModal(!showModal)}
+        className={`output${showDialog ? ' output--open' : ''}`}
+        onClick={() => setShowDialog(!showDialog)}
       >
         <dialog
           className="output__dialog"
@@ -98,7 +98,7 @@ export default function Output({
           </div>
           <button
             className="output__btn"
-            onClick={() => setShowModal(!showModal)}
+            onClick={() => setShowDialog(!showDialog)}
           >
             Got It
           </button>

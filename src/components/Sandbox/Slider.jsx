@@ -7,7 +7,7 @@ export default function Slider({
   variableName,
 }) {
   return (
-    <div className="sandbox-item-flex">
+    <div className="property-tab__flex">
       <label>{sliderLabel}</label>
       <div className="sandbox-input">
         <input

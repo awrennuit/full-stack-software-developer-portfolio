@@ -6,8 +6,7 @@ export default function HeaderBtn({ label, url }) {
 
   return (
     <Link
-      className={`header-btn
-        ${isCurPage ? 'header-btn--current' : ''}
+      className={`header-btn${isCurPage ? ' header-btn--current' : ''}
       `}
       to={location.pathname !== url ? url : '#'}
       tabIndex={isCurPage ? '-1' : '0'}

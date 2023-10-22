@@ -1,0 +1,108 @@
+.property-tab {
+  position: relative;
+  z-index: 0;
+
+  label {
+    color: #444;
+  }
+
+  .property-tab__heading {
+    align-items: center;
+    background: $gray-gradient--lightest;
+    border: none;
+    border-radius: 1.75rem;
+    box-shadow: -0.125rem -0.125rem 0.25rem 0.063rem $white,
+      0.125rem 0.125rem 0.25rem 0.063rem $gray--light;
+    box-sizing: border-box;
+    color: $gray--darker;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    padding: 0.5rem 2.5rem;
+    position: relative;
+    transition: 0.3s;
+    width: 100%;
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+      box-shadow: -0.125rem -0.125rem 0.25rem $white,
+        0.125rem 0.125rem 0.25rem $gray--light;
+      color: $gray;
+
+      .property-tab__arrow::before,
+      .property-tab__arrow::after {
+        background-color: $gray;
+      }
+    }
+
+    &:active {
+      box-shadow: inset -0.125rem -0.063rem 0.125rem $white,
+        inset 0.125rem 0.125rem 0.125rem $gray--light;
+    }
+
+    &--open {
+      background: transparent;
+      box-shadow: none;
+
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+
+      &:active {
+        box-shadow: none;
+      }
+
+      .property-tab__arrow {
+        &::before {
+          transform: rotate(300deg);
+        }
+
+        &::after {
+          transform: rotate(426deg);
+        }
+      }
+    }
+  }
+
+  .property-tab__arrow {
+    &::before,
+    &::after {
+      background-color: $gray--darker;
+      border-radius: 0.063rem;
+      content: '';
+      height: 0.125rem;
+      position: absolute;
+      top: 1rem;
+      transition: background-color 0.3s, left 0.5s, transform 0.7s;
+      width: 1rem;
+    }
+
+    &::before {
+      left: 1rem;
+      transform: rotate(66deg);
+    }
+
+    &::after {
+      left: 1.375rem;
+      transform: rotate(114deg);
+    }
+  }
+
+  &__toggle-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      cursor: pointer;
+      margin-bottom: 0.75rem;
+      width: 50%;
+    }
+
+    input {
+      cursor: pointer;
+      margin-right: 0.25rem;
+    }
+  }
+}

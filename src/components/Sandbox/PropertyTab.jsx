@@ -2,36 +2,33 @@ import Slider from './Slider';
 import Toggle from './Toggle';
 
 export default function PropertyTab({
-  classClicked,
-  classShow,
   heading,
-  setClassClicked,
-  setClassShow,
+  isExpanded,
+  setIsExpanded,
   sliderList,
   toggleList,
 }) {
   return (
-    <div className="sandbox-item-container">
-      <div
-        className={classClicked}
-        onClick={() => {
-          classClicked === 'sandbox-item-heading'
-            ? setClassClicked('sandbox-item-heading--clicked')
-            : setClassClicked('sandbox-item-heading');
-
-          classShow === 'sandbox-item-contents'
-            ? setClassShow(
-                'sandbox-item-contents sandbox-item-contents--active'
-              )
-            : setClassShow('sandbox-item-contents');
-        }}
-        role="button"
+    <div className="property-tab">
+      <button
+        className={`property-tab__heading${
+          isExpanded ? ' property-tab__heading--open' : ''
+        }`}
+        onClick={() => setIsExpanded(!isExpanded)}
+        aria-expanded={isExpanded}
+        aria-controls={`${heading.replace(/\s+/g, '-').toLowerCase()}-filter`}
       >
-        <span className="sandbox-btn-arrow"></span>
-        <span className="sandbox-btn-text">{heading}</span>
-      </div>
-      <div className={classShow}>
-        <div className="sandbox-toggle-flex">
+        <span className="property-tab__arrow"></span>
+        {heading}
+      </button>
+
+      <div
+        id={`${heading.replace(/\s+/g, '-').toLowerCase()}-filter`}
+        className={`property-tab__contents${
+          isExpanded ? ' property-tab__contents--open' : ''
+        }`}
+      >
+        <div className="property-tab__toggle-container">
           {toggleList?.length > 0
             ? toggleList.map((item, i) => (
                 <Toggle

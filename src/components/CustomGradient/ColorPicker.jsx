@@ -5,8 +5,8 @@ export default function ColorPicker({ color, isToolbarOpen, setColor }) {
 
   return (
     <div
-      className={`color-picker ${
-        isToolbarOpen ? 'color-picker--inactive' : ''
+      className={`color-picker${
+        isToolbarOpen ? ' color-picker--inactive' : ''
       }`}
     >
       <label className="a11y" htmlFor={`${inputId}-color-input`}>

@@ -30,6 +30,13 @@ $blue--darker: #323144;
 $blue--transparent: #55cdfc21;
 
 // gradients
+$gray-gradient--lightest: linear-gradient(#ddd, #ccc);
+$gray-gradient-bottom-right--lightest: linear-gradient(
+  to bottom right,
+  #ccc,
+  #ddd
+);
+$red-gradient--lightest: linear-gradient(#eedede, #e0c7c7);
 $blue-gradient--lightest: linear-gradient(#deeaee, #c7d9e0);
 
 // breakpoints

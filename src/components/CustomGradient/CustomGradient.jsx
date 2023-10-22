@@ -76,8 +76,8 @@ export default function CustomGradient() {
           setColorTwo={setColorTwo}
         />
         <button
-          className={`custom-gradient__toolbar-btn ${
-            isToolbarOpen ? 'custom-gradient__toolbar-btn--hidden' : ''
+          className={`custom-gradient__toolbar-btn${
+            isToolbarOpen ? ' custom-gradient__toolbar-btn--hidden' : ''
           }`}
           onClick={() => setIsToolbarOpen(true)}
           title="Open advanced controls"
