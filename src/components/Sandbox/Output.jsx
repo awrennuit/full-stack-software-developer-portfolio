@@ -39,7 +39,7 @@ export default function Output({
   return (
     // TODO: trap focus in dialog
     createPortal(
-      <div
+      <aside
         className={`output${showDialog ? ' output--open' : ''}`}
         onClick={() => setShowDialog(!showDialog)}
       >
@@ -103,7 +103,7 @@ export default function Output({
             Got It
           </button>
         </dialog>
-      </div>,
+      </aside>,
       document.body
     )
   );

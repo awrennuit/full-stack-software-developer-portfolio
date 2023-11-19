@@ -90,6 +90,30 @@
     }
   }
 
+  &__contents {
+    background: $gray-gradient-bottom-right--lightest;
+    border-radius: 1rem;
+    box-shadow: inset -0.125rem -0.063rem 0.125rem $white,
+      inset 0.125rem 0.125rem 0.125rem $gray--light;
+    margin-bottom: -2rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0.5rem;
+    padding-top: 2.5rem;
+    position: relative;
+    transform: translateY(-2rem);
+    transition: all 0.5s;
+    visibility: hidden;
+
+    &--open {
+      max-height: 19.375rem;
+      opacity: 1;
+      transition: all 0.5s, padding 0s;
+      visibility: visible;
+    }
+  }
+
   &__toggle-container {
     display: flex;
     flex-wrap: wrap;

@@ -435,12 +435,9 @@ export default function CssSandbox() {
         />
       </Helmet>
       <Header />
-      {/* TODO: streamline HTML & CSS */}
-      {/* TODO: add h1, h2 for Properties, section for properties */}
-      <div className="sandbox">
+      <article className="sandbox">
         <h1 className="a11y">CSS Sandbox</h1>
-        {/* TODO: make this its own (slideout?) component */}
-        <div className="sandbox__sidebar-container">
+        <section className="sandbox__sidebar-container">
           <div className="sandbox__sidebar-header">
             <h2>Properties</h2>
             <button className="sandbox__reset-btn" onClick={resetValues}>
@@ -465,7 +462,7 @@ export default function CssSandbox() {
           >
             I'm Done
           </button>
-        </div>
+        </section>
 
         <TestDiv
           backgroundColor={bgColor}
@@ -499,7 +496,7 @@ export default function CssSandbox() {
           showDialog={showDialog}
           width={width}
         />
-      </div>
+      </article>
       <Footer />
     </>
   );
