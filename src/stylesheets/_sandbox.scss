@@ -1,7 +1,16 @@
 .sandbox {
   align-items: center;
   display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
   justify-content: center;
+  overflow: hidden;
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+    height: auto;
+    overflow: auto;
+  }
 
   &__sidebar-container {
     background-color: $gray--lighter;
@@ -13,7 +22,11 @@
     height: calc(100vh - 8.813rem);
     overflow-y: auto;
     padding: 0.75rem;
-    width: 15rem;
+    width: 100%;
+
+    @media (min-width: $screen-md-min) {
+      width: 15rem;
+    }
 
     h2 {
       color: $black;
@@ -46,7 +59,7 @@
     transition: 0.3s;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       box-shadow: -0.125rem -0.125rem 0.25rem $white,
         0.125rem 0.125rem 0.25rem $gray--light;
       color: $gray;
@@ -75,7 +88,7 @@
     transition: 0.3s;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       box-shadow: -0.125rem -0.125rem 0.25rem $white,
         0.125rem 0.125rem 0.25rem $gray--light;
       color: $gray;
@@ -88,6 +101,7 @@
   }
 }
 
+// TODO: move these over to correct stylesheet if they're still needed
 .property-tab__contents {
   margin-bottom: -2rem;
   max-height: 0;
@@ -129,17 +143,4 @@
 .property-tab__show::after {
   border-radius: 50%;
   top: 31px;
-}
-
-.property-tab__flex {
-  display: flex;
-}
-
-.sandbox-input {
-  text-align: right;
-  width: 100%;
-}
-
-.sandbox-input input[type='range'] {
-  width: 120px;
 }

@@ -8,7 +8,7 @@ export default function Toggle({
   toggleValue,
 }) {
   return (
-    <label>
+    <label className="toggle">
       <input
         defaultChecked={isChecked}
         id={toggleId ? toggleId : null}

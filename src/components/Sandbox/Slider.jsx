@@ -7,18 +7,17 @@ export default function Slider({
   variableName,
 }) {
   return (
-    <div className="property-tab__flex">
-      <label>{sliderLabel}</label>
-      <div className="sandbox-input">
-        <input
-          type="range"
-          value={variableName}
-          min={minValue}
-          max={maxValue}
-          step={stepValue}
-          onChange={(e) => setVariable(e.target.value)}
-        />
-      </div>
+    <div className="slider">
+      <label htmlFor={sliderLabel}>{sliderLabel}</label>
+      <input
+        id={sliderLabel}
+        type="range"
+        value={variableName}
+        min={minValue}
+        max={maxValue}
+        step={stepValue}
+        onChange={(e) => setVariable(e.target.value)}
+      />
     </div>
   );
 }

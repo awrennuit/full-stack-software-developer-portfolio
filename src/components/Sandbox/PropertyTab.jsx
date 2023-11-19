@@ -28,22 +28,24 @@ export default function PropertyTab({
           isExpanded ? ' property-tab__contents--open' : ''
         }`}
       >
-        <div className="property-tab__toggle-container">
-          {toggleList?.length > 0
-            ? toggleList.map((item, i) => (
-                <Toggle
-                  key={i}
-                  isChecked={item.defaultChecked}
-                  setVariable={item.toggleVariable}
-                  toggleId={item.toggleId}
-                  toggleLabel={item.toggleLabel}
-                  toggleName={item.toggleName}
-                  toggleType={item.toggleType}
-                  toggleValue={item.toggleValue}
-                />
-              ))
-            : ''}
-        </div>
+        {toggleList?.length > 0 ? (
+          <div className="property-tab__toggle-container">
+            {toggleList.map((item, i) => (
+              <Toggle
+                key={i}
+                isChecked={item.defaultChecked}
+                setVariable={item.toggleVariable}
+                toggleId={item.toggleId}
+                toggleLabel={item.toggleLabel}
+                toggleName={item.toggleName}
+                toggleType={item.toggleType}
+                toggleValue={item.toggleValue}
+              />
+            ))}
+          </div>
+        ) : (
+          ''
+        )}
         {sliderList?.length > 0
           ? sliderList.map((item, i) => (
               <Slider

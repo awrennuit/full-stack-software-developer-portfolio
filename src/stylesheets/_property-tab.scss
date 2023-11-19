@@ -25,7 +25,7 @@
     z-index: 1;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       box-shadow: -0.125rem -0.125rem 0.25rem $white,
         0.125rem 0.125rem 0.25rem $gray--light;
       color: $gray;
@@ -46,7 +46,7 @@
       box-shadow: none;
 
       &:hover,
-      &:focus {
+      &:focus-visible {
         box-shadow: none;
       }
 
@@ -93,16 +93,6 @@
   &__toggle-container {
     display: flex;
     flex-wrap: wrap;
-
-    label {
-      cursor: pointer;
-      margin-bottom: 0.75rem;
-      width: 50%;
-    }
-
-    input {
-      cursor: pointer;
-      margin-right: 0.25rem;
-    }
+    padding-bottom: 0.5rem;
   }
 }

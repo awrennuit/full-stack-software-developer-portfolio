@@ -18,7 +18,6 @@ export default function TestDiv({
         borderRadius,
         boxShadow,
         height: `${height}px`,
-        top: `${50 - height / 20}%`,
         transform,
         width,
       }}
