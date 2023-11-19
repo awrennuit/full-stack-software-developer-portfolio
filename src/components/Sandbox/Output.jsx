@@ -23,10 +23,11 @@ export default function Output({
   width,
 }) {
   const closeRef = useRef(null);
+  const copyRef = useRef(null);
 
   useEffect(() => {
     if (showDialog) {
-      closeRef.current.focus();
+      setTimeout(() => closeRef.current.focus(), 300);
       document.body.style.overflow = 'hidden';
       document.addEventListener('keydown', handleEscPress);
       document.addEventListener('keydown', handleTabPress);
@@ -39,14 +40,23 @@ export default function Output({
     };
   }, [showDialog]);
 
+  const handleEnterPress = (e) => {
+    if (e.key === 'Enter') selectText('dialog-description');
+  };
+
   const handleEscPress = (e) => {
     if (e.key === 'Escape') setShowDialog(!showDialog);
   };
 
   const handleTabPress = (e) => {
-    if (e.key === 'Tab') {
+    if (e.key !== 'Tab') return;
+
+    if (document.activeElement === copyRef.current) {
       e.preventDefault();
       closeRef.current.focus();
+    } else if (document.activeElement === closeRef.current) {
+      e.preventDefault();
+      copyRef.current.focus();
     }
   };
 
@@ -64,8 +74,11 @@ export default function Output({
         <h3 id="dialog-title">Here's Your CSS</h3>
         <div
           id="dialog-description"
+          ref={copyRef}
           className="output__content"
           onClick={() => selectText('dialog-description')}
+          onKeyDown={handleEnterPress}
+          tabIndex={0}
         >
           <p>
             <span>.my-class {'{'}</span>
