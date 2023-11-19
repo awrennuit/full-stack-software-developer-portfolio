@@ -38,9 +38,14 @@
 
   &__content {
     background-color: $gray--darker;
+    border: 0.125rem solid $gray--darker;
     border-radius: 0.25rem;
     box-sizing: border-box;
     padding: 0.5rem;
+
+    &:focus {
+      border-color: $blue;
+    }
 
     span {
       display: block;

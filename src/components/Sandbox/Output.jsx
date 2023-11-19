@@ -27,7 +27,7 @@ export default function Output({
 
   useEffect(() => {
     if (showDialog) {
-      setTimeout(() => closeRef.current.focus(), 300);
+      setTimeout(() => copyRef.current.focus(), 300);
       document.body.style.overflow = 'hidden';
       document.addEventListener('keydown', handleEscPress);
       document.addEventListener('keydown', handleTabPress);
