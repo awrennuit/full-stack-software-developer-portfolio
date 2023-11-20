@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Header from '../Header';
 import Footer from '../Footer';
 import PropertyTab from './PropertyTab';
-import TestDiv from './testDiv';
+import TestDiv from './TestDiv';
 import Output from './Output';
 
 export default function CssSandbox() {
