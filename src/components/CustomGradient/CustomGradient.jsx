@@ -56,7 +56,7 @@ export default function CustomGradient() {
         <title>
           gradient maker - awren nuit's software engineering portfolio
         </title>
-        <link rel="canonical" href="http://awrennuit.com/#/gradient-maker" />
+        <link rel="canonical" href="http://www.awrennuit.com/#/gradient-maker" />
         <meta
           name="description"
           content="A gradient generator developed by full stack software awren nuit. It's a free & easy way to create beautiful backgrounds."
