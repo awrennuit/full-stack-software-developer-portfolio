@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../Header';
 import Footer from '../Footer';
@@ -7,6 +7,8 @@ import TestDiv from './TestDiv';
 import Output from './Output';
 
 export default function CssSandbox() {
+  const doneRef = useRef(null);
+
   // sets height & width
   const [isDimensionsExpanded, setIsDimensionsExpanded] = useState(false);
   const [height, setHeight] = useState(200);
@@ -457,6 +459,7 @@ export default function CssSandbox() {
           ))}
 
           <button
+            ref={doneRef}
             className="sandbox__done-btn"
             onClick={() => setShowDialog(!showDialog)}
           >
@@ -489,6 +492,7 @@ export default function CssSandbox() {
           boxOffsetX={boxOffsetX}
           boxOffsetY={boxOffsetY}
           boxSpread={boxSpread}
+          doneRef={doneRef}
           height={height}
           rotation={rotation}
           selectText={selectText}

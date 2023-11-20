@@ -15,6 +15,7 @@ export default function Output({
   boxOffsetX,
   boxOffsetY,
   boxSpread,
+  doneRef,
   height,
   rotation,
   selectText,
@@ -37,6 +38,7 @@ export default function Output({
       document.body.style.overflow = 'auto';
       document.removeEventListener('keydown', handleEscPress);
       document.removeEventListener('keydown', handleTabPress);
+      doneRef.current.focus();
     };
   }, [showDialog]);
 
