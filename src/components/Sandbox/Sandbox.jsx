@@ -1,24 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
-import '../../stylesheets/css-sandbox.css';
 import Header from '../Header';
 import Footer from '../Footer';
-import PropertyTab from './PropertyTab/PropertyTab';
-import TestDiv from './TestDiv/testDiv';
-import Output from './Output/Output';
+import PropertyTab from './PropertyTab';
+import TestDiv from './TestDiv';
+import Output from './Output';
 
 export default function CssSandbox() {
+  const doneRef = useRef(null);
+
   // sets height & width
-  const [dimensionsClicked, setDimensionsClicked] = useState(
-    'sandbox-item-heading'
-  );
-  const [dimensionsShow, setDimensionsShow] = useState('sandbox-item-contents');
+  const [isDimensionsExpanded, setIsDimensionsExpanded] = useState(false);
   const [height, setHeight] = useState(200);
   const [width, setWidth] = useState(300);
 
   // sets background color
-  const [bgClicked, setBgClicked] = useState('sandbox-item-heading');
-  const [bgShow, setBgShow] = useState('sandbox-item-contents');
+  const [isBgExpanded, setIsBgExpanded] = useState(false);
   const [bgRed, setBgRed] = useState(255);
   const [bgGreen, setBgGreen] = useState(255);
   const [bgBlue, setBgBlue] = useState(255);
@@ -27,13 +24,11 @@ export default function CssSandbox() {
   );
 
   // sets blur
-  const [blurClicked, setBlurClicked] = useState('sandbox-item-heading');
-  const [blurShow, setBlurShow] = useState('sandbox-item-contents');
+  const [isBlurExpanded, setIsBlurExpanded] = useState(false);
   const [blur, setBlur] = useState(0);
 
   //sets border
-  const [borderClicked, setBorderClicked] = useState('sandbox-item-heading');
-  const [borderShow, setBorderShow] = useState('sandbox-item-contents');
+  const [isBorderExpanded, setIsBorderExpanded] = useState(false);
   const [borderWidth, setBorderWidth] = useState(0);
   const [borderStyle, setBorderStyle] = useState('none');
   const [borderRed, setBorderRed] = useState(125);
@@ -44,20 +39,12 @@ export default function CssSandbox() {
   );
 
   // sets border radius
-  const [borderRadiusClicked, setBorderRadiusClicked] = useState(
-    'sandbox-item-heading'
-  );
-  const [borderRadiusShow, setBorderRadiusShow] = useState(
-    'sandbox-item-contents'
-  );
+  const [isBorderRadiusExpanded, setIsBorderRadiusExpanded] = useState(false);
   const [borderRadius, setBorderRadius] = useState(0);
   const [borderRadiusType, setBorderRadiusType] = useState('px');
 
   // sets box shadow
-  const [boxShadowClicked, setBoxShadowClicked] = useState(
-    'sandbox-item-heading'
-  );
-  const [boxShadowShow, setBoxShadowShow] = useState('sandbox-item-contents');
+  const [isBoxShadowExpanded, setIsBoxShadowExpanded] = useState(false);
   const [boxRed, setBoxRed] = useState(125);
   const [boxGreen, setBoxGreen] = useState(125);
   const [boxBlue, setBoxBlue] = useState(125);
@@ -71,23 +58,18 @@ export default function CssSandbox() {
   const [boxSpread, setBoxSpread] = useState(0);
 
   // sets rotation
-  const [rotationClicked, setRotationClicked] = useState(
-    'sandbox-item-heading'
-  );
-  const [rotationShow, setRotationShow] = useState('sandbox-item-contents');
+  const [isRotationExpanded, setIsRotationExpanded] = useState(false);
   const [rotation, setRotation] = useState(0);
 
-  // toggles modal
-  const [showModal, setShowModal] = useState(false);
+  // toggles dialog
+  const [showDialog, setShowDialog] = useState(false);
 
   // property tab data
   const propertyTabList = [
     {
-      classClicked: dimensionsClicked,
-      classShow: dimensionsShow,
       heading: 'Dimensions',
-      setClassClicked: setDimensionsClicked,
-      setClassShow: setDimensionsShow,
+      isExpanded: isDimensionsExpanded,
+      setIsExpanded: setIsDimensionsExpanded,
       sliderList: [
         {
           sliderLabel: 'Height',
@@ -108,11 +90,9 @@ export default function CssSandbox() {
       ],
     },
     {
-      classClicked: bgClicked,
-      classShow: bgShow,
       heading: 'Background',
-      setClassClicked: setBgClicked,
-      setClassShow: setBgShow,
+      isExpanded: isBgExpanded,
+      setIsExpanded: setIsBgExpanded,
       sliderList: [
         {
           sliderLabel: 'Red',
@@ -141,11 +121,9 @@ export default function CssSandbox() {
       ],
     },
     {
-      classClicked: blurClicked,
-      classShow: blurShow,
       heading: 'Blur',
-      setClassClicked: setBlurClicked,
-      setClassShow: setBlurShow,
+      isExpanded: isBlurExpanded,
+      setIsExpanded: setIsBlurExpanded,
       sliderList: [
         {
           sliderLabel: 'Blur',
@@ -158,11 +136,9 @@ export default function CssSandbox() {
       ],
     },
     {
-      classClicked: borderClicked,
-      classShow: borderShow,
       heading: 'Border',
-      setClassClicked: setBorderClicked,
-      setClassShow: setBorderShow,
+      isExpanded: isBorderExpanded,
+      setIsExpanded: setIsBorderExpanded,
       sliderList: [
         {
           sliderLabel: 'Width',
@@ -266,11 +242,9 @@ export default function CssSandbox() {
       ],
     },
     {
-      classClicked: borderRadiusClicked,
-      classShow: borderRadiusShow,
       heading: 'Border Radius',
-      setClassClicked: setBorderRadiusClicked,
-      setClassShow: setBorderRadiusShow,
+      isExpanded: isBorderRadiusExpanded,
+      setIsExpanded: setIsBorderRadiusExpanded,
       sliderList: [
         {
           sliderLabel: 'Width',
@@ -301,11 +275,9 @@ export default function CssSandbox() {
       ],
     },
     {
-      classClicked: boxShadowClicked,
-      classShow: boxShadowShow,
       heading: 'Box Shadow',
-      setClassClicked: setBoxShadowClicked,
-      setClassShow: setBoxShadowShow,
+      isExpanded: isBoxShadowExpanded,
+      setIsExpanded: setIsBoxShadowExpanded,
       sliderList: [
         {
           sliderLabel: 'X-Offset',
@@ -376,11 +348,9 @@ export default function CssSandbox() {
       ],
     },
     {
-      classClicked: rotationClicked,
-      classShow: rotationShow,
       heading: 'Rotation',
-      setClassClicked: setRotationClicked,
-      setClassShow: setRotationShow,
+      isExpanded: isRotationExpanded,
+      setIsExpanded: setIsRotationExpanded,
       sliderList: [
         {
           sliderLabel: 'Rotate',
@@ -456,10 +426,10 @@ export default function CssSandbox() {
     <>
       <Helmet>
         <title>css sandbox - awren nuit's software engineering portfolio</title>
-        <link rel="canonical" href="http://awrennuit.com/#/css-sandbox" />
+        <link rel="canonical" href="http://www.awrennuit.com/#/sandbox" />
         <meta
           name="description"
-          content="This is an interactive CSS sandbox! Add some styles, including box-shadow, blur, borders, and more. Then copy the code to add to your project."
+          content="This is an interactive CSS sandbox! Add some styles, including box-shadow, blur, borders, and more. Copy the code to add it to your project."
         />
         <meta
           name="keywords"
@@ -467,7 +437,36 @@ export default function CssSandbox() {
         />
       </Helmet>
       <Header />
-      <div className="sandbox-main-container">
+      <article className="sandbox">
+        <h1 className="a11y">CSS Sandbox</h1>
+        <section className="sandbox__sidebar-container">
+          <div className="sandbox__sidebar-header">
+            <h2>Properties</h2>
+            <button className="sandbox__reset-btn" onClick={resetValues}>
+              Reset
+            </button>
+          </div>
+
+          {propertyTabList.map((item, i) => (
+            <PropertyTab
+              key={i}
+              heading={item.heading}
+              isExpanded={item.isExpanded}
+              setIsExpanded={item.setIsExpanded}
+              sliderList={item.sliderList}
+              toggleList={item.toggleList}
+            />
+          ))}
+
+          <button
+            ref={doneRef}
+            className="sandbox__done-btn"
+            onClick={() => setShowDialog(!showDialog)}
+          >
+            I'm Done
+          </button>
+        </section>
+
         <TestDiv
           backgroundColor={bgColor}
           border={`${borderWidth}px ${borderStyle} ${borderColor}`}
@@ -478,35 +477,6 @@ export default function CssSandbox() {
           transform={`rotate(${rotation}deg)`}
           width={`${width}px`}
         />
-
-        <div className="sandbox-slider-container">
-          <h3>Properties</h3>
-          <button className="sandbox-reset-btn" onClick={resetValues}>
-            Reset
-          </button>
-
-          {propertyTabList.map((item, i) => (
-            <PropertyTab
-              key={i}
-              classClicked={item.classClicked}
-              classShow={item.classShow}
-              heading={item.heading}
-              setClassClicked={item.setClassClicked}
-              setClassShow={item.setClassShow}
-              sliderList={item.sliderList}
-              toggleList={item.toggleList}
-            />
-          ))}
-
-          <div>
-            <button
-              className="sandbox-btn-done"
-              onClick={() => setShowModal(!showModal)}
-            >
-              I'm Done
-            </button>
-          </div>
-        </div>
 
         <Output
           bgColor={bgColor}
@@ -522,14 +492,15 @@ export default function CssSandbox() {
           boxOffsetX={boxOffsetX}
           boxOffsetY={boxOffsetY}
           boxSpread={boxSpread}
+          doneRef={doneRef}
           height={height}
           rotation={rotation}
           selectText={selectText}
-          setShowModal={setShowModal}
-          showModal={showModal}
+          setShowDialog={setShowDialog}
+          showDialog={showDialog}
           width={width}
         />
-      </div>
+      </article>
       <Footer />
     </>
   );

@@ -18,8 +18,9 @@ export default function GradientToolbar({
 }) {
   return (
     <div
-      className={`gradient-toolbar
-      ${isToolbarOpen ? 'gradient-toolbar--active' : ''}`}
+      className={`gradient-toolbar${
+        isToolbarOpen ? ' gradient-toolbar--active' : ''
+      }`}
     >
       <div className="gradient-toolbar__inner">
         <p

@@ -56,7 +56,7 @@ export default function CustomGradient() {
         <title>
           gradient maker - awren nuit's software engineering portfolio
         </title>
-        <link rel="canonical" href="http://awrennuit.com/#/gradient-maker" />
+        <link rel="canonical" href="http://www.awrennuit.com/#/gradient-maker" />
         <meta
           name="description"
           content="A gradient generator developed by full stack software awren nuit. It's a free & easy way to create beautiful backgrounds."
@@ -76,8 +76,8 @@ export default function CustomGradient() {
           setColorTwo={setColorTwo}
         />
         <button
-          className={`custom-gradient__toolbar-btn ${
-            isToolbarOpen ? 'custom-gradient__toolbar-btn--hidden' : ''
+          className={`custom-gradient__toolbar-btn${
+            isToolbarOpen ? ' custom-gradient__toolbar-btn--hidden' : ''
           }`}
           onClick={() => setIsToolbarOpen(true)}
           title="Open advanced controls"

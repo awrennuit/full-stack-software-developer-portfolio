@@ -8,7 +8,7 @@ export const headerLinks = [
     label: 'Projects',
   },
   {
-    url: '/css-sandbox',
+    url: '/sandbox',
     label: 'Sandbox',
   },
   {

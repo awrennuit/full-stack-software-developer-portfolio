@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>about - awren nuit's software engineering portfolio</title>
-        <link rel="canonical" href="http://awrennuit.com/#/about" />
+        <link rel="canonical" href="http://www.awrennuit.com/#/about" />
         <meta
           name="description"
           content="More details about full stack software engineer awren nuit, including personal background and frequently-used technologies."

@@ -1,0 +1,102 @@
+.sandbox {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+    height: auto;
+    overflow: auto;
+  }
+
+  &__sidebar-container {
+    background-color: $gray--lighter;
+    border-top: 0.063rem solid $gray--light;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: calc(100vh - 8.813rem);
+    overflow-y: auto;
+    padding: 0.75rem;
+    width: 100%;
+
+    @media (min-width: $screen-md-min) {
+      width: 15rem;
+    }
+
+    h2 {
+      color: $black;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__sidebar-header {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+
+  &__reset-btn {
+    align-items: center;
+    background: $red-gradient--lightest;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: -0.125rem -0.125rem 0.25rem 0.063rem $white,
+      0.125rem 0.125rem 0.25rem 0.063rem $gray--light;
+    box-sizing: border-box;
+    color: $gray--darker;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: -0.125rem -0.125rem 0.25rem $white,
+        0.125rem 0.125rem 0.25rem $gray--light;
+      color: $gray;
+    }
+
+    &:active {
+      box-shadow: inset -0.125rem -0.063rem 0.125rem $white,
+        inset 0.125rem 0.125rem 0.125rem $gray--light;
+    }
+  }
+
+  &__done-btn {
+    align-items: center;
+    background: $blue-gradient--lightest;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: -0.125rem -0.125rem 0.25rem 0.063rem $white,
+      0.125rem 0.125rem 0.25rem 0.063rem $gray--light;
+    box-sizing: border-box;
+    color: $gray--darker;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 0.5rem 3.25rem;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: -0.125rem -0.125rem 0.25rem $white,
+        0.125rem 0.125rem 0.25rem $gray--light;
+      color: $gray;
+    }
+
+    &:active {
+      box-shadow: inset -0.125rem -0.063rem 0.125rem $white,
+        inset 0.125rem 0.125rem 0.125rem $gray--light;
+    }
+  }
+}

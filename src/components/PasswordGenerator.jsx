@@ -84,7 +84,7 @@ export default function PasswordGenerator() {
         </title>
         <link
           rel="canonical"
-          href="http://awrennuit.com/#/password-generator"
+          href="http://www.awrennuit.com/#/password-generator"
         />
         <meta
           name="description"
