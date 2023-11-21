@@ -38,7 +38,7 @@ export default function Output({
       document.body.style.overflow = 'auto';
       document.removeEventListener('keydown', handleEscPress);
       document.removeEventListener('keydown', handleTabPress);
-      doneRef.current.focus();
+      doneRef?.current?.focus();
     };
   }, [showDialog]);
 
