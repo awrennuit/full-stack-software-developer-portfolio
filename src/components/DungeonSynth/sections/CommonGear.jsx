@@ -1,19 +1,19 @@
 export default function CommonGear() {
   return (
     <>
-      <p className="dungeon-synth__content-block">
+      <p className="u-music-container__content-block">
         as the name implies, dungeon synth is generally synth-based. but it
         doesn't have to be. for instance, some people use guitars. a{' '}
         <em>lot</em> of modern dungeon synth is VST-based and 100% digital.
       </p>
 
-      <ul className="dungeon-synth__list-container">
+      <ul className="u-music-container__nested-list">
         <li>
           common hardware synths
           <ul>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=casio%20sk-1&product_type=keyboards-and-synths"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -23,7 +23,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=ensoniq%20sq-80&product_type=keyboards-and-synths"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -33,7 +33,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=korg%20m1&make=korg&product_type=keyboards-and-synths"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -43,7 +43,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.vintagesynth.com/roland/jv80.php"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=yamaha%20sy77&product_type=keyboards-and-synths"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -63,7 +63,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=80s%20keyboard"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,7 +73,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=midi%20keyboard&product_type=keyboards-and-synths"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,7 +88,7 @@ export default function CommonGear() {
           <ul>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.native-instruments.com/en/products/komplete/samplers/kontakt-7/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -98,7 +98,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://asb2m10.github.io/dexed/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -108,7 +108,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.korg.com/us/products/software/kc_m1/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -117,7 +117,7 @@ export default function CommonGear() {
               </a>{' '}
               or{' '}
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.korg.com/us/products/software/kc_wavestation/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -128,7 +128,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.nilsschneider.de/wp/nils-k1v/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -138,7 +138,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://daichilab.sakura.ne.jp/softsynth/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -148,7 +148,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://musical-artifacts.com/artifacts?formats=sf2&tags=soundfont"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -163,7 +163,7 @@ export default function CommonGear() {
           <ul>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.image-line.com/fl-studio/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -173,7 +173,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.apple.com/mac/garageband/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -183,7 +183,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.apple.com/logic-pro/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -193,7 +193,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.reaper.fm/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -203,7 +203,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=focusrite%20scarlett%202i2"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -213,7 +213,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=tascam%204%20track%20cassette"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -228,7 +228,7 @@ export default function CommonGear() {
           <ul>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://www.reaper.fm/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -239,7 +239,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=M-Audio%20Keystation%2049es"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -250,7 +250,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://daichilab.sakura.ne.jp/softsynth/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -261,7 +261,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://plugins4free.com/plugin/2541/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -272,7 +272,7 @@ export default function CommonGear() {
             </li>
             <li>
               <a
-                className="dungeon-synth__link"
+                className="u-music-container__link"
                 href="https://vis.versilstudios.com/etherealwinds-harp.html"
                 target="_blank"
                 rel="noopener noreferrer"

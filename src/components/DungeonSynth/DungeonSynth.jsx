@@ -20,7 +20,7 @@ export default function DungeonSynth() {
   }, [location?.hash]);
 
   return (
-    <div className="dungeon-synth">
+    <div className="u-music-container dungeon-synth">
       <Helmet>
         <title>a dungeon synth primer</title>
         <link rel="canonical" href="http://www.awrennuit.com/#/dungeon-synth" />
@@ -33,7 +33,7 @@ export default function DungeonSynth() {
           content="dungeon synth, how to make dungeon synth, how do i make dungeon synth, dungeon synth gear, dungeon synth intro, dungeon synth introduction, dungeon synth basics, dungeon synth primer, dungeon synth gear, dungeon synth history, wooden vessels, aveline baudelaire"
         />
       </Helmet>
-      <div className="dungeon-synth__inner">
+      <div className="u-music-container__inner">
         <header>
           <div className="dungeon-synth__title-container">
             <AudioPlayer />

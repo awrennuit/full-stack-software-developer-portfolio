@@ -68,3 +68,96 @@ input[type='range'] {
   white-space: nowrap;
   width: 1px;
 }
+
+// TODO: make some variables?
+.u-music-container {
+  background-color: #181616;
+  min-height: 100vh;
+
+  * {
+    color: #918080;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Fondamento', serif;
+  }
+
+  h1 {
+    color: #c4acac;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    span {
+      font-size: 0.75rem;
+    }
+  }
+
+  h3 {
+    color: #aa9696;
+    font-size: 1.4rem;
+    padding-bottom: 0.75rem;
+  }
+
+  ul {
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+  }
+
+  li {
+    padding: 0.25rem 0;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 45rem;
+    padding: 0.5rem 1.25rem;
+  }
+
+  &__content-block {
+    line-height: 1.06rem;
+    padding-bottom: 0.75rem;
+  }
+
+  &__link {
+    border: 0.125rem dotted transparent;
+    color: #9c2a2a;
+    text-decoration: underline;
+    transition: 0.2s;
+
+    &:hover {
+      color: #be3333;
+    }
+
+    &:focus {
+      border-color: #5d9c2a;
+    }
+
+    &:active {
+      color: #9c2a2a;
+    }
+  }
+
+  &__nested-list {
+    padding-bottom: 0.75rem;
+
+    > li {
+      list-style: none;
+    }
+
+    ul {
+      padding-bottom: 0.75rem;
+      padding-left: 1.25rem;
+      padding-top: 0.25rem;
+    }
+
+    ul li {
+      padding-bottom: 0.25rem;
+    }
+  }
+}
