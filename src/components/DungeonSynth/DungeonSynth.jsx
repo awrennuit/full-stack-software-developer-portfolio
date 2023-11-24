@@ -8,6 +8,7 @@ import Inspiration from './sections/Inspiration';
 import MoreRecommendations from './sections/MoreRecommendations';
 import MyMethod from './sections/MyMethod';
 import ThankYou from './sections/ThankYou';
+import MusicHeader from '../MusicHeader';
 
 export default function DungeonSynth() {
   const location = useLocation();
@@ -33,6 +34,7 @@ export default function DungeonSynth() {
           content="dungeon synth, how to make dungeon synth, how do i make dungeon synth, dungeon synth gear, dungeon synth intro, dungeon synth introduction, dungeon synth basics, dungeon synth primer, dungeon synth gear, dungeon synth history, wooden vessels, aveline baudelaire"
         />
       </Helmet>
+      <MusicHeader />
       <div className="u-music-container__inner">
         <header>
           <div className="dungeon-synth__title-container">

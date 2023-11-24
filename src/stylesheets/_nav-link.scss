@@ -1,0 +1,24 @@
+.nav-link {
+  color: #9c2a2a;
+  padding: 0.5rem !important;
+  text-decoration: underline;
+  transition: 0.2s;
+
+  &:hover {
+    color: #be3333;
+  }
+
+  &:focus {
+    border-color: #5d9c2a;
+  }
+
+  &:active {
+    color: #9c2a2a;
+  }
+
+  &--current {
+    color: #be3333;
+    pointer-events: none;
+    text-decoration: none;
+  }
+}

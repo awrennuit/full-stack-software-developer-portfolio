@@ -1,0 +1,21 @@
+.music-header {
+  background-color: #292626;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+  width: 100%;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  nav {
+    padding: 0 !important;
+  }
+}

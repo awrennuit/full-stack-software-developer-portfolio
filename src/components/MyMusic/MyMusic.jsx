@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
 import EmbeddedMusic from '../EmbeddedMusic';
+import MusicHeader from '../MusicHeader';
 import SummaryAwren from './SummaryAwren';
 import SummaryChrysanthemum from './SummaryChrysanthemum';
 import SummaryGloomthread from './SummaryGloomthread';
@@ -20,6 +21,7 @@ export default function MyMusic() {
           content="awren, chrysanthemum, gloomthread, wooden vessels, aveline baudelaire"
         />
       </Helmet>
+      <MusicHeader />
       <main className="u-music-container__inner">
         <h1>my music</h1>
         <p className="u-music-container__content-block">
