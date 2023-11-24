@@ -38,7 +38,6 @@ export default function DungeonSynth() {
       <div className="u-music-container__inner">
         <header>
           <div className="dungeon-synth__title-container">
-            <AudioPlayer />
             <h1>
               a dungeon synth primer <span>by Aveline Baudelaire</span>
             </h1>
@@ -52,6 +51,7 @@ export default function DungeonSynth() {
             <Link to="/dungeon-synth#method">V. my method</Link>
             <Link to="/dungeon-synth#thanks">VI. final thoughts</Link>
           </nav>
+          <AudioPlayer />
         </header>
         <main>
           <section>
