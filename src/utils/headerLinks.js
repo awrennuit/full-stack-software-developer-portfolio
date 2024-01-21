@@ -27,6 +27,10 @@ export const musicHeaderLinks = [
     label: 'dungeon synth primer',
   },
   {
+    url: '/dungeon-vault',
+    label: 'dungeon vault',
+  },
+  {
     url: '/my-music',
     label: 'my music',
   },

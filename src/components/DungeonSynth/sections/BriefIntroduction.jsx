@@ -121,7 +121,26 @@ export default function BriefIntroduction() {
         . it also gave rise to what i call 'bedroom' artists - untrained or
         semi-trained people who made amateur, under-produced music as a hobby.
         meandering songs, off-kilter melodies, and all sorts of synth-y
-        experimentation.
+        experimentation. of special note are the periodic{' '}
+        <a
+          className="u-music-container__link"
+          href="https://dungeonsynth.proboards.com/thread/1085/dungeon-rush-open-challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Dungeon Rushes
+        </a>{' '}
+        that{' '}
+        <a
+          className="u-music-container__link"
+          href="https://bartizanchill.bandcamp.com/music"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Bartizanier
+        </a>{' '}
+        hosts. anyone can participate in them and they're a great way to get
+        more involved in the community.
       </p>
     </>
   );

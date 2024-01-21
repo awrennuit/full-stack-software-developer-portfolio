@@ -31,7 +31,7 @@ export default function DungeonSynth() {
         />
         <meta
           name="keywords"
-          content="dungeon synth, how to make dungeon synth, how do i make dungeon synth, dungeon synth gear, dungeon synth intro, dungeon synth introduction, dungeon synth basics, dungeon synth primer, dungeon synth gear, dungeon synth history, wooden vessels, aveline baudelaire"
+          content="dungeon synth, how to make dungeon synth, how do i make dungeon synth, dungeon synth gear, dungeon synth intro, dungeon synth introduction, dungeon synth basics, dungeon synth primer, dungeon synth gear, dungeon synth history, dungeon rush, wooden vessels, aveline baudelaire"
         />
       </Helmet>
       <MusicHeader />
