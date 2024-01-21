@@ -17,7 +17,7 @@ export default function DungeonVault() {
   return (
     <div className="u-music-container dungeon-vault">
       <MusicHeader />
-      <div className="u-music-container__inner">
+      <main className="u-music-container__inner">
         <h1>dungeon vault</h1>
         <p className="u-music-container__content-block">
           a collection of some of my favorite dungeon synth artists. clicking an
@@ -54,7 +54,7 @@ export default function DungeonVault() {
             </li>
           ))}
         </ul>
-      </div>
+      </main>
     </div>
   );
 }
