@@ -1,12 +1,12 @@
 export default function MoreRecommendations() {
   return (
-    <ul className="dungeon-synth__list-container">
+    <ul className="u-music-container__nested-list">
       <li>
         90s classics
         <ul>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://www.youtube.com/watch?v=N_L2QCBKOeE"
               target="_blank"
               rel="noopener noreferrer"
@@ -16,7 +16,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://www.youtube.com/watch?v=OxgVmpAk538"
               target="_blank"
               rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://www.youtube.com/watch?v=XKSu-wZChcQ"
               target="_blank"
               rel="noopener noreferrer"
@@ -36,7 +36,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://www.youtube.com/watch?v=sASdlbKxooM"
               target="_blank"
               rel="noopener noreferrer"
@@ -51,7 +51,7 @@ export default function MoreRecommendations() {
         <ul>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://vindkaldr.bandcamp.com/album/enchantments-of-old-lore"
               target="_blank"
               rel="noopener noreferrer"
@@ -61,7 +61,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://fief.bandcamp.com/album/ii"
               target="_blank"
               rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://thangorodrimsynth.bandcamp.com/album/taur-nu-fuin-remaster"
               target="_blank"
               rel="noopener noreferrer"
@@ -81,7 +81,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://iamdim.bandcamp.com/album/compendium-i"
               target="_blank"
               rel="noopener noreferrer"
@@ -91,7 +91,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://ulkmusic.bandcamp.com/album/ulk"
               target="_blank"
               rel="noopener noreferrer"
@@ -106,7 +106,7 @@ export default function MoreRecommendations() {
         <ul>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://www.youtube.com/watch?v=DRh9Cz9g_Wo"
               target="_blank"
               rel="noopener noreferrer"
@@ -116,7 +116,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://estoc1.bandcamp.com/album/chapter-i"
               target="_blank"
               rel="noopener noreferrer"
@@ -126,7 +126,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://theloreseeker.bandcamp.com/album/where-the-moonlight-herb-grows"
               target="_blank"
               rel="noopener noreferrer"
@@ -136,7 +136,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://chanterelle.bandcamp.com/album/tales-from-the-forest-floor"
               target="_blank"
               rel="noopener noreferrer"
@@ -146,7 +146,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://songsofhircine.bandcamp.com/album/old-kings-fall"
               target="_blank"
               rel="noopener noreferrer"
@@ -156,7 +156,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://ithildintapeproduction.bandcamp.com/album/frosts-enchantment"
               target="_blank"
               rel="noopener noreferrer"
@@ -166,7 +166,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://archmast.bandcamp.com/album/as-the-wind-carries-us"
               target="_blank"
               rel="noopener noreferrer"
@@ -176,7 +176,7 @@ export default function MoreRecommendations() {
           </li>
           <li>
             <a
-              className="dungeon-synth__link"
+              className="u-music-container__link"
               href="https://thefogweaver.bandcamp.com/album/magelight"
               target="_blank"
               rel="noopener noreferrer"

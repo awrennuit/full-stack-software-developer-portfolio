@@ -20,3 +20,18 @@ export const headerLinks = [
     label: 'Contact',
   },
 ];
+
+export const musicHeaderLinks = [
+  {
+    url: '/dungeon-synth',
+    label: 'dungeon synth primer',
+  },
+  {
+    url: '/dungeon-vault',
+    label: 'dungeon vault',
+  },
+  {
+    url: '/my-music',
+    label: 'my music',
+  },
+];

@@ -11,8 +11,12 @@ const CustomGradient = React.lazy(() =>
 const DungeonSynth = React.lazy(() =>
   import('./components/DungeonSynth/DungeonSynth')
 );
+const DungeonVault = React.lazy(() =>
+  import('./components/DungeonSynth/DungeonVault')
+);
 const Home = React.lazy(() => import('./components/Home/Home'));
 const Landing = React.lazy(() => import('./components/Landing'));
+const MyMusic = React.lazy(() => import('./components/MyMusic/MyMusic'));
 const PasswordGenerator = React.lazy(() =>
   import('./components/PasswordGenerator')
 );
@@ -31,7 +35,9 @@ export default function App() {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/sandbox" element={<Sandbox />} />
           <Route exact path="/dungeon-synth" element={<DungeonSynth />} />
+          <Route exact path="/dungeon-vault" element={<DungeonVault />} />
           <Route exact path="/gradient-maker" element={<CustomGradient />} />
+          <Route exact path="/my-music" element={<MyMusic />} />
           <Route
             exact
             path="/password-generator"

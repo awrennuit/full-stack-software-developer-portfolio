@@ -1,14 +1,14 @@
 export default function MyMethod() {
   return (
     <>
-      <p className="dungeon-synth__content-block">
+      <p className="u-music-container__content-block">
         i don't have a whole lot of music theory knowledge, but i'll do my best
         to explain how i go about making dungeon synth. keep in mind that what
         works for me might not work for you. use this loose guide as a starting
         point. experiment with things to see what works best for you and your
         unique brand of creativity.
       </p>
-      <p className="dungeon-synth__content-block">
+      <p className="u-music-container__content-block">
         before i write any music i pick a set of maybe 4-8 instruments/synth
         patches to prevent decision paralysis. setting limitations on music may
         seem counterintuitive, but it can also help spark creativity. too many
@@ -20,7 +20,7 @@ export default function MyMethod() {
         most of the sounds on my albums in Synth1, and try to create a couple
         new sounds for each album.
       </p>
-      <p className="dungeon-synth__content-block">
+      <p className="u-music-container__content-block">
         once the instruments are chosen, i start making some short musical
         ideas. nothing set in stone, and most of them end up getting deleted
         eventually. i find that playing around on my MIDI keyboard is quicker &
@@ -67,7 +67,7 @@ export default function MyMethod() {
           <figcaption>fourth</figcaption>
         </figure>
       </figure>
-      <p className="dungeon-synth__content-block">
+      <p className="u-music-container__content-block">
         after i get a short progression of 4 chords (sometimes more chords) i
         hit play, loop it, and start noodling around in a higher register to
         find some melody ideas. i try to find a sequence & rhythm of 3 or 4
@@ -92,7 +92,7 @@ export default function MyMethod() {
         />
         <figcaption>melody rise & fall</figcaption>
       </figure>
-      <p className="dungeon-synth__content-block">
+      <p className="u-music-container__content-block">
         next i start sewing ideas together. i find a couple ideas that sound
         like they could go together and try them out next to each other in my
         DAW. sometimes nothing really 'works' with another part, so i noodle
@@ -106,7 +106,7 @@ export default function MyMethod() {
         to that. in dungeon synth we could do anything: ABAB, ABCABC, ABC,
         ABCBA, ABBACC, etc. pretty much anything goes!
       </p>
-      <p className="dungeon-synth__content-block">
+      <p className="u-music-container__content-block">
         once i smash some sections together into a rough song structure i listen
         to it, paying special attention to the transition between each section
         (A =&gt; B, B =&gt; A, etc). more often than not the change between
@@ -119,7 +119,7 @@ export default function MyMethod() {
         melody to rise or fall in the direction of the first note of the next
         section.
       </p>
-      <p className="dungeon-synth__content-block">
+      <p className="u-music-container__content-block">
         one of the last things i do is add some background ornamentation. this
         is something i'm terrible at and have been working on. my last album had
         a few songs with quiet chords that faded in and faded out. it added some
@@ -128,7 +128,7 @@ export default function MyMethod() {
         out - just quick little C D E F E D C sixteenth (1/16) notes, for
         instance.
       </p>
-      <p className="dungeon-synth__content-block">
+      <p className="u-music-container__content-block">
         i make my entire album in one Reaper file, which helps me bounce around
         from song to song while i'm writing. i've found that trying to brute
         force my way through one song, then the next, the next, etc takes away

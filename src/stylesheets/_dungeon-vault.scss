@@ -1,0 +1,40 @@
+.dungeon-vault {
+  h1 {
+    padding-bottom: 1.25rem;
+  }
+
+  &__artist-list {
+    padding-left: 0 !important;
+    list-style-type: none;
+  }
+
+  &__artist-btn {
+    background: transparent;
+    border: 0.063rem solid transparent;
+    cursor: pointer;
+    padding: 0.5rem 0.25rem;
+    transition: 0.2s;
+
+    &:hover {
+      color: #c4acac;
+    }
+
+    &:focus-within {
+      border-color: #5d9c2a;
+    }
+
+    &:active {
+      color: #918080;
+    }
+
+    &--active {
+      color: #9c2a2a;
+      cursor: auto;
+
+      &:hover,
+      &:active {
+        color: #9c2a2a;
+      }
+    }
+  }
+}
