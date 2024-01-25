@@ -3,6 +3,9 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Loading from './components/Loading';
 
 const Abstract = React.lazy(() => import('./components/Abstract'));
+const AWelcomeFuneral = React.lazy(() =>
+  import('./components/AWelcomeFuneral/AWelcomeFuneral')
+);
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
 const Sandbox = React.lazy(() => import('./components/Sandbox/Sandbox'));
 const CustomGradient = React.lazy(() =>
@@ -32,6 +35,11 @@ export default function App() {
           <Route exact path="/" element={<Landing />} />
           <Route exact path="/about" element={<Home />} />
           <Route exact path="/abstract-art" element={<Abstract />} />
+          <Route
+            exact
+            path="/a-welcome-funeral"
+            element={<AWelcomeFuneral />}
+          />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/sandbox" element={<Sandbox />} />
           <Route exact path="/dungeon-synth" element={<DungeonSynth />} />
