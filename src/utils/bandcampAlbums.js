@@ -268,6 +268,14 @@ export const dungeonVaultAlbums = {
     link: 'https://thefogweaver.bandcamp.com/album/vedurnan',
     linkLabel: 'Vedurnan by Fogweaver',
   },
+  forgotten_phantasm: {
+    albumId: '2387182410',
+    artist: 'Forgotten Phantasm',
+    height: '373px',
+    label: '♜♜♜♜♜♜♜ - 2024',
+    link: 'https://forgottenphantasm.bandcamp.com/album/-',
+    linkLabel: '♜♜♜♜♜♜♜ by Forgotten Phantasm',
+  },
   frostgard: {
     albumId: '2721127097',
     artist: 'Frostgard',
@@ -291,6 +299,14 @@ export const dungeonVaultAlbums = {
     label: 'Livro Primeiro - 2022',
     link: 'https://herdade.bandcamp.com/album/livro-primeiro',
     linkLabel: 'Livro Primeiro by Herdade',
+  },
+  hibernal_harvest: {
+    albumId: '4152867053',
+    artist: 'Hibernal Harvest',
+    height: '307px',
+    label: 'Dreamspire - 2023',
+    link: 'https://hibernalharvest.bandcamp.com/album/dreamspire',
+    linkLabel: 'Dreamspire by Hibernal Harvest',
   },
   hircine: {
     albumId: '1214115397',
