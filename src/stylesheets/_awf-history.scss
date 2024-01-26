@@ -1,0 +1,44 @@
+.awf-history {
+  background-color: $awf-wise;
+  min-height: 100vh;
+  padding: 2rem;
+
+  &__list {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 31rem;
+    padding: 0;
+  }
+
+  &__list-item {
+    padding-bottom: 0.5rem;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.2s;
+
+    &:hover,
+    &:focus-visible {
+      .awf-history__title,
+      .awf-history__date {
+        color: $awf-precious;
+      }
+    }
+
+    &:active {
+      .awf-history__title,
+      .awf-history__date {
+        color: $awf-radiant;
+      }
+    }
+  }
+
+  &__title,
+  &__date {
+    color: $awf-radiant;
+    font-family: $awf-font;
+    width: 50%;
+  }
+}

@@ -1,8 +1,10 @@
 export default function AwfPost({ post }) {
   return (
     <article className="awf-post">
-      <p className="awf-post__date">{post.date}</p>
-      <h2 className="awf-post__heading">{post.title}</h2>
+      <div className="awf-post__heading-container">
+        <h2 className="awf-post__heading">{post.title}</h2>
+        <p className="awf-post__date">{post.date}</p>
+      </div>
       {post.content.map((content, i) => (
         <div className="awf-post__block" key={i}>
           {content.heading && (

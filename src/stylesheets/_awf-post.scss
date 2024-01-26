@@ -1,21 +1,37 @@
 .awf-post {
+  margin: 0 auto;
+  max-width: 31rem;
+
+  &__heading-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+  }
+
   &__heading {
-    padding-bottom: 0.5rem;
+    color: $awf-radiant;
+    font-family: $awf-heading-font;
+    font-size: 2rem;
   }
 
   &__date {
-    padding-bottom: 0.5rem;
-  }
-
-  &__block {
-    padding-bottom: 1rem;
+    color: $awf-radiant;
+    font-family: $awf-font;
   }
 
   &__subheading {
+    color: $awf-radiant;
+    font-family: $awf-heading-font;
+    font-size: 1.6rem;
     padding-bottom: 0.25rem;
   }
 
   &__paragraph {
-    padding-bottom: 0.5rem;
+    color: $awf-nimble;
+    font-family: $awf-font;
+    line-height: 1.6rem;
+    padding-bottom: 1rem;
   }
 }

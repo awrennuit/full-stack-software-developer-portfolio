@@ -6,6 +6,9 @@ const Abstract = React.lazy(() => import('./components/Abstract'));
 const AWelcomeFuneral = React.lazy(() =>
   import('./components/AWelcomeFuneral/AWelcomeFuneral')
 );
+const AwfHistory = React.lazy(() =>
+  import('./components/AWelcomeFuneral/AwfHistory')
+);
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
 const Sandbox = React.lazy(() => import('./components/Sandbox/Sandbox'));
 const CustomGradient = React.lazy(() =>
@@ -39,6 +42,11 @@ export default function App() {
             exact
             path="/a-welcome-funeral"
             element={<AWelcomeFuneral />}
+          />
+          <Route
+            exact
+            path="/a-welcome-funeral/history"
+            element={<AwfHistory />}
           />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/sandbox" element={<Sandbox />} />

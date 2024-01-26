@@ -1,5 +1,6 @@
 const awfPosts = [
   {
+    slug: 'a-little-intro',
     date: 'October 23',
     title: 'a little intro',
     content: [
@@ -31,6 +32,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'a-case-of-names',
     date: 'October 30',
     title: 'a case of names',
     content: [
@@ -51,6 +53,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'why-work',
     date: 'November 7',
     title: 'why work?',
     content: [
@@ -75,6 +78,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'the-key-to-good-sleep',
     date: 'November 13',
     title: 'the key to good sleep (sometimes)',
     content: [
@@ -93,6 +97,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'more-to-life',
     date: 'November 20',
     title: 'more to life',
     content: [
@@ -112,6 +117,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'living-spaces',
     date: 'November 27',
     title: 'living spaces',
     content: [
@@ -132,6 +138,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'more-names',
     date: 'December 4',
     title: 'more names',
     content: [
@@ -151,6 +158,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'searching-for-clues',
     date: 'December 11',
     title: 'searching for clues',
     content: [
@@ -170,6 +178,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'a-conversation-with-my-boss',
     date: 'December 18',
     title: 'a conversation with my boss',
     content: [
@@ -190,6 +199,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'pondering-corruption',
     date: 'December 25',
     title: 'pondering corruption',
     content: [
@@ -209,6 +219,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'deliveries',
     date: 'January 1',
     title: 'deliveries',
     content: [
@@ -228,6 +239,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'my-boss',
     date: 'January 8',
     title: 'my boss',
     content: [
@@ -248,6 +260,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'missing',
     date: 'January 15',
     title: 'missing',
     content: [
@@ -268,6 +281,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'the-damp-corner',
     date: 'january 22',
     title: 'the damp corner',
     content: [
@@ -287,6 +301,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'another-notebook',
     date: 'January 29',
     title: 'another notebook',
     content: [
@@ -306,6 +321,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'ordering-everything',
     date: 'February 5',
     title: 'ordering everything',
     content: [
@@ -326,6 +342,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'whats-outside',
     date: 'February 12',
     title: 'what’s outside',
     content: [
@@ -345,6 +362,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'whats-inside',
     date: 'February 19',
     title: 'what’s inside',
     content: [
@@ -364,6 +382,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'rearranging',
     date: 'February 26',
     title: 'rearranging',
     content: [
@@ -383,6 +402,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'all-the-names',
     date: 'March 5',
     title: 'all the names',
     content: [
@@ -402,6 +422,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'farming',
     date: 'March 12',
     title: 'farming',
     content: [
@@ -421,6 +442,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'a-trickling',
     date: 'March 19',
     title: 'a trickling',
     content: [
@@ -440,6 +462,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'anticipation',
     date: 'March 26',
     title: 'anticipation',
     content: [
@@ -459,6 +482,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'skipping-work',
     date: 'April 2',
     title: 'skipping work',
     content: [
@@ -478,6 +502,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'so-close',
     date: 'April 9',
     title: 'so close',
     content: [
@@ -497,6 +522,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'the-first-step',
     date: 'April 16',
     title: 'the first step',
     content: [
@@ -516,6 +542,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'seeing-everything',
     date: 'April 23',
     title: 'seeing everything',
     content: [
@@ -535,6 +562,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'a-way-out',
     date: 'April 30',
     title: 'a way out',
     content: [
@@ -554,6 +582,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'letters',
     date: 'May 7',
     title: 'letters',
     content: [
@@ -573,6 +602,7 @@ const awfPosts = [
     ],
   },
   {
+    slug: 'switching-gears',
     date: 'May 14',
     title: 'switching gears',
     content: [
@@ -591,19 +621,20 @@ const awfPosts = [
       },
     ],
   },
-  {
-    date: '',
-    title: '',
-    content: [
-      {
-        paragraphs: [''],
-      },
-      {
-        heading: '',
-        paragraphs: [''],
-      },
-    ],
-  },
+  // {
+  //   slug: '',
+  //   date: '',
+  //   title: '',
+  //   content: [
+  //     {
+  //       paragraphs: [''],
+  //     },
+  //     {
+  //       heading: '',
+  //       paragraphs: [''],
+  //     },
+  //   ],
+  // },
 ];
 
 export { awfPosts };
