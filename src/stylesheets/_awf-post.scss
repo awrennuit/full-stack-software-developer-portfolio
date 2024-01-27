@@ -1,19 +1,30 @@
 .awf-post {
-  margin: 0 auto;
-  max-width: 31rem;
+  background-color: $awf-wise;
+  min-height: 100vh;
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 31rem;
+    padding: 1rem;
+
+    @media (min-width: $screen-md-min) {
+      padding: 2rem;
+    }
+  }
 
   &__heading-container {
-    align-items: center;
+    align-items: baseline;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    gap: 0.5rem;
     justify-content: space-between;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.25rem;
   }
 
   &__heading {
     color: $awf-radiant;
     font-family: $awf-heading-font;
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   &__date {
@@ -24,7 +35,7 @@
   &__subheading {
     color: $awf-radiant;
     font-family: $awf-heading-font;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding-bottom: 0.25rem;
   }
 

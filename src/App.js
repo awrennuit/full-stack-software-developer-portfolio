@@ -3,11 +3,11 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Loading from './components/Loading';
 
 const Abstract = React.lazy(() => import('./components/Abstract'));
-const AWelcomeFuneral = React.lazy(() =>
-  import('./components/AWelcomeFuneral/AWelcomeFuneral')
-);
 const AwfHistory = React.lazy(() =>
   import('./components/AWelcomeFuneral/AwfHistory')
+);
+const AwfPost = React.lazy(() =>
+  import('./components/AWelcomeFuneral/AwfPost')
 );
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
 const Sandbox = React.lazy(() => import('./components/Sandbox/Sandbox'));
@@ -40,14 +40,10 @@ export default function App() {
           <Route exact path="/abstract-art" element={<Abstract />} />
           <Route
             exact
-            path="/a-welcome-funeral"
-            element={<AWelcomeFuneral />}
-          />
-          <Route
-            exact
             path="/a-welcome-funeral/history"
             element={<AwfHistory />}
           />
+          <Route exact path="/a-welcome-funeral/:slug" element={<AwfPost />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/sandbox" element={<Sandbox />} />
           <Route exact path="/dungeon-synth" element={<DungeonSynth />} />
