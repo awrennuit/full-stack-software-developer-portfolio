@@ -12,8 +12,18 @@ export const headerLinks = [
     label: 'Sandbox',
   },
   {
-    url: '/dungeon-synth',
-    label: 'Music',
+    url: null,
+    label: 'More',
+    subLinks: [
+      {
+        url: '/dungeon-synth',
+        label: 'Music',
+      },
+      {
+        url: '/a-welcome-funeral/a-little-intro',
+        label: 'Story',
+      },
+    ],
   },
   {
     url: '/contact',
