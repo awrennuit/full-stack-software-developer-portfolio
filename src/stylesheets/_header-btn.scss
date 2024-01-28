@@ -38,7 +38,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-within {
     color: $blue;
 
     &::before {
@@ -176,6 +176,51 @@
       left: 6.313rem;
       top: 1.938rem;
       width: 0.938rem;
+    }
+  }
+
+  &--with-sublist {
+    &:hover,
+    &:focus-within {
+      .header-btn__sublist {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__sublist {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 2.125rem;
+    transition: 0.2s;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  &__subitem {
+    a {
+      background-color: $white;
+      color: $gray--darker;
+      display: block;
+      font-weight: 700;
+      padding: 0.5rem;
+      transition: 0.2s;
+
+      &:hover,
+      &:focus-visible {
+        background-color: $pink--transparent;
+        color: $gray--darkest;
+      }
+
+      &:active {
+        color: $gray--darker;
+      }
     }
   }
 }
