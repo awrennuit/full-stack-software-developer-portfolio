@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { useState } from 'react';
 import { dungeonVaultAlbums } from '../../utils/bandcampAlbums';
 import { dungeonVaultArtists } from '../../utils/dungeonVaultArtists';
@@ -16,6 +17,18 @@ export default function DungeonVault() {
   };
   return (
     <div className="u-music-container dungeon-vault">
+      <Helmet>
+        <title>the dungeon vault</title>
+        <link rel="canonical" href="http://www.awrennuit.com/#/dungeon-vault" />
+        <meta
+          name="description"
+          content="Welcome to the Dungeon Vault. A collection of excellent dungeon synth artists, complete with a Bandcamp player to preview them. Written by Aveline Baudelaire aka Wooden Vessels."
+        />
+        <meta
+          name="keywords"
+          content="dungeon synth, dungeon vault, best dungeon synth, favorite dungeon synth, dungeon synth albums, dungeon synth artists, wooden vessels, aveline baudelaire"
+        />
+      </Helmet>
       <MusicHeader />
       <main className="u-music-container__inner">
         <h1>dungeon vault</h1>

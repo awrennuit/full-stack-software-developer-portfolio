@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
 import { awfPosts } from '../../utils/aWelcomeFuneral';
+import { Helmet } from 'react-helmet';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import AwfHeader from './AwfHeader';
 
@@ -13,6 +14,21 @@ export default function AwfPost() {
 
   return (
     <div className="awf-post">
+      <Helmet>
+        <title>a welcome funeral</title>
+        <link
+          rel="canonical"
+          href="http://www.awrennuit.com/#/a-welcome-funeral/a-little-intro"
+        />
+        <meta
+          name="description"
+          content="a welcome funeral for society. a place where free thought and radical ideas reign supreme"
+        />
+        <meta
+          name="keywords"
+          content="a welcome funeral, awelcomefuneral, oddities, anomalies, philosophy, free thought, radical ideas, aveline baudelaire"
+        />
+      </Helmet>
       <AwfHeader />
       <main>
         <article className="awf-post__inner">
