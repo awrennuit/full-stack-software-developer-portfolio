@@ -17,7 +17,7 @@ export default function SummaryChrysanthemum() {
         and{' '}
         <a
           className="u-music-container__link"
-          href="https://hammock.bandcamp.com/track/you-lost-the-starlight-in-your-eyes-6"
+          href="https://hammock.bandcamp.com/track/chorus-of-trees"
           target="_blank"
           rel="noopener noreferrer"
         >
