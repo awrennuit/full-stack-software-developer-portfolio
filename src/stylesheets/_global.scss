@@ -69,13 +69,12 @@ input[type='range'] {
   width: 1px;
 }
 
-// TODO: make some variables?
 .u-music-container {
-  background-color: #181616;
+  background-color: $music-black;
   min-height: 100vh;
 
   * {
-    color: #918080;
+    color: $music-gray;
   }
 
   h1,
@@ -88,7 +87,7 @@ input[type='range'] {
   }
 
   h1 {
-    color: #c4acac;
+    color: $music-gray--lighter;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -99,7 +98,7 @@ input[type='range'] {
   }
 
   h3 {
-    color: #aa9696;
+    color: $music-gray--light;
     font-size: 1.4rem;
     padding-bottom: 0.75rem;
   }
@@ -126,20 +125,20 @@ input[type='range'] {
 
   &__link {
     border: 0.125rem dotted transparent;
-    color: #9c2a2a;
+    color: $music-red;
     text-decoration: underline;
     transition: 0.2s;
 
     &:hover {
-      color: #be3333;
+      color: $music-red--light;
     }
 
     &:focus {
-      border-color: #5d9c2a;
+      border-color: $music-green;
     }
 
     &:active {
-      color: #9c2a2a;
+      color: $music-red;
     }
   }
 
