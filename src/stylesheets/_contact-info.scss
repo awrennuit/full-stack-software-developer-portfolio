@@ -1,0 +1,25 @@
+.contact-info {
+  animation: fade-in 2s ease-in;
+  font-size: 1.1rem;
+  list-style: none;
+
+  a {
+    color: $blue;
+    display: inline-block;
+    padding: 0.5rem 0;
+    transition: 0.3s;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

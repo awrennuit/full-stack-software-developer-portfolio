@@ -1,0 +1,238 @@
+.contact {
+  box-sizing: border-box;
+  min-height: calc(100vh - 18.375rem);
+  padding: 1rem;
+
+  p {
+    animation: fade-in 2s ease-in;
+    line-height: 1.4rem;
+  }
+
+  &__writeup {
+    background-color: $gray--darker;
+    position: relative;
+    max-width: 20rem;
+  }
+
+  &__list {
+    background-color: $gray--darker;
+    display: grid;
+    grid-template-areas: 'a' 'b' 'c' 'd';
+    margin: 0 auto;
+    padding-top: 1rem;
+    position: relative;
+    width: max-content;
+  }
+
+  &__thanks {
+    padding-bottom: 5.5rem;
+    padding-top: 2rem;
+    position: relative;
+    text-align: center;
+    max-width: 20rem;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    padding: 3rem;
+
+    &__writeup {
+      margin: 3rem auto;
+      margin-top: 0;
+      max-width: 31rem;
+
+      &::before,
+      &::after {
+        border-top: 0.5rem solid $white;
+        content: '';
+        height: 12rem;
+        position: absolute;
+        top: -1.5rem;
+        width: 6rem;
+      }
+
+      &::before {
+        border-left: 0.5rem solid $white;
+        left: -1.5rem;
+      }
+
+      &::after {
+        border-right: 0.5rem solid $white;
+        right: -1.5rem;
+      }
+
+      p {
+        line-height: 1.4rem;
+      }
+    }
+
+    &__divider {
+      &::before {
+        background-color: $white;
+        content: '';
+        bottom: -2rem;
+        height: 0.25rem;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 10rem;
+        z-index: 1;
+      }
+    }
+
+    &__list {
+      padding-top: 0;
+
+      &::after {
+        border-bottom: 0.25rem solid $white;
+        bottom: -1.5rem;
+        content: '';
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 10rem;
+      }
+    }
+
+    &__thanks {
+      margin: 1.5rem auto;
+      margin-bottom: 0;
+      padding-bottom: 5.5rem;
+      position: relative;
+      text-align: center;
+      max-width: 31rem;
+
+      &::before,
+      &::after {
+        border-bottom: 0.5rem solid $white;
+        bottom: 2.5rem;
+        content: '';
+        height: 8rem;
+        position: absolute;
+        width: 10rem;
+      }
+
+      &::before {
+        border-left: 0.5rem solid $white;
+        left: -1.5rem;
+      }
+
+      &::after {
+        border-right: 0.5rem solid $white;
+        right: -1.5rem;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    min-height: calc(100vh - 13.75rem);
+    padding: 0;
+
+    &__writeup {
+      margin: 5rem auto;
+      max-width: 31.25rem;
+
+      &::before,
+      &::after {
+        height: 8.375rem;
+        top: -2.5rem;
+        width: 12.5rem;
+      }
+
+      &::before {
+        left: -3.188rem;
+      }
+
+      &::after {
+        right: -3.188rem;
+      }
+    }
+
+    &__sidebars {
+      &::before {
+        background-color: $white;
+        content: '';
+        height: 8.375rem;
+        left: 50%;
+        max-width: 90vw;
+        position: absolute;
+        top: 100%;
+        transform: translateX(-50%);
+        width: 62.5rem;
+        z-index: -1;
+      }
+
+      &::after {
+        border: 1rem solid $gray--darker;
+        content: '';
+        height: 4.688rem;
+        left: 50%;
+        max-width: 80vw;
+        position: absolute;
+        top: 6.5rem;
+        transform: translateX(-50%);
+        width: 56.25rem;
+      }
+    }
+
+    &__divider {
+      &::before {
+        bottom: -4.375rem;
+        width: 15.625rem;
+      }
+
+      &::after {
+        background-color: $gray--darker;
+        content: '';
+        height: 9.375rem;
+        left: 50%;
+        position: absolute;
+        top: 100%;
+        transform: translateX(-50%);
+        width: 36.625rem;
+      }
+    }
+
+    &__list {
+      gap: 1rem;
+      grid-template-areas:
+        'a b'
+        'c d';
+      max-width: 31.25rem;
+      padding: 1rem 0;
+
+      &::after {
+        bottom: -0.625rem;
+        width: 25rem;
+      }
+    }
+
+    &__thanks {
+      margin-top: 4.25rem;
+
+      &::before,
+      &::after {
+        bottom: 2.5rem;
+        height: 8.125rem;
+        width: 12.5rem;
+      }
+
+      &::before {
+        left: -3.125rem;
+      }
+
+      &::after {
+        right: -3.125rem;
+      }
+    }
+  }
+}

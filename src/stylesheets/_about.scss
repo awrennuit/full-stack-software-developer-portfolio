@@ -17,6 +17,7 @@
       position: absolute;
       top: -1rem;
       width: 12.5rem;
+      z-index: -1;
     }
 
     &::before {

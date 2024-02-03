@@ -16,6 +16,7 @@ export default function About() {
           to bring them to life. As I got older this manifested through visual
           arts and{' '}
           <a
+            className="u-link"
             href="https://cavebirdrecords.bandcamp.com/"
             target="_blank"
             rel="noopener noreferrer"

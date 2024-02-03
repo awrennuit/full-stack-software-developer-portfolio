@@ -8,7 +8,7 @@ export default function ContactInfo({
   target,
 }) {
   return (
-    <li className={`contact-info-block ${className}`}>
+    <li className="contact-info">
       <label htmlFor={className}>{method}:&nbsp;</label>
       <a
         id={className}

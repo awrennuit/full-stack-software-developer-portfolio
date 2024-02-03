@@ -1,6 +1,6 @@
 export const contactData = [
   {
-    class: 'contact-email',
+    class: 'contact-info-email',
     href: 'mailto:awren.nuit@gmail.com?subject=I%20Loved%20Your%20Portfolio',
     label: 'awren.nuit@gmail.com',
     method: 'Email',
@@ -9,7 +9,7 @@ export const contactData = [
   },
   {
     ariaLabel: '6 5 1. 2 7 6. 3 4 6 1.',
-    class: 'contact-phone',
+    class: 'contact-info-phone',
     href: 'tel:+01-651-276-3461',
     label: '651-276-3461',
     method: 'Phone',
@@ -17,7 +17,7 @@ export const contactData = [
     target: null,
   },
   {
-    class: 'contact-github',
+    class: 'contact-info-github',
     href: 'https://github.com/awrennuit',
     label: 'awrennuit',
     method: 'GitHub',
@@ -25,7 +25,7 @@ export const contactData = [
     target: '_blank',
   },
   {
-    class: 'contact-linkedin',
+    class: 'contact-info-linkedin',
     href: 'https://www.linkedin.com/in/awren-nuit/',
     label: 'awren nuit',
     method: 'LinkedIn',
