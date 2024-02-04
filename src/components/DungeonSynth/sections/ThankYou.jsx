@@ -20,7 +20,18 @@ export default function ThankYou() {
       >
         Spotify
       </a>
-      , and pretty much all other music platforms.
+      , and pretty much all other music platforms. Bandcamp is a great tool to
+      find new music. i've found a ton of great artists through the people i
+      follow. feel free to follow me, too!{' '}
+      <a
+        className="u-music-container__link"
+        href="https://bandcamp.com/avelinebaudelaire"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        here's a link to my 'fan' page
+      </a>
+      .
     </p>
   );
 }
