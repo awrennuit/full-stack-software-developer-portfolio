@@ -477,6 +477,14 @@ export const dungeonVaultAlbums = {
     link: 'https://skhemty.bandcamp.com/album/sunrise-on-the-old-kingdom',
     linkLabel: 'Sunrise on the Old Kingdom by Skhemty',
   },
+  spectral_austräa: {
+    albumId: '591195171',
+    artist: 'Spectral Austräa',
+    height: '274px',
+    label: 'Solemn Spring - 2024',
+    link: 'https://spectralaustraa.bandcamp.com/album/solemn-spring',
+    linkLabel: 'Solemn Spring by Spectral Austräa',
+  },
   spellbound_mire: {
     albumId: '2484794722',
     artist: 'Spellbound Mire',
