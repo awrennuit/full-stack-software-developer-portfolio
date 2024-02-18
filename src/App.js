@@ -3,6 +3,9 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Loading from './components/Loading';
 
 const Abstract = React.lazy(() => import('./components/Abstract'));
+const AlbumIdeaGenerator = React.lazy(() =>
+  import('./components/AlbumIdeaGenerator/AlbumIdeaGenerator')
+);
 const AwfHistory = React.lazy(() =>
   import('./components/AWelcomeFuneral/AwfHistory')
 );
@@ -39,6 +42,11 @@ export default function App() {
           <Route exact path="/" element={<Landing />} />
           <Route exact path="/about" element={<Home />} />
           <Route exact path="/abstract-art" element={<Abstract />} />
+          <Route
+            exact
+            path="/album-idea-generator"
+            element={<AlbumIdeaGenerator />}
+          />
           <Route
             exact
             path="/a-welcome-funeral/history"

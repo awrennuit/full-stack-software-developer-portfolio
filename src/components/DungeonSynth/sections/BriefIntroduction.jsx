@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function BriefIntroduction() {
   return (
     <>
@@ -140,7 +142,12 @@ export default function BriefIntroduction() {
           Bartizanier
         </a>{' '}
         hosts. anyone can participate in them and they're a great way to get
-        more involved in the community.
+        more involved in the community. i made{' '}
+        <Link className="u-music-container__link" to="/album-idea-generator">
+          album idea generator
+        </Link>{' '}
+        heavily inspired by Bartizanier's Dungeon Rush. it's a great way to get
+        some ideas for your next (or first!) album.
       </p>
     </>
   );
