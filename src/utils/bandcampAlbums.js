@@ -477,6 +477,14 @@ export const dungeonVaultAlbums = {
     link: 'https://skhemty.bandcamp.com/album/sunrise-on-the-old-kingdom',
     linkLabel: 'Sunrise on the Old Kingdom by Skhemty',
   },
+  sourcerior: {
+    albumId: '3365241793',
+    artist: 'Sourcerior',
+    height: '340px',
+    label: 'Messère - 2022',
+    link: 'https://sourcerior.bandcamp.com/album/mess-re',
+    linkLabel: 'Messère by Sourcerior',
+  },
   spectral_austräa: {
     albumId: '591195171',
     artist: 'Spectral Austräa',

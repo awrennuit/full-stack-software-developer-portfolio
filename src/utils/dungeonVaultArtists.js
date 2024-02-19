@@ -44,6 +44,7 @@ export const dungeonVaultArtists = [
   'Sequestered Keep',
   'Silent Garden',
   'Skhemty',
+  'Sourcerior',
   'Spectral Austräa',
   'Spellbound Mire',
   'Spife',
