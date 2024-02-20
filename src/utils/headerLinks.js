@@ -44,4 +44,8 @@ export const musicHeaderLinks = [
     url: '/my-music',
     label: 'my music',
   },
+  {
+    url: '/album-idea-generator',
+    label: 'idea generator',
+  },
 ];
