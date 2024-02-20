@@ -10,6 +10,7 @@ const styleAesthetic = [
   'comfy synth',
   'gnome synth',
   'dungeon drone',
+  'astral dungeon synth',
   'romantic dungeon synth',
   'sci-fi dungeon synth',
   'dungeon ambient',
