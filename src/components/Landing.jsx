@@ -5,7 +5,7 @@ export default function Landing() {
   return (
     <>
       <Helmet>
-        <title>awren nuit's software engineering portfolio</title>
+        <title>awren nuit’s software engineering portfolio</title>
         <link rel="canonical" href="http://www.awrennuit.com/" />
         <meta
           name="description"
@@ -19,7 +19,7 @@ export default function Landing() {
       <main className="landing">
         <p>Hi there!</p>
         <p>
-          I'm&nbsp;
+          I’m&nbsp;
           <span className="landing__name">awren nuit</span>.
         </p>
         <p>I bring ideas to reality.</p>

@@ -73,7 +73,7 @@ export default function Output({
         aria-describedby="dialog-description"
         onClick={(e) => e.stopPropagation()}
       >
-        <h3 id="dialog-title">Here's Your CSS</h3>
+        <h3 id="dialog-title">Here’s Your CSS</h3>
         <div
           id="dialog-description"
           ref={copyRef}

@@ -161,7 +161,7 @@ export default function MoreRecommendations() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Dyvyná - Frost's Enchantment (2022)
+              Dyvyná - Frost’s Enchantment (2022)
             </a>
           </li>
           <li>

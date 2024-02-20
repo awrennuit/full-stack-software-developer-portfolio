@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>about - awren nuit's software engineering portfolio</title>
+        <title>about - awren nuit’s software engineering portfolio</title>
         <link rel="canonical" href="http://www.awrennuit.com/#/about" />
         <meta
           name="description"

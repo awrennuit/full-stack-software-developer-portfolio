@@ -11,7 +11,7 @@ export default function Inspiration() {
       </p>
       <p className="u-music-container__content-block">
         when i set out to make an album i make a loose idea of the story i want
-        it to tell. the story that goes with the album usually isn't fully
+        it to tell. the story that goes with the album usually isn’t fully
         written until the music is done. i do, however, make an outline of the
         main story as well as some branching plot paths. the path to take with
         the narrative becomes clearer as the music gets further along.
@@ -21,7 +21,7 @@ export default function Inspiration() {
         everyone works at their own pace. we all have a different musical
         background with different things we like and dislike. what works for me
         might not work for you. and what works for you might not work for
-        someone else. work at your own pace. don't compare yourself to others.
+        someone else. work at your own pace. don’t compare yourself to others.
         and remember to have fun &lt;3
       </p>
     </>

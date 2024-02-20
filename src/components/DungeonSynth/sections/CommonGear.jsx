@@ -3,7 +3,7 @@ export default function CommonGear() {
     <>
       <p className="u-music-container__content-block">
         as the name implies, dungeon synth is generally synth-based. but it
-        doesn't have to be. for instance, some people use guitars. a{' '}
+        doesn’t have to be. for instance, some people use guitars. a{' '}
         <em>lot</em> of modern dungeon synth is VST-based and 100% digital.
       </p>
 

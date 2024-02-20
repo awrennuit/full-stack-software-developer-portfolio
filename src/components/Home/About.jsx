@@ -7,9 +7,9 @@ export default function About() {
       <h1 className="about__heading">A little history...</h1>
       <div className="about__content-container">
         <p className="about__content-copy">
-          Hello. I'm awren nuit. A software engineer with a special love for
+          Hello. I’m awren nuit. A software engineer with a special love for
           accessibility and inclusivity. Full stack development blends a lot of
-          my favorite things. Let's take a look at how I got here.
+          my favorite things. Let’s take a look at how I got here.
         </p>
         <p className="about__content-copy">
           Growing up I was always coming up with new ideas and figuring out how
@@ -32,7 +32,7 @@ export default function About() {
           very important to me. I raise many of them from seed so I can study
           them and be present with them through their entire lifecycle from seed
           to sprout to bloom and back again to seed. Ask me about my homemade
-          cough syrup sometime - it's delicious and nutritious!
+          cough syrup sometime - it’s delicious and nutritious!
         </p>
         <p className="about__content-copy">
           My passions for creation and understanding how things work on a
@@ -43,7 +43,7 @@ export default function About() {
         </p>
         <br />
         <p className="about__contact">
-          I'm always open for a conversation, so feel free to&nbsp;
+          I’m always open for a conversation, so feel free to&nbsp;
           <a
             className="u-link about__contact-link"
             href="mailto:awren.nuit@gmail.com?subject=Let's%20Have%20a%20Conversation"

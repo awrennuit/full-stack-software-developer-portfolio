@@ -4,7 +4,7 @@ export default function BriefIntroduction() {
   return (
     <>
       <p className="u-music-container__content-block">
-        disclaimer: i'm not a historian, and this is just my perception of
+        disclaimer: i’m not a historian, and this is just my perception of
         things. check out{' '}
         <a
           className="u-music-container__link"
@@ -88,9 +88,9 @@ export default function BriefIntroduction() {
         ) create their own worlds to serve as a setting for their music.
       </p>
       <p className="u-music-container__content-block">
-        throughout all these years the term 'dungeon synth' did not exist as an
-        'official' identifier (note: Mortiis called his music 'dark dungeon
-        music'). in 2011, a{' '}
+        throughout all these years the term ‘dungeon synth’ did not exist as an
+        ‘official’ identifier (note: Mortiis called his music ‘dark dungeon
+        music’). in 2011, a{' '}
         <a
           className="u-music-container__link"
           href="https://dungeonsynth.blogspot.com/"
@@ -100,7 +100,7 @@ export default function BriefIntroduction() {
           blog
         </a>{' '}
         started posting all sorts of dark ambient, fantasy synth, lofi medieval,
-        etc music. the blog owner called it 'dungeon synth'. the blog slowly
+        etc music. the blog owner called it ‘dungeon synth’. the blog slowly
         gained in popularity and the 2010s saw a substantial increase in the
         number of people making this style of music, like{' '}
         <a
@@ -120,7 +120,7 @@ export default function BriefIntroduction() {
         >
           Lord Lovidicus
         </a>
-        . it also gave rise to what i call 'bedroom' artists - untrained or
+        . it also gave rise to what i call ‘bedroom’ artists - untrained or
         semi-trained people who made amateur, under-produced music as a hobby.
         meandering songs, off-kilter melodies, and all sorts of synth-y
         experimentation. of special note are the periodic{' '}
@@ -141,12 +141,12 @@ export default function BriefIntroduction() {
         >
           Bartizanier
         </a>{' '}
-        hosts. anyone can participate in them and they're a great way to get
+        hosts. anyone can participate in them and they’re a great way to get
         more involved in the community. i made an{' '}
         <Link className="u-music-container__link" to="/album-idea-generator">
           album idea generator
         </Link>{' '}
-        that's heavily inspired by Bartizanier's Dungeon Rush. it's a great way
+        that’s heavily inspired by Bartizanier’s Dungeon Rush. it’s a great way
         to get some ideas for your next (or first!) album.
       </p>
     </>

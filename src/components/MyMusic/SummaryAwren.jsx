@@ -8,7 +8,7 @@ export default function SummaryAwren() {
         got into the depressive/suicidal (DSBM) subgenre. i liked how cold, raw,
         and emotional it was. many of the projects were one person who had a
         guitar, a keyboard, and a drum machine. these were the same tools i had
-        available, so i thought if they could do it then why couldn't i? for my
+        available, so i thought if they could do it then why couldn’t i? for my
         first album, i programmed all the drums on an{' '}
         <a
           className="u-music-container__link"
@@ -32,7 +32,7 @@ export default function SummaryAwren() {
       </p>
 
       <p className="u-music-container__content-block">
-        in the years since, i've grown my musical equipment collection. my
+        in the years since, i’ve grown my musical equipment collection. my
         latest album,{' '}
         <a
           className="u-music-container__link"
@@ -81,7 +81,7 @@ export default function SummaryAwren() {
         in Garageband. the music is much more freeflowing and experimental than
         my earlier black metal. it also has bass and vocals. i decided to record
         the vocals pretty much all in one take while reading from my lyrics
-        sheet because i was excited to release it. as of November 2023 i'm
+        sheet because i was excited to release it. as of November 2023 i’m
         working on a new album.
       </p>
     </section>

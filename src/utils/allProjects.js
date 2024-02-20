@@ -28,7 +28,7 @@ export const allProjects = [
     title: 'Household Hub',
   },
   {
-    altText: "homebody app's homepage",
+    altText: 'homebody app’s homepage',
     codeUrl: 'https://github.com/awrennuit/HTG-WorkoutApp-2020',
     description:
       'Hack The Gap weekend virtual hackathon project conceived and built by a team of five',

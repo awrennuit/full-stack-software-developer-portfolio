@@ -23,7 +23,7 @@ export default function AlbumIdeaGenerator() {
         />
         <meta
           name="description"
-          content="A dungeon synth & fantasy album idea generator heavily inspired by Bartizanier's Dungeon Rushes. Created by Aveline Baudelaire aka Wooden Vessels."
+          content="A dungeon synth & fantasy album idea generator heavily inspired by Bartizanier’s Dungeon Rushes. Created by Aveline Baudelaire aka Wooden Vessels."
         />
         <meta
           name="keywords"

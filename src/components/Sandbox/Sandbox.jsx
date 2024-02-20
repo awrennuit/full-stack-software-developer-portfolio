@@ -425,7 +425,7 @@ export default function CssSandbox() {
   return (
     <>
       <Helmet>
-        <title>css sandbox - awren nuit's software engineering portfolio</title>
+        <title>css sandbox - awren nuit’s software engineering portfolio</title>
         <link rel="canonical" href="http://www.awrennuit.com/#/sandbox" />
         <meta
           name="description"
@@ -463,7 +463,7 @@ export default function CssSandbox() {
             className="sandbox__done-btn"
             onClick={() => setShowDialog(!showDialog)}
           >
-            I'm Done
+            I’m Done
           </button>
         </section>
 

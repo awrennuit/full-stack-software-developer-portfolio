@@ -32,7 +32,7 @@ export default function Intro() {
       </p>
       <p className="u-music-container__content-block album-idea-generator__intro">
         use it purely for inspiration. follow it to the letter. or anything in
-        between. if you're really ambitious you can get some friends involved,
+        between. if you’re really ambitious you can get some friends involved,
         too. happy music-making! 💜
       </p>
     </div>

@@ -14,7 +14,7 @@ export default function MyMusic() {
         <link rel="canonical" href="http://www.awrennuit.com/#/my-music" />
         <meta
           name="description"
-          content="I'm a musician. All of my musical projects live here. Learn about the music I make while you listen to it."
+          content="I’m a musician. All of my musical projects live here. Learn about the music I make while you listen to it."
         />
         <meta
           name="keywords"
@@ -37,7 +37,7 @@ export default function MyMusic() {
           >
             A Wren
           </a>
-          . it's instrumental black metal. since then i've expanded my projects
+          . it’s instrumental black metal. since then i’ve expanded my projects
           to include:
         </p>
 
@@ -49,7 +49,7 @@ export default function MyMusic() {
         </ul>
 
         <p className="u-music-container__content-block">
-          you can listen to all of my albums in the player below. there's a
+          you can listen to all of my albums in the player below. there’s a
           little dropdown so you can change the album.
         </p>
 

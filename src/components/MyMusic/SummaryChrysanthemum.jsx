@@ -38,14 +38,14 @@ export default function SummaryChrysanthemum() {
       </p>
 
       <p className="u-music-container__content-block">
-        i started writing more and more 'one sitting' songs. many of the takes
+        i started writing more and more ‘one sitting’ songs. many of the takes
         were improvised - i pressed record and played stuff. then i layered
         another track on top of that. and so on. eventually i got a looper and
         everything changed. suddenly i could play things <em>backward</em> on
         the fly. around this time i also got my hands on a delay pedal that
         simulated tape. i could play around with textures quite a bit now. the
         looper also allowed me to do live performances. it opened my whole world
-        up. if you haven't used a looper i highly recommend checking one out.
+        up. if you haven’t used a looper i highly recommend checking one out.
       </p>
 
       <p className="u-music-container__content-block">

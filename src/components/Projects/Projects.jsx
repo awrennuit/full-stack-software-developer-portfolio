@@ -8,11 +8,11 @@ export default function Projects() {
   return (
     <>
       <Helmet>
-        <title>projects - awren nuit's software engineering portfolio</title>
+        <title>projects - awren nuit’s software engineering portfolio</title>
         <link rel="canonical" href="http://www.awrennuit.com/#/projects" />
         <meta
           name="description"
-          content="Full stack software engineer awren nuit's past personal projects. Most projects have a link to both the source code and a demo."
+          content="Full stack software engineer awren nuit’s past personal projects. Most projects have a link to both the source code and a demo."
         />
         <meta
           name="keywords"

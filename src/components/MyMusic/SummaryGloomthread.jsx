@@ -4,7 +4,7 @@ export default function SummaryGloomthread() {
       <h3>Gloomthread</h3>
       <p className="u-music-container__content-block">
         Gloomthread is an interesting project. it started in 2011 when i had
-        Halloween off and attempted to use the 'one sitting song' idea to make
+        Halloween off and attempted to use the ‘one sitting song’ idea to make
         some doom. it ended up taking most of the day, but i did it! i tried my
         best to turn it into an annual tradition and completed a Halloween doom
         song each year for maybe three years? possibly four? it was just so time
@@ -33,7 +33,7 @@ export default function SummaryGloomthread() {
         >
           baritone guitar
         </a>{' '}
-        so i wouldn't have to keep retuning my guitar for my other projects, and
+        so i wouldn’t have to keep retuning my guitar for my other projects, and
         set to work making some funeral doom. in 2018 i released{' '}
         <a
           className="u-music-container__link"

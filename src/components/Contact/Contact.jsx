@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>contact - awren nuit's software engineering portfolio</title>
+        <title>contact - awren nuit’s software engineering portfolio</title>
         <link rel="canonical" href="http://www.awrennuit.com/#/contact" />
         <meta
           name="description"

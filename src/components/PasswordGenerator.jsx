@@ -80,7 +80,7 @@ export default function PasswordGenerator() {
     <>
       <Helmet>
         <title>
-          password generator - awren nuit's software engineering portfolio
+          password generator - awren nuit’s software engineering portfolio
         </title>
         <link
           rel="canonical"
@@ -88,7 +88,7 @@ export default function PasswordGenerator() {
         />
         <meta
           name="description"
-          content="A password generator developed by full stack software awren nuit. It's a free & easy way to create secure passwords."
+          content="A password generator developed by full stack software awren nuit. It’s a free & easy way to create secure passwords."
         />
         <meta
           name="keywords"
