@@ -96,7 +96,7 @@ const special = [
   'use acoustic harp as main instrument',
   'use only four instruments',
   'the album must have four songs',
-  'the album must be completed in 21 days (instead of 14)',
+  'the album must be completed in 14 days (instead of 21)',
   'base the album on public domain artwork & use this artwork on the album’s cover art',
   'base the album on poem or one page story (your own or someone else’s)',
   'base the album on a place you’ve been to',
