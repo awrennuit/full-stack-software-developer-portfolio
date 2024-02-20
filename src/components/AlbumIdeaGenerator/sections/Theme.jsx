@@ -20,7 +20,7 @@ export default function Theme({ getRandomNumber }) {
       </div>
       {theme.result && (
         <p>
-          {theme.result}. ({theme.roll})
+          {theme.result} ({theme.roll})
         </p>
       )}
     </div>
