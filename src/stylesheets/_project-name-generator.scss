@@ -1,0 +1,48 @@
+.project-name-generator {
+  &__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__btn {
+    background-color: $music-red;
+    border-radius: 0.25rem;
+    color: $music-gray--light;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    transition: background-color 0.2s;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $music-red--dark;
+    }
+
+    &:active {
+      background-color: $music-red;
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+    background-color: $music-gray--lighter;
+    border: 0.5rem double $music-red--dark;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem $music-gray--light, 0 0 0.5rem $music-green,
+      inset 0 0 1rem $music-gray--dark, inset 0 0 0.25rem $music-black,
+      inset 0 0 1rem $music-gray--dark;
+    color: $music-red--dark;
+    padding: 1rem;
+  }
+}

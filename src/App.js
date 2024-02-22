@@ -29,6 +29,9 @@ const MyMusic = React.lazy(() => import('./components/MyMusic/MyMusic'));
 const PasswordGenerator = React.lazy(() =>
   import('./components/PasswordGenerator')
 );
+const ProjectNameGenerator = React.lazy(() =>
+  import('./components/ProjectNameGenerator')
+);
 const Projects = React.lazy(() => import('./components/Projects/Projects'));
 const Secret = React.lazy(() => import('./components/Secret'));
 const Swatches = React.lazy(() => import('./components/Swatches'));
@@ -63,6 +66,11 @@ export default function App() {
             exact
             path="/password-generator"
             element={<PasswordGenerator />}
+          />
+          <Route
+            exact
+            path="/project-name-generator"
+            element={<ProjectNameGenerator />}
           />
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/secret" element={<Secret />} />
