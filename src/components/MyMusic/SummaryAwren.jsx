@@ -23,7 +23,7 @@ export default function SummaryAwren() {
           className="u-music-container__link"
           href="https://reverb.com/p/digitech-death-metal"
           target="_blank"
-          rel="noopener noferrer"
+          rel="noopener noreferrer"
         >
           Digitech Death Metal
         </a>{' '}
@@ -38,7 +38,7 @@ export default function SummaryAwren() {
           className="u-music-container__link"
           href="https://cavebirdrecords.bandcamp.com/album/dreams"
           target="_blank"
-          rel="noopener noferrer"
+          rel="noopener noreferrer"
         >
           Dreams
         </a>
@@ -47,7 +47,7 @@ export default function SummaryAwren() {
           className="u-music-container__link"
           href="https://reverb.com/p/digitech-death-metal"
           target="_blank"
-          rel="noopener noferrer"
+          rel="noopener noreferrer"
         >
           Digitech Death Metal
         </a>{' '}
@@ -56,7 +56,7 @@ export default function SummaryAwren() {
           className="u-music-container__link"
           href="https://reverb.com/p/electro-harmonix-holy-grail-nano"
           target="_blank"
-          rel="noopener noferrer"
+          rel="noopener noreferrer"
         >
           EHX Holy Grail Nano
         </a>{' '}
@@ -65,7 +65,7 @@ export default function SummaryAwren() {
           className="u-music-container__link"
           href="https://reverb.com/p/roland-juno-di"
           target="_blank"
-          rel="noopener noferrer"
+          rel="noopener noreferrer"
         >
           Juno-Di
         </a>{' '}
@@ -74,7 +74,7 @@ export default function SummaryAwren() {
           className="u-music-container__link"
           href="https://www.xlnaudio.com/products/addictive_drums_2"
           target="_blank"
-          rel="noopener noferrer"
+          rel="noopener noreferrer"
         >
           Additive Drums
         </a>{' '}
