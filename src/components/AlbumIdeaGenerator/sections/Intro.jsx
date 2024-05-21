@@ -1,6 +1,6 @@
 export default function Intro() {
   return (
-    <div class="album-idea-generator__intro-container">
+    <div className="album-idea-generator__intro-container">
       <p className="u-music-container__content-block album-idea-generator__intro">
         <em>heavily</em> inspired by{' '}
         <a
