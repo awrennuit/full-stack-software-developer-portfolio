@@ -164,6 +164,14 @@ export const dungeonVaultAlbums = {
     link: 'https://bakt.bandcamp.com/album/cores-de-arquea',
     linkLabel: 'Cores de Arquea by Bakt',
   },
+  bartizan_chill: {
+    albumId: '4252540934',
+    artist: 'Bartizan Chill',
+    height: '472px',
+    label: 'Live at Sailors Arms - 2024',
+    link: 'https://bartizanchill.bandcamp.com/album/live-at-sailors-arms',
+    linkLabel: 'Live At Sailors Arms by Bartizan Chill',
+  },
   chanterelle: {
     albumId: '3220478371',
     artist: 'Chanterelle',
@@ -211,6 +219,14 @@ export const dungeonVaultAlbums = {
     label: 'Compendium III - 2020',
     link: 'https://iamdim.bandcamp.com/album/compendium-iii',
     linkLabel: 'Compendium III by DIM',
+  },
+  diplodocus: {
+    albumId: '1154173385',
+    artist: 'Diplodocus',
+    height: '307px',
+    label: 'Slow And Heavy - 2019',
+    link: 'https://diplodocus.bandcamp.com/album/slow-and-heavy',
+    linkLabel: 'Slow And Heavy by Diplodocus',
   },
   dusklight: {
     albumId: '1747122653',
@@ -300,6 +316,14 @@ export const dungeonVaultAlbums = {
     link: 'https://herdade.bandcamp.com/album/livro-primeiro',
     linkLabel: 'Livro Primeiro by Herdade',
   },
+  hermit_knight: {
+    albumId: '2793370122',
+    artist: 'Hermit Knight',
+    height: '406px',
+    label: 'wandeweorpe - 2023',
+    link: 'https://hermitknight.bandcamp.com/album/wandeweorpe',
+    linkLabel: 'wandeweorpe by Hermit Knight',
+  },
   hibernal_harvest: {
     albumId: '4152867053',
     artist: 'Hibernal Harvest',
@@ -315,6 +339,14 @@ export const dungeonVaultAlbums = {
     label: 'Old Kings Fall - 2022',
     link: 'https://songsofhircine.bandcamp.com/album/old-kings-fall',
     linkLabel: 'Old Kings Fall by Hircine',
+  },
+  hjartans: {
+    albumId: '4114641268',
+    artist: 'Hjartans',
+    height: '439px',
+    label: 'Open your heart to the Night - 2024',
+    link: 'https://hjartans.bandcamp.com/album/open-your-heart-to-the-night',
+    linkLabel: 'Open your heart to the Night by Hjartans',
   },
   hyperborean_might: {
     albumId: '3522688156',
@@ -339,6 +371,14 @@ export const dungeonVaultAlbums = {
     label: 'Courtier - 2023',
     link: 'https://kyvon.bandcamp.com/album/courtier',
     linkLabel: 'Courtier by Kyvon',
+  },
+  lone_sentinel: {
+    albumId: '1976600274',
+    artist: 'Lone Sentinel',
+    height: '406px',
+    label: 'Adventure Calls Thy Name - 2023',
+    link: 'https://hammerandflailrecordings.bandcamp.com/album/adventure-calls-thy-name',
+    linkLabel: 'Adventure Calls Thy Name by Lone Sentinel',
   },
   the_loreseeker: {
     albumId: '2815154567',
@@ -380,6 +420,14 @@ export const dungeonVaultAlbums = {
     link: 'https://worldoftrollhorn.bandcamp.com/album/the-sleeping-green',
     linkLabel: 'The Sleeping Green by Lunar Womb',
   },
+  maximum_mana: {
+    albumId: '3847176149',
+    artist: 'Maximum Mana',
+    height: '340px',
+    label: 'Live at the Black Bridge - 2024',
+    link: 'https://maximummana.bandcamp.com/album/live-at-the-black-bridge',
+    linkLabel: 'Live at the Black Bridge by Maximum Mana',
+  },
   moonkeeper: {
     albumId: '3865733876',
     artist: 'MoonKeeper',
@@ -387,6 +435,14 @@ export const dungeonVaultAlbums = {
     label: 'The Keeper’s Odyssey - 2023',
     link: 'https://moonkeeper.bandcamp.com/album/the-keepers-odyssey',
     linkLabel: 'The Keeper’s Odyssey by MoonKeeper',
+  },
+  moonkissed_spires: {
+    albumId: '1454872167',
+    artist: 'Moonkissed Spires',
+    height: '274px',
+    label: 'Hymns of the Battlefield - 2024',
+    link: 'https://moonkissedspires.bandcamp.com/album/hymns-of-the-battlefield',
+    linkLabel: 'Hymns of the Battlefield by Moonkissed Spires',
   },
   mordiford_dragon: {
     albumId: '136601526',
