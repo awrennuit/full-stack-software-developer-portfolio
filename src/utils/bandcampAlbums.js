@@ -115,6 +115,14 @@ export const bandcampAlbums = {
 };
 
 export const dungeonVaultAlbums = {
+  ancient_boreal_forest: {
+    albumId: '4027050997',
+    artist: 'Ancient Boreal Forest',
+    height: '373px',
+    label: 'Cold Ethereal Winter - 2017',
+    link: 'https://ancientborealforest.bandcamp.com/album/cold-ethereal-winter',
+    linkLabel: 'Cold Ethereal Winter by Ancient Boreal Forest',
+  },
   ancient_invocations: {
     albumId: '4261526893',
     artist: 'Ancient Invocations',
@@ -268,6 +276,14 @@ export const dungeonVaultAlbums = {
     link: 'https://estoc1.bandcamp.com/album/chapter-i',
     linkLabel: 'Chapter I by ESTOC',
   },
+  fenmoss: {
+    albumId: '3531789836',
+    artist: 'Fenmoss',
+    height: '340px',
+    label: 'Reawakened Wisdom - 2024',
+    link: 'https://barony-of-fenmoss.bandcamp.com/album/reawakened-wisdom',
+    linkLabel: 'Reawakened Wisdom by Fenmoss',
+  },
   fief: {
     albumId: '3763192730',
     artist: 'Fief',
@@ -292,6 +308,14 @@ export const dungeonVaultAlbums = {
     link: 'https://forgottenphantasm.bandcamp.com/album/-',
     linkLabel: '♜♜♜♜♜♜♜ by Forgotten Phantasm',
   },
+  forlorn: {
+    albumId: '3237544710',
+    artist: 'Forlorn',
+    height: '241px',
+    label: 'Forlorn - 2024',
+    link: 'https://forlorn-ds.bandcamp.com/album/forlorn',
+    linkLabel: 'Forlorn by Forlorn',
+  },
   frostgard: {
     albumId: '2721127097',
     artist: 'Frostgard',
@@ -307,6 +331,14 @@ export const dungeonVaultAlbums = {
     label: 'The Candlelight Tomes - 2021',
     link: 'https://gelure.bandcamp.com/album/the-candlelight-tomes',
     linkLabel: 'The Candlelight Tomes by Gelure',
+  },
+  gorgons_alter: {
+    albumId: '3261724646',
+    artist: 'Gorgons Alter',
+    height: '373px',
+    label: 'Arcane and Abel - 2024',
+    link: 'https://gorgonsalter.bandcamp.com/album/arcane-and-abel',
+    linkLabel: 'Arcane and Abel by Gorgons Alter',
   },
   herdade: {
     albumId: '1080988963',
