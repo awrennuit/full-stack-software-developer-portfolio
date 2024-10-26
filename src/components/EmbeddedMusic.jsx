@@ -5,7 +5,7 @@ export default function EmbeddedMusic() {
   const [selectedAlbum, setSelectedAlbum] = useState({});
 
   useEffect(() => {
-    setSelectedAlbum(bandcampAlbums['Wooden Vessels (dungeon synth)'][1]);
+    setSelectedAlbum(bandcampAlbums['Wooden Vessels (dungeon synth)'][0]);
   }, []);
 
   const handleAlbumSelect = (e) => setSelectedAlbum(JSON.parse(e.target.value));
@@ -36,7 +36,6 @@ export default function EmbeddedMusic() {
 
       <iframe
         className="embedded-music__player"
-        style={{ height: selectedAlbum.height }}
         src={`https://bandcamp.com/EmbeddedPlayer/album=${selectedAlbum.albumId}/size=large/bgcol=333333/linkcol=e32c14/artwork=small/transparent=true/`}
         seamless
         title="Bandcamp embedded player"
