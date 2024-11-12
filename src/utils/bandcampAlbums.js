@@ -67,6 +67,13 @@ export const bandcampAlbums = {
   ],
   'Wooden Vessels (dungeon synth)': [
     {
+      albumId: '1908782603',
+      label: 'That Which is in Death Shall Grant Life Without End - 2024',
+      link: 'https://cavebirdrecords.bandcamp.com/album/that-which-is-in-death-shall-grant-life-without-end',
+      linkLabel:
+        'That Which is in Death Shall Grant Life Without End by Wooden Vessels',
+    },
+    {
       albumId: '1634272242',
       label: 'What Lies in Wait - 2024',
       link: 'https://cavebirdrecords.bandcamp.com/album/what-lies-in-wait',
