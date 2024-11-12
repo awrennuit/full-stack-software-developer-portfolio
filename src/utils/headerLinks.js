@@ -20,8 +20,8 @@ export const headerLinks = [
         label: 'Music',
       },
       {
-        url: '/a-welcome-funeral/a-little-intro',
-        label: 'Story',
+        url: '/stories',
+        label: 'Stories',
       },
     ],
   },

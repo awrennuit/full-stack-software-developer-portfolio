@@ -1,0 +1,17 @@
+.stories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 40rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-left: 1rem;
+
+    a * {
+      color: inherit;
+    }
+  }
+}

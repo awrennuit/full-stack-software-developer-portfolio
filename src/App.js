@@ -34,6 +34,8 @@ const ProjectNameGenerator = React.lazy(() =>
 );
 const Projects = React.lazy(() => import('./components/Projects/Projects'));
 const Secret = React.lazy(() => import('./components/Secret'));
+const Stories = React.lazy(() => import('./components/Stories'));
+const Story = React.lazy(() => import('./components/Story'));
 const Swatches = React.lazy(() => import('./components/Swatches'));
 const TimerMain = React.lazy(() => import('./components/Timer/TimerMain'));
 
@@ -74,6 +76,8 @@ export default function App() {
           />
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/secret" element={<Secret />} />
+          <Route exact path="/stories" element={<Stories />} />
+          <Route exact path="/stories/:slug" element={<Story />} />
           <Route exact path="/swatches" element={<Swatches />} />
           <Route exact path="/timer" element={<TimerMain />} />
         </Routes>

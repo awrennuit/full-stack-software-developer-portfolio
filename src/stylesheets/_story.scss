@@ -1,0 +1,39 @@
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 40rem;
+  white-space: pre-wrap;
+
+  a {
+    align-items: center;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s;
+    width: max-content;
+
+    &:hover,
+    &:focus {
+      background-color: $pink--transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+
+    span {
+      padding-bottom: 0.125rem;
+    }
+  }
+
+  h1 {
+    font-family: $awf-heading-font;
+  }
+
+  p {
+    font-family: $awf-font;
+    line-height: 1.5;
+  }
+}

@@ -34,7 +34,7 @@ export default function SummaryWoodenVessels() {
           rel="noopener noreferrer"
         >
           Etherealwinds Harp
-        </a>
+        </a>{' '}
         being my favorites), and set to work learning how DAWs and VSTs work.
       </p>
 
