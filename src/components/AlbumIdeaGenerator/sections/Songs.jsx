@@ -14,7 +14,7 @@ export default function Songs({ getRandomNumber }) {
     setSongs({
       rollOne: rollOne,
       rollTwo: rollTwo,
-      total: rollOne + rollTwo,
+      total: rollOne + rollTwo + 1,
     });
   };
 
@@ -22,14 +22,14 @@ export default function Songs({ getRandomNumber }) {
     <div className="album-idea-generator__card">
       <h2>number of songs</h2>
       <div className="album-idea-generator__content-top">
-        <p>(2d6)</p>
+        <p>(2d6 + 1)</p>
         <button className="album-idea-generator__btn" onClick={rollSongs}>
           {!songs.total ? 'roll' : 'reroll'}
         </button>
       </div>
       {songs.total && (
         <p>
-          <strong>{songs.total}</strong> = {songs.rollOne} + {songs.rollTwo}
+          <strong>{songs.total}</strong> = {songs.rollOne} + {songs.rollTwo} + 1
         </p>
       )}
     </div>

@@ -45,7 +45,7 @@ export default function AlbumIdeaGenerator() {
             <div className="album-idea-generator__card">
               <h2>time to complete the album</h2>
               <p>
-                <strong>21</strong> days
+                <strong>28</strong> days
               </p>
             </div>
 
