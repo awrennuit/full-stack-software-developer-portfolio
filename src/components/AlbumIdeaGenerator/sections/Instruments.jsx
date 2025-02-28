@@ -14,7 +14,7 @@ export default function Instruments({ getRandomNumber }) {
     setInstruments({
       rollOne: rollOne,
       rollTwo: rollTwo,
-      total: rollOne + rollTwo + 2,
+      total: rollOne + rollTwo + 1,
     });
   };
 
@@ -22,7 +22,7 @@ export default function Instruments({ getRandomNumber }) {
     <div className="album-idea-generator__card">
       <h2>number of instruments</h2>
       <div className="album-idea-generator__content-top">
-        <p>(2d4 + 2)</p>
+        <p>(2d4 + 1)</p>
         <button className="album-idea-generator__btn" onClick={rollInstruments}>
           {!instruments.total ? 'roll' : 'reroll'}
         </button>
@@ -30,7 +30,7 @@ export default function Instruments({ getRandomNumber }) {
       {instruments.total && (
         <p>
           <strong>{instruments.total}</strong> = {instruments.rollOne} +{' '}
-          {instruments.rollTwo} + 2
+          {instruments.rollTwo} + 1
         </p>
       )}
     </div>
