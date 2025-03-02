@@ -245,6 +245,13 @@ const albumTheme = [
   'a B-list hero attempts to make a name for herself by slaying the creatures that have overtaken a nearby castle.',
   'a scientist that no one likes has been tasked with learning about the language & behavior of dragons. he excels at this and thinks about taking revenge.',
   'the gnomes that helped you pass through perilous territory have come to collect on your end of the bargain.',
+  'you go to bed and wake up on a tall mountain.',
+  'you go to bed and wake up in the middle of a forest.',
+  'you go to bed and wake up in a ship on a large sea.',
+  'you go to bed and wake up inside of the castle dungeon.',
+  'you go to bed and wake up at a camp with several battle hardened adventurers.',
+  'you go to bed and wake up in the desert with a travelling caravan.',
+  'a veteran adventurer wishes upon a shooting star - what is the wish? does it come true? does it backfire?',
 ];
 
 const special = [
