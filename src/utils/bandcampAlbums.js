@@ -21,6 +21,12 @@ export const bandcampAlbums = {
   ],
   'chrysanthemum (ambient guitar)': [
     {
+      albumId: '1135978160',
+      label: 'a stillness outside the window - 2025',
+      link: 'https://cavebirdrecords.bandcamp.com/album/a-stillness-outside-the-window',
+      linkLabel: 'a stillness outside the window by chrysanthemum',
+    },
+    {
       albumId: '1764876855',
       label: 'the softest feeling the quietest touch - 2023',
       link: 'https://cavebirdrecords.bandcamp.com/album/the-softest-feeling-the-quietest-touch',
@@ -66,6 +72,69 @@ export const bandcampAlbums = {
     },
   ],
   'Wooden Vessels (dungeon synth)': [
+    {
+      albumId: '3738689127',
+      label: 'Live at Grace Center - 2026',
+      link: 'https://cavebirdrecords.bandcamp.com/album/live-at-grace-center',
+      linkLabel:
+        'Live at Grace Center by Wooden Vessels',
+    },
+    {
+      albumId: '1023187973',
+      label: 'The Very Best of Wooden Vessels 2021-2025 - 2025',
+      link: 'https://cavebirdrecords.bandcamp.com/album/the-very-best-of-wooden-vessels-2021-2025',
+      linkLabel:
+        'The Very Best of Wooden Vessels 2021-2025 by Wooden Vessels',
+    },
+    {
+      albumId: '3832920755',
+      label: 'Dagorby Pomme’s Magickal Emporium - 2025',
+      link: 'https://cavebirdrecords.bandcamp.com/album/dagorby-pommes-magickal-emporium',
+      linkLabel:
+        'Dagorby Pomme’s Magickal Emporium by Wooden Vessels',
+    },
+    {
+      albumId: '487786529',
+      label: 'Virtual Dungeon Crawl Set - 2025',
+      link: 'https://cavebirdrecords.bandcamp.com/album/virtual-dungeon-crawl-set',
+      linkLabel:
+        'Virtual Dungeon Crawl Set by Wooden Vessels',
+    },
+    {
+      albumId: '3376078526',
+      label: 'Aveline’s Synth1 Dungeon Synth Bank (NOT AN ALBUM) - 2025',
+      link: 'https://cavebirdrecords.bandcamp.com/album/avelines-synth1-dungeon-synth-bank',
+      linkLabel:
+        'Aveline’s Synth1 Dungeon Synth Bank by Aveline Baudelaire',
+    },
+    {
+      albumId: '870420289',
+      label: 'Rise of the Woodland Empire - 2025',
+      link: 'https://cavebirdrecords.bandcamp.com/album/rise-of-the-woodland-empire',
+      linkLabel:
+        'Rise of the Woodland Empire by Wooden Vessels',
+    },
+    {
+      albumId: '426352869',
+      label: 'A Sunless Winter (split with Hibernal Harvest) - 2025',
+      link: 'https://cavebirdrecords.bandcamp.com/album/a-sunless-winter-split-with-hibernal-harvest',
+      linkLabel:
+        'A Sunless Winter (split with Hibernal Harvest) by Wooden Vessels / Hiberal Harvest',
+    },
+    {
+      albumId: '2767721795',
+      label: 'With Both Feet Upon the Aether - 2025',
+      link: 'https://cavebirdrecords.bandcamp.com/album/with-both-feet-upon-the-aether',
+      linkLabel:
+        'With Both Feet Upon the Aether by Wooden Vessels',
+    },
+    {
+      albumId: '3190851946',
+      label: 'Paxtonirae, Fleeting Embodiment of Contrition - 2025',
+      link: 'https://cavebirdrecords.bandcamp.com/album/paxtonirae-fleeting-embodiment-of-contrition',
+      linkLabel:
+        'Paxtonirae, Fleeting Embodiment of Contrition by Wooden Vessels',
+    },
     {
       albumId: '1908782603',
       label: 'That Which is in Death Shall Grant Life Without End - 2024',
