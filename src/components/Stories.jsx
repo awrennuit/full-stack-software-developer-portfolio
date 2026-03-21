@@ -8,7 +8,7 @@ export default function Stories() {
     <>
       <Helmet>
         <title>stories - awren nuit’s software engineering portfolio</title>
-        <link rel="canonical" href="https://www.awrennuit.com/#/stories" />
+        <link rel="canonical" href="https://www.awrennuit.com/stories" />
         <meta
           name="description"
           content="Stories written by awren nuit. Includes poems, short stories, and a mock blog."

@@ -9,7 +9,7 @@ export default function Contact() {
     <>
       <Helmet>
         <title>contact - awren nuit’s software engineering portfolio</title>
-        <link rel="canonical" href="https://www.awrennuit.com/#/contact" />
+        <link rel="canonical" href="https://www.awrennuit.com/contact" />
         <meta
           name="description"
           content="Different ways to contact full stack software engineer awren nuit. Methods include email, phone, GitHub, and LinkedIn."

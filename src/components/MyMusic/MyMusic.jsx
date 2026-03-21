@@ -11,7 +11,7 @@ export default function MyMusic() {
     <div className="u-music-container music">
       <Helmet>
         <title>my music</title>
-        <link rel="canonical" href="https://www.awrennuit.com/#/my-music" />
+        <link rel="canonical" href="https://www.awrennuit.com/my-music" />
         <meta
           name="description"
           content="I’m a musician. All of my musical projects live here. Learn about the music I make while you listen to it."

@@ -24,10 +24,7 @@ export default function DungeonSynth() {
     <div className="u-music-container dungeon-synth">
       <Helmet>
         <title>a dungeon synth primer</title>
-        <link
-          rel="canonical"
-          href="https://www.awrennuit.com/#/dungeon-synth"
-        />
+        <link rel="canonical" href="https://www.awrennuit.com/dungeon-synth" />
         <meta
           name="description"
           content="A brief Dungeon Synth primer, including common gear and how to make make the music. Written by Aveline Baudelaire aka Wooden Vessels."

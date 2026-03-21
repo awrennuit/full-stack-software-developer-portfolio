@@ -19,10 +19,7 @@ export default function DungeonVault() {
     <div className="u-music-container dungeon-vault">
       <Helmet>
         <title>the dungeon vault</title>
-        <link
-          rel="canonical"
-          href="https://www.awrennuit.com/#/dungeon-vault"
-        />
+        <link rel="canonical" href="https://www.awrennuit.com/dungeon-vault" />
         <meta
           name="description"
           content="Welcome to the Dungeon Vault. A collection of excellent dungeon synth artists, complete with a Bandcamp player to preview them. Written by Aveline Baudelaire aka Wooden Vessels."
