@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Loading from './components/Loading';
 
 const Abstract = React.lazy(() => import('./components/Abstract'));
@@ -41,47 +42,56 @@ const TimerMain = React.lazy(() => import('./components/Timer/TimerMain'));
 
 export default function App() {
   return (
-    <Router>
-      <Suspense fallback={<Loading />}>
-        <Routes>
-          <Route exact path="/" element={<Landing />} />
-          <Route exact path="/about" element={<Home />} />
-          <Route exact path="/abstract-art" element={<Abstract />} />
-          <Route
-            exact
-            path="/album-idea-generator"
-            element={<AlbumIdeaGenerator />}
-          />
-          <Route
-            exact
-            path="/a-welcome-funeral/history"
-            element={<AwfHistory />}
-          />
-          <Route exact path="/a-welcome-funeral/:slug" element={<AwfPost />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/sandbox" element={<Sandbox />} />
-          <Route exact path="/dungeon-synth" element={<DungeonSynth />} />
-          <Route exact path="/dungeon-vault" element={<DungeonVault />} />
-          <Route exact path="/gradient-maker" element={<CustomGradient />} />
-          <Route exact path="/my-music" element={<MyMusic />} />
-          <Route
-            exact
-            path="/password-generator"
-            element={<PasswordGenerator />}
-          />
-          <Route
-            exact
-            path="/project-name-generator"
-            element={<ProjectNameGenerator />}
-          />
-          <Route exact path="/projects" element={<Projects />} />
-          <Route exact path="/secret" element={<Secret />} />
-          <Route exact path="/stories" element={<Stories />} />
-          <Route exact path="/stories/:slug" element={<Story />} />
-          <Route exact path="/swatches" element={<Swatches />} />
-          <Route exact path="/timer" element={<TimerMain />} />
-        </Routes>
-      </Suspense>
-    </Router>
+    <>
+      <Helmet>
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      <Router>
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route exact path="/" element={<Landing />} />
+            <Route exact path="/about" element={<Home />} />
+            <Route exact path="/abstract-art" element={<Abstract />} />
+            <Route
+              exact
+              path="/album-idea-generator"
+              element={<AlbumIdeaGenerator />}
+            />
+            <Route
+              exact
+              path="/a-welcome-funeral/history"
+              element={<AwfHistory />}
+            />
+            <Route
+              exact
+              path="/a-welcome-funeral/:slug"
+              element={<AwfPost />}
+            />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/sandbox" element={<Sandbox />} />
+            <Route exact path="/dungeon-synth" element={<DungeonSynth />} />
+            <Route exact path="/dungeon-vault" element={<DungeonVault />} />
+            <Route exact path="/gradient-maker" element={<CustomGradient />} />
+            <Route exact path="/my-music" element={<MyMusic />} />
+            <Route
+              exact
+              path="/password-generator"
+              element={<PasswordGenerator />}
+            />
+            <Route
+              exact
+              path="/project-name-generator"
+              element={<ProjectNameGenerator />}
+            />
+            <Route exact path="/projects" element={<Projects />} />
+            <Route exact path="/secret" element={<Secret />} />
+            <Route exact path="/stories" element={<Stories />} />
+            <Route exact path="/stories/:slug" element={<Story />} />
+            <Route exact path="/swatches" element={<Swatches />} />
+            <Route exact path="/timer" element={<TimerMain />} />
+          </Routes>
+        </Suspense>
+      </Router>
+    </>
   );
 }
