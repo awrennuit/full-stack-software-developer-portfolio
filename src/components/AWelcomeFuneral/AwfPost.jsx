@@ -18,7 +18,7 @@ export default function AwfPost() {
         <title>a welcome funeral</title>
         <link
           rel="canonical"
-          href="http://www.awrennuit.com/#/a-welcome-funeral/a-little-intro"
+          href="https://www.awrennuit.com/#/a-welcome-funeral/a-little-intro"
         />
         <meta
           name="description"

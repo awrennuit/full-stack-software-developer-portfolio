@@ -20,7 +20,7 @@ export default function CssSandbox() {
   const [bgGreen, setBgGreen] = useState(255);
   const [bgBlue, setBgBlue] = useState(255);
   const [bgColor, setBgColor] = useState(
-    `rgb(${bgRed}, ${bgGreen}, ${bgBlue})`
+    `rgb(${bgRed}, ${bgGreen}, ${bgBlue})`,
   );
 
   // sets blur
@@ -35,7 +35,7 @@ export default function CssSandbox() {
   const [borderGreen, setBorderGreen] = useState(125);
   const [borderBlue, setBorderBlue] = useState(125);
   const [borderColor, setBorderColor] = useState(
-    `rgb(${borderRed}, ${borderGreen}, ${borderBlue})`
+    `rgb(${borderRed}, ${borderGreen}, ${borderBlue})`,
   );
 
   // sets border radius
@@ -49,7 +49,7 @@ export default function CssSandbox() {
   const [boxGreen, setBoxGreen] = useState(125);
   const [boxBlue, setBoxBlue] = useState(125);
   const [boxColor, setBoxColor] = useState(
-    `rgb(${boxRed}, ${boxGreen}, ${boxBlue})`
+    `rgb(${boxRed}, ${boxGreen}, ${boxBlue})`,
   );
   const [boxInset, setBoxInset] = useState('');
   const [boxOffsetX, setBoxOffsetX] = useState(0);
@@ -378,9 +378,8 @@ export default function CssSandbox() {
 
   const resetValues = () => {
     document.querySelector('input[name="borderStyle"]:checked').checked = false;
-    document.querySelector(
-      'input[name="borderRadiusType"]:checked'
-    ).checked = false;
+    document.querySelector('input[name="borderRadiusType"]:checked').checked =
+      false;
     document.getElementById('border-none').checked = true;
     document.getElementById('radius-px').checked = true;
     document.getElementById('box-inset').checked = false;
@@ -426,7 +425,7 @@ export default function CssSandbox() {
     <>
       <Helmet>
         <title>css sandbox - awren nuit’s software engineering portfolio</title>
-        <link rel="canonical" href="http://www.awrennuit.com/#/sandbox" />
+        <link rel="canonical" href="https://www.awrennuit.com/#/sandbox" />
         <meta
           name="description"
           content="This is an interactive CSS sandbox! Add some styles, including box-shadow, blur, borders, and more. Copy the code to add it to your project."

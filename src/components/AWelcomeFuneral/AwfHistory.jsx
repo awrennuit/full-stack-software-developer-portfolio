@@ -10,7 +10,7 @@ export default function AwfHistory() {
         <title>a welcome funeral - history</title>
         <link
           rel="canonical"
-          href="http://www.awrennuit.com/#/a-welcome-funeral/history"
+          href="https://www.awrennuit.com/#/a-welcome-funeral/history"
         />
         <meta
           name="description"

@@ -14,10 +14,10 @@ export default function CustomGradient() {
 
   useEffect(() => {
     setColorOne(
-      '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0')
+      '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0'),
     );
     setColorTwo(
-      '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0')
+      '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0'),
     );
   }, []);
 
@@ -25,7 +25,7 @@ export default function CustomGradient() {
     switch (gradientType) {
       case 'linear':
         setGradient(
-          `linear-gradient(to ${gradientDirection}, ${colorOne}, ${colorTwo})`
+          `linear-gradient(to ${gradientDirection}, ${colorOne}, ${colorTwo})`,
         );
         break;
       case 'radial':
@@ -58,7 +58,7 @@ export default function CustomGradient() {
         </title>
         <link
           rel="canonical"
-          href="http://www.awrennuit.com/#/gradient-maker"
+          href="https://www.awrennuit.com/#/gradient-maker"
         />
         <meta
           name="description"
