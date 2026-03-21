@@ -47,27 +47,27 @@ export default function AudioPlayer() {
       audioRef.current.addEventListener('ended', updateCurrentFile);
       progressSliderRef.current?.addEventListener(
         'mousedown',
-        progressSliderIsBeingUsed
+        progressSliderIsBeingUsed,
       );
       progressSliderRef.current?.addEventListener(
         'mouseup',
-        progressSliderIsNotBeingUsed
+        progressSliderIsNotBeingUsed,
       );
 
       return () => {
         audioRef.current?.removeEventListener('timeupdate', updateCurrentTime);
         audioRef.current?.removeEventListener('ended', updateCurrentFile);
-        progressSliderRef.current?.addEventListener(
+        progressSliderRef.current?.removeEventListener(
           'mousedown',
-          progressSliderIsBeingUsed
+          progressSliderIsBeingUsed,
         );
-        progressSliderRef.current?.addEventListener(
+        progressSliderRef.current?.removeEventListener(
           'mouseup',
-          progressSliderIsNotBeingUsed
+          progressSliderIsNotBeingUsed,
         );
       };
     }
-  }, [audioRef]);
+  }, []);
 
   useEffect(() => {
     if (isEnded) {
@@ -110,7 +110,7 @@ export default function AudioPlayer() {
       0,
       0,
       canvasRef.current?.width,
-      canvasRef.current?.height
+      canvasRef.current?.height,
     );
 
     // Get the current frequency data
@@ -126,7 +126,7 @@ export default function AudioPlayer() {
         0,
         0,
         0,
-        canvasRef.current?.height
+        canvasRef.current?.height,
       );
       gradient.addColorStop(0, electricBlue); // Start color
       gradient.addColorStop(0.5, coral); // Middle color
@@ -144,7 +144,7 @@ export default function AudioPlayer() {
           x,
           canvasRef.current?.height - barHeight,
           barWidth,
-          barHeight
+          barHeight,
         );
         x += barWidth + 1;
       }
@@ -230,6 +230,8 @@ export default function AudioPlayer() {
   };
 
   const updateCurrentTime = () => {
+    if (!audioRef.current || !progressSliderRef.current) return;
+
     formatTime(audioRef.current?.currentTime, setCurrentTime);
 
     if (!isProgressSliderClicked) {
