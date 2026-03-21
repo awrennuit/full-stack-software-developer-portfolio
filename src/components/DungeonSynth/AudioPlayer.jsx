@@ -79,15 +79,24 @@ export default function AudioPlayer() {
   }, [isEnded]);
 
   useEffect(() => {
-    setCurrentTime('0:00');
+    if (!audioRef.current) return;
 
-    setTimeout(() => {
-      if (duration !== audioRef.current?.duration) {
-        formatTime(audioRef.current.duration, setDuration);
-        setProgressSliderMax(Math.floor(audioRef.current.duration));
-        progressSliderRef.current.value = 0;
-      }
-    }, 100);
+    setCurrentTime('0:00');
+    setDuration('-:--');
+    progressSliderRef.current.value = 0;
+
+    const audioEl = audioRef.current;
+
+    const handleLoadedMetadata = () => {
+      setDuration(formatTimeString(audioEl.duration));
+      setProgressSliderMax(Math.floor(audioEl.duration));
+    };
+
+    audioEl.addEventListener('loadedmetadata', handleLoadedMetadata);
+
+    return () => {
+      audioEl.removeEventListener('loadedmetadata', handleLoadedMetadata);
+    };
   }, [currentFile]);
 
   const constructFile = () => {
@@ -151,15 +160,15 @@ export default function AudioPlayer() {
     }
   };
 
-  const formatTime = (timeToFormat, setter) => {
-    if (timeToFormat) {
-      const minutes = Math.trunc(timeToFormat / 60);
-      let seconds = Math.trunc(timeToFormat - minutes * 60);
+  const formatTimeString = (timeInSeconds) => {
+    if (!timeInSeconds || isNaN(timeInSeconds)) return '-:--';
 
-      if (seconds < 10) seconds = `0${seconds}`;
+    const minutes = Math.floor(timeInSeconds / 60);
+    const seconds = Math.floor(timeInSeconds % 60)
+      .toString()
+      .padStart(2, '0');
 
-      setter(`${minutes}:${seconds}`);
-    }
+    return `${minutes}:${seconds}`;
   };
 
   const handlePlayPauseClick = () => {
@@ -232,7 +241,7 @@ export default function AudioPlayer() {
   const updateCurrentTime = () => {
     if (!audioRef.current || !progressSliderRef.current) return;
 
-    formatTime(audioRef.current?.currentTime, setCurrentTime);
+    setCurrentTime(formatTimeString(audioRef.current?.currentTime));
 
     if (!isProgressSliderClicked) {
       progressSliderRef.current.value = audioRef.current?.currentTime;
