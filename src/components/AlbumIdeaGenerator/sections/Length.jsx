@@ -47,7 +47,7 @@ export default function Length({ getRandomNumber }) {
   };
 
   return (
-    <div className="album-idea-generator__card">
+    <section className="album-idea-generator__card">
       <h2>album length</h2>
       <div className="album-idea-generator__content-top">
         <p>(3d20)</p>
@@ -73,6 +73,6 @@ export default function Length({ getRandomNumber }) {
           )
         </p>
       )}
-    </div>
+    </section>
   );
 }

@@ -25,7 +25,7 @@ export default function ProjectNameGenerator() {
         <title>dungeon synth project name generator</title>
         <link
           rel="canonical"
-          href="http://www.awrennuit.com/#/project-name-generator"
+          href="https://www.awrennuit.com/project-name-generator"
         />
         <meta
           name="description"

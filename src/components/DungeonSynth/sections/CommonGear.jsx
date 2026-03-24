@@ -54,6 +54,16 @@ export default function CommonGear() {
             <li>
               <a
                 className="u-music-container__link"
+                href="https://reverb.com/marketplace?query=Roland%20JUNO-DS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Roland JUNO-DS
+              </a>
+            </li>
+            <li>
+              <a
+                className="u-music-container__link"
                 href="https://reverb.com/marketplace?query=yamaha%20sy77&product_type=keyboards-and-synths"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -224,7 +234,7 @@ export default function CommonGear() {
           </ul>
         </li>
         <li>
-          my main gear
+          my main gear for software albums
           <ul>
             <li>
               <a
@@ -280,6 +290,46 @@ export default function CommonGear() {
                 Etherealwinds Harp II Community Edition
               </a>{' '}
               (free)
+            </li>
+          </ul>
+        </li>
+        <li>
+          my main gear for live instrument albums
+          <ul>
+            <li>
+              <a
+                className="u-music-container__link"
+                href="https://apps.apple.com/us/app/garageband/id408709785"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Garageband
+              </a>{' '}
+              (free on Apple products)
+            </li>
+            <li>
+              <a
+                className="u-music-container__link"
+                href="https://reverb.com/marketplace?query=Roland%20JUNO-Di"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Roland JUNO-Di
+              </a>{' '}
+              (~$450-500 - i got mine for like $100 many years ago - a music
+              shop was closing. it was the last day so everything had to go, and
+              it was a floor model)
+            </li>
+            <li>
+              <a
+                className="u-music-container__link"
+                href="https://reverb.com/marketplace?query=Behringer+U-Phoria+UMC22+USB+Audio+Interface"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Behringer U-Phoria UMC22 USB Audio Interface
+              </a>{' '}
+              (~$50-60)
             </li>
           </ul>
         </li>

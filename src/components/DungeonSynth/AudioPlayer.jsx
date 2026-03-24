@@ -47,27 +47,27 @@ export default function AudioPlayer() {
       audioRef.current.addEventListener('ended', updateCurrentFile);
       progressSliderRef.current?.addEventListener(
         'mousedown',
-        progressSliderIsBeingUsed
+        progressSliderIsBeingUsed,
       );
       progressSliderRef.current?.addEventListener(
         'mouseup',
-        progressSliderIsNotBeingUsed
+        progressSliderIsNotBeingUsed,
       );
 
       return () => {
         audioRef.current?.removeEventListener('timeupdate', updateCurrentTime);
         audioRef.current?.removeEventListener('ended', updateCurrentFile);
-        progressSliderRef.current?.addEventListener(
+        progressSliderRef.current?.removeEventListener(
           'mousedown',
-          progressSliderIsBeingUsed
+          progressSliderIsBeingUsed,
         );
-        progressSliderRef.current?.addEventListener(
+        progressSliderRef.current?.removeEventListener(
           'mouseup',
-          progressSliderIsNotBeingUsed
+          progressSliderIsNotBeingUsed,
         );
       };
     }
-  }, [audioRef]);
+  }, []);
 
   useEffect(() => {
     if (isEnded) {
@@ -79,15 +79,24 @@ export default function AudioPlayer() {
   }, [isEnded]);
 
   useEffect(() => {
-    setCurrentTime('0:00');
+    if (!audioRef.current) return;
 
-    setTimeout(() => {
-      if (duration !== audioRef.current?.duration) {
-        formatTime(audioRef.current.duration, setDuration);
-        setProgressSliderMax(Math.floor(audioRef.current.duration));
-        progressSliderRef.current.value = 0;
-      }
-    }, 100);
+    setCurrentTime('0:00');
+    setDuration('-:--');
+    progressSliderRef.current.value = 0;
+
+    const audioEl = audioRef.current;
+
+    const handleLoadedMetadata = () => {
+      setDuration(formatTimeString(audioEl.duration));
+      setProgressSliderMax(Math.floor(audioEl.duration));
+    };
+
+    audioEl.addEventListener('loadedmetadata', handleLoadedMetadata);
+
+    return () => {
+      audioEl.removeEventListener('loadedmetadata', handleLoadedMetadata);
+    };
   }, [currentFile]);
 
   const constructFile = () => {
@@ -110,7 +119,7 @@ export default function AudioPlayer() {
       0,
       0,
       canvasRef.current?.width,
-      canvasRef.current?.height
+      canvasRef.current?.height,
     );
 
     // Get the current frequency data
@@ -126,7 +135,7 @@ export default function AudioPlayer() {
         0,
         0,
         0,
-        canvasRef.current?.height
+        canvasRef.current?.height,
       );
       gradient.addColorStop(0, electricBlue); // Start color
       gradient.addColorStop(0.5, coral); // Middle color
@@ -144,22 +153,22 @@ export default function AudioPlayer() {
           x,
           canvasRef.current?.height - barHeight,
           barWidth,
-          barHeight
+          barHeight,
         );
         x += barWidth + 1;
       }
     }
   };
 
-  const formatTime = (timeToFormat, setter) => {
-    if (timeToFormat) {
-      const minutes = Math.trunc(timeToFormat / 60);
-      let seconds = Math.trunc(timeToFormat - minutes * 60);
+  const formatTimeString = (timeInSeconds) => {
+    if (!timeInSeconds || isNaN(timeInSeconds)) return '-:--';
 
-      if (seconds < 10) seconds = `0${seconds}`;
+    const minutes = Math.floor(timeInSeconds / 60);
+    const seconds = Math.floor(timeInSeconds % 60)
+      .toString()
+      .padStart(2, '0');
 
-      setter(`${minutes}:${seconds}`);
-    }
+    return `${minutes}:${seconds}`;
   };
 
   const handlePlayPauseClick = () => {
@@ -230,7 +239,9 @@ export default function AudioPlayer() {
   };
 
   const updateCurrentTime = () => {
-    formatTime(audioRef.current?.currentTime, setCurrentTime);
+    if (!audioRef.current || !progressSliderRef.current) return;
+
+    setCurrentTime(formatTimeString(audioRef.current?.currentTime));
 
     if (!isProgressSliderClicked) {
       progressSliderRef.current.value = audioRef.current?.currentTime;

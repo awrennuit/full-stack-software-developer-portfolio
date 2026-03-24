@@ -14,22 +14,22 @@ export default function ThankYou() {
       ,{' '}
       <a
         className="u-music-container__link"
-        href="https://open.spotify.com/artist/6tQ2cAHwzyv53OTofiDwfS"
+        href="https://ampwall.com/a/woodenvessels"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Spotify
+        Ampwall
       </a>
-      , and pretty much all other music platforms. Bandcamp is a great tool to
-      find new music. i’ve found a ton of great artists through the people i
-      follow. feel free to follow me, too!{' '}
+      , and pretty much all other music platforms except for Spotify. Bandcamp &
+      Ampwall are great tools to find new music. i’ve found a ton of great
+      artists through the people i follow. feel free to follow me, too!{' '}
       <a
         className="u-music-container__link"
         href="https://bandcamp.com/avelinebaudelaire"
         target="_blank"
         rel="noopener noreferrer"
       >
-        here’s a link to my ‘fan’ page
+        here’s a link to my Bandcamp ‘fan’ page
       </a>
       .
     </p>

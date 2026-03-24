@@ -10,8 +10,8 @@ export default function Theme({ getRandomNumber }) {
     setTheme({ roll: num, result: albumTheme[num - 1] });
   };
   return (
-    <div className="album-idea-generator__card">
-      <h2>album story & theme</h2>
+    <section className="album-idea-generator__card">
+      <h2>story & theme</h2>
       <div className="album-idea-generator__content-top">
         <p>(1d{albumTheme?.length})</p>
         <button className="album-idea-generator__btn" onClick={rollTheme}>
@@ -23,6 +23,6 @@ export default function Theme({ getRandomNumber }) {
           {theme.result} ({theme.roll})
         </p>
       )}
-    </div>
+    </section>
   );
 }

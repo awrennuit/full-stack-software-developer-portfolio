@@ -10,8 +10,8 @@ export default function Style({ getRandomNumber }) {
     setStyle({ roll: num, result: styleAesthetic[num - 1] });
   };
   return (
-    <div className="album-idea-generator__card">
-      <h2>album style & aesthetic</h2>
+    <section className="album-idea-generator__card">
+      <h2>style & aesthetic</h2>
       <div className="album-idea-generator__content-top">
         <p>(1d{styleAesthetic?.length})</p>
         <button className="album-idea-generator__btn" onClick={rollStyle}>
@@ -23,6 +23,6 @@ export default function Style({ getRandomNumber }) {
           {style.result} ({style.roll})
         </p>
       )}
-    </div>
+    </section>
   );
 }
