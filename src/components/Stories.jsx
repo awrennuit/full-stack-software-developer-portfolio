@@ -8,7 +8,7 @@ export default function Stories() {
     <>
       <Helmet>
         <title>stories - awren nuit’s software engineering portfolio</title>
-        <link rel="canonical" href="http://www.awrennuit.com/#/stories" />
+        <link rel="canonical" href="https://www.awrennuit.com/stories" />
         <meta
           name="description"
           content="Stories written by awren nuit. Includes poems, short stories, and a mock blog."
@@ -22,7 +22,7 @@ export default function Stories() {
       <main className="main-container stories">
         <h1>Stories</h1>
         <ul>
-          {storyData.map(story => (
+          {storyData.map((story) => (
             <li key={story.id}>
               <Link className="u-link" to={story.route}>
                 <cite>{story.title}</cite>, {story.type} ({story.year})

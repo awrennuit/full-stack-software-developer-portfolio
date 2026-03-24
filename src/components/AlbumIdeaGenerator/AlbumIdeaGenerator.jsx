@@ -18,7 +18,7 @@ export default function AlbumIdeaGenerator() {
         <title>album idea generator</title>
         <link
           rel="canonical"
-          href="http://www.awrennuit.com/#/album-idea-generator"
+          href="https://www.awrennuit.com/album-idea-generator"
         />
         <meta
           name="description"

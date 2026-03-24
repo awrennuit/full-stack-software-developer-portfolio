@@ -15,16 +15,23 @@ export default function DungeonSynth() {
 
   useEffect(() => {
     const hash = location?.hash;
-    const $el = hash && document.getElementById(hash.substr(1));
+    const $el = hash && document.getElementById(hash.slice(1));
 
-    if ($el) $el.scrollIntoView({ behavior: 'smooth' });
+    const prefersReducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)',
+    ).matches;
+
+    if ($el)
+      $el.scrollIntoView({
+        behavior: prefersReducedMotion ? 'auto' : 'smooth',
+      });
   }, [location?.hash]);
 
   return (
     <div className="u-music-container dungeon-synth">
       <Helmet>
         <title>a dungeon synth primer</title>
-        <link rel="canonical" href="http://www.awrennuit.com/#/dungeon-synth" />
+        <link rel="canonical" href="https://www.awrennuit.com/dungeon-synth" />
         <meta
           name="description"
           content="A brief Dungeon Synth primer, including common gear and how to make make the music. Written by Aveline Baudelaire aka Wooden Vessels."
@@ -55,44 +62,32 @@ export default function DungeonSynth() {
         </header>
         <main>
           <section>
-            <a id="intro">
-              <h3>I. a brief introduction</h3>
-            </a>
+            <h3 id="intro">I. a brief introduction</h3>
             <BriefIntroduction />
           </section>
 
           <section>
-            <a id="recs">
-              <h3>II. more recommendations</h3>
-            </a>
+            <h3 id="recs">II. more recommendations</h3>
             <MoreRecommendations />
           </section>
 
           <section>
-            <a id="gear">
-              <h3>III. common gear</h3>
-            </a>
+            <h3 id="gear">III. common gear</h3>
             <CommonGear />
           </section>
 
           <section>
-            <a id="inspiration">
-              <h3>IV. inspiration</h3>
-            </a>
+            <h3 id="inspiration">IV. inspiration</h3>
             <Inspiration />
           </section>
 
           <section>
-            <a id="method">
-              <h3>V. my method</h3>
-            </a>
+            <h3 id="method">V. my method</h3>
             <MyMethod />
           </section>
 
           <section>
-            <a id="thanks">
-              <h3>VI. thank you!</h3>
-            </a>
+            <h3 id="thanks">VI. thank you!</h3>
             <ThankYou />
           </section>
         </main>

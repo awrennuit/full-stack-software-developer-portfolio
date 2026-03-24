@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Sitemap: http://awrennuit.com/sitemap.xml
+Allow: /
+
+Sitemap: https://awrennuit.com/sitemap.xml

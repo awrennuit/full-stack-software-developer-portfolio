@@ -123,7 +123,15 @@ export default function BriefIntroduction() {
         . it also gave rise to what i call ‘bedroom’ artists - untrained or
         semi-trained people who made amateur, under-produced music as a hobby.
         meandering songs, off-kilter melodies, and all sorts of synth-y
-        experimentation. of special note are the periodic{' '}
+        experimentation. of special note are{' '}
+        <a
+          className="u-music-container__link"
+          href="https://bartizanchill.bandcamp.com/music"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Bartizanier’s
+        </a>
         <a
           className="u-music-container__link"
           href="https://dungeonsynth.proboards.com/thread/1085/dungeon-rush-open-challenge"
@@ -131,18 +139,18 @@ export default function BriefIntroduction() {
           rel="noopener noreferrer"
         >
           Dungeon Rushes
-        </a>{' '}
-        that{' '}
+        </a>
+        . the Dungeon Rushes haven’t happened in a while, and this spurred me to
+        host slightly more leisurely challenges called{' '}
         <a
-          className="u-music-container__link"
-          href="https://bartizanchill.bandcamp.com/music"
+          href="docs.google.com/spreadsheets/d/e/2PACX-1vQXfQAVcU1s66KZWv_p9In3TQTM7wQWZAYJM9-D9dwWc1btUFraSr71ngrQGGPbglYQboRVoruUvAN6/pubhtml"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Bartizanier
-        </a>{' '}
-        hosts. anyone can participate in them and they’re a great way to get
-        more involved in the community. i made an{' '}
+          Dungeon Shambles
+        </a>
+        . anyone can participate in them and they’re a great way to get more
+        involved in the community. i made an{' '}
         <Link className="u-music-container__link" to="/idea-generator/album">
           album idea generator
         </Link>{' '}
