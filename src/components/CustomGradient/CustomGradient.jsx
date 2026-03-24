@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../Header';
 import GradientToolbar from './GradientToolbar';
@@ -36,7 +36,7 @@ export default function CustomGradient() {
     }
   }, [colorOne, colorTwo, gradientType, gradientDirection]);
 
-  const selectText = (text) => {
+  const selectText = text => {
     if (document.selection) {
       // for IE
       const range = document.body.createTextRange();

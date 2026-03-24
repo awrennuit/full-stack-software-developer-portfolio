@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,10 +12,13 @@
     <link
       rel="stylesheet"
       media="print"
-      onload="this.onload=null;this.removeAttribute('media');"
+      onload="
+        this.onload = null;
+        this.removeAttribute('media');
+      "
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Bricolage+Grotesque&family=Fondamento&display=swap"
     />
-    <link rel="icon" href="%PUBLIC_URL%/fav.ico" />
+    <link rel="icon" href="/fav.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#323144" />
     <meta name="author" content="awren nuit" />
@@ -23,11 +26,12 @@
       name="google-site-verification"
       content="P3D-phFo5-lTnzM2NMr3o_evY5tf9PL0VYnWmIHDrAM"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/fav.ico" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" href="/fav.ico" />
+    <link rel="manifest" href="/manifest.json" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

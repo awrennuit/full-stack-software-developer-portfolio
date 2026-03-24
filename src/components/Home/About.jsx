@@ -46,7 +46,7 @@ export default function About() {
           I’m always open for a conversation, so feel free to&nbsp;
           <a
             className="u-link about__contact-link"
-            href="mailto:awren.nuit@gmail.com?subject=Let's%20Have%20a%20Conversation"
+            href="mailto:awren.nuit@gmail.com?subject=Let%27s%20Have%20a%20Conversation"
           >
             contact me
           </a>
