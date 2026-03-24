@@ -1,55 +1,56 @@
 export const headerLinks = [
   {
-    url: '/about',
     label: 'About',
+    url: '/about',
   },
   {
-    url: '/projects',
     label: 'Projects',
+    url: '/projects',
   },
   {
     url: '/sandbox',
     label: 'Sandbox',
   },
   {
-    url: null,
     label: 'More',
+    url: null,
     subLinks: [
       {
-        url: '/dungeon-synth',
         label: 'Music',
+        url: '/dungeon-synth',
       },
       {
-        url: '/stories',
         label: 'Stories',
+        url: '/stories',
       },
     ],
   },
   {
-    url: '/contact',
     label: 'Contact',
+    url: '/contact',
   },
 ];
 
 export const musicHeaderLinks = [
   {
-    url: '/dungeon-synth',
     label: 'dungeon synth primer',
+    url: '/dungeon-synth',
   },
   {
-    url: '/dungeon-vault',
     label: 'dungeon vault',
+    url: '/dungeon-vault',
   },
   {
-    url: '/my-music',
     label: 'my music',
+    url: '/my-music',
   },
   {
-    url: '/album-idea-generator',
+    backupUrl: '/idea-generator/song',
     label: 'idea generator',
+    url: '/idea-generator/album',
   },
   {
-    url: '/project-name-generator',
     label: 'project name generator',
+    url: '/project-name-generator',
   },
 ];

@@ -8,7 +8,11 @@ export default function MusicHeader() {
         <ul className="music-header__inner">
           {musicHeaderLinks.map((link, i) => (
             <li key={i}>
-              <NavLink label={link.label} url={link.url} />
+              <NavLink
+                backupUrl={link.backupUrl}
+                label={link.label}
+                url={link.url}
+              />
             </li>
           ))}
         </ul>

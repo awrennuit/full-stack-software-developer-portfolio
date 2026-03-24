@@ -8,7 +8,7 @@ export default function Challenge({ getRandomNumber }) {
 
   const rollChallenge = (i = null) => {
     const num = getRandomNumber(1, special.length);
-    const duplicates = challenge.filter((c) => c.result === special[num - 1]);
+    const duplicates = challenge.filter(c => c.result === special[num - 1]);
     let existingData = [...challenge];
 
     if (duplicates.length > 0) {
@@ -17,14 +17,15 @@ export default function Challenge({ getRandomNumber }) {
       existingData[i] = { roll: num, result: special[num - 1] };
       setChallenge(existingData);
     } else {
-      setChallenge((challenge) => [
+      setChallenge(challenge => [
         ...challenge,
         { roll: num, result: special[num - 1] },
       ]);
     }
   };
+
   return (
-    <div className="album-idea-generator__card">
+    <section className="album-idea-generator__card">
       <h2>special challenges & restrictions</h2>
       <div className="album-idea-generator__content-top">
         <p>(1d{special?.length}, max three)</p>
@@ -71,6 +72,6 @@ export default function Challenge({ getRandomNumber }) {
           ))}
         </ul>
       )}
-    </div>
+    </section>
   );
 }

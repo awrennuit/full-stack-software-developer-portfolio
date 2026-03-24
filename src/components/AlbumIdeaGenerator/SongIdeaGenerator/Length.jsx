@@ -7,28 +7,23 @@ export default function Length({ getRandomNumber }) {
     rollTwo: null,
     rollThree: null,
     rollFour: null,
-    rollFive: null,
-    rollSix: null,
     min: null,
     max: null,
   });
 
   const rollLength = () => {
-    const rollOne = getRandomNumber(1, 20);
-    const rollTwo = getRandomNumber(1, 20);
-    const rollThree = getRandomNumber(1, 20);
-    const sumOne = rollOne + rollTwo + rollThree;
+    const rollOne = getRandomNumber(1, 6);
+    const rollTwo = getRandomNumber(1, 6);
+    const sumOne = (rollOne + rollTwo) / 2;
 
-    let rollFour = getRandomNumber(1, 20);
-    let rollFive = getRandomNumber(1, 20);
-    let rollSix = getRandomNumber(1, 20);
-    let sumTwo = rollFour + rollFive + rollSix;
+    let rollThree = getRandomNumber(1, 6);
+    let rollFour = getRandomNumber(1, 6);
+    let sumTwo = (rollThree + rollFour) / 2;
 
     while (sumOne === sumTwo) {
-      rollFour = getRandomNumber(1, 20);
-      rollFive = getRandomNumber(1, 20);
-      rollSix = getRandomNumber(1, 20);
-      sumTwo = rollFour + rollFive + rollSix;
+      rollThree = getRandomNumber(1, 5);
+      rollFour = getRandomNumber(1, 5);
+      sumTwo = (rollThree + rollFour) / 2;
     }
 
     const isFirstThreeHigher = sumOne > sumTwo ? true : false;
@@ -39,8 +34,6 @@ export default function Length({ getRandomNumber }) {
       rollTwo: rollTwo,
       rollThree: rollThree,
       rollFour: rollFour,
-      rollFive: rollFive,
-      rollSix: rollSix,
       min: isFirstThreeHigher ? sumTwo : sumOne,
       max: isFirstThreeHigher ? sumOne : sumTwo,
     });
@@ -48,26 +41,26 @@ export default function Length({ getRandomNumber }) {
 
   return (
     <section className="album-idea-generator__card">
-      <h2>album length</h2>
+      <h2>song length</h2>
       <div className="album-idea-generator__content-top">
-        <p>(3d20)</p>
+        <p>(2d6 / 2)</p>
         <button className="album-idea-generator__btn" onClick={rollLength}>
           {!length.min ? 'roll' : 'reroll'}
         </button>
       </div>
       {length.min && (
         <p>
-          <strong>{length.min}</strong> minutes to <strong>{length.max}</strong>{' '}
-          minutes (
+          <strong>{length.min}</strong> minute{length.min !== 1 && 's'} to{' '}
+          <strong>{length.max}</strong> minutes (
           {length.isFirstThreeHigher ? (
             <>
-              {length.rollFour} + {length.rollFive} + {length.rollSix} &{' '}
-              {length.rollOne} + {length.rollTwo} + {length.rollThree}
+              {length.rollThree} + {length.rollFour} & {length.rollOne} +{' '}
+              {length.rollTwo}
             </>
           ) : (
             <>
-              {length.rollOne} + {length.rollTwo} + {length.rollThree} &{' '}
-              {length.rollFour} + {length.rollFive} + {length.rollSix}
+              {length.rollOne} + {length.rollTwo} & {length.rollThree} +{' '}
+              {length.rollFour}
             </>
           )}
           )
