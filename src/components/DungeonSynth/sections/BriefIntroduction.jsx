@@ -151,7 +151,7 @@ export default function BriefIntroduction() {
         </a>
         . anyone can participate in them and they’re a great way to get more
         involved in the community. i made an{' '}
-        <Link className="u-music-container__link" to="/album-idea-generator">
+        <Link className="u-music-container__link" to="/idea-generator/album">
           album idea generator
         </Link>{' '}
         that’s heavily inspired by Bartizanier’s Dungeon Rush. it’s a great way

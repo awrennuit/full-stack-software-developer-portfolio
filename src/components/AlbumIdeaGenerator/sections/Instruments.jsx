@@ -19,7 +19,7 @@ export default function Instruments({ getRandomNumber }) {
   };
 
   return (
-    <div className="album-idea-generator__card">
+    <section className="album-idea-generator__card">
       <h2>number of instruments</h2>
       <div className="album-idea-generator__content-top">
         <p>(2d4 + 1)</p>
@@ -33,6 +33,6 @@ export default function Instruments({ getRandomNumber }) {
           {instruments.rollTwo} + 1
         </p>
       )}
-    </div>
+    </section>
   );
 }

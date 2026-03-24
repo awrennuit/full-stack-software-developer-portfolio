@@ -19,7 +19,7 @@ export default function Songs({ getRandomNumber }) {
   };
 
   return (
-    <div className="album-idea-generator__card">
+    <section className="album-idea-generator__card">
       <h2>number of songs</h2>
       <div className="album-idea-generator__content-top">
         <p>(2d6 + 1)</p>
@@ -32,6 +32,6 @@ export default function Songs({ getRandomNumber }) {
           <strong>{songs.total}</strong> = {songs.rollOne} + {songs.rollTwo} + 1
         </p>
       )}
-    </div>
+    </section>
   );
 }

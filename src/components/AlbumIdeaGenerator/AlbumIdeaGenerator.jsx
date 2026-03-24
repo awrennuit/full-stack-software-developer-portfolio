@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet';
-import MusicHeader from '../MusicHeader';
 import Instruments from './sections/Instruments';
 import Songs from './sections/Songs';
 import Length from './sections/Length';
@@ -30,7 +29,6 @@ export default function AlbumIdeaGenerator() {
           content="dungeon synth, fantasy album idea generator, dungeon synth idea generator, fantasy story idea generator, dungeon rush, wooden vessels, aveline baudelaire"
         />
       </Helmet>
-      <MusicHeader />
       <div className="album-idea-generator__inner">
         <header>
           <div className="album-idea-generator__title-container">
@@ -42,13 +40,12 @@ export default function AlbumIdeaGenerator() {
         <main>
           <article>
             <Intro />
-            <div className="album-idea-generator__card">
+            <section className="album-idea-generator__card">
               <h2>time to complete the album</h2>
               <p>
                 <strong>28</strong> days
               </p>
-            </div>
-
+            </section>
             <Instruments getRandomNumber={getRandomNumber} />
             <Songs getRandomNumber={getRandomNumber} />
             <Length getRandomNumber={getRandomNumber} />

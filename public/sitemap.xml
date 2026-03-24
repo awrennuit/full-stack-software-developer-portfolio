@@ -3,10 +3,13 @@
     <loc>https://www.awrennuit.com/</loc>
   </url>
   <url>
-    <loc>https://www.awrennuit.com/about</loc>
+    <loc>https://www.awrennuit.com/a-welcome-funeral/history</loc>
   </url>
   <url>
-    <loc>https://www.awrennuit.com/album-idea-generator</loc>
+    <loc>https://www.awrennuit.com/a-welcome-funeral/a-little-intro</loc>
+  </url>
+  <url>
+    <loc>https://www.awrennuit.com/about</loc>
   </url>
   <url>
     <loc>https://www.awrennuit.com/contact</loc>
@@ -18,10 +21,16 @@
     <loc>https://www.awrennuit.com/dungeon-vault</loc>
   </url>
   <url>
-    <loc>https://www.awrennuit.com/my-music</loc>
+    <loc>https://www.awrennuit.com/gradient-maker</loc>
   </url>
   <url>
-    <loc>https://www.awrennuit.com/sandbox</loc>
+    <loc>https://www.awrennuit.com/idea-generator/album</loc>
+  </url>
+  <url>
+    <loc>https://www.awrennuit.com/idea-generator/song</loc>
+  </url>
+  <url>
+    <loc>https://www.awrennuit.com/my-music</loc>
   </url>
   <url>
     <loc>https://www.awrennuit.com/project-name-generator</loc>
@@ -33,12 +42,6 @@
     <loc>https://www.awrennuit.com/password-generator</loc>
   </url>
   <url>
-    <loc>https://www.awrennuit.com/gradient-maker</loc>
-  </url>
-  <url>
-    <loc>https://www.awrennuit.com/a-welcome-funeral/history</loc>
-  </url>
-  <url>
-    <loc>https://www.awrennuit.com/a-welcome-funeral/a-little-intro</loc>
+    <loc>https://www.awrennuit.com/sandbox</loc>
   </url>
 </urlset>
