@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 .color-picker {
   background-color: $white;
   border: 0.063rem solid $black;

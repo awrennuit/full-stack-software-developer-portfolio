@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 .property-tab {
   position: relative;
   z-index: 0;
@@ -11,7 +13,8 @@
     background: $gray-gradient--lightest;
     border: none;
     border-radius: 1.75rem;
-    box-shadow: -0.125rem -0.125rem 0.25rem 0.063rem $white,
+    box-shadow:
+      -0.125rem -0.125rem 0.25rem 0.063rem $white,
       0.125rem 0.125rem 0.25rem 0.063rem $gray--light;
     box-sizing: border-box;
     color: $gray--darker;
@@ -26,7 +29,8 @@
 
     &:hover,
     &:focus-visible {
-      box-shadow: -0.125rem -0.125rem 0.25rem $white,
+      box-shadow:
+        -0.125rem -0.125rem 0.25rem $white,
         0.125rem 0.125rem 0.25rem $gray--light;
       color: $gray;
 
@@ -37,7 +41,8 @@
     }
 
     &:active {
-      box-shadow: inset -0.125rem -0.063rem 0.125rem $white,
+      box-shadow:
+        inset -0.125rem -0.063rem 0.125rem $white,
         inset 0.125rem 0.125rem 0.125rem $gray--light;
     }
 
@@ -75,7 +80,10 @@
       height: 0.125rem;
       position: absolute;
       top: 1rem;
-      transition: background-color 0.3s, left 0.5s, transform 0.7s;
+      transition:
+        background-color 0.3s,
+        left 0.5s,
+        transform 0.7s;
       width: 1rem;
     }
 
@@ -93,7 +101,8 @@
   &__contents {
     background: $gray-gradient-bottom-right--lightest;
     border-radius: 1rem;
-    box-shadow: inset -0.125rem -0.063rem 0.125rem $white,
+    box-shadow:
+      inset -0.125rem -0.063rem 0.125rem $white,
       inset 0.125rem 0.125rem 0.125rem $gray--light;
     margin-bottom: -2rem;
     max-height: 0;
@@ -109,7 +118,9 @@
     &--open {
       max-height: 19.375rem;
       opacity: 1;
-      transition: all 0.5s, padding 0s;
+      transition:
+        all 0.5s,
+        padding 0s;
       visibility: visible;
     }
   }

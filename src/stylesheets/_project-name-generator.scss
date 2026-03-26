@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 .project-name-generator {
   &__inner {
     align-items: center;
@@ -39,8 +41,11 @@
     background-color: $music-gray--lighter;
     border: 0.5rem double $music-red--dark;
     border-radius: 0.5rem;
-    box-shadow: 0 0 1rem $music-gray--light, 0 0 0.5rem $music-green,
-      inset 0 0 1rem $music-gray--dark, inset 0 0 0.25rem $music-black,
+    box-shadow:
+      0 0 1rem $music-gray--light,
+      0 0 0.5rem $music-green,
+      inset 0 0 1rem $music-gray--dark,
+      inset 0 0 0.25rem $music-black,
       inset 0 0 1rem $music-gray--dark;
     color: $music-red--dark;
     padding: 1rem;

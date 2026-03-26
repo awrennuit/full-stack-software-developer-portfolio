@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 .header {
   background-color: $black--transparentest;
   box-sizing: border-box;

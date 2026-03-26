@@ -36,7 +36,7 @@ const Secret = React.lazy(() => import('./components/Secret'));
 const Stories = React.lazy(() => import('./components/Stories'));
 const Story = React.lazy(() => import('./components/Story'));
 const Swatches = React.lazy(() => import('./components/Swatches'));
-const TimerMain = React.lazy(() => import('./components/Timer/TimerMain'));
+const Timer = React.lazy(() => import('./components/Timer'));
 
 const routes = [
   { path: '/', element: <Landing /> },
@@ -62,7 +62,7 @@ const routes = [
   { path: '/stories', element: <Stories /> },
   { path: '/stories/:slug', element: <Story /> },
   { path: '/swatches', element: <Swatches /> },
-  { path: '/timer', element: <TimerMain /> },
+  { path: '/timer', element: <Timer /> },
 ];
 
 export default routes;

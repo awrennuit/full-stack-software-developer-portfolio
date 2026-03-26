@@ -59,7 +59,8 @@ export const allProjects = [
     altText: 'set timer page',
     appUrl: '/timer',
     codeUrl: 'https://github.com/awrennuit/countdown-timer',
-    description: 'Constructed to gain a better understanding of time',
+    description:
+      'Constructed to gain a better understanding of time and intervals',
     image: 'images/screenshots/timer.webp',
     oneButton: false,
     title: 'Countdown Timer',
