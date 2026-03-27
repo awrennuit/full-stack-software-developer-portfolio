@@ -9,7 +9,6 @@ const AwfPost = React.lazy(
   () => import('./components/AWelcomeFuneral/AwfPost'),
 );
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
-const Sandbox = React.lazy(() => import('./components/Sandbox/Sandbox'));
 const CustomGradient = React.lazy(
   () => import('./components/CustomGradient/CustomGradient'),
 );
@@ -32,13 +31,14 @@ const ProjectNameGenerator = React.lazy(
   () => import('./components/ProjectNameGenerator'),
 );
 const Projects = React.lazy(() => import('./components/Projects/Projects'));
+const Sandbox = React.lazy(() => import('./components/Sandbox/Sandbox'));
 const Secret = React.lazy(() => import('./components/Secret'));
 const Stories = React.lazy(() => import('./components/Stories'));
 const Story = React.lazy(() => import('./components/Story'));
 const Swatches = React.lazy(() => import('./components/Swatches'));
 const Timer = React.lazy(() => import('./components/Timer'));
 
-const routes = [
+export const routes = [
   { path: '/', element: <Landing /> },
   { path: '/about', element: <Home /> },
   { path: '/abstract-art', element: <Abstract /> },
@@ -49,7 +49,6 @@ const routes = [
   { path: '/a-welcome-funeral/history', element: <AwfHistory /> },
   { path: '/a-welcome-funeral/:slug', element: <AwfPost /> },
   { path: '/contact', element: <Contact /> },
-  { path: '/sandbox', element: <Sandbox /> },
   { path: '/dungeon-synth', element: <DungeonSynth /> },
   { path: '/dungeon-vault', element: <DungeonVault /> },
   { path: '/gradient-maker', element: <CustomGradient /> },
@@ -58,11 +57,10 @@ const routes = [
   { path: '/password-generator', element: <PasswordGenerator /> },
   { path: '/project-name-generator', element: <ProjectNameGenerator /> },
   { path: '/projects', element: <Projects /> },
+  { path: '/sandbox', element: <Sandbox /> },
   { path: '/secret', element: <Secret /> },
   { path: '/stories', element: <Stories /> },
   { path: '/stories/:slug', element: <Story /> },
   { path: '/swatches', element: <Swatches /> },
   { path: '/timer', element: <Timer /> },
 ];
-
-export default routes;
