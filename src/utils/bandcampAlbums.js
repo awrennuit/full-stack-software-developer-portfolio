@@ -76,43 +76,37 @@ export const bandcampAlbums = {
       albumId: '3738689127',
       label: 'Live at Grace Center - 2026',
       link: 'https://cavebirdrecords.bandcamp.com/album/live-at-grace-center',
-      linkLabel:
-        'Live at Grace Center by Wooden Vessels',
+      linkLabel: 'Live at Grace Center by Wooden Vessels',
     },
     {
       albumId: '1023187973',
       label: 'The Very Best of Wooden Vessels 2021-2025 - 2025',
       link: 'https://cavebirdrecords.bandcamp.com/album/the-very-best-of-wooden-vessels-2021-2025',
-      linkLabel:
-        'The Very Best of Wooden Vessels 2021-2025 by Wooden Vessels',
+      linkLabel: 'The Very Best of Wooden Vessels 2021-2025 by Wooden Vessels',
     },
     {
       albumId: '3832920755',
       label: 'Dagorby Pomme’s Magickal Emporium - 2025',
       link: 'https://cavebirdrecords.bandcamp.com/album/dagorby-pommes-magickal-emporium',
-      linkLabel:
-        'Dagorby Pomme’s Magickal Emporium by Wooden Vessels',
+      linkLabel: 'Dagorby Pomme’s Magickal Emporium by Wooden Vessels',
     },
     {
       albumId: '487786529',
       label: 'Virtual Dungeon Crawl Set - 2025',
       link: 'https://cavebirdrecords.bandcamp.com/album/virtual-dungeon-crawl-set',
-      linkLabel:
-        'Virtual Dungeon Crawl Set by Wooden Vessels',
+      linkLabel: 'Virtual Dungeon Crawl Set by Wooden Vessels',
     },
     {
       albumId: '3376078526',
       label: 'Aveline’s Synth1 Dungeon Synth Bank (NOT AN ALBUM) - 2025',
       link: 'https://cavebirdrecords.bandcamp.com/album/avelines-synth1-dungeon-synth-bank',
-      linkLabel:
-        'Aveline’s Synth1 Dungeon Synth Bank by Aveline Baudelaire',
+      linkLabel: 'Aveline’s Synth1 Dungeon Synth Bank by Aveline Baudelaire',
     },
     {
       albumId: '870420289',
       label: 'Rise of the Woodland Empire - 2025',
       link: 'https://cavebirdrecords.bandcamp.com/album/rise-of-the-woodland-empire',
-      linkLabel:
-        'Rise of the Woodland Empire by Wooden Vessels',
+      linkLabel: 'Rise of the Woodland Empire by Wooden Vessels',
     },
     {
       albumId: '426352869',
@@ -125,8 +119,7 @@ export const bandcampAlbums = {
       albumId: '2767721795',
       label: 'With Both Feet Upon the Aether - 2025',
       link: 'https://cavebirdrecords.bandcamp.com/album/with-both-feet-upon-the-aether',
-      linkLabel:
-        'With Both Feet Upon the Aether by Wooden Vessels',
+      linkLabel: 'With Both Feet Upon the Aether by Wooden Vessels',
     },
     {
       albumId: '3190851946',
@@ -188,6 +181,14 @@ export const bandcampAlbums = {
 };
 
 export const dungeonVaultAlbums = {
+  amethyst_dagger: {
+    albumId: '2171565932',
+    artist: 'Amethyst Dagger',
+    label: 'The Amethyst Dagger EP / The Judgement of the Moon - 2021',
+    link: 'https://gulikrecords.bandcamp.com/album/the-amethyst-dagger-ep-the-judgement-of-the-moon-glk-053',
+    linkLabel:
+      'The Amethyst Dagger EP / The Judgement of the Moon by Amethyst Dagger',
+  },
   'an_old_witch’s_hat': {
     albumId: '4081667564',
     artist: 'An Old Witch’s Hat',
@@ -210,26 +211,12 @@ export const dungeonVaultAlbums = {
     link: 'https://ancientinvocations.bandcamp.com/album/solitude-in-a-starry-sky',
     linkLabel: 'Solitude in a Starry Sky by Ancient Invocations',
   },
-  anser: {
-    albumId: '3363363148',
-    artist: 'Anser',
-    label: 'Apostate - 2023',
-    link: 'https://ansersynth.bandcamp.com/album/apostate',
-    linkLabel: 'Apostate by Anser',
-  },
   archmast: {
     albumId: '3800077581',
     artist: 'Archmast',
     label: 'As the Wind Carries Us - 2023',
     link: 'https://archmast.bandcamp.com/album/as-the-wind-carries-us',
     linkLabel: 'As the Wind Carries Us by Archmast',
-  },
-  arvondrakh: {
-    albumId: '110306453',
-    artist: 'Arvondrakh',
-    label: 'Arvondrakh I - 2023',
-    link: 'https://arvondrakh.bandcamp.com/album/arvondrakh-i',
-    linkLabel: 'Arvondrakh I by Arvondrakh',
   },
   atlantean_sword: {
     albumId: '3391845468',
@@ -239,13 +226,6 @@ export const dungeonVaultAlbums = {
     linkLabel:
       'Atlantean Sword - Cimmerian Solitude (Demo) MMXXIII by Atlantean Sword',
   },
-  atrium_of_time: {
-    albumId: '421868206',
-    artist: 'Atrium of Time',
-    label: 'Atrium of Time - 2023',
-    link: 'https://atriumoftime.bandcamp.com/album/atrium-of-time',
-    linkLabel: 'Atrium of Time by Atrium of Time',
-  },
   bakt: {
     albumId: '1901491086',
     artist: 'Bakt',
@@ -254,11 +234,32 @@ export const dungeonVaultAlbums = {
     linkLabel: 'Cores de Arquea by Bakt',
   },
   bartizan_chill: {
-    albumId: '4252540934',
+    albumId: '4031759563',
     artist: 'Bartizan Chill',
-    label: 'Live at Sailors Arms - 2024',
-    link: 'https://bartizanchill.bandcamp.com/album/live-at-sailors-arms',
-    linkLabel: 'Live At Sailors Arms by Bartizan Chill',
+    label: 'I Was Cleansed At Aquae Sulis - 2026',
+    link: 'https://bartizanchill.bandcamp.com/album/i-was-cleansed-at-aquae-sulis',
+    linkLabel: 'I Was Cleansed At Aquae Sulis by Bartizan Chill',
+  },
+  brave_knight: {
+    albumId: '870502637',
+    artist: 'Brave Knight',
+    label: 'The Adventures of Percival and Montague - 2022',
+    link: 'https://braveknight.bandcamp.com/album/the-adventures-of-percival-and-montague',
+    linkLabel: 'The Adventures of Percival and Montague by Brave Knight',
+  },
+  candle_void: {
+    albumId: '1070560441',
+    artist: 'Candle Void',
+    label: 'Candle Void - 2025',
+    link: 'https://candlevoid.bandcamp.com/album/candle-void',
+    linkLabel: 'Candle Void by Candle Void',
+  },
+  castle_waters: {
+    albumId: '890223950',
+    artist: 'Castle Waters',
+    label: 'Ethereal Elegance - 2025',
+    link: 'https://theastralrealms.bandcamp.com/album/ethereal-elegance',
+    linkLabel: 'Ethereal Elegance by Castle Waters',
   },
   chanterelle: {
     albumId: '3220478371',
@@ -267,12 +268,12 @@ export const dungeonVaultAlbums = {
     link: 'https://chanterelle.bandcamp.com/album/tales-from-the-forest-floor',
     linkLabel: 'Tales from the Forest Floor by Chanterelle',
   },
-  deionarra: {
-    albumId: '3494547514',
-    artist: 'Deionarra',
-    label: 'The Suicide God - 2023',
-    link: 'https://deionarra.bandcamp.com/album/the-suicide-god',
-    linkLabel: 'The Suicide God by Deionarra',
+  chestnut_brown: {
+    albumId: '366462984',
+    artist: 'Chestnut Brown',
+    label: 'Sequoia - 2022',
+    link: 'Sequoia',
+    linkLabel: 'Sequoia by Chestnut Brown',
   },
   depressive_silence: {
     albumId: '2099193775',
@@ -287,6 +288,13 @@ export const dungeonVaultAlbums = {
     label: 'Ysopet 1er - 2021',
     link: 'https://descort.bandcamp.com/album/ysopet-1er',
     linkLabel: 'Ysopet 1er by Descort',
+  },
+  desolation_plains: {
+    albumId: '4130170394',
+    artist: 'Desolation Plains',
+    label: 'Celestial Sorcery - 2026',
+    link: 'https://desolationplains.bandcamp.com/album/celestial-sorcery',
+    linkLabel: 'Celestial Sorcery by Desolation Plains',
   },
   desolazione_rurale: {
     albumId: '2164699977',
@@ -316,12 +324,12 @@ export const dungeonVaultAlbums = {
     link: 'https://windkeytapes.bandcamp.com/album/key-xiv-enchantment-serenity',
     linkLabel: 'Key XIV: Enchantment &amp; Serenity by Dusklight',
   },
-  dust_seeker: {
-    albumId: '1950139173',
-    artist: 'Dust Seeker',
-    label: 'The Golden Compass - 2019',
-    link: 'https://dustseeker.bandcamp.com/album/the-golden-compass',
-    linkLabel: 'The Golden Compass by Dust Seeker',
+  emglev: {
+    albumId: '1833799015',
+    artist: 'Emglev',
+    label: 'Dor An Tenvalijenn - 2022 (demo from 1994)',
+    link: 'https://ancientmeadow.bandcamp.com/album/dor-an-tenvalijenn',
+    linkLabel: 'Dor An Tenvalijenn by Emglev',
   },
   ephemerus: {
     albumId: '2781382904',
@@ -336,6 +344,13 @@ export const dungeonVaultAlbums = {
     label: 'Another World Another Time - 2013',
     link: 'https://erang.bandcamp.com/album/another-world-another-time',
     linkLabel: 'Another World Another Time by Erang',
+  },
+  erevos: {
+    albumId: '2338764097',
+    artist: 'Erevos',
+    label: 'My Black Desires - 1994',
+    link: 'https://erevos.bandcamp.com/album/my-black-desires-promo-1994',
+    linkLabel: 'My Black Desires by Erevos',
   },
   erythrite_throne: {
     albumId: '1905769229',
@@ -387,12 +402,26 @@ export const dungeonVaultAlbums = {
     link: 'https://forlorn-ds.bandcamp.com/album/forlorn',
     linkLabel: 'Forlorn by Forlorn',
   },
+  frogknight: {
+    albumId: '586575843',
+    artist: 'Frogknight',
+    label: 'Lothlórien - 2024',
+    link: 'https://frogknight.bandcamp.com/album/lothl-rien',
+    linkLabel: 'Lothlórien by Frogknight',
+  },
   frostgard: {
     albumId: '2721127097',
     artist: 'Frostgard',
     label: 'Valaquenta I - 2021',
     link: 'https://frostgard-dungeonsynth.bandcamp.com/album/valaquenta-i',
     linkLabel: 'Valaquenta I by Frostgard',
+  },
+  gargoylium: {
+    albumId: '354537695',
+    artist: 'Gargoylium',
+    label: 'Mon Royaume - 2018',
+    link: 'https://gargoylium.bandcamp.com/album/mon-royaume',
+    linkLabel: 'Mon Royaume by Gargoylium',
   },
   gelure: {
     albumId: '255396186',
@@ -450,12 +479,19 @@ export const dungeonVaultAlbums = {
     link: 'https://ithildintapeproduction.bandcamp.com/album/within-the-age-of-savagery',
     linkLabel: 'Within The Age Of Savagery by Hyperborean Might',
   },
-  koryos: {
-    albumId: '416583136',
-    artist: 'Koryos',
-    label: 'Realm of the White Tiger - 2023',
-    link: 'https://ageofkoryos.bandcamp.com/album/realm-of-the-white-tiger',
-    linkLabel: 'Realm of the White Tiger by Kóryos',
+  inlustris: {
+    albumId: '1521929972',
+    artist: 'Inlustris',
+    label: 'Rosa Das Rosas - 2022',
+    link: 'https://inlustris.bandcamp.com/album/rosa-das-rosas',
+    linkLabel: 'Rosa Das Rosas by Inlustris',
+  },
+  jenn_taiga: {
+    albumId: '2120946176',
+    artist: 'Jenn Taiga',
+    label: 'Sanguine Descent - 2025',
+    link: 'https://jenntaiga.bandcamp.com/album/sanguine-descent',
+    linkLabel: 'Sanguine Descent by Jenn Taiga',
   },
   kyvon: {
     albumId: '2426135048',
@@ -465,11 +501,18 @@ export const dungeonVaultAlbums = {
     linkLabel: 'Courtier by Kyvon',
   },
   lone_sentinel: {
-    albumId: '1976600274',
+    albumId: '2969878331',
     artist: 'Lone Sentinel',
-    label: 'Adventure Calls Thy Name - 2023',
-    link: 'https://hammerandflailrecordings.bandcamp.com/album/adventure-calls-thy-name',
-    linkLabel: 'Adventure Calls Thy Name by Lone Sentinel',
+    label: 'Vampyric Obsolescence - 2025',
+    link: 'https://hammerandflailrecordings.bandcamp.com/album/vampyric-obsolescence',
+    linkLabel: 'Vampyric Obsolescence by Lone Sentinel',
+  },
+  lore_arborea: {
+    albumId: '1065944075',
+    artist: 'Lore Arborea',
+    label: 'Rivers - 2026',
+    link: 'https://lorearborea.bandcamp.com/album/rivers',
+    linkLabel: 'Rivers by Lore Arborea',
   },
   the_loreseeker: {
     albumId: '2815154567',
@@ -478,20 +521,6 @@ export const dungeonVaultAlbums = {
     link: 'https://theloreseeker.bandcamp.com/album/where-the-moonlight-herb-grows',
     linkLabel: 'Where the Moonlight Herb Grows by The Loreseeker',
   },
-  losgann: {
-    albumId: '3442329119',
-    artist: 'Losgann',
-    label: 'Lakespell - 2021',
-    link: 'https://losgann.bandcamp.com/album/lakespell',
-    linkLabel: 'Lakespell by Losgann',
-  },
-  lost_woods: {
-    albumId: '4107200645',
-    artist: 'Lost Woods',
-    label: 'Abandoned - 2020',
-    link: 'https://thelostwoods.bandcamp.com/album/abandoned',
-    linkLabel: 'Abandoned by Lost Woods',
-  },
   lugubrious_chant: {
     albumId: '167600791',
     artist: 'Lugubrious Chant',
@@ -499,26 +528,19 @@ export const dungeonVaultAlbums = {
     link: 'https://lugubriouschant.bandcamp.com/album/macabre-aurae',
     linkLabel: 'Macabre Aurae by Lugubrious Chant',
   },
+  lunar_gate: {
+    albumId: '501573589',
+    artist: 'Lunar Gate',
+    label: 'A Secret Well Kept - 1996',
+    link: 'https://irish-metal.bandcamp.com/album/lunar-gate-a-secret-well-kept-demo-1996',
+    linkLabel: 'A Secret Well Kept by Lunar Gate',
+  },
   lunar_womb: {
     albumId: '1930718337',
     artist: 'Lunar Womb',
     label: 'The Sleeping Green - 1999',
     link: 'https://worldoftrollhorn.bandcamp.com/album/the-sleeping-green',
     linkLabel: 'The Sleeping Green by Lunar Womb',
-  },
-  mark_ellery_griffiths: {
-    albumId: '2816429900',
-    artist: 'Mark Ellery Griffiths',
-    label: 'K2 - 1987',
-    link: 'https://markgriffiths.bandcamp.com/album/k2-1987',
-    linkLabel: 'K2 by Mark Ellery Griffiths',
-  },
-  maximum_mana: {
-    albumId: '3847176149',
-    artist: 'Maximum Mana',
-    label: 'Live at the Black Bridge - 2024',
-    link: 'https://maximummana.bandcamp.com/album/live-at-the-black-bridge',
-    linkLabel: 'Live at the Black Bridge by Maximum Mana',
   },
   moonkeeper: {
     albumId: '3865733876',
@@ -541,20 +563,6 @@ export const dungeonVaultAlbums = {
     link: 'https://mordiforddragon.bandcamp.com/album/the-tale-of-the-mordiford-dragon-part-i',
     linkLabel: 'The Tale of the Mordiford Dragon Part I by Mordiford Dragon',
   },
-  morke_og_lys: {
-    albumId: '329813403',
-    artist: 'Morke Og Lys',
-    label: 'Lethal Sphere - 2022',
-    link: 'https://morkeoglys.bandcamp.com/album/lethal-sphere',
-    linkLabel: 'Lethal Sphere by 𝔐ø𝔯𝔨𝔢 𝔒𝔤 𝔏𝔶𝔰',
-  },
-  morrowsworn: {
-    albumId: '1900121955',
-    artist: 'Morrowsworn',
-    label: 'Where Crowns Are Forged Of Stars - 2021',
-    link: 'https://sijmusicart.bandcamp.com/album/where-crowns-are-forged-of-stars',
-    linkLabel: 'Where Crowns Are Forged Of Stars by Morrowsworn',
-  },
   nan_morlith: {
     albumId: '2989012696',
     artist: 'Nan Morlith',
@@ -566,8 +574,15 @@ export const dungeonVaultAlbums = {
     albumId: '2433808251',
     artist: 'Nest',
     label: 'Hidden Stream - 2001',
-    link: 'ttps://nestfin.bandcamp.com/album/hidden-stream',
+    link: 'https://nestfin.bandcamp.com/album/hidden-stream',
     linkLabel: 'Hidden Stream by Nest',
+  },
+  oublieth: {
+    albumId: '471073603',
+    artist: 'Oublieth',
+    label: 'Uren Vell - 2024',
+    link: 'https://oublieth.bandcamp.com/album/uren-vell',
+    linkLabel: 'Uren Vell by Oublieth',
   },
   porcelain_sword: {
     albumId: '2983422098',
@@ -575,13 +590,6 @@ export const dungeonVaultAlbums = {
     label: 'Porcelain Sword - 2023',
     link: 'https://porcelainsword.bandcamp.com/album/porcelain-sword',
     linkLabel: 'Porcelain Sword by Porcelain Sword',
-  },
-  pumpkin_golem: {
-    albumId: '1851916512',
-    artist: 'Pumpkin Golem',
-    label: 'Rise of the Pumpkin Golem - 2024',
-    link: 'https://blindsorceress.bandcamp.com/album/rise-of-the-pumpkin-golem-ep',
-    linkLabel: 'Rise of the Pumpkin Golem by Pumpkin Golem',
   },
   refusa: {
     albumId: '3025787786',
@@ -598,11 +606,11 @@ export const dungeonVaultAlbums = {
     linkLabel: 'Brave sir Robin by Rog',
   },
   secret_stairways: {
-    albumId: '3819909238',
+    albumId: '225886347',
     artist: 'Secret Stairways',
-    label: 'Enchantment of the Ring - 1997',
-    link: 'https://secretstairways.bandcamp.com/album/enchantment-of-the-ring',
-    linkLabel: 'Enchantment of the Ring by Secret Stairways',
+    label: 'Turning Point - 1999',
+    link: 'https://secretstairways.bandcamp.com/album/turning-point',
+    linkLabel: 'Turning Point by Secret Stairways',
   },
   sequestered_keep: {
     albumId: '2116089096',
@@ -618,26 +626,19 @@ export const dungeonVaultAlbums = {
     link: 'https://silentgardenmusic.bandcamp.com/album/demo-ii',
     linkLabel: 'Demo II by Silent Garden',
   },
-  skhemty: {
-    albumId: '2525414357',
-    artist: 'Skhemty',
-    label: 'Sunrise on the Old Kingdom - 2022',
-    link: 'https://skhemty.bandcamp.com/album/sunrise-on-the-old-kingdom',
-    linkLabel: 'Sunrise on the Old Kingdom by Skhemty',
+  soltri: {
+    albumId: '2067937489',
+    artist: 'Soltri',
+    label: 'The Rising of the King Arthur - 2017',
+    link: 'https://soltri.bandcamp.com/album/the-rising-of-the-king-arthur',
+    linkLabel: 'The Rising of the King Arthur by Soltri',
   },
-  sombre_arcane: {
-    albumId: '1137168445',
-    artist: 'Sombre Arcane',
-    label: 'Realmsong - 2021',
-    link: 'https://sombrearcane.bandcamp.com/album/realmson',
-    linkLabel: 'Realmsong by Sombre Arcane',
-  },
-  sophia: {
-    albumId: '309704240',
-    artist: 'Sophia',
-    label: 'As We Weep at the Altar of Mourning - 2020',
-    link: 'https://serpentsswordrecords.bandcamp.com/album/as-we-weep-at-the-altar-of-mourning',
-    linkLabel: 'As We Weep at the Altar of Mourning by Sophia',
+  sorrowmoon: {
+    albumId: '159520955',
+    artist: 'Sorrowmoon',
+    label: 'Sorrowmoon - 2024',
+    link: 'https://sorrowmoon.bandcamp.com/album/sorrowmoon',
+    linkLabel: 'Sorrowmoon by Sorrowmoon',
   },
   sourcerior: {
     albumId: '3365241793',
@@ -667,6 +668,13 @@ export const dungeonVaultAlbums = {
     link: 'https://spife-dot-mp4.bandcamp.com/album/the-fulfillment-of-the-scapen',
     linkLabel: 'The Fulfillment of The ’Scapen by Spife',
   },
+  swordcerer: {
+    albumId: '2593179938',
+    artist: 'Swordcerer',
+    label: 'A September Night’s Dream by Swordcerer - 2025',
+    link: 'https://swordcerer.bandcamp.com/album/a-september-nights-dream',
+    linkLabel: 'A September Night’s Dream by Swordcerer by Swordcerer',
+  },
   sylfvr: {
     albumId: '3286080536',
     artist: 'Sylfvr',
@@ -681,12 +689,12 @@ export const dungeonVaultAlbums = {
     link: 'https://sylvanechoes.bandcamp.com/album/i',
     linkLabel: 'I by Sylvan Echoes',
   },
-  tales_under_the_oak: {
-    albumId: '1739046790',
-    artist: 'Tales Under The Oak',
-    label: 'The Toad Alchemy - 2023',
-    link: 'https://talesundertheoak.bandcamp.com/album/the-toad-alchemy',
-    linkLabel: 'The Toad Alchemy by Tales Under The Oak',
+  thangorodrim: {
+    albumId: '586827447',
+    artist: 'Thangorodrim',
+    label: 'Akallabêth - 2018',
+    link: 'https://thangorodrimsynth.bandcamp.com/album/akallab-th-ep',
+    linkLabel: 'Akallabêth by Thangorodrim',
   },
   that_demon_the_sun: {
     albumId: '4250056751',
@@ -695,12 +703,19 @@ export const dungeonVaultAlbums = {
     link: 'https://hadeanhollerrecordings.bandcamp.com/album/ghosted',
     linkLabel: 'Ghosted by That Demon the Sun',
   },
+  til_det_bergens_skyggene: {
+    albumId: '3293959707',
+    artist: 'Til Det Bergens Skyggene',
+    label: 'Til Det Bergens Skyggene - 2011',
+    link: 'https://voldsomtapes.bandcamp.com/album/til-det-bergens-skyggene',
+    linkLabel: 'Til Det Bergens Skyggene by Til Det Bergens Skyggene',
+  },
   tree_gardener: {
-    albumId: '1645476470',
+    albumId: '1982507984',
     artist: 'Tree Gardener',
-    label: 'Midwinter Memories - 2023',
-    link: 'https://treegardener.bandcamp.com/album/midwinter-memories',
-    linkLabel: 'Midwinter Memories by Tree Gardener',
+    label: 'A Pilgrim in the Frozen Wood - 2026',
+    link: 'ttps://treegardener.bandcamp.com/album/a-pilgrim-in-the-frozen-wood',
+    linkLabel: 'A Pilgrim in the Frozen Wood by Tree Gardener',
   },
   ugrino: {
     albumId: '3898342440',
@@ -744,6 +759,13 @@ export const dungeonVaultAlbums = {
     link: 'https://valeminstrel.bandcamp.com/album/warden-of-the-vale',
     linkLabel: 'Warden Of The Vale by Vale Minstrel',
   },
+  valor: {
+    albumId: '724233733',
+    artist: 'Valor',
+    label: 'La Lune Noire - 1996',
+    link: 'https://darkageproductions.bandcamp.com/album/la-lune-noire',
+    linkLabel: 'La Lune Noire by Valor',
+  },
   vanhellig: {
     albumId: '3518011199',
     artist: 'Vanhellig',
@@ -764,13 +786,6 @@ export const dungeonVaultAlbums = {
     label: 'Mourningwraith - 2022',
     link: 'https://pestilent-one.bandcamp.com/album/mourningwraith',
     linkLabel: 'Mourningwraith by Vermin Halls',
-  },
-  vetraheimr: {
-    albumId: '1089464393',
-    artist: 'Vetraheimr',
-    label: 'The Renegade - 2019',
-    link: 'https://vetraheimr.bandcamp.com/album/the-renegade',
-    linkLabel: 'The Renegade by Vetraheimr',
   },
   villein: {
     albumId: '413853285',
@@ -804,7 +819,14 @@ export const dungeonVaultAlbums = {
     albumId: '3680094735',
     artist: 'Wooden Lungs',
     label: 'Quiet Places - 2023',
-    link: 'https://woodenlungs.bandcamp.com/album/quiet-places',
+    link: 'https://ageofbarbarity.bandcamp.com/album/quiet-places',
     linkLabel: 'Quiet Places by Wooden Lungs',
+  },
+  zireael: {
+    albumId: '4088138630',
+    artist: 'Zireael',
+    label: 'Upon Her Blade... - 2025',
+    link: 'https://arcanechapel.bandcamp.com/album/upon-her-blade',
+    linkLabel: 'Upon Her Blade... by Zireael',
   },
 };
