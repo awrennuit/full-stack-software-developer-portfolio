@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import routes from './routes';
+import { routes } from './routes';
 import Loading from './components/Loading';
 import ScrollToTop from './components/ScrollToTop';
 
