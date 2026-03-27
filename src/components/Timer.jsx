@@ -25,6 +25,7 @@ export default function Timer() {
         let { days, hours, minutes, seconds } = prev;
 
         seconds--;
+
         if (seconds < 0) {
           seconds = 59;
           minutes--;
@@ -106,9 +107,9 @@ export default function Timer() {
   };
 
   return (
-    <div className={`timer ${isLightMode ? 'timer--light' : ''}`}>
+    <main className={`timer ${isLightMode ? 'timer--light' : ''}`}>
       <Header />
-      <main className="timer__inner">
+      <article className="timer__inner">
         <button
           className="timer__theme-btn"
           onClick={() => setIsLightMode(!isLightMode)}
@@ -145,7 +146,7 @@ export default function Timer() {
             </form>
           </>
         )}
-      </main>
-    </div>
+      </article>
+    </main>
   );
 }
