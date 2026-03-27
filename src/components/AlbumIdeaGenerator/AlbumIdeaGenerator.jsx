@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Instruments from './sections/Instruments';
 import Songs from './sections/Songs';
 import Length from './sections/Length';

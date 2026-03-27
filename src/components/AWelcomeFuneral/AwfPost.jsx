@@ -1,5 +1,5 @@
 import { awfPosts } from '../../utils/aWelcomeFuneral';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import AwfHeader from './AwfHeader';

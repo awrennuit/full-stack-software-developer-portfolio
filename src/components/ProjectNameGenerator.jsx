@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { firstWord, secondWord } from '../utils/dungeonSynthNameList';
 import MusicHeader from './MusicHeader';
 

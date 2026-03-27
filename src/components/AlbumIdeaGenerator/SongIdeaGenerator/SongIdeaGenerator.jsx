@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Feeling from './Feeling';
 import Intro from './Intro';
 import KeyAndMode from './KeyAndMode';

@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import routes from './routes';
 import Loading from './components/Loading';
 import ScrollToTop from './components/ScrollToTop';
@@ -11,7 +11,7 @@ export default function App() {
       <Helmet>
         <meta name="robots" content="index, follow" />
       </Helmet>
-      <Router>
+      <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
         <ScrollToTop />
         <Suspense fallback={<Loading />}>
           <Routes>
