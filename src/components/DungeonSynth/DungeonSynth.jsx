@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link, useLocation } from 'react-router-dom';
 import AudioPlayer from './AudioPlayer';
 import BriefIntroduction from './sections/BriefIntroduction';

@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import EmbeddedMusic from '../EmbeddedMusic';
 import MusicHeader from '../MusicHeader';
 import SummaryAwren from './SummaryAwren';

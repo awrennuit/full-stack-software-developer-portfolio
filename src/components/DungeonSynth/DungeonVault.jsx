@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { dungeonVaultAlbums } from '../../utils/bandcampAlbums';
 import { dungeonVaultArtists } from '../../utils/dungeonVaultArtists';
