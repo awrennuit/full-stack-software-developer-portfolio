@@ -87,7 +87,8 @@ export const allProjects = [
   {
     altText: 'pixel art main page',
     appUrl: '/abstract-art',
-    codeUrl: 'https://github.com/awrennuit/abstract-pixel-art',
+    codeUrl:
+      'https://github.com/awrennuit/full-stack-software-developer-portfolio/blob/main/src/components/Abstract.jsx',
     description: 'Fusing my love for both experimental art and technology',
     image: 'images/screenshots/art.webp',
     oneButton: false,

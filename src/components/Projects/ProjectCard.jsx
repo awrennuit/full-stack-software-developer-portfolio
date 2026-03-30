@@ -12,7 +12,7 @@ export default function ProjectCard({
 }) {
   return (
     <div className="project-card" tabIndex={0}>
-      <img src={image} alt={altText} />
+      <img src={image} alt={altText} loading="lazy" />
       <div className="project-card__overlay">
         <h2>{title}</h2>
         <p>{description}</p>
