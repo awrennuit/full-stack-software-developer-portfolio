@@ -26,6 +26,7 @@ export default defineConfig({
             'react-router-dom',
             'react-helmet-async',
           ],
+          common: ['./src/components/Header'],
         },
       },
     },
