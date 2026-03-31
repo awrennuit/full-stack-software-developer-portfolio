@@ -18,8 +18,6 @@ export default function App() {
             {routes.map(({ path, element }) => (
               <Route key={path} path={path} element={element} />
             ))}
-            {/* TODO: make 404 page */}
-            <Route path="*" element={<div>Page not found</div>} />
           </Routes>
         </Suspense>
       </Router>
