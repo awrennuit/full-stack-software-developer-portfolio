@@ -5,11 +5,11 @@ import Intro from './Intro';
 import KeyAndMode from './KeyAndMode';
 import Length from './Length';
 import NumInstruments from './NumInstruments';
-import Style from '../sections/Style';
+import Structure from './Structure';
+import Style from '../AlbumIdeaGenerator/Style';
 import Tempo from './Tempo';
 import TimeSignature from './TimeSignature';
 import TypeInstruments from './TypeInstruments';
-import Structure from './Structure';
 
 export default function SongIdeaGenerator() {
   const [numInstruments, setNumInstruments] = useState({

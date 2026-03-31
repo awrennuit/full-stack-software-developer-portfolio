@@ -20,7 +20,7 @@ const DungeonVault = React.lazy(
 );
 const Home = React.lazy(() => import('./components/Home/Home'));
 const IdeaGenerator = React.lazy(
-  () => import('./components/AlbumIdeaGenerator/IdeaGenerator'),
+  () => import('./components/IdeaGenerator/IdeaGenerator'),
 );
 const Landing = React.lazy(() => import('./components/Landing'));
 const MyMusic = React.lazy(() => import('./components/MyMusic/MyMusic'));
