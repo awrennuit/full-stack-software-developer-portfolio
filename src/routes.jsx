@@ -44,7 +44,7 @@ export const routes = [
   { path: '/about', element: <Home /> },
   { path: '/abstract-art', element: <Abstract /> },
   {
-    path: '/album-idea-generator',
+    path: '/album-idea-generator/',
     element: <Navigate to="/idea-generator/album" replace />,
   },
   { path: '/a-welcome-funeral/history', element: <AwfHistory /> },
@@ -55,7 +55,7 @@ export const routes = [
   { path: '/gradient-maker', element: <CustomGradient /> },
   { path: '/idea-generator/:slug', element: <IdeaGenerator /> },
   {
-    path: '/idea-generator',
+    path: '/idea-generator/',
     element: <Navigate to="/idea-generator/album" replace />,
   },
   { path: '/my-music', element: <MyMusic /> },
