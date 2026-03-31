@@ -24,6 +24,7 @@ const IdeaGenerator = React.lazy(
 );
 const Landing = React.lazy(() => import('./components/Landing'));
 const MyMusic = React.lazy(() => import('./components/MyMusic/MyMusic'));
+const NotFound = React.lazy(() => import('./components/NotFound'));
 const PasswordGenerator = React.lazy(
   () => import('./components/PasswordGenerator'),
 );
@@ -53,6 +54,10 @@ export const routes = [
   { path: '/dungeon-vault', element: <DungeonVault /> },
   { path: '/gradient-maker', element: <CustomGradient /> },
   { path: '/idea-generator/:slug', element: <IdeaGenerator /> },
+  {
+    path: '/idea-generator',
+    element: <Navigate to="/idea-generator/album" replace />,
+  },
   { path: '/my-music', element: <MyMusic /> },
   { path: '/password-generator', element: <PasswordGenerator /> },
   { path: '/project-name-generator', element: <ProjectNameGenerator /> },
@@ -63,4 +68,5 @@ export const routes = [
   { path: '/stories/:slug', element: <Story /> },
   { path: '/swatches', element: <Swatches /> },
   { path: '/timer', element: <Timer /> },
+  { path: '*', element: <NotFound /> },
 ];
