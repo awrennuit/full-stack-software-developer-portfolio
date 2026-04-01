@@ -13,4 +13,22 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react', 'react-dom'],
   },
+  build: {
+    target: 'esnext',
+    minify: 'esbuild',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: [
+            'react',
+            'react-dom',
+            'react-router-dom',
+            'react-helmet-async',
+          ],
+          common: ['./src/components/Header'],
+        },
+      },
+    },
+  },
 });

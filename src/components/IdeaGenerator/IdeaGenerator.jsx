@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import MusicHeader from '../MusicHeader';
-import AlbumIdeaGenerator from '../AlbumIdeaGenerator/AlbumIdeaGenerator';
+import AlbumIdeaGenerator from './AlbumIdeaGenerator/AlbumIdeaGenerator';
 import SongIdeaGenerator from './SongIdeaGenerator/SongIdeaGenerator';
 
 export default function IdeaGenerator() {

@@ -1,5 +1,5 @@
 import { contactData } from '../../utils/contactData';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import ContactInfo from './ContactInfo';
 import Footer from '../Footer';
 import Header from '../Header';

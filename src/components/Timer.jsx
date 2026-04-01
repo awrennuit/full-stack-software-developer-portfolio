@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { timerInputs } from '../utils/timerInputs';
 import Header from './Header';
 
 export default function Timer() {
@@ -24,6 +25,7 @@ export default function Timer() {
         let { days, hours, minutes, seconds } = prev;
 
         seconds--;
+
         if (seconds < 0) {
           seconds = 59;
           minutes--;
@@ -105,9 +107,9 @@ export default function Timer() {
   };
 
   return (
-    <div className={`timer ${isLightMode ? 'timer--light' : ''}`}>
+    <main className={`timer ${isLightMode ? 'timer--light' : ''}`}>
       <Header />
-      <main className="timer__inner">
+      <article className="timer__inner">
         <button
           className="timer__theme-btn"
           onClick={() => setIsLightMode(!isLightMode)}
@@ -128,48 +130,23 @@ export default function Timer() {
           <>
             <form name="timer-form" onSubmit={handleSubmit}>
               <div className="timer__inputs">
-                <label>
-                  Days
-                  <input
-                    placeholder="99"
-                    type="number"
-                    value={time.days}
-                    onChange={e => handleChange(e, 'days', 99)}
-                  />
-                </label>
-                <label>
-                  Hours
-                  <input
-                    placeholder="23"
-                    type="number"
-                    value={time.hours}
-                    onChange={e => handleChange(e, 'hours', 23)}
-                  />
-                </label>
-                <label>
-                  Minutes
-                  <input
-                    placeholder="59"
-                    type="number"
-                    value={time.minutes}
-                    onChange={e => handleChange(e, 'minutes', 59)}
-                  />
-                </label>
-                <label>
-                  Seconds
-                  <input
-                    placeholder="59"
-                    type="number"
-                    value={time.seconds}
-                    onChange={e => handleChange(e, 'seconds', 59)}
-                  />
-                </label>
+                {timerInputs.map(i => (
+                  <label key={i.key}>
+                    {i.label}
+                    <input
+                      placeholder={i.placeholder}
+                      type="number"
+                      value={time[i.key]}
+                      onChange={e => handleChange(e, i.key, i.max)}
+                    />
+                  </label>
+                ))}
               </div>
               <button type="submit">Start</button>
             </form>
           </>
         )}
-      </main>
-    </div>
+      </article>
+    </main>
   );
 }

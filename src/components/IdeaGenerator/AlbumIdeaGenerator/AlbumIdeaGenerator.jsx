@@ -1,11 +1,11 @@
-import { Helmet } from 'react-helmet';
-import Instruments from './sections/Instruments';
-import Songs from './sections/Songs';
-import Length from './sections/Length';
-import Style from './sections/Style';
-import Theme from './sections/Theme';
-import Challenge from './sections/Challenge';
-import Intro from './sections/Intro';
+import { Helmet } from 'react-helmet-async';
+import Challenge from './Challenge';
+import Instruments from './Instruments';
+import Intro from './Intro';
+import Length from './Length';
+import Songs from './Songs';
+import Style from './Style';
+import Theme from './Theme';
 
 export default function AlbumIdeaGenerator() {
   const getRandomNumber = (min, max) => {

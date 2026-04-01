@@ -56,9 +56,10 @@ export const allProjects = [
     title: 'Tarot',
   },
   {
-    altText: 'set timer page',
+    altText: 'timer page',
     appUrl: '/timer',
-    codeUrl: 'https://github.com/awrennuit/countdown-timer',
+    codeUrl:
+      'https://github.com/awrennuit/full-stack-software-developer-portfolio/blob/main/src/components/Timer.jsx',
     description:
       'Constructed to gain a better understanding of time and intervals',
     image: 'images/screenshots/timer.webp',
@@ -86,7 +87,8 @@ export const allProjects = [
   {
     altText: 'pixel art main page',
     appUrl: '/abstract-art',
-    codeUrl: 'https://github.com/awrennuit/abstract-pixel-art',
+    codeUrl:
+      'https://github.com/awrennuit/full-stack-software-developer-portfolio/blob/main/src/components/Abstract.jsx',
     description: 'Fusing my love for both experimental art and technology',
     image: 'images/screenshots/art.webp',
     oneButton: false,

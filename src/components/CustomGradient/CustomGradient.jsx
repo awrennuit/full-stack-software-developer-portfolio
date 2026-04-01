@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Header from '../Header';
 import GradientToolbar from './GradientToolbar';
 import SimplePicker from './SimplePicker';
