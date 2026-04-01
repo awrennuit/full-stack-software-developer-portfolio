@@ -1,80 +1,74 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import '../stylesheets/password-generator.css';
+import { passwordData } from '../utils/passwordData';
 import Header from './Header';
-import PasswordSection from './PasswordSection';
 
 export default function PasswordGenerator() {
-  // Store local state and variables
-  const [length, setLength] = useState(10);
-  const [charset, setCharset] = useState('abcdefghijklmnopqrstuvwxyz');
+  const [charset, setCharset] = useState(
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890',
+  );
+  const [length, setLength] = useState(20);
   const [uniquePassword, setUniquePassword] = useState('');
-  const notChar = /^[a-zA-Z0-9]/;
-  let tempPassword = '';
+  const isAlphaNumeric = /^[a-zA-Z0-9]/;
 
-  // Check if a specific symbol is used two times in a row and skip it if true
-  const checkDupe = (char) => {
-    switch (char) {
-      case char:
-        if (tempPassword[tempPassword.length - 1] === char) {
-          return false;
-        }
-        return true;
-      default:
-        return true;
-    }
+  const handleChange = e => {
+    const newVal = e.target.value;
+
+    if (charset.includes(newVal)) setCharset(charset.replace(newVal, ''));
+    else setCharset(prev => prev + newVal);
   };
 
-  // Create unique password
-  const generatePassword = () => {
-    let randomCharset = charset.split(``);
+  const handleLengthChange = e => {
+    const newVal = e.target.value;
+
+    if (newVal >= 50) setLength(50);
+    else if (newVal <= 2) setLength(2);
+    else setLength(newVal);
+  };
+
+  const isDupe = (char, tempPassword) => {
+    if (tempPassword[tempPassword.length - 1] === char) return true;
+
+    return false;
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
 
     if (!charset) {
-      setUniquePassword('Check at least one option!');
-    } else {
-      for (let i = 0; tempPassword.length < length; i++) {
-        if (i === randomCharset.length) {
-          i = 0;
-        } else {
-          randomCharset.sort(() => Math.random() - 0.5);
-          if (!randomCharset[i].match(notChar)) {
-            if (checkDupe(randomCharset[i])) {
-              tempPassword += randomCharset[i];
-            }
-          } else {
-            tempPassword += randomCharset[i];
-          }
-        }
-      }
-      setUniquePassword(tempPassword);
-    }
-  };
+      setUniquePassword('12345 - the same as my luggage');
 
-  // Add characters to selected set when checked, remove them when unchecked
-  const handleCheck = (e) => {
-    const char = e.target;
-    if (char.checked) {
-      if (!charset.includes(`ABCDEFGHIJKLMNOPQRSTUVWXYZ`)) {
-        setCharset(charset + char.value);
-      } else if (!charset.includes(`abcdefghijklmnopqrstuvwxyz`)) {
-        setCharset(charset + char.value);
-      } else if (!charset.includes(`1234567890`)) {
-        setCharset(charset + char.value);
-      } else if (!charset.includes(`-_`)) {
-        setCharset(charset + char.value);
-      } else if (!charset.includes('#;:`~!@#$%^&*()+={}[]/\\?')) {
-        setCharset(charset + char.value);
-      }
-    } else if (!char.checked) {
-      setCharset(charset.replace(char.value, ''));
+      return;
     }
-  };
 
-  // Assure length cannot be lower than 2 or higher than 50
-  const handleLengthChange = (e) =>
-    e.target.value <= 50 && e.target.value >= 2
-      ? setLength(+e.target.value)
-      : '';
+    const randomCharset = charset.split(``);
+    let tempPassword = '';
+
+    for (let i = 0; tempPassword.length < length; i++) {
+      // ensure we do not run out of characters
+      if (i === randomCharset.length) {
+        i = 0;
+
+        continue;
+      }
+
+      // randomize on each iteration
+      randomCharset.sort(() => Math.random() - 0.5);
+
+      if (randomCharset[i].match(isAlphaNumeric)) {
+        tempPassword += randomCharset[i];
+
+        continue;
+      }
+
+      // do not allow two special characters in a row
+      if (!isDupe(randomCharset[i], tempPassword)) {
+        tempPassword += randomCharset[i];
+      }
+    }
+
+    setUniquePassword(tempPassword);
+  };
 
   return (
     <>
@@ -88,7 +82,7 @@ export default function PasswordGenerator() {
         />
         <meta
           name="description"
-          content="A password generator developed by full stack software awren nuit. It’s a free & easy way to create secure passwords."
+          content="A password generator developed by full stack software engineer awren nuit. It’s a free & easy way to create secure passwords."
         />
         <meta
           name="keywords"
@@ -96,58 +90,40 @@ export default function PasswordGenerator() {
         />
       </Helmet>
       <Header />
-      <div className="password-background">
-        <div className="password-full-container">
-          <h1 className="password-heading">Password Generator</h1>
-          <PasswordSection
-            symbolType="uppercase"
-            handleCheck={handleCheck}
-            value="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-          />
-          <PasswordSection
-            symbolType="lowercase"
-            handleCheck={handleCheck}
-            value="abcdefghijklmnopqrstuvwxyz"
-          />
-          <PasswordSection
-            symbolType="numbers"
-            handleCheck={handleCheck}
-            value="1234567890"
-          />
-          <PasswordSection
-            symbolType="dash & underscore"
-            handleCheck={handleCheck}
-            value="-_"
-          />
-          <PasswordSection
-            symbolType="other symbols"
-            handleCheck={handleCheck}
-            value="#;:`~!@#$%^&*()+={}[]/\\?"
-          />
+      <main className="password">
+        <article className="password__inner">
+          <h1>Password Generator</h1>
+          <form name="password-form" onSubmit={handleSubmit}>
+            {passwordData.map(p => (
+              <label key={p.id}>
+                <input
+                  checked={charset.includes(p.value)}
+                  type="checkbox"
+                  value={p.value}
+                  onChange={handleChange}
+                />
+                {p.value}
+              </label>
+            ))}
+            <label className="password__length">
+              <input
+                max="50"
+                min="2"
+                type="number"
+                value={length}
+                onChange={handleLengthChange}
+              />
+              characters
+            </label>
+            <button type="submit">Generate</button>
+          </form>
 
-          <input
-            className="password-length-input"
-            type="number"
-            min="2"
-            max="50"
-            value={length}
-            id="length"
-            onChange={handleLengthChange}
-          />
-          <div>
-            <button className="generate" onClick={generatePassword}>
-              Generate
-            </button>
+          <div className="password__output">
+            <h2>Your unique ID</h2>
+            <p>{uniquePassword}</p>
           </div>
-
-          <hr className="password-hr" />
-
-          <div>
-            <p className="password-output-heading">Your unique ID is:</p>
-            <p className="password-output">{uniquePassword}</p>
-          </div>
-        </div>
-      </div>
+        </article>
+      </main>
     </>
   );
 }

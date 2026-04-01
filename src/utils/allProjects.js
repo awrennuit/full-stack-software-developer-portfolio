@@ -78,7 +78,8 @@ export const allProjects = [
   {
     altText: 'password generator main page',
     appUrl: '/password-generator',
-    codeUrl: 'https://github.com/awrennuit/unique-id-generator',
+    codeUrl:
+      'https://github.com/awrennuit/full-stack-software-developer-portfolio/blob/main/src/components/PasswordGenerator.jsx',
     description: 'An exercise in basic password and ID generation',
     image: 'images/screenshots/password.webp',
     oneButton: false,
