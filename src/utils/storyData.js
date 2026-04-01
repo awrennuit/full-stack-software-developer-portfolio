@@ -109,7 +109,7 @@ drifting to another place`,
 
 A troupe of musicians is going to unveil their latest work tonight. Their instruments are on the stage, ready to be played. There is a flute, some hand drums, and stringed instruments of various sizes. By the look of things the troupe consists of about five or six members. No one knows which of the inn’s patrons are part of the band, but there are some bets going about who might be one of the performers. You place a few bets of your own, hoping to make some money. Rumor has it that the tall, thin gentleman with the big feather in his hat and the sort of mysterious lady in the corner are part of the troupe. You decide to roll with the odds and put your money on them.
     
-While most of the inn’s guests are engaging in evening revelry, there might also be more sinister activities taking place. In the midst of the festivities you have been noticing a few *very* normal looking people who have been trying to act as unsuspicious as possible. However, you can't help but notice their darting eyes and the small packages discretely changing hands. Despite this shady behavior they don't appear to be a threat...at least for now.
+While most of the inn’s guests are engaging in evening revelry, there might also be more sinister activities taking place. In the midst of the festivities you have been noticing a few *very* normal looking people who have been trying to act as unsuspicious as possible. However, you can’t help but notice their darting eyes and the small packages discretely changing hands. Despite this shady behavior they don’t appear to be a threat...at least for now.
     
 Someone walks onto the stage in the middle of the room and announces the musical act. The crowd is noticeably quieter now - perhaps in anticipation of the music, perhaps to see if they won big or lost hard with their wagers. The man with the big feather in his hat walks onto the stage alongside four other people. The mysterious lady isn’t one of them. Oh well. You end up more or less breaking even with your wagers.
     
@@ -192,5 +192,122 @@ Til next year
 When it returns
 And I fear
 The rest will disappear`,
+  },
+  {
+    id: 10,
+    route: '/stories/paxtonirae',
+    slug: 'paxtonirae',
+    title: 'Paxtonirae, Fleeting Embodiment of Contrition',
+    type: 'short story',
+    year: '2025',
+    content: `Deep underground lies a forgotten city. Its inhabitants fade in and out of the physical plane, occupying a space beyond our comprehension. Each has a special task that they were assigned at creation. It is their sacred duty to perform that task until the day of destruction, which will cause everything to cease to exist.
+
+In their hidden city they come and go as they please, largely unaware of each other. Unaware of most living beings, too, save for when necessary. Until such a time, they wander aimlessly through the dark corridors. Some floating. Other walking or crawling. But always moving.
+
+Paxtonirae was given the title Fleeting Embodiment of Contrition. Its sole purpose is to act as a temporary vessel for the deeply-repentant to pour their sorrows into. This act releases them from their burden and allows the healing process to begin. The weight of such a task is immeasurable. Paxtonirae perpetually weeps from the near-constant barrage of these intense feelings.
+
+Among humans it is said that an aura of sadness can be felt where Paxtonirae has recently passed through. Plants slightly wilt, petals begin to fall from flowers, and sometimes a faint dark mist can be seen. Many have tried to follow this vague path to the secret realm where these transitory entities dwell. No one has yet discovered its hiding place.
+
+The people of Dausedmera sing Paxtonirae’s praises during a minor festival that happens in the transition between the Dry Season and the Rainy Season. The empty jars that they set outside their houses become filled with the metaphysical essence that Paxtonirae bears for them. For they know that they will call upon this anguished spirit when atoning for their misdeeds.
+
+Until then, Paxtonirae wanders...`,
+  },
+  {
+    id: 11,
+    route: '/stories/with-both-feet-upon-the-aether',
+    slug: 'with-both-feet-upon-the-aether',
+    title: 'With Both Feet Upon the Aether',
+    type: 'short story',
+    year: '2025',
+    content: `Many centuries ago a young woman was traveling through Meadowtrek Woods. During her journey she decided to camp off the beaten path and away from any prying eyes. While she looked for a good spot with just the right combination of level ground and tree cover she began to feel odd. Floaty, but also present. Her hair stood on end, as if a faint energetic current flowed through her.
+
+Slightly startled, she wondered if this could be the spot. The magick spot that she heard stories about growing up. Many had sought it out. None had found it. She took a few steps this way then that way as she gauged where the energy felt strongest. It was at this moment that she saw them. Small anomalies, almost like ripples. Like when the rain hits standing water. Slowly, she reached out her hand.
+
+Her fingers felt charged as they slid through the veil. She pulled her hand out and inspected it. The static feeling left her hand. No signs of immediate injury. This was evidence enough for her. Boldly, she walked through the nearly invisible rippling wall.
+
+The energy was so different, yet so familiar. But she could not yet place it. What was this strange place? Aside from the peculiar physical sensation everything appeared the same at first glance - vegetation, the sounds of the forest, etc. However, the coloring was subtly different. As her focus shifted to the hues of the leaves they almost seemed to meld into a new color. Where once there was aquamarine, now there was a rich cerulean, then a deep blue. When her awareness moved to something else the colors remained constant. Focusing on the size of different plants caused them to slowly change size. First larger, then smaller. Oscillating back and forth.
+
+After exploring this wondrous place for a while she had gained a certain level of mastery over it. Color, size, and other properties could be controlled with her consciousness. It was as if she had entered a dream world while fully awake. Any thought she had would manifest. She walked into the canopy, then the clouds, then the heavens. She flew. Touched the aether itself. Breathed deeply in this sacred space. Got lost in the majesty of it all.
+
+For decades she remained here. Eager to learn everything of this place. Consumed by the magick. Until one day she felt a disturbance. As if this wondrous world was dissipating. Growing weaker and weaker. Fearful that she may get trapped or even perish in this realm she made haste toward the veil. Crossing the threshold caused her to pass out - she had been away for far too long.
+
+It took a few days for her to fully ‘return’ to this plane of existence. Each day she became more grounded. And each day she started noticing things. The most obvious was that despite being in that secret place for many years she did not age. Then she realized that not a day had passed in this realm. It was as if time stood still. Lastly, she discovered that she had the ability to visit that magickal realm whenever she wished. All she needed was a dreamer...`,
+  },
+  {
+    id: 12,
+    route: '/stories/rise-of-the-woodland-empire',
+    slug: 'rise-of-the-woodland-empire',
+    title: 'Rise of the Woodland Empire',
+    type: 'short story',
+    year: '2025',
+    content: `Many centuries ago, early humans settled at the base of the mountains. The way the mountains wrapped around in a loose U shape provided security. The ground was perfect for farming - fertile and easy to work despite no known rivers or lakes nearby. Wells were easy to dig out and seemed to never run low.
+
+This led to the civilization prospering. As the years passed and the kingdom grew, they constructed a massive castle nestled up near the mountains. Invaders stood no chance, and every attempted assault was thwarted. Their influence began to spread.
+
+Then one day the populace awakened to trees sprouting up all around the kingdom. Through roads, in the fields, even from the walls of the castle. The trees did not appear to be native to the region. Curious, scientists and researchers took samples to see what they could learn. But there wasn't time.
+
+The trees grew quickly. It wasn’t long before they started flowering and releasing pollen. And thus the siege had begun. Those living closest to the trees fell ill with a bark-like skin condition. The ailment swiftly spread. Leaves sprang forth from fingertips. Roots reached downward into the earth from the soles of their feet. Still conscious, the inhabitants could do nothing as they became part human and part tree.
+
+Panic overtook the kingdom. No one could escape, though many tried. The roots would take hold before they got too far. Some resigned themselves to this destiny and laid on the ground, yielding to nature. Their homes and the castle consumed by branches and leaves. And so the kingdom was lost to the Woodland Empire.`,
+  },
+  {
+    id: 13,
+    route: '/stories/dagorby-pommes-magickal-emporium',
+    slug: 'dagorby-pommes-magickal-emporium',
+    title: 'Dagorby Pomme’s Magickal Emporium',
+    type: 'short story',
+    year: '2025',
+    content: `Dagorby Pomme has always been a mysterious fellow. Not much is known about him outside of his seasonal shoppe. It’s large, and contains thousands of magick artefacts from all over Dausedmera. It arrives with the first rains, and vanishes just before the first snow. The curious thing is...no one has ever witnessed it being set up. With its size one would think it would take several weeks to construct, staff, and merchandise. But it seems to pop up overnight.
+
+One year I decided to check out this legendary store to see if the rumours were true. Each relic had a small plaque with brief details about it. Some of them had a glass dome around them so no one could touch them. Because they’re dangerous, I guessed. Several of the objects were from my area, so I was naturally drawn to them. They are a part of my land’s history, after all.
+
+First I saw a rusty iron link. It was quite unremarkable. So why was it here? According to the description it was from the shackles that bind The Unnamed King in his eternal prison. The stories people tell of him vary wildly. Some scary. Some cautionary. What they all agree on is that The Unnamed King did something terrible, which caused the deities to imprison him in celestial shackles. Some say he’s immortal. Some say he was crushed beneath the rubble of his stronghold. I find it hard to believe that a hunk of rusty iron was forged by the gods.
+
+Soon I came to a curious flower. Brilliant red with three yellow orbs in the center. Some moss was growing on the table around it. Very curious indeed, given we were indoors. The sign said "The Perpetual Bloom" and claimed that wherever it went, nature soon followed. I had heard about a city in the mountains that was overrun by plants. I’ve always written that off as something parents tell their children to keep them from getting lost in the woods. But now I’m not so sure...
+
+The next item that caught my eye was a pair of very old, very worn boots. They had strange markings all over them. At first I thought they were just cut up from excessive use. As I inspected more closely I could see they were overlapping runic sigils. Surely they had some grand stories to tell. "Extremely powerful" was written on the placard. "No one knows what they do" was also written. Hmmmmm...
+
+One spot over was a small vial of faintly glowing orange liquid. This had to be the fabled elixir that cures illnesses and grants life everlasting. Personally, I don’t believe it, but the vast majority of people around here view it as some sort of divine gift. Who in their right mind was drink a mystery liquid that’s glowing? Ew.
+
+Then I saw a bizarre artefact: a book, maybe about 500 pages, that was empty. Not empty as in blank pages - it had no pages at all. The cover was unmarked and smooth. By unmarked I mean literally no marks. Not a single crease or scratch. Wondering if the user was meant to add pages to it themself, I checked the sign. "Book with missing pages. Pages may be missing or invisible. No refunds." Huh. They truly thrive on the mystery of things here, don’t they?
+
+A quill and inkwell stood out to me. It must have been the bottomless ink I’ve heard about. The catch is you need a special tool to read it once it dries. Without it the words can’t be seen. That would be a funny pairing with the pageless book, wouldn’t it? Can you imagine writing on invisible pages with invisible ink? Although I do wonder what other unseen things are out there. If paper and ink need to be seen with some kind of tool, what else can the tool see?
+
+After that I stopped in front of an ordinary smoking pipe. "Dream Pipe" the placard read. Ah. This was one of the pipes that the oracle from Pelmer made. It’s supposed to let the smoker travel in between the waking world and the dreaming world. Though I’m not sure if the pipe itself causes the effect or if a special smoking blend is necessary. Either way I don’t think many people around here would trust it seeing as how the oracle has become part of the local folklore. Anyone spending the night around Pelmer disappears. The rumours are that she bewitches them and feeds off their life force. If the stories are true, then this really should have a dome over it.
+
+One artefact pulled me in from across the emporium. An extended spyglass that stood at least a meter long. It was used by a tyrant that ruled the land a long, long time ago. He massacred thousands, and levelled their cities to build monuments to himself. According to the myths, this spyglass was the key to his success in battle - it can see thirty minutes into the future. With that kind of advantage a great tactician becomes an unstoppable one. I considered purchasing it with intent to destroy it...but I was scared that I’d get curious and become addicted to the power it holds.
+
+Near the door was a candle. It was lit, and it had a blue flame. As I drew closer I saw that the wax wasn’t melting. Ever curious, I put my hand above the flame. There was no heat. No smoke. I lowered my hand toward the flame. Still nothing. As I was about to touch it the shopkeep shouted "NO TOUCHING!" Slightly embarrassed, I quickly walked away.
+
+Finally I saw it. A unique piece of ancient wood. This had to be from The Bog out near Myrkfel. Some backstory: after creating our land, the goddess Sedmera helped guide us. She taught us farming, construction, how to lead, and how to work alongside nature. Once she was satisfied with our society, she left. After millennia she returned to check on her creation. What she saw broke her heart. Somewhere along the way we stopped practicing her teachings, and started dominating nature and fighting with each other. Overcome with sadness she shed a single tear. The tear formed The Bog...which is the source of this wood. Magickal? Probably not. Touched by the divine? Absolutely.
+
+A few weeks later Dagorby Pomme’s shoppe vanished as suddenly as it appeared. But we all know he’ll be back next year. Maybe one day I’ll invest in an artefact just to say I did. They’re probably just knock-offs anyway.`,
+  },
+  {
+    id: 14,
+    route: '/stories/the-creature-of-mogsville-heights',
+    slug: 'the-creature-of-mogsville-heights',
+    title: 'The Creature of Mogsville Heights',
+    type: 'poem',
+    year: '2025',
+    content: `make no fuss
+when you peer
+
+into the maw
+it opens wide
+
+fangs so sharp
+twisting and coiling
+
+breath from the darkness
+Howling and moist
+
+the creature decides
+who lives
+
+and
+who
+
+dies`,
   },
 ];
