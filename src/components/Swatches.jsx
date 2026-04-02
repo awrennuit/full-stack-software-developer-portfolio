@@ -5,7 +5,7 @@ import Header from './Header';
 export default function Swatches() {
   const [isBgWhite, setIsBgWhite] = useState(true);
 
-  const copySwatch = (i) => {
+  const copySwatch = i => {
     document.getElementById(`swatch-${i}`).focus();
     document.getElementById(`swatch-${i}`).select();
     document.execCommand('copy');
@@ -14,7 +14,7 @@ export default function Swatches() {
   return (
     <>
       <Header />
-      <div className="swatches">
+      <main className="swatches">
         <button
           className="swatches__toggle-btn"
           onClick={() => setIsBgWhite(!isBgWhite)}
@@ -28,13 +28,14 @@ export default function Swatches() {
           ></span>
           <span className="a11y">Toggle light/dark mode</span>
         </button>
-        <div
+        <article
           className={`swatches__container${
             isBgWhite ? ' swatches__container--white' : ''
           }`}
         >
+          <h1 className="a11y">Swatch gallery</h1>
           {swatchList.map((item, i) => (
-            <div
+            <section
               key={i}
               className="swatches__box"
               onClick={() => copySwatch(i)}
@@ -53,10 +54,10 @@ export default function Swatches() {
                 value={`linear-gradient(${item.dir}, ${item.a}, ${item.b})`}
                 readOnly
               />
-            </div>
+            </section>
           ))}
-        </div>
-      </div>
+        </article>
+      </main>
     </>
   );
 }

@@ -67,7 +67,8 @@ export default function CustomGradient() {
         />
       </Helmet>
       <Header />
-      <div className="custom-gradient" style={{ background: `${gradient}` }}>
+      <main className="custom-gradient" style={{ background: `${gradient}` }}>
+        <h1 className="a11y">Custom gradient maker</h1>
         <SimplePicker
           colorOne={colorOne}
           colorTwo={colorTwo}
@@ -81,6 +82,8 @@ export default function CustomGradient() {
           }`}
           onClick={() => setIsToolbarOpen(true)}
           title="Open advanced controls"
+          aria-expanded={isToolbarOpen}
+          aria-controls="gradient-toolbar"
         >
           &#10137;
           <span className="a11y">Open advanced controls</span>
@@ -100,7 +103,7 @@ export default function CustomGradient() {
           setGradientType={setGradientType}
           setIsToolbarOpen={setIsToolbarOpen}
         />
-      </div>
+      </main>
     </>
   );
 }

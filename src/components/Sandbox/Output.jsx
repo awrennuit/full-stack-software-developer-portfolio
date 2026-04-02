@@ -42,15 +42,15 @@ export default function Output({
     };
   }, [showDialog]);
 
-  const handleEnterPress = (e) => {
+  const handleEnterPress = e => {
     if (e.key === 'Enter') selectText('dialog-description');
   };
 
-  const handleEscPress = (e) => {
+  const handleEscPress = e => {
     if (e.key === 'Escape') setShowDialog(!showDialog);
   };
 
-  const handleTabPress = (e) => {
+  const handleTabPress = e => {
     if (e.key !== 'Tab') return;
 
     if (document.activeElement === copyRef.current) {
@@ -71,7 +71,7 @@ export default function Output({
         className="output__dialog"
         aria-labelledby="dialog-title"
         aria-describedby="dialog-description"
-        onClick={(e) => e.stopPropagation()}
+        onClick={e => e.stopPropagation()}
       >
         <h3 id="dialog-title">Here’s Your CSS</h3>
         <div
@@ -131,6 +131,6 @@ export default function Output({
         </button>
       </dialog>
     </aside>,
-    document.body
+    document.body,
   );
 }

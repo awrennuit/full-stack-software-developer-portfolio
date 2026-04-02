@@ -11,7 +11,7 @@ export default function ProjectCard({
   title,
 }) {
   return (
-    <div className="project-card" tabIndex={0}>
+    <article className="project-card" tabIndex={0}>
       <img src={image} alt={altText} loading="lazy" />
       <div className="project-card__overlay">
         <h2>{title}</h2>
@@ -46,6 +46,6 @@ export default function ProjectCard({
           )
         ) : null}
       </div>
-    </div>
+    </article>
   );
 }

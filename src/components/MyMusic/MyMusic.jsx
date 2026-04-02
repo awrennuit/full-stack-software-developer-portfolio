@@ -26,9 +26,10 @@ export default function MyMusic() {
         <h1>my music</h1>
         <p className="u-music-container__content-block">
           greetings and welcome to a compendium of my music and a brief history
-          of my solo projects. i grew up playing violin in the school orchestra.
+          of my solo projects. i grew up playing violin in the school orchestra
+          and played in several bands ranging from metal to industrial to rock.
           around 2008 i started making my own music. in 2009 i released my first
-          album,{' '}
+          solo album,{' '}
           <a
             className="u-music-container__link"
             href="https://cavebirdrecords.bandcamp.com/album/a-wren-ep"
@@ -46,6 +47,7 @@ export default function MyMusic() {
           <li>chrysanthemum: (mostly improvised) ambient guitar</li>
           <li>Gloomthread: funeral doom</li>
           <li>Wooden Vessels: dungeon synth</li>
+          <li>several secret/anonymous projects</li>
         </ul>
 
         <p className="u-music-container__content-block">

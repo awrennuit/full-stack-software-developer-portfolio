@@ -17,7 +17,8 @@ export default function GradientToolbar({
   setIsToolbarOpen,
 }) {
   return (
-    <div
+    <section
+      id="gradient-toolbar"
       className={`gradient-toolbar${
         isToolbarOpen ? ' gradient-toolbar--active' : ''
       }`}
@@ -52,6 +53,6 @@ export default function GradientToolbar({
           <ColorPicker color={colorTwo} setColor={setColorTwo} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

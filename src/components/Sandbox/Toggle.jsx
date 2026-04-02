@@ -10,18 +10,18 @@ export default function Toggle({
   return (
     <label className="toggle">
       <input
-        defaultChecked={isChecked}
         id={toggleId ? toggleId : null}
+        defaultChecked={isChecked}
         name={toggleName}
-        onChange={(e) =>
+        type={toggleType}
+        value={toggleValue}
+        onChange={e =>
           toggleType === 'checkbox'
             ? e.target.checked
               ? setVariable(e.target.value)
               : setVariable('')
             : setVariable(e.target.value)
         }
-        type={toggleType}
-        value={toggleValue}
       />
       {toggleLabel}
     </label>

@@ -24,7 +24,7 @@ export default function AwfHistory() {
       <AwfHeader />
       <main>
         <article className="awf-history__inner">
-          <ul className="awf-history__list">
+          <ol className="awf-history__list">
             {awfPosts.map((post) => (
               <li className="awf-history__list-item" key={post.slug}>
                 <Link
@@ -36,7 +36,7 @@ export default function AwfHistory() {
                 </Link>
               </li>
             ))}
-          </ul>
+          </ol>
         </article>
       </main>
     </div>

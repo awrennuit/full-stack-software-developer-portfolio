@@ -7,17 +7,16 @@ export default function Slider({
   variableName,
 }) {
   return (
-    <div className="slider">
-      <label htmlFor={sliderLabel}>{sliderLabel}</label>
+    <label className="slider">
+      {sliderLabel}
       <input
-        id={sliderLabel}
-        type="range"
-        value={variableName}
         min={minValue}
         max={maxValue}
         step={stepValue}
-        onChange={(e) => setVariable(e.target.value)}
+        type="range"
+        value={variableName}
+        onChange={e => setVariable(e.target.value)}
       />
-    </div>
+    </label>
   );
 }

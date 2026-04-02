@@ -9,12 +9,12 @@ import Output from './Output';
 export default function CssSandbox() {
   const doneRef = useRef(null);
 
-  // sets height & width
+  // height & width
   const [isDimensionsExpanded, setIsDimensionsExpanded] = useState(false);
   const [height, setHeight] = useState(200);
   const [width, setWidth] = useState(300);
 
-  // sets background color
+  // background color
   const [isBgExpanded, setIsBgExpanded] = useState(false);
   const [bgRed, setBgRed] = useState(255);
   const [bgGreen, setBgGreen] = useState(255);
@@ -23,11 +23,11 @@ export default function CssSandbox() {
     `rgb(${bgRed}, ${bgGreen}, ${bgBlue})`,
   );
 
-  // sets blur
+  // blur
   const [isBlurExpanded, setIsBlurExpanded] = useState(false);
   const [blur, setBlur] = useState(0);
 
-  //sets border
+  //border
   const [isBorderExpanded, setIsBorderExpanded] = useState(false);
   const [borderWidth, setBorderWidth] = useState(0);
   const [borderStyle, setBorderStyle] = useState('none');
@@ -38,12 +38,12 @@ export default function CssSandbox() {
     `rgb(${borderRed}, ${borderGreen}, ${borderBlue})`,
   );
 
-  // sets border radius
+  // border radius
   const [isBorderRadiusExpanded, setIsBorderRadiusExpanded] = useState(false);
   const [borderRadius, setBorderRadius] = useState(0);
   const [borderRadiusType, setBorderRadiusType] = useState('px');
 
-  // sets box shadow
+  // box shadow
   const [isBoxShadowExpanded, setIsBoxShadowExpanded] = useState(false);
   const [boxRed, setBoxRed] = useState(125);
   const [boxGreen, setBoxGreen] = useState(125);
@@ -57,7 +57,7 @@ export default function CssSandbox() {
   const [boxBlur, setBoxBlur] = useState(0);
   const [boxSpread, setBoxSpread] = useState(0);
 
-  // sets rotation
+  // rotation
   const [isRotationExpanded, setIsRotationExpanded] = useState(false);
   const [rotation, setRotation] = useState(0);
 
@@ -407,7 +407,7 @@ export default function CssSandbox() {
     setRotation(0);
   };
 
-  const selectText = (text) => {
+  const selectText = text => {
     if (document.selection) {
       // for IE
       const range = document.body.createTextRange();
