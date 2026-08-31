@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://awrennuit.com/sitemap.xml
+Sitemap: https://www.awrennuit.com/sitemap.xml

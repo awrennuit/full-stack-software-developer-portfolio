@@ -7,6 +7,16 @@ export default function MoreRecommendations() {
           <li>
             <a
               className="u-music-container__link"
+              href="https://www.youtube.com/watch?v=9LHAt8Qtmyk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mortiis - Anden som Gjorde Oppror (1994)
+            </a>
+          </li>
+          <li>
+            <a
+              className="u-music-container__link"
               href="https://www.youtube.com/watch?v=N_L2QCBKOeE"
               target="_blank"
               rel="noopener noreferrer"
@@ -37,11 +47,66 @@ export default function MoreRecommendations() {
           <li>
             <a
               className="u-music-container__link"
-              href="https://www.youtube.com/watch?v=sASdlbKxooM"
+              href="https://www.youtube.com/watch?v=DLFDe-AfKhc"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Lunar Womb - The Sleeping Green (1999)
+              Gothmog - Medieval Journeys (1998)
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        2000s classics
+        <ul>
+          <li>
+            <a
+              className="u-music-container__link"
+              href="https://journeythroughdarkness.bandcamp.com/album/iii-2000"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Arden - III (2000)
+            </a>
+          </li>
+          <li>
+            <a
+              className="u-music-container__link"
+              href="https://www.youtube.com/watch?v=qf0C1nDi0UM"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Corvus Neblus - Chapter II Strahd's Possession (2001)
+            </a>
+          </li>
+          <li>
+            <a
+              className="u-music-container__link"
+              href="https://mitternachtproject.bandcamp.com/album/the-desolation-of-blendenstein"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mitternacht - The Desolation Of Blendenstein (2002)
+            </a>
+          </li>
+          <li>
+            <a
+              className="u-music-container__link"
+              href="https://dungeonsdeeprecords.bandcamp.com/album/nocturnal-obeisance"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              And the Oceans Dream Eternal - Nocturnal Obeisance (2006)
+            </a>
+          </li>
+          <li>
+            <a
+              className="u-music-container__link"
+              href="https://www.youtube.com/watch?v=ACMbSVdAMYQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Skymning - Pesten (2008)
             </a>
           </li>
         </ul>
@@ -49,6 +114,16 @@ export default function MoreRecommendations() {
       <li>
         2010s classics
         <ul>
+          <li>
+            <a
+              className="u-music-container__link"
+              href="https://lordlovidicus.bandcamp.com/album/autumnal-winds-and-times-of-yore"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lord Lovidicus - Autumnal Winds And Times Of Yore (2013)
+            </a>
+          </li>
           <li>
             <a
               className="u-music-container__link"
@@ -89,16 +164,6 @@ export default function MoreRecommendations() {
               DIM - Compendium I (2017)
             </a>
           </li>
-          <li>
-            <a
-              className="u-music-container__link"
-              href="https://ulkmusic.bandcamp.com/album/ulk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ulk - Ulk (2019)
-            </a>
-          </li>
         </ul>
       </li>
       <li>
@@ -117,21 +182,21 @@ export default function MoreRecommendations() {
           <li>
             <a
               className="u-music-container__link"
-              href="https://estoc1.bandcamp.com/album/chapter-i"
+              href="https://www.youtube.com/watch?v=gewBohrLlS8"
               target="_blank"
               rel="noopener noreferrer"
             >
-              ESTOC - Chapter I (2019)
+              Daoine Sidhe - Daoine Sidhe (1996)
             </a>
           </li>
           <li>
             <a
               className="u-music-container__link"
-              href="https://theloreseeker.bandcamp.com/album/where-the-moonlight-herb-grows"
+              href="https://estoc1.bandcamp.com/album/chapter-i"
               target="_blank"
               rel="noopener noreferrer"
             >
-              The Loreseeker - Where the Moonlight Herb Grows (2020)
+              ESTOC - Chapter I (2019)
             </a>
           </li>
           <li>
@@ -147,41 +212,11 @@ export default function MoreRecommendations() {
           <li>
             <a
               className="u-music-container__link"
-              href="https://songsofhircine.bandcamp.com/album/old-kings-fall"
+              href="https://hammerandflailrecordings.bandcamp.com/album/twilight-of-ragnar-k"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Hircine - Old Kings Fall (2022)
-            </a>
-          </li>
-          <li>
-            <a
-              className="u-music-container__link"
-              href="https://ithildintapeproduction.bandcamp.com/album/frosts-enchantment"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dyvyná - Frost’s Enchantment (2022)
-            </a>
-          </li>
-          <li>
-            <a
-              className="u-music-container__link"
-              href="https://archmast.bandcamp.com/album/as-the-wind-carries-us"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Archmast - As the Wind Carries Us (2023)
-            </a>
-          </li>
-          <li>
-            <a
-              className="u-music-container__link"
-              href="https://thefogweaver.bandcamp.com/album/magelight"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Fogweaver - Magelight (2023)
+              Lone Sentinel - Twilight of Ragnarök (2024)
             </a>
           </li>
         </ul>

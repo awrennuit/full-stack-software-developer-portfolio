@@ -30,11 +30,11 @@ export default function DungeonSynth() {
   return (
     <div className="u-music-container dungeon-synth">
       <Helmet>
-        <title>a dungeon synth primer</title>
+        <title>dungeon synth: what it is & how to make it | a primer</title>
         <link rel="canonical" href="https://www.awrennuit.com/dungeon-synth" />
         <meta
           name="description"
-          content="A brief Dungeon Synth primer, including common gear and how to make make the music. Written by Aveline Baudelaire aka Wooden Vessels."
+          content="What is dungeon synth? Learn its history, sound, common gear, sources of inspiration, and how to make it. Written by Aveline Baudelaire of Wooden Vessels."
         />
         <meta
           name="keywords"
@@ -46,7 +46,8 @@ export default function DungeonSynth() {
         <header>
           <div className="dungeon-synth__title-container">
             <h1>
-              a dungeon synth primer <span>by Aveline Baudelaire</span>
+              dungeon synth: what it is & how to make it{' '}
+              <span>a primer by Aveline Baudelaire</span>
             </h1>
           </div>
           <nav>
@@ -61,33 +62,33 @@ export default function DungeonSynth() {
           <AudioPlayer />
         </header>
         <main>
-          <section>
-            <h3 id="intro">I. a brief introduction</h3>
+          <section id="intro">
+            <h2>I. what is dungeon synth?</h2>
             <BriefIntroduction />
           </section>
 
-          <section>
-            <h3 id="recs">II. more recommendations</h3>
+          <section id="recs">
+            <h2>II. dungeon synth recommendations</h2>
             <MoreRecommendations />
           </section>
 
-          <section>
-            <h3 id="gear">III. common gear</h3>
+          <section id="gear">
+            <h2>III. dungeon synth gear</h2>
             <CommonGear />
           </section>
 
-          <section>
-            <h3 id="inspiration">IV. inspiration</h3>
+          <section id="inspiration">
+            <h2>IV. dungeon synth inspiration</h2>
             <Inspiration />
           </section>
 
-          <section>
-            <h3 id="method">V. my method</h3>
+          <section id="method">
+            <h2>V. how i make dungeon synth</h2>
             <MyMethod />
           </section>
 
-          <section>
-            <h3 id="thanks">VI. thank you!</h3>
+          <section id="thanks">
+            <h2>VI. closing thoughts</h2>
             <ThankYou />
           </section>
         </main>

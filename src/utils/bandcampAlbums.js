@@ -73,6 +73,36 @@ export const bandcampAlbums = {
   ],
   'Wooden Vessels (dungeon synth)': [
     {
+      albumId: '4229812034',
+      label: 'Live at Grace Center Summer MMXXVI - 2026',
+      link: 'https://cavebirdrecords.bandcamp.com/album/live-at-grace-center-summer-mmxxvi',
+      linkLabel: 'Live at Grace Center Summer MMXXVI',
+    },
+    {
+      albumId: '2036461619',
+      label: 'Xeroxed Castles - 2026',
+      link: 'https://cavebirdrecords.bandcamp.com/album/xeroxed-castles',
+      linkLabel: 'Xeroxed Castles',
+    },
+    {
+      albumId: '3911111102',
+      label: 'Gorgon Salter - 2026',
+      link: 'https://cavebirdrecords.bandcamp.com/album/gorgon-salter',
+      linkLabel: 'Gorgon Salter',
+    },
+    {
+      albumId: '3816745154',
+      label: 'The Dungeon of Daumer - 2026',
+      link: 'https://cavebirdrecords.bandcamp.com/album/the-dungeon-of-daumer',
+      linkLabel: 'The Dungeon of Daumer',
+    },
+    {
+      albumId: '1544971418',
+      label: 'Tales From Misthaven Falls - 2026',
+      link: 'https://cavebirdrecords.bandcamp.com/album/tales-from-misthaven-falls',
+      linkLabel: 'Tales From Misthaven Falls',
+    },
+    {
       albumId: '3738689127',
       label: 'Live at Grace Center - 2026',
       link: 'https://cavebirdrecords.bandcamp.com/album/live-at-grace-center',

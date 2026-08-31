@@ -7,12 +7,18 @@ import MusicHeader from '../MusicHeader';
 export default function DungeonVault() {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
 
+  const formattedArtist = (artist) => {
+    if (!artist) return null;
+
+    return artist.replace(/\s+/g, '_').toLowerCase();
+  };
+
   const handleArtistClick = (artist) => {
-    const formattedArtist = artist.replace(/\s+/g, '_').toLowerCase();
+    const albumMatch = dungeonVaultAlbums[formattedArtist(artist)];
 
-    if (!dungeonVaultAlbums[formattedArtist]) return;
+    if (!albumMatch) return;
 
-    setSelectedAlbum(dungeonVaultAlbums[formattedArtist]);
+    setSelectedAlbum(albumMatch);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
@@ -50,21 +56,34 @@ export default function DungeonVault() {
         )}
 
         <ul className="dungeon-vault__artist-list">
-          {dungeonVaultArtists.map((artist, i) => (
-            <li key={i}>
-              <button
-                className={`dungeon-vault__artist-btn${
-                  selectedAlbum?.artist === artist
-                    ? ' dungeon-vault__artist-btn--active'
-                    : ''
-                }
+          {dungeonVaultArtists.map((artist) => {
+            const album = dungeonVaultAlbums[formattedArtist(artist)];
+            return (
+              <li key={artist}>
+                <button
+                  className={`dungeon-vault__artist-btn${
+                    selectedAlbum?.artist === artist
+                      ? ' dungeon-vault__artist-btn--active'
+                      : ''
+                  }
                 `}
-                onClick={() => handleArtistClick(artist)}
-              >
-                {artist}
-              </button>
-            </li>
-          ))}
+                  onClick={() => handleArtistClick(artist)}
+                >
+                  {artist}
+                </button>
+                {album?.link?.startsWith('http') && (
+                  <a
+                    className="a11y"
+                    href={album.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {album.linkLabel}
+                  </a>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </main>
     </div>

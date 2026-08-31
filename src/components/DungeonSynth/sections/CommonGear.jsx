@@ -2,14 +2,20 @@ export default function CommonGear() {
   return (
     <>
       <p className="u-music-container__content-block">
-        as the name implies, dungeon synth is generally synth-based. but it
-        doesn’t have to be. for instance, some people use guitars. a{' '}
-        <em>lot</em> of modern dungeon synth is VST-based and 100% digital.
+        dungeon synth is a bit of a misnomer as it’s generally rompler
+        keyboard-based rather than synthesizer-based. in the 90s this was more
+        by necessity - musicians used whatever gear was readily available. in
+        modern times all manner of physical & virtual instruments are more
+        accessible than ever. throughout dungeon synth’s history musicians
+        utilized various instruments, such as guitar or kantele. a <em>lot</em>{' '}
+        of modern dungeon synth is VST-based and 100% digital. this is a genre
+        where gear matters far less than how you use it. the atmosphere is the
+        main focal point.
       </p>
 
       <ul className="u-music-container__nested-list">
         <li>
-          common hardware synths
+          common hardware
           <ul>
             <li>
               <a
@@ -169,7 +175,7 @@ export default function CommonGear() {
           </ul>
         </li>
         <li>
-          DAWs & recording
+          common DAWs & recording equipment
           <ul>
             <li>
               <a
@@ -245,7 +251,7 @@ export default function CommonGear() {
               >
                 Reaper
               </a>{' '}
-              (free or ~$60)
+              (free or ~$60 as of 2025)
             </li>
             <li>
               <a
@@ -256,7 +262,7 @@ export default function CommonGear() {
               >
                 M-Audio Keystation 49es
               </a>{' '}
-              (~$100 new)
+              (~$100 new as of 2025)
             </li>
             <li>
               <a
@@ -316,9 +322,9 @@ export default function CommonGear() {
               >
                 Roland JUNO-Di
               </a>{' '}
-              (~$450-500 - i got mine for like $100 many years ago - a music
-              shop was closing. it was the last day so everything had to go, and
-              it was a floor model)
+              (~$450-500 as of 2025 - i got mine for like $100 many years ago -
+              a music shop was closing. it was the last day so everything had to
+              go, and it was a floor model)
             </li>
             <li>
               <a
@@ -329,7 +335,7 @@ export default function CommonGear() {
               >
                 Behringer U-Phoria UMC22 USB Audio Interface
               </a>{' '}
-              (~$50-60)
+              (~$50-60 as of 2025)
             </li>
           </ul>
         </li>

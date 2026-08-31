@@ -3,7 +3,7 @@ export default function Inspiration() {
     <>
       <p className="u-music-container__content-block">
         atmosphere is vital to dungeon synth. songs that transport someone to a
-        far away land. music that tells stories. while the overall composition
+        faraway land. music that tells stories. while the overall composition
         is important, so is the overall aesthetic. the album art. the lore
         accompanying the album. maybe a short story or two. some physical
         releases even come with things like candles or incense to burn while

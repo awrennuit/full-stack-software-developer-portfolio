@@ -29,11 +29,11 @@ export default function MyMethod() {
         fifths, or fourths in a lower register and moving that ‘shape’ around
         until i find a series of chords that sound good together. ‘octave’,
         ‘fifth’, and ‘fourth’ are words we can use to describe the space between
-        two notes. if we start on C that is 1, D is 2, E is 3, and so on. don’t
-        worry if you don’t know the piano key note names. if we’re only using
-        white keys all we have to do is count up until we get to 4 (fourth), 5
-        (fifth), or 8 (octave). we just need to make sure we count the note
-        we’re starting on as 1.
+        two notes, known as an interval. if we start on C that is 1, D is 2, E
+        is 3, and so on. don’t worry if you don’t know the piano key note names.
+        if we’re only using white keys all we have to do is count the starting
+        note as 1, then count up until we get to 4 (fourth), 5 (fifth), or 8
+        (octave).
       </p>
       <figure className="dungeon-synth__figure-container" role="group">
         <figure>
