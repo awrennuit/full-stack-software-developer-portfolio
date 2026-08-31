@@ -130,10 +130,10 @@ export default function BriefIntroduction() {
         >
           blog
         </a>
-        , and he began posting all sorts of dark ambient, fantasy synth, lofi
-        medieval, etc music. Werdna called it ‘dungeon synth’. the blog slowly
-        gained in popularity and the 2010s saw a substantial increase, or
-        ‘revival’, in the number of people making this style of music, like{' '}
+        , and he began posting a very specific style of dark ambient & medieval
+        fantasy music. Werdna called it ‘dungeon synth’. the blog slowly gained
+        in popularity and the 2010s saw a substantial increase, or ‘revival’, in
+        the number of people making this style of music, like{' '}
         <a
           className="u-music-container__link"
           href="https://lordlovidicus.bandcamp.com/album/book-of-lore-vol-i"
